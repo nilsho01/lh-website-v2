@@ -3,7 +3,7 @@ import { styled, useTheme } from "@mui/material/styles";
 import { Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import TransText from "../components/common/transText";
+import TransText from "../components/common/TransText";
 import FlickeringText from "../components/common/SpecialTextObjects";
 
 // === Styled Components ===
