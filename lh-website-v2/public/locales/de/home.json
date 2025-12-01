@@ -1,0 +1,54 @@
+{
+    "hero_section": {
+        "header": "MANCHMAL IST GUT NICHT GUT GENUG",
+        "title": "Wir verwandeln komplexe Zielgruppen in klare Entscheidungen.",
+        "content": "In unseren Kernbereichen – dem Online- und dem Automobilsektor – übersetzen wir Verhaltensweisen und Einstellungen in Erkenntnisse, die Ihre strategischen und operativen Entscheidungen direkt unterstützen.",
+        "buttons": {
+            "our_solutions": "UNSERE LÖSUNGEN",
+            "contact_us": "KONTAKTIEREN SIE UNS"
+        },
+        "mini_tags": {
+            "tag_1": "Daten in Entscheidungen",
+            "tag_2": "Schnell & pragmatisch",
+            "tag_3": "Von der Erkenntnis zur Handlung"
+        },
+        "cards": {
+            "card_1": {
+                "title": "Globale Reichweite",
+                "content": "Online-Panels und Automobilpartner weltweit."
+            },
+            "card_2": {
+                "title": "Intelligente Analytik",
+                "content": "Von Dashboards bis hin zu detaillierten Analysen."
+            },
+            "card_3": {
+                "title": "Fokus auf Automobile",
+                "content": "From product clinics to customer journeys."
+            }
+        }
+    },
+    "main_section": {
+        "target_groups":{
+            "header": "Kennen Sie Ihre Zielgruppe wirklich?",
+            "subheader": "Wir helfen Ihnen zu verstehen, wer Ihre Kunden sind, wie sie Entscheidungen treffen und welche Hebel Ihr Geschäft im Online- und Automobilsektor wirklich voranbringen.",
+            "cards": {
+                "card_1": {
+                    "title": "Individuelle Lösungen weltweit",
+                    "content": "Als international tätiges Marktforschungsunternehmen entwickeln wir maßgeschneiderte Studien, die zu Ihren Märkten passen – und nicht umgekehrt."
+                },
+                "card_2": {
+                    "title": "Online- und Automobilexperten",
+                    "content": "Wir verstehen vernetzte Kunden und Mobilitätsökosysteme – von Online-Kontaktpunkten bis hin zu komplexen automobilen Reisen."
+                },
+                "card_3": {
+                    "title": "Schlanke Strukturen, schnelle Entscheidungen",
+                    "content": "Kurze Entscheidungswege, ein engagiertes Team und eine schlanke Organisation liefern Ihnen Ergebnisse genau dann, wenn Sie sie brauchen."
+                }  
+            } 
+        },
+        "clients": {
+            "header": "UNSERE KUNDEN",
+            "title": "Ausgewählte Marken, die uns vertrauen"
+        }
+    }
+}

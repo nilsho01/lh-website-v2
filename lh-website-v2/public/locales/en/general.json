@@ -1,0 +1,31 @@
+{
+    "general": {
+        "language": "English",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "general": "General",
+        "menu": "Menu"
+    },
+    "buttons": {
+      "home": "Home",
+      "company": "Company",
+      "flexibility": "Flexibility",
+      "specialisation": "Specialisation",
+      "internationality": "Internationality",
+      "automobile": "Automobile",
+      "performance": "Performance",
+      "customers": "Customers",
+      "methods": "Methods",
+      "car_clinics": "Car Clinics",
+      "customersatisfaction": "Customer Satisfaction",
+      "finanzmarket": "Financial Market",
+      "online_surveys": "Online Surveys",
+      "reportingsystem": "Reporting System",
+      "team": "Team",
+      "contact": "Contact",
+      "imprint": "Imprint",
+      "data_protection": "Data Protection",
+      "directions": "Directions",
+      "job_career": "Jobs & Career"
+    }
+}

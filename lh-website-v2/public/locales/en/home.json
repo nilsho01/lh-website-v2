@@ -1,0 +1,54 @@
+{
+    "hero_section": {
+        "header": "SOMETIMES GOOD IS NOT GOOD ENOUGH",
+        "title": "We turn complex target groups into clear decisions.",
+        "content": "In our core fields – the online and automotive sectors – we translate behaviour and attitudes into insights that directly support your strategic and operational decisions.",
+        "buttons": {
+            "our_solutions": "OUR SOLUTIONS",
+            "contact_us": "TALK TO US"
+        },
+        "mini_tags": {
+            "tag_1": "Data into decisins",
+            "tag_2": "Fast & pragmatic",
+            "tag_3": "From insight to action"
+        },
+        "cards": {
+            "card_1": {
+                "title": "Global reach",
+                "content": "Online panels & automotive partners worldwide."
+            },
+            "card_2": {
+                "title": "Smart analytics",
+                "content": "From dashboards to deep dives."
+            },
+            "card_3": {
+                "title": "Automotive focus",
+                "content": "From product clinics to customer journeys."
+            }
+        }
+    },
+    "main_section": {
+        "target_groups":{
+            "header": "Do you really know your target group?",
+            "subheader": "We help you understand who your customers are, how they decide and which levers truly move your business in the online and automotive sectors.",
+            "cards": {
+                "card_1": {
+                    "title": "Individual solutions worldwide",
+                    "content": "As an internationally operating market research company we design tailored studies that match your markets – not the other way round."
+                },
+                "card_2": {
+                    "title": "Online & automotive experts",
+                    "content": "We understand connected customers and mobility ecosystems – from online touchpoints to complex automotive journeys."
+                },
+                "card_3": {
+                    "title": "Lean structures, fast decisions",
+                    "content": "Short decision paths, a dedicated team and a streamlined organisation give you results when you actually need them."
+                }  
+            } 
+        },
+        "clients": {
+            "header": "OUR CLIENTS",
+            "title": "Selected brands that trust us"
+        }
+    }
+}
