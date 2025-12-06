@@ -1,19 +1,15 @@
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import RateReviewOutlinedIcon from "@mui/icons-material/RateReviewOutlined";
-import LockResetOutlinedIcon from "@mui/icons-material/LockResetOutlined";
-import AddCircleIcon from "@mui/icons-material/AddCircle";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ArticleIcon from "@mui/icons-material/Article";
 import GroupsIcon from "@mui/icons-material/Groups";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InfoIcon from "@mui/icons-material/Info";
-import BookOnlineIcon from "@mui/icons-material/BookOnline";
 import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import SavingsIcon from '@mui/icons-material/Savings';
 
 const getMenuConfigs = (t) => {
   const main = [
@@ -26,25 +22,22 @@ const getMenuConfigs = (t) => {
     {
       display: t("buttons.company"),
       path: "/company",
-      icon: CalendarMonthIcon,
+      icon: ApartmentIcon,
       state: "company",
       children: [
         {
           display: t("buttons.flexibility"),
           path: "/company/flexibility",
-          icon: GroupsIcon,
           state: "flexibility",
         },
         {
           display: t("buttons.specializations"),
           path: "/company/specializations",
-          icon: GroupsIcon,
           state: "specializations",
         },
         {
             display: t("buttons.internationality"),
             path: "/company/internationality",
-            icon: GroupsIcon,
             state: "internationality",
         }
       ]
@@ -52,57 +45,51 @@ const getMenuConfigs = (t) => {
     {
       display: t("buttons.automobile"),
       path: "/automobile",
-      icon: BookOnlineIcon,
+      icon: DirectionsCarIcon,
       state: "automobile",
       children: [
         {
           display: t("buttons.performance"),
           path: "/automobile/performance",
-            icon: GroupsIcon,
-            state: "performance",
+          state: "performance",
         },
         {
           display: t("buttons.customers"),
           path: "/automobile/customers",
-          icon: GroupsIcon,
           state: "customers",
         },
         {
             display: t("buttons.methods"),
             path: "/automobile/methods",
-            icon: GroupsIcon,
             state: "methods",
         },
         {
             display: t("buttons.car_clinics"),
             path: "/automobile/car-clinics",
-            icon: GroupsIcon,
-            state: "car-clinics",
+            state: "car-clinics"  ,
         }
        ]
     },
     {
       display: t("buttons.customersatisfaction"),
       path: "/customersatisfaction",
-      icon: InfoIcon,
+      icon: PermContactCalendarIcon,
       state: "customersatisfaction",
     },
     {
       display: t("buttons.finanzmarket"),
       path: "/finanzmarket",
-      icon: SearchOutlinedIcon,
+      icon: SavingsIcon,
       state: "finanzmarket",
       children: [
         {
           display: t("buttons.online_surveys"),
           path: "/finanzmarket/online-surveys",
-          icon: GroupsIcon,
           state: "online-surveys",
         },
         {
           display: t("buttons.reportingsystem"),
           path: "/finanzmarket/reporting-system",
-          icon: GroupsIcon,
           state: "reporting-system",
         }
       ]
@@ -110,35 +97,8 @@ const getMenuConfigs = (t) => {
     {
       display: t("buttons.team"),
       path: "/team",
-      icon: AddCircleIcon,
+      icon: GroupsIcon,
       state: "team",
-    },
-  ];
-
-  const user = [
-    {
-      display: t("buttons.favorites"),
-      path: "/favorites",
-      icon: FavoriteBorderOutlinedIcon,
-      state: "favorites",
-    },
-    {
-      display: t("buttons.suggestions"),
-      path: "/suggestions",
-      icon: RateReviewOutlinedIcon,
-      state: "suggestions",
-    },
-    {
-      display: t("buttons.ownSuggestions"),
-      path: "/own-suggestions",
-      icon: AddCircleIcon,
-      state: "own-suggestions",
-    },
-    {
-      display: t("buttons.passwordUpdate"),
-      path: "/password-update",
-      icon: LockResetOutlinedIcon,
-      state: "password-update",
     },
   ];
 
@@ -186,7 +146,7 @@ const getMenuConfigs = (t) => {
     },
   ];
 
-  return { main, user, footer, social };
+  return { main, footer, social };
 };
 
 export default getMenuConfigs;

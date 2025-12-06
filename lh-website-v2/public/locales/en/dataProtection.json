@@ -1,0 +1,69 @@
+{
+    "title": "Privacy policy",
+    "disclaimer": "The controller of this website is L+H MarketingServices GmbH.",
+    "intro": "The protection of your privacy is very important to us. Therefore, we have designed our website in such a way that it can be used as far as possible without processing your personal data.",
+    "sections": {
+      "1": {
+        "title": "Usage data",
+        "paragraphs": [
+            "When you visit our website, so-called usage data is temporarily stored on our web server as a protocol for statistical purposes in order to improve the quality of our web pages. This data record consists of",
+            " - the name and address of the requested content,",
+            " - the date and time of the request,",
+            " - the amount of data transferred,",
+            " - the access status (content transferred, content not found),",
+            " - the description of the web browser and operating system used,",
+            " - the referral link, which indicates the page from which you came to ours,",
+            " - the IP address of the requesting computer, which is shortened so that a personal reference can no longer be established.",
+            "The above-mentioned protocol data is only evaluated anonymously."
+        ]
+      },
+      "2": {
+        "title": "Storage of the IP address for security purposes",
+        "paragraphs": [
+          "In addition, we store the full IP address transmitted by your web browser for a strictly limited period of seven days in the interest of being able to detect, limit and eliminate attacks on our web pages. After this period, we delete or anonymize the IP address. The legal basis is Art. 6 para. 1 p. 1 lit. f GDPR."
+        ]
+      },
+      "3": {
+        "title": "Data transfer to third parties",
+        "paragraphs": [
+          "We do not transfer your personal data to third parties."
+        ]
+      },
+      "4": {
+        "title": "Encryption",
+        "paragraphs": [
+          "In order to protect your data from unauthorized access, we use an encryption process on all pages. Your requests and information are then forwarded from your computer to our server and vice versa via the Internet using TLS encryption. You can recognize this by the fact that the lock symbol on the status bar of your browser is closed and the address line begins with https://."
+        ]
+      },
+      "5": {
+        "title": "Your rights",
+        "paragraphs": [
+          "When processing your personal data, the GDPR grants you certain rights as a website user:",
+          "<strong>1. Right of access (Art. 15 GDPR):</strong>",
+          "You have the right to request confirmation as to whether personal data concerning you is being processed; if this is the case, you have a right to information about this personal data and to the information listed in detail in Art. 15 GDPR.",
+            "<strong>2. Right to rectification and erasure (Art. 16 and 17 GDPR):</strong>",
+            "You have the right to request without undue delay the rectification of any inaccurate personal data concerning you and, where applicable, the completion of any incomplete personal data. You also have the right to request that personal data concerning you be deleted without undue delay, provided that one of the reasons listed in detail in Art. 17 GDPR applies, e.g. if the data is no longer required for the purposes pursued.",
+            "<strong>3. Right to restriction of processing (Art. 18 GDPR):</strong>",
+            "You have the right to request the restriction of processing if one of the reasons listed in Art. 18 GDPR applies, e.g. if you have objected to the processing, for the duration of any review.",
+            "<strong>4. Right to data portability (Art. 20 GDPR):</strong>",
+            "In certain cases, which are detailed in Art. 20 GDPR, you have the right to receive the personal data concerning you in a structured, commonly used and machine-readable format or to request the transfer of such data to a third party.",
+            "<strong>5. Right to object (Art. 21 GDPR):</strong>",
+            "If data is collected on the basis of Art. 6 para.1 p.1 lit.f GDPR (data processing for the protection of legitimate interests), you have the right to object to the processing at any time for reasons arising from your particular situation. We will then no longer process the personal data unless there are demonstrably compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject, or the processing serves to assert, exercise or defend legal claims.",
+            "<strong>6. Right to lodge a complaint with a supervisory authority:</strong>",
+            "Pursuant to Art. 77 GDPR, you have the right to lodge a complaint with a supervisory authority if you are of the opinion that the processing of the data concerning you violates data protection provisions. The right of complaint can be asserted in particular before a supervisory authority in the Member State of your habitual residence, your place of work or the place of the alleged infringement.",
+            "<strong>7. Data protection officer:</strong>",
+            "If you have any further questions regarding data protection issues, please contact our company data protection officer (datenschutz süd GmbH, Wörthstraße 15, 97082 Würzburg, Germany) by <linkTag href='mailto:office@datenschutz-sued.de'>e-mail office@datenschutz-sued.de</linkTag> or by telephone <linkTag href='tel:+499313049760'>+49/931 304 976 0</linkTag>."
+        ]
+      },
+      "6": {
+        "title": "Contact form",
+        "paragraphs": [
+          "You have the option of contacting us via a web formula. The provision of the data specified there is voluntary. There are no mandatory fields. Your data will only be processed to answer your request and will be deleted after a period of 7 days. Your data will not be transferred to third parties."
+        ]
+      }
+    },
+    "footer": {
+      "note": "Last updated on xx.xx.xxxx."
+    }
+  }
+  

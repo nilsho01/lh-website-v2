@@ -62,9 +62,15 @@ const Topbar = () => {
   const { appState } = useSelector((state) => state.appState);
   const { themeMode } = useSelector((state) => state.themeMode);
 
+  // robust gegen undefined / falschen Typ
+  const safeAppState =
+    typeof appState === "string" ? appState : String(appState ?? "");
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(null); // which top menu is open (hover)
-  const closeTimeoutRef = useRef(null);           // delayed close timer
+  const closeTimeoutRef = useRef(null); // delayed close timer
+
+  const [languageOpen, setLanguageOpen] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -75,12 +81,6 @@ const Topbar = () => {
     const theme =
       themeMode === themeModes.dark ? themeModes.light : themeModes.dark;
     dispatch(setThemeMode(theme));
-  };
-
-  const onSwitchLanguage = () => {
-    i18n.language === "en"
-      ? i18n.changeLanguage("de")
-      : i18n.changeLanguage("en");
   };
 
   const toggleSidebar = () => setSidebarOpen((prev) => !prev);
@@ -95,10 +95,25 @@ const Topbar = () => {
   };
 
   const handleMenuLeave = (state) => {
-    // leichtes Delay, damit man Zeit hat ins Dropdown zu fahren
     closeTimeoutRef.current = setTimeout(() => {
       setOpenMenu((prev) => (prev === state ? null : prev));
     }, 220);
+  };
+
+  // === Sprachkonfiguration (wie in Sidebar) ===
+  const languages = [
+    { code: "en", label: "English", flag: "GB" },
+    { code: "de", label: "Deutsch", flag: "DE" },
+    { code: "cn", label: "中文", flag: "CN" }, // deine dritte Sprache
+  ];
+
+  const currentLanguage =
+    languages.find((lang) => i18n.language.startsWith(lang.code)) ||
+    languages[0];
+
+  const handleSelectLanguage = (code) => {
+    i18n.changeLanguage(code);
+    setLanguageOpen(false);
   };
 
   return (
@@ -149,7 +164,7 @@ const Topbar = () => {
                 {menuConfigs.main.map((item) => {
                   const hasChildren =
                     item.children && item.children.length > 0;
-                  const isActive = appState.includes(item.state);
+                  const isActive = safeAppState.includes(item.state);
                   const isOpen = openMenu === item.state;
 
                   return (
@@ -231,9 +246,8 @@ const Topbar = () => {
                           }}
                         >
                           {item.children.map((child) => {
-                            const childActive = appState.includes(
-                              child.state
-                            );
+                            const childActive =
+                              safeAppState.includes(child.state);
                             return (
                               <Button
                                 key={child.state}
@@ -276,55 +290,128 @@ const Topbar = () => {
               </Box>
             </Box>
 
-            {/* Right: language + theme (desktop) */}
+            {/* Right: language dropdown + theme (desktop) */}
             <Box
               sx={{
                 display: { xs: "none", lg: "flex" },
                 alignItems: "center",
                 gap: 1,
                 ml: 2,
+                position: "relative",
               }}
             >
-              <IconButton
-                sx={{
-                  color: "inherit",
-                  borderRadius: "999px",
-                  transition:
-                    "background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease",
-                  "&:hover": {
-                    backgroundColor: "action.hover",
-                    transform: "translateY(-1px)",
-                    boxShadow: 2,
-                  },
-                }}
-                onClick={onSwitchLanguage}
-              >
-                {i18n.language.startsWith("en") && (
-                  <Flag
-                    code="GB"
-                    style={{
-                      width: 24,
-                      height: 24,
-                      borderRadius: "50%",
-                      boxShadow: "0 0 5px rgba(0,0,0,0.3)",
-                      objectFit: "cover",
-                    }}
-                  />
-                )}
-                {i18n.language.startsWith("de") && (
-                  <Flag
-                    code="DE"
-                    style={{
-                      width: 24,
-                      height: 24,
-                      borderRadius: "50%",
-                      boxShadow: "0 0 5px rgba(0,0,0,0.3)",
-                      objectFit: "cover",
-                    }}
-                  />
-                )}
-              </IconButton>
+              {/* Language selector */}
+              <Box sx={{ position: "relative" }}>
+                <Button
+                  onClick={() => setLanguageOpen((prev) => !prev)}
+                  sx={{
+                    textTransform: "none",
+                    borderRadius: "999px",
+                    px: 1.5,
+                    py: 0.5,
+                    gap: 1,
+                    color: "inherit",
+                    backgroundColor: "transparent",
+                    "&:hover": {
+                      backgroundColor: "action.hover",
+                    },
+                  }}
+                  startIcon={
+                    <Flag
+                      code={currentLanguage.flag}
+                      style={{
+                        width: 22,
+                        height: 22,
+                        borderRadius: "50%",
+                        boxShadow: "0 0 4px rgba(0,0,0,0.3)",
+                        objectFit: "cover",
+                      }}
+                    />
+                  }
+                  endIcon={
+                    <ExpandMoreIcon
+                      sx={{
+                        fontSize: 18,
+                        transition: "transform 0.2s ease",
+                        transform: languageOpen
+                          ? "rotate(180deg)"
+                          : "rotate(0deg)",
+                      }}
+                    />
+                  }
+                >
+                  {currentLanguage.label}
+                </Button>
 
+                {/* Dropdown */}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    right: 0,
+                    top: "100%",
+                    mt: 1,
+                    minWidth: 160,
+                    bgcolor: "background.paper",
+                    boxShadow: 4,
+                    borderRadius: 2,
+                    overflow: "hidden",
+                    opacity: languageOpen ? 1 : 0,
+                    transform: languageOpen
+                      ? "translateY(0)"
+                      : "translateY(6px)",
+                    pointerEvents: languageOpen ? "auto" : "none",
+                    transition: "opacity 0.2s ease, transform 0.2s ease",
+                    zIndex: 1500,
+                  }}
+                >
+                  {languages.map((lang) => {
+                    const isCurrent =
+                      i18n.language && i18n.language.startsWith(lang.code);
+                    return (
+                      <Button
+                        key={lang.code}
+                        onClick={() => handleSelectLanguage(lang.code)}
+                        fullWidth
+                        sx={{
+                          justifyContent: "flex-start",
+                          textTransform: "none",
+                          borderRadius: 0,
+                          px: 1.5,
+                          py: 0.75,
+                          gap: 1,
+                          color: isCurrent
+                            ? "primary.contrastText"
+                            : "text.primary",
+                          backgroundColor: isCurrent
+                            ? "primary.main"
+                            : "transparent",
+                          "&:hover": {
+                            backgroundColor: isCurrent
+                              ? "primary.dark"
+                              : "action.hover",
+                          },
+                        }}
+                        startIcon={
+                          <Flag
+                            code={lang.flag}
+                            style={{
+                              width: 20,
+                              height: 20,
+                              borderRadius: "50%",
+                              boxShadow: "0 0 4px rgba(0,0,0,0.3)",
+                              objectFit: "cover",
+                            }}
+                          />
+                        }
+                      >
+                        {lang.label}
+                      </Button>
+                    );
+                  })}
+                </Box>
+              </Box>
+
+              {/* Theme toggle */}
               <IconButton
                 sx={{
                   color: "inherit",

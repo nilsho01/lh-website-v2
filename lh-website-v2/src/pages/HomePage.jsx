@@ -154,7 +154,7 @@ const HomePage = () => {
                       variant="contained"
                       color="primary"
                       component={RouterLink}
-                      to="/program"
+                      to="/solutions"
                       sx={{
                         borderRadius: "999px",
                         px: 3,
@@ -167,7 +167,7 @@ const HomePage = () => {
                     <Button
                       variant="text"
                       component={RouterLink}
-                      to="/finanzmarkt"
+                      to="/contact"
                       sx={{
                         borderRadius: "999px",
                         px: 2,

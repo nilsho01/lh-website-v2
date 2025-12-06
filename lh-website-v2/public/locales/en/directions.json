@@ -1,0 +1,60 @@
+{
+    "header": "DIRECTIONS",
+    "title": "How to find us",
+    "subtitle": "Whether by car, public transport, or on foot – here you will find all the information you need to arrive relaxed.",
+    "adress_card": {
+        "title": "Address",
+        "company_name": "L+H MarketingServices GmbH",
+        "street": "Ingolstädter Str. 45",
+        "postal_code_city": "85276 Pfaffenhofen a.d.Ilm",
+        "phone": "Phone: +49 8441 808-0",
+        "tags": [
+            "Parking nearby",
+            "Public transport easily accessible"
+        ],
+        "office_details": "Our office is on the left side with the number 19."
+    },
+    "directions_card": {
+        "title": "Travel options",
+        "subtitle": "Choose the most convenient way for you to arrive – we are conveniently located and well signposted.",
+        "by_public_transport": {
+            "title": "By public transport",
+            "description": "Take the train to Pfaffenhofen station. From there, it is about a 10-minute walk to Ingolstädter Str. 45."
+        },
+        "on_foot": {
+            "title": "On foot / by bicycle",
+            "description": "From Pfaffenhofen city center, follow the main street north to Ingolstädter Str. 45."
+        },
+        "by_car_A3": {
+            "title": "By car from the A3",
+            "description": "If you are coming via the A3 motorway, take exit 85 'Nürnberg-Nord' and follow the signs towards Nürnberg. Stay on 'Äußere Bayreuther Straße' for about 4.5 km. After this stretch, turn right onto Virchowstraße to reach your destination."
+        },
+        "by_car_north_west": {
+            "title": "By car from the North or West",
+            "description": "If you are coming from the north or west towards Nürnberg, follow the Nordring (B4R) to the intersection with Äußere Bayreuther Straße. Turn right onto Äußere Bayreuther Straße towards the city center. Shortly after, turn right again onto Virchowstraße."
+        },
+        "by_car_south_east": {
+            "title": "By car from the South or East",
+            "description": "If you are coming from the south or east towards Nürnberg, follow the B4R towards the airport until the intersection with Äußere Bayreuther Straße. Turn left onto Äußere Bayreuther Straße towards the city center. Shortly after, turn right onto Virchowstraße."
+        }
+    },
+    "map_card": {
+        "title": "Our location on the map",
+        "description": "See our location on the map and easily plan your route.",
+        "disclaimer": "We use Google Maps to display the map. Please consent to the use to load the map.",
+        "window": {
+            "title": "Activate Google Maps",
+            "discription": "By loading the map, data is transmitted to Google. For more information, please see our privacy policy.",
+            "button": "Agree and load map",
+            "subtitle": "This decision only applies to your current visit." 
+        }
+    },
+    "on_your_way": {
+        "title": "Already on your way?",
+        "description": "Just introduce yourself – while you are on your way, we are already ready for your project.",
+        "subtitle": "Scroll on – your project is already on its way.",
+        "title2": "Still have questions about getting here?",
+        "description2": "Write to us – we are happy to help you plan your journey and answer any open questions personally.",
+        "contact_us": "Contact us"
+    }
+}

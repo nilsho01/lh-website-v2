@@ -1,0 +1,60 @@
+{
+    "header": "ANFAHRT",
+    "title": "So finden Sie uns",
+    "subtitle": "Egal ob mit Auto, Öffentlichen Verkehrsmitteln oder zu Fuß – hier finden Sie alle Informationen, die Sie brauchen, um entspannt bei uns anzukommen.",
+    "adress_card": {
+        "title": "Adresse",
+        "company_name": "L+H MarketingServices GmbH",
+        "street": "Ingolstädter Str. 45",
+        "postal_code_city": "85276 Pfaffenhofen a.d.Ilm",
+        "phone": "Telefon: +49 8441 808-0",
+        "tags": [
+            "Parkplätze in der Nähe",
+            "ÖPNV gut erreichbar"
+        ],
+        "office_details": "Unser Büro ist auf der linken Seite mit der 19."
+    },
+    "directions_card": {
+        "title": "Anreiseoptionen",
+        "subtitle": "Wählen Sie die für Sie bequemste Anreise – wir liegen verkehrsgünstig und sind gut ausgeschildert.",
+        "by_public_transport": {
+            "title": "Mit öffentlichen Verkehrsmitteln",
+            "description": "Nehmen Sie den Zug bis zum Bahnhof Pfaffenhofen. Von dort aus sind es etwa 10 Minuten zu Fuß zur Ingolstädter Str. 45."
+        },
+        "on_foot": {
+            "title": "Zu Fuß / Fahrrad",
+            "description": "Vom Stadtzentrum Pfaffenhofen aus folgen Sie der Hauptstraße Richtung Norden bis zur Ingolstädter Str. 45."
+        },
+        "by_car_A3": {
+            "title": "Mit dem Auto von der A3",
+            "description": "Wenn Sie über die Autobahn A3 anreisen, nehmen Sie die Ausfahrt 85 „Nürnberg-Nord“ und folgen Sie den Schildern in Richtung Nürnberg. Bleiben Sie etwa 4,5 km lang auf der „Äußeren Bayreuther Straße“. Nach dieser Strecke biegen Sie rechts in die Virchowstraße ein, um Ihr Ziel zu erreichen."
+        },
+        "by_car_north_west": {
+            "title": "Mit dem Auto von Nord oder West",
+            "description": "Wenn Sie aus nördlicher oder westlicher Richtung nach Nürnberg kommen, folgen Sie dem Nordring (B4R) bis zur Kreuzung mit der Äußeren Bayreuther Straße. Biegen Sie dort rechts in die Äußere Bayreuther Straße in Richtung Zentrum ab. Biegen Sie kurz darauf erneut rechts in die Virchowstraße ein."
+        },
+        "by_car_south_east": {
+            "title": "Mit dem Auto von Süd oder Ost",
+            "description": "Wenn Sie aus Richtung Süden oder Osten von Nürnberg kommen, folgen Sie der B4R in Richtung Flughafen bis zur Kreuzung mit der „Äußeren Bayreuther Straße“. Biegen Sie dort links in die „Äußere Bayreuther Straße“ in Richtung Stadtzentrum („Zentrum“) ab. Biegen Sie kurz darauf an der nächsten Möglichkeit rechts in die Virchowstraße ein."
+        }
+    },
+    "map_card": {
+        "title": "Unser Standort auf der Karte",
+        "description": "Sehen Sie sich unseren Standort auf der Karte an und planen Sie Ihre Route ganz einfach.",
+        "disclaimer": "Zur Darstellung der Karte verwenden wir Google Maps. Bitte stimmen Sie der Nutzung zu, um die Karte zu laden.",
+        "window": {
+            "title": "Google Maps aktivieren",
+            "discription": "Durch das Laden der Karte werden Daten an Google übertragen. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
+            "button": "Zustimmen und Karte laden",
+            "subtitle": "Diese Entscheidung gilt nur für Ihren aktuellen Besuch." 
+        }
+    },
+    "on_your_way": {
+        "title": "Schon unterwegs?",
+        "description": "Stellen Sie sich einfach vor – während Sie sich auf den Weg machen, sind wir schon bereit für Ihr Projekt.",
+        "subtitle": "Scrollen Sie weiter – Ihr Projekt ist schon auf dem Weg.",
+        "title2": "Noch Fragen zur Anfahrt?",
+        "description2": "Schreiben Sie uns – wir helfen Ihnen gern bei der Planung Ihrer Anreise und klären offene Fragen persönlich.",
+        "contact_us": "Kontaktieren Sie uns"
+    }
+}

@@ -1,0 +1,90 @@
+{
+  "header": "Jobs & Karriere",
+  "title": "Bauen Sie Ihre Karriere dort auf, wo Kommunikation auf Handwerk trifft.",
+  "subtitle": "Bei L+H arbeiten Sie an echten Projekten für echte Kunden – in einem Team, das direkte Kommunikation statt Buzzwords bevorzugt. Entwickeln Sie Schritt für Schritt Ihre Fähigkeiten, Ihre Verantwortung und Ihre Wirkung.",
+  "tags": [
+    "Marketing & Kommunikation",
+    "Kleines, erfahrenes Team",
+    "Langfristige Entwicklung"
+  ],
+  "button": "Initiativbewerbung senden",
+  "why_work": {
+    "header": "Warum bei uns arbeiten?",
+    "title": "Ein Karrierepfad mit echten Gesichtern, nicht nur Organigrammen.",
+    "subtitle": "Wir arbeiten eng mit unseren Kunden – und ebenso eng miteinander. Erwarten Sie klare Verantwortlichkeiten, sichtbare Wirkung und Kolleginnen und Kollegen, die Ihren Namen wirklich kennen.",
+    "cards": [
+      {
+        "title": "Abwechslungsreiche Kundenprojekte",
+        "content": "Vom Konzept bis zur Umsetzung – Sie sehen, wie aus Ideen greifbare Kommunikation wird.",
+        "tag": "Praktische Arbeit"
+      },
+      {
+        "title": "Eingespieltes Team",
+        "content": "Sie sind Teil eines kleinen, erfahrenen Teams, das direkte Kommunikation und Vertrauen schätzt.",
+        "tag": "Flache Hierarchie"
+      },
+      {
+        "title": "Raum, sich einzubringen",
+        "content": "Bringen Sie Ihre Stärken ein und gestalten Sie Ihre Rolle im Laufe der Zeit – statt in eine starre Schablone zu passen.",
+        "tag": "Ihre Ideen sind willkommen"
+      }
+    ]
+  },
+  "jobs": {
+    "header": "Jobs",
+    "title": "Offene Stellen – wenn das Timing passt.",
+    "subtitle": "Wir veröffentlichen unsere offenen Stellen hier. Schreiben Sie uns, wenn Sie sich für eine der Positionen interessieren. Gibt es aktuell keine passende Rolle, freuen wir uns dennoch über Initiativbewerbungen über unsere Kontaktseite.",
+    "no_positions": "Derzeit keine offenen Stellen.",
+    "no_positions_helper": "Manchmal entstehen die besten Matches ohne Stellenausschreibung. Wenn Sie das Gefühl haben, dass Sie und L+H gut zusammenpassen, freuen wir uns über Ihre Initiativbewerbung über unsere Kontaktseite.",
+    "apply": "Für diese Position bewerben"
+  },
+  "how_we_hire": {
+    "header": "So stellen wir ein",
+    "title": "Transparent, menschlich und auf den Punkt.",
+    "subtitle": "Wir halten unseren Prozess schlank und persönlich. Keine endlosen Assessment-Marathons – nur wenige fokussierte Schritte, in denen wir herausfinden, ob wir zueinander passen.",
+    "cards": [
+      {
+        "name": "Schritt 01",
+        "title": "Ihre Nachricht",
+        "content": "Sie kontaktieren uns über das Kontaktformular und skizzieren kurz, wer Sie sind, Ihren Hintergrund und wonach Sie suchen."
+      },
+      {
+        "name": "Schritt 02",
+        "title": "Erstes Gespräch",
+        "content": "Wir vereinbaren einen kurzen Call, um die Erwartungen beider Seiten zu klären und zu sehen, ob es einen potenziellen Match gibt."
+      },
+      {
+        "name": "Schritt 03",
+        "title": "Vertiefung",
+        "content": "Wenn es gut aussieht, sprechen wir detaillierter über Ihre Erfahrung, Ihre Arbeitsweise und sehen uns ggf. ein kleines Arbeitsbeispiel an."
+      },
+      {
+        "name": "Schritt 04",
+        "title": "Entscheidung & nächste Schritte",
+        "content": "Sie erhalten ehrliches Feedback und – idealerweise – ein konkretes Angebot, wie Sie bei uns einsteigen können."
+      }
+    ]
+  },
+  "career": {
+    "header": "Ihre Karriere bei L+H",
+    "title": "Nicht nur ein Job, sondern ein Weg, den Sie aktiv mitgestalten.",
+    "subtitle": "Wir verstehen Karriere als etwas, das wir gemeinsam aufbauen. Wir sprechen regelmäßig darüber, wohin Sie wollen und was Sie dafür brauchen – statt Ihnen jährliche Feedback-Formulare zu schicken.",
+    "cards": [
+      {
+        "title": "Onboarding & Mentoring",
+        "content": "Sie erhalten ein strukturiertes Onboarding und eine feste Ansprechperson, die Ihnen unsere Kunden, Tools und Prozesse näherbringt.",
+        "tag": "Begleiteter Start"
+      },
+      {
+        "title": "Wachsende Verantwortung",
+        "content": "Mit der Zeit übernehmen Sie mehr Ownership: eigene Projekte, direkter Kundenkontakt oder Verantwortung für spezifische Themen.",
+        "tag": "Schrittweises Wachstum"
+      },
+      {
+        "title": "Langfristige Entwicklung",
+        "content": "Ob Sie eher zu Konzept, Projektmanagement oder digitalen Themen tendieren – wir entwickeln Ihre Rolle im Dialog mit Ihnen.",
+        "tag": "Individuelle Wege"
+      }
+    ]
+  }
+}

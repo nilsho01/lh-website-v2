@@ -45,23 +45,34 @@ const Sidebar = ({ open, toggleSidebar }) => {
     dispatch(setThemeMode(theme));
   };
 
-  const onSwitchLanguage = () => {
-    i18n.language === "en"
-      ? i18n.changeLanguage("de")
-      : i18n.changeLanguage("en");
-  };
-
   const { t } = useTranslation();
   const menuConfigs = getMenuConfigs(t);
 
   // track which parent menus are expanded
   const [openSubmenus, setOpenSubmenus] = useState({});
+  const [languageOpen, setLanguageOpen] = useState(false);
 
   const handleToggleSubmenu = (stateKey) => {
     setOpenSubmenus((prev) => ({
       ...prev,
       [stateKey]: !prev[stateKey],
     }));
+  };
+
+  // Sprachkonfiguration
+  const languages = [
+    { code: "en", label: "English", flag: "GB" },
+    { code: "de", label: "Deutsch", flag: "DE" },
+    { code: "cn", label: "中文", flag: "CN" }, // <-- hier deine "cn"-Sprache
+  ];
+
+  const currentLanguage =
+    languages.find((lang) => i18n.language.startsWith(lang.code)) ||
+    languages[0];
+
+  const handleSelectLanguage = (code) => {
+    i18n.changeLanguage(code);
+    setLanguageOpen(false);
   };
 
   const drawer = (
@@ -143,14 +154,14 @@ const Sidebar = ({ open, toggleSidebar }) => {
                       backgroundColor: "action.hover",
                       flexShrink: 0,
                       cursor: "pointer",
-                      transition: "background-color 0.2s ease, transform 0.2s ease",
+                      transition:
+                        "background-color 0.2s ease, transform 0.2s ease",
                       "&:hover": {
                         backgroundColor: "action.selected",
                         transform: "scale(1.05)",
                       },
                     }}
                     onClick={(e) => {
-                      // only toggle submenu, do not navigate
                       e.preventDefault();
                       e.stopPropagation();
                       handleToggleSubmenu(item.state);
@@ -165,7 +176,6 @@ const Sidebar = ({ open, toggleSidebar }) => {
                 )}
               </ListItemButton>
 
-              {/* CHILDREN (Submenu) */}
               {hasChildren && (
                 <Collapse in={isOpen} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding sx={{ pl: 6 }}>
@@ -224,9 +234,9 @@ const Sidebar = ({ open, toggleSidebar }) => {
           {t("general.general")}
         </Typography>
 
-        {/* Language button */}
+        {/* LANGUAGE DROPDOWN BUTTON */}
         <ListItemButton
-          onClick={onSwitchLanguage}
+          onClick={() => setLanguageOpen((prev) => !prev)}
           sx={{
             borderRadius: "12px",
             marginY: 0.5,
@@ -241,30 +251,16 @@ const Sidebar = ({ open, toggleSidebar }) => {
           }}
         >
           <ListItemIcon sx={{ color: "inherit" }}>
-            {i18n.language.startsWith("en") && (
-              <Flag
-                code="GB"
-                style={{
-                  width: 24,
-                  height: 24,
-                  borderRadius: "50%",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.3)",
-                  objectFit: "cover",
-                }}
-              />
-            )}
-            {i18n.language.startsWith("de") && (
-              <Flag
-                code="DE"
-                style={{
-                  width: 24,
-                  height: 24,
-                  borderRadius: "50%",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.3)",
-                  objectFit: "cover",
-                }}
-              />
-            )}
+            <Flag
+              code={currentLanguage.flag}
+              style={{
+                width: 24,
+                height: 24,
+                borderRadius: "50%",
+                boxShadow: "0 0 5px rgba(0,0,0,0.3)",
+                objectFit: "cover",
+              }}
+            />
           </ListItemIcon>
           <ListItemText
             disableTypography
@@ -274,9 +270,64 @@ const Sidebar = ({ open, toggleSidebar }) => {
               </Typography>
             }
           />
+          {languageOpen ? (
+            <ExpandLessIcon fontSize="small" />
+          ) : (
+            <ExpandMoreIcon fontSize="small" />
+          )}
         </ListItemButton>
 
-        {/* Theme toggle button */}
+        {/* LANGUAGE DROPDOWN LIST */}
+        <Collapse in={languageOpen} timeout="auto" unmountOnExit>
+          <List component="div" disablePadding sx={{ pl: 4 }}>
+            {languages.map((lang) => {
+              const isCurrent =
+                i18n.language && i18n.language.startsWith(lang.code);
+              return (
+                <ListItemButton
+                  key={lang.code}
+                  onClick={() => handleSelectLanguage(lang.code)}
+                  sx={{
+                    borderRadius: "10px",
+                    marginY: 0.3,
+                    backgroundColor: isCurrent
+                      ? "primary.main"
+                      : "transparent",
+                    color: isCurrent
+                      ? "primary.contrastText"
+                      : "text.secondary",
+                    "&:hover": {
+                      backgroundColor: isCurrent
+                        ? "primary.dark"
+                        : "action.hover",
+                    },
+                  }}
+                >
+                  <ListItemIcon sx={{ minWidth: 40, color: "inherit" }}>
+                    <Flag
+                      code={lang.flag}
+                      style={{
+                        width: 22,
+                        height: 22,
+                        borderRadius: "50%",
+                        boxShadow: "0 0 4px rgba(0,0,0,0.3)",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </ListItemIcon>
+                  <ListItemText
+                    disableTypography
+                    primary={
+                      <Typography variant="body2">{lang.label}</Typography>
+                    }
+                  />
+                </ListItemButton>
+              );
+            })}
+          </List>
+        </Collapse>
+
+        {/* THEME TOGGLE BUTTON */}
         <ListItemButton
           onClick={onSwitchTheme}
           sx={{

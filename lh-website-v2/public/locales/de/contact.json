@@ -1,0 +1,97 @@
+{
+  "header": "KONTAKT AUFNEHMEN",
+  "title": "Kontakt zu L+H MarketingServices GmbH",
+  "content": "Ob Sie bereits ein konkretes Projekt im Sinn haben oder nur eine Frage: Melden Sie sich bei uns – wir unterstützen Sie gerne mit unseren Marketingservices.",
+  "response_time": "Antwort in der Regel innerhalb von 1–2 Werktagen",
+  "informations": {
+    "contact_details": {
+      "title": "Kontaktdaten",
+      "company_name": "L+H MarketingServices GmbH",
+      "street": "Virchowstraße 19",
+      "city": "D-90409 Nürnberg",
+      "phone": "Telefon: +49 (0)911-32289-0",
+      "fax": "Fax: +49 (0)911-32289-99",
+      "mail": "E-Mail: info(at)l-h.de",
+      "office_hours": {
+        "title": "Bürozeiten",
+        "times": "Montag – Freitag: 09:00 – 17:30",
+        "disclaimer": "(MEZ, außer an Feiertagen)"
+      },
+      "contact_info": "Sie erreichen uns auch über das Kontaktformular – wir leiten Ihre Anfrage intern weiter und melden uns bei Ihnen."
+    },
+    "on_side": {
+      "title": "Vor Ort in Nürnberg",
+      "content": "Unser Büro in Nürnberg ist sowohl mit öffentlichen Verkehrsmitteln als auch mit dem Auto gut erreichbar. Detaillierte Schritt-für-Schritt-Wegbeschreibungen finden Sie auf unserer Anfahrtsseite.",
+      "tag_1": "Zentrale Lage",
+      "tag_2": "Parkmöglichkeiten in der Nähe",
+      "button": "ZUR ANFAHRTSSEITE"
+    },
+    "contact_form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "name": "Name",
+      "mail": "E-Mail",
+      "company": "Unternehmen",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "agreement": "Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. Weitere Informationen finden Sie in der Datenschutzerklärung.",
+      "button": "NACHRICHT SENDEN",
+      "error": {
+        "enter_mail": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+        "name": "Bitte geben Sie Ihren Namen ein.",
+        "valid_mail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "message": "Bitte geben Sie eine kurze Nachricht ein.",
+        "consent": "Bitte bestätigen Sie, dass Sie mit einer Kontaktaufnahme einverstanden sind.",
+        "general": "Bitte prüfen Sie die markierten Felder und versuchen Sie es erneut."
+      },
+      "success": "Vielen Dank für Ihre Nachricht. Wir melden uns so schnell wie möglich bei Ihnen."
+    }
+  },
+  "next_steps": {
+    "header": "NACH DEM ABSENDEN IHRER NACHRICHT",
+    "title": "Wie geht es weiter?",
+    "subtitle": "Wir möchten, dass Ihre Anfrage direkt bei den richtigen Ansprechpersonen landet. So gehen wir typischerweise mit eingehenden Nachrichten um.",
+    "steps": [
+      {
+        "name": "Schritt 1",
+        "title": "Eingang & Vorprüfung",
+        "content": "Wir erhalten Ihre Nachricht und führen eine kurze Vorprüfung durch, um zu sehen, welche Abteilung oder Ansprechperson Ihre Anfrage am besten bearbeiten kann."
+      },
+      {
+        "name": "Schritt 2",
+        "title": "Klärung & Vorbereitung",
+        "content": "Falls nötig, fragen wir einige zusätzliche Details ab, um Ihre Anforderungen vollständig zu verstehen und relevante Informationen oder Optionen vorzubereiten."
+      },
+      {
+        "name": "Schritt 3",
+        "title": "Antwort & nächste Schritte",
+        "content": "Sie erhalten eine persönliche Antwort mit konkreten nächsten Schritten – sei es ein Angebot, ein Terminvorschlag oder eine direkte Lösung."
+      }
+    ]
+  },
+  "why_contact": {
+    "header": "WARUM UNS KONTAKTIEREN?",
+    "title": "Ein Partner, der Ihre Sprache spricht",
+    "subtitle": "Vom Konzept bis zur Umsetzung – wir begleiten Ihre Marketingprojekte mit Erfahrung, Kreativität und verlässlichem Projektmanagement.",
+    "tiles": [
+      {
+        "title": "Erfahrung & Zuverlässigkeit",
+        "content": "Viele Jahre Erfahrung in Marketingservices und Projektumsetzung – mit starkem Fokus auf effiziente, verlässliche Prozesse."
+      },
+      {
+        "title": "Persönlicher Kontakt",
+        "content": "Kein anonymes Ticketsystem – Ihre Anfrage wird von echten Menschen bearbeitet, die Ihr Projekt kennen und mit Ihnen im Austausch bleiben."
+      },
+      {
+        "title": "Klare nächste Schritte",
+        "content": "Wir lassen Sie nicht mit abstrakten Ideen allein – wir schlagen konkrete nächste Schritte, Zeitpläne und Umsetzungsmöglichkeiten vor."
+      }
+    ]
+  },
+  "CTA": {
+    "header": "Lieber sprechen?",
+    "title": "Wir sind nur eine Nachricht oder einen Anruf entfernt.",
+    "content": "Nutzen Sie das obenstehende Kontaktformular, senden Sie uns direkt eine E-Mail oder rufen Sie uns an – gemeinsam finden wir den richtigen Weg, Ihr Projekt zu unterstützen.",
+    "phone": "+49 (0)911-32289-0",
+    "mail": "info(at)l-h.de"
+  }
+}

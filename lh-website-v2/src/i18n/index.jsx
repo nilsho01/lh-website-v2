@@ -10,7 +10,7 @@ i18n.
     init({
         fallbackLng: 'en',
         debug: false,
-        ns: ['general', 'not_found'],
+        ns: ['general', 'not_found', 'dataProtection', 'directions', 'contact', 'home'],
         defaultNS: 'general',
         interpolation: {
             escapeValue: false

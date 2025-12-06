@@ -1,0 +1,55 @@
+{
+  "header": "法律声明",
+  "title": "法律声明 · L+H MarketingServices GmbH",
+  "subtitle": "我们重视透明与清晰——在此您可一目了然地查看 L+H MarketingServices GmbH 的所有法定信息。",
+  "company_information": {
+    "title": "公司信息",
+    "company": "L+H MarketingServices GmbH",
+    "street": "Virchowstraße 19",
+    "city": "D-90409 Nürnberg",
+    "phone": "电话：+49 (0)911-32289-0",
+    "fax": "传真：+49 (0)911-32289-99",
+    "mail": "电子邮件：info(at)l-h.de"
+  },
+  "register_management": {
+    "title": "登记与管理层",
+    "content": "纽伦堡地方法院商事登记：<br><strong>HRB 11298</strong>",
+    "managing": "总经理：",
+    "name": "Christian Hothum",
+    "vat": "增值税号：<strong>DE152635599</strong>"
+  },
+  "copyright": {
+    "title": "版权与使用权",
+    "content": "本网站所有内容的版权与使用权归属：<br><strong>L+H MarketingServices GmbH</strong>"
+  },
+  "dispute_resolution": {
+    "title": "争议解决",
+    "content": "根据《消费者争议解决法》第 36 条（VSBG），我们在此声明：我们不参与消费者仲裁机构的争议解决程序，且法律上也无此义务。"
+  },
+  "facts": {
+    "header": "一目了然",
+    "title": "关键信息",
+    "fact": [
+      {
+        "tag": "GmbH",
+        "content": "L+H MarketingServices GmbH，总部位于纽伦堡（德国）"
+      },
+      {
+        "tag": "HRB 11298",
+        "content": "商事登记——纽伦堡地方法院"
+      },
+      {
+        "tag": "增值税号",
+        "content": "增值税号：DE152635599"
+      },
+      {
+        "tag": "总经理",
+        "content": "Christian Hothum"
+      }
+    ]
+  },
+  "hint": {
+    "title": "简要提示",
+    "content": "本法律声明依据德国法律提供。如对法律声明或数据保护有任何疑问，欢迎通过下方列出的联系方式与我们联系。"
+  }
+}

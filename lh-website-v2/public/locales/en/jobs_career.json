@@ -1,0 +1,90 @@
+{
+    "header": "Jobs & Career",
+    "title": "Build your career where communication meets craft.",
+    "subtitle": "At L+H you work on real projects for real clients – in a team that prefers direct communication over buzzwords. Grow your skills, your responsibility and your impact step by step.",
+    "tags": [
+        "Marketing & communication",
+        "Small, experienced team",
+        "Long-term development"
+    ],
+    "button": "Send speculative application",
+    "why_work": {
+        "header": "Why work with us?",
+        "title": "A career path with real faces, not just org charts.",
+        "subtitle": "We work closely with our clients – and equally closely with each other. Expect clear responsibilities, visible impact and colleagues who actually know your name.",
+        "cards": [
+            {
+                "title": "Varied client projects",
+                "content": "From concept to implementation – you see how ideas turn into tangible communication.",
+                "tag": "Hands-on work"
+            },
+            {
+                "title": "Close-knit team",
+                "content": "You are part of a small, experienced team that values direct communication and trust.",
+                "tag": "Flat hierarchy"
+            },
+            {
+                "title": "Room to contribute",
+                "content": "You can bring your strengths and shape your role over time instead of fitting into a rigid box.",
+                "tag": "Your ideas welcome"
+            }
+        ]
+    },
+    "jobs": {
+        "header": "Jobs",
+        "title": "Open positions – when the timing fits.",
+        "subtitle": "We publish our open positions here. Write us when one of the positions interesst you. If there is no suitable role at the moment, we still appreciate speculative applications via our contact page.",
+        "no_positions": "Currently no open positions.",
+        "no_positions_helper": "Sometimes the best matches start without a job posting. If you feel that you and L+H could be a good fit, we look forward to your speculative application via our contact page.",
+        "apply": "Apply for this role"
+    },
+    "how_we_hire": {
+        "header": "How we hire",
+        "title": "Transparent, human and to the point.",
+        "subtitle": "We keep our process lean and personal. No endless assessment marathons – just a few focused steps where we figure out whether we fit together.",
+        "cards": [
+            {
+                "name": "Step 01",
+                "title": "Your message",
+                "content": "You contact us via the contact form and briefly outline who you are, your background and what you are looking for."
+            },
+            {
+                "name": "Step 02",
+                "title": "First conversation",
+                "content": "We set up a short call to clarify expectations on both sides and to see whether there is a potential match."
+            },
+            {
+                "name": "Step 03",
+                "title": "Deep dive",
+                "content": "If it looks good, we talk in more detail about your experience, your working style and maybe look at a small work sample."
+            },
+            {
+                "name": "Step 04",
+                "title": "Decision & next steps",
+                "content": "You receive honest feedback and – ideally – a concrete proposal on how to join and start with us."
+            }
+        ]
+    },
+    "career": {
+        "header": "Your career at L+H",
+        "title": "Not just a job, but a path you can actively shape.",
+        "subtitle": "We see careers as something we build together. We talk regularly about where you want to go and what you need to get there – instead of throwing yearly feedback forms at you.",
+        "cards": [
+            {
+                "title": "Onboarding & mentoring",
+                "content": "You get a structured onboarding and a fixed contact person who helps you understand our clients, tools and processes.",
+                "tag": "Guided start"
+            },
+            {
+                "title": "Growing responsibility",
+                "content": "Over time you take over more ownership: own projects, direct client contact or responsibility for specific topics.",
+                "tag": "Step-by-step growth"
+            },
+            {
+                "title": "Long-term development",
+                "content": "Whether you lean towards concept, project management or digital topics – we develop your role in dialogue with you.",
+                "tag": "Individual paths"
+            }
+        ]
+    }
+}

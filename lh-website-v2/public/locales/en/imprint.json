@@ -1,0 +1,55 @@
+{
+    "header": "LEGAL NOTICE",
+    "title": "Imprint · L+H MarketingServices GmbH",
+    "subtitle": "Transparency and clarity are important to us – here you will find all legally required information about L+H MarketingServices GmbH at a glance.",
+    "company_information": {
+        "title": "Company Information",
+        "company": "L+H MarketingServices GmbH",
+        "street": "Virchowstraße 19",
+        "city": "D-90409 Nürnberg",
+        "phone": "Phone: +49 (0)911-32289-0",
+        "fax": "Fax: +49 (0)911-32289-99",
+        "mail": "E-mail: info(at)l-h.de"
+    },
+    "register_management": {
+        "title": "Register & Management",
+        "content": "Entry in the commercial register of the Nuremberg District Court:<br><strong>HRB 11298</strong>",
+        "managing": "Managing director:",
+        "name": "Christian Hothum",
+        "vat": "VAT-Nr.: <strong>DE152635599</strong>"
+    },
+    "copyright": {
+        "title": "Copyright & Rights of Use",
+        "content": "Copyright and right of use of all contents of this website are owned by:<br><strong>L+H MarketingServices GmbH</strong>"
+    },
+    "dispute_resolution": {
+        "title": "Dispute Resolution",
+        "content": "According to § 36 VSBG we would like to point out that we do not participate on a dispute resolution at a consumer arbitration board and that we are also not legally obligated to do this."
+    },
+    "facts": {
+        "header": "At a glance",
+        "title": "Key Legal Facts",
+        "fact": [
+            {
+                "tag": "GmbH",
+                "content": "L+H MarketingServices GmbH, based in Nürnberg (Germany)"
+            },
+            {
+                "tag": "HRB 11298",
+                "content": "Commercial register – District Court Nuremberg"
+            },
+            {
+                "tag": "VAT",
+                "content": "VAT-Nr.: DE152635599"
+            },
+            {
+                "tag": "Managing director",
+                "content": "Christian Hothum"
+            }
+        ]
+    },
+    "hint": {
+        "title": "Short hint",
+        "content": "This imprint is provided in accordance with German law. If you have any questions regarding the legal notice or data protection, feel free to contact us via the contact options listed below."
+    }
+}

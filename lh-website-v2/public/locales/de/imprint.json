@@ -1,0 +1,55 @@
+{
+  "header": "RECHTLICHE HINWEISE",
+  "title": "Impressum · L+H MarketingServices GmbH",
+  "subtitle": "Transparenz und Klarheit sind uns wichtig – hier finden Sie alle gesetzlich erforderlichen Informationen zur L+H MarketingServices GmbH auf einen Blick.",
+  "company_information": {
+    "title": "Unternehmensangaben",
+    "company": "L+H MarketingServices GmbH",
+    "street": "Virchowstraße 19",
+    "city": "D-90409 Nürnberg",
+    "phone": "Telefon: +49 (0)911-32289-0",
+    "fax": "Fax: +49 (0)911-32289-99",
+    "mail": "E-Mail: info(at)l-h.de"
+  },
+  "register_management": {
+    "title": "Register & Geschäftsführung",
+    "content": "Eintrag im Handelsregister des Amtsgerichts Nürnberg:<br><strong>HRB 11298</strong>",
+    "managing": "Geschäftsführer:",
+    "name": "Christian Hothum",
+    "vat": "USt-IdNr.: <strong>DE152635599</strong>"
+  },
+  "copyright": {
+    "title": "Urheberrecht & Nutzungsrechte",
+    "content": "Urheberrecht und Nutzungsrechte an allen Inhalten dieser Website liegen bei:<br><strong>L+H MarketingServices GmbH</strong>"
+  },
+  "dispute_resolution": {
+    "title": "Streitbeilegung",
+    "content": "Gemäß § 36 VSBG weisen wir darauf hin, dass wir nicht an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilnehmen und hierzu auch nicht gesetzlich verpflichtet sind."
+  },
+  "facts": {
+    "header": "Auf einen Blick",
+    "title": "Wesentliche rechtliche Angaben",
+    "fact": [
+      {
+        "tag": "GmbH",
+        "content": "L+H MarketingServices GmbH, mit Sitz in Nürnberg (Deutschland)"
+      },
+      {
+        "tag": "HRB 11298",
+        "content": "Handelsregister – Amtsgericht Nürnberg"
+      },
+      {
+        "tag": "USt-IdNr.",
+        "content": "USt-IdNr.: DE152635599"
+      },
+      {
+        "tag": "Geschäftsführer",
+        "content": "Christian Hothum"
+      }
+    ]
+  },
+  "hint": {
+    "title": "Kurzer Hinweis",
+    "content": "Dieses Impressum wird gemäß deutschem Recht bereitgestellt. Bei Fragen zum Impressum oder zum Datenschutz kontaktieren Sie uns gerne über die unten aufgeführten Kontaktmöglichkeiten."
+  }
+}

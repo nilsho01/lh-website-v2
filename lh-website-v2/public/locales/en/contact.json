@@ -1,0 +1,97 @@
+{
+    "header": "GET IN TOUCH",
+    "title": "Contact L+H MarketingServices GmbH",
+    "content": "Whether you have a concrete project in mind or just a question: reach out to us – we are happy to support you with your marketing services.",
+    "response_time": "Typically responding within 1–2 business days",
+    "informations": {
+        "contact_details": {
+            "title": "Contact details",
+            "company_name": "L+H MarketingServices GmbH",
+            "street": "Virchowstraße 19",
+            "city": "D-90409 Nürnberg",
+            "phone": "Phone: +49 (0)911-32289-0",
+            "fax": "Fax: +49 (0)911-32289-99",
+            "mail": "E-mail: info(at)l-h.de",
+            "office_hours": {
+                "title": "Office hours",
+                "times": "Monday – Friday: 09:00 – 17:30",
+                "disclaimer": "(CET, excl. public holidays)"
+            },
+            "contact_info": "You can also reach us via the contact form – we will forward your request internally and we will come back to you."
+        },
+        "on_side": {
+            "title": "On site in Nuremberg",
+            "content": "Our office in Nürnberg is easily accessible both by public transport and by car. Detailed step-by-step directions can be found on our directions page.",
+            "tag_1": "Central location",
+            "tag_2": "Parking available nearby",
+            "button": "TO DIRECTIONS PAGE"
+        },
+        "contact_form": {
+            "title": "Send us a message",
+            "name": "Name",
+            "mail": "E-mail",
+            "company": "Company",
+            "subject": "Subject",
+            "message": "Message",
+            "agreement": "I agree that my data will be used to process my request. Further information can be found in the privacy policy.",
+            "button": "SEND MESSAGE",
+            "error": {
+                "enter_mail": "Please enter your email address.",
+                "name": "Please enter your name.",
+                "valid_mail": "Please enter a valid email address.",
+                "message": "Please enter a short message.",
+                "consent": "Please confirm that you agree to be contacted.",
+                "general": "Please check the highlighted fields and try again."
+            },
+              "success": "Thank you for your message. We will get back to you as soon as possible."
+        }
+    },
+    "next_steps": {
+        "header": "AFTER SENDING YOUR MESSAGE",
+        "title": "What happens next?",
+        "subtitle": "We want your request to land directly with the right people. Here is how we typically handle incoming messages.",
+        "steps": [
+            {
+                "name": "Step 1",
+                "title": "Receipt & pre-check",
+                "content": "We receive your message and perform a quick pre-check to see which department or contact person is best suited to handle your request."
+            },
+            {
+                "name": "Step 2",
+                "title": "Clarification & preparation",
+                "content": "If necessary, we might ask for a few additional details to fully understand your needs and prepare relevant information or options."
+            },
+            {
+                "name": "Step 3",
+                "title": "Response & next steps",
+                "content": "You receive a personal response with concrete next steps – whether it's an offer, a proposal for a meeting or a direct solution."
+            }
+        ]
+    },
+    "why_contact":{
+        "header": "WHY CONTACT US?",
+        "title": "A partner that speaks your language",
+        "subtitle": "From concept to implementation – we accompany your marketing projects with experience, creativity and reliable project management.",
+        "tiles": [
+            {
+                "title": "Experience & reliability",
+                "content": "Many years of experience in marketing services and project realization – with a strong focus on efficient, reliable processes."
+            },
+            {
+                "title": "Personal contact",
+                "content": "No anonymous ticket system – your request is handled by real people who know your project and stay in touch with you."
+            },
+            {
+                "title": "Clear next steps",
+                "content": "We don't leave you with abstract ideas – we propose concrete next steps, timelines and implementation options."
+            }
+        ]
+    },
+    "CTA": {
+        "header": "Prefer to talk?",
+        "title": "We are just one message or one call away.",
+        "content": "Use the contact form above, send us an e-mail directly or call us – together we will find the right way to support your project.",
+        "phone": "+49 (0)911-32289-0",
+        "mail": "info(at)l-h.de"
+    }
+}

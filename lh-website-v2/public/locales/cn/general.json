@@ -1,0 +1,31 @@
+{
+  "general": {
+    "language": "德语",
+    "cancel": "取消",
+    "confirm": "确认",
+    "general": "常规",
+    "menu": "菜单"
+  },
+  "buttons": {
+    "home": "首页",
+    "company": "公司",
+    "flexibility": "灵活性",
+    "specialisation": "专业化",
+    "internationality": "国际化",
+    "automobile": "汽车",
+    "performance": "服务",
+    "customers": "客户",
+    "methods": "方法",
+    "car_clinics": "汽车评审会",
+    "customersatisfaction": "客户满意度",
+    "finanzmarket": "金融市场",
+    "online_surveys": "在线问卷",
+    "reportingsystem": "报告系统",
+    "team": "团队",
+    "contact": "联系我们",
+    "imprint": "法律声明",
+    "data_protection": "隐私政策",
+    "directions": "路线指引",
+    "job_career": "招聘与职业发展"
+  }
+}
