@@ -6,6 +6,7 @@ import ImprintPage from "../pages/ImprintPage";
 import ContactPage from "../pages/ContactPage";
 import StatusPage from "../pages/StatusPage";
 import JobsPage from "../pages/JobsPage";
+import TeamPage from "../pages/TeamPage";
 
 
 export const routesGen = {
@@ -13,20 +14,35 @@ export const routesGen = {
 };
 
 const routes = [
+    // index
     {
         index: true,
         element: <StatusPage />,
         state: "status"
+    },
+
+    // TopBar
+    {
+        path: "/team",
+        element: <TeamPage />,
+        status: "team"
     },
     {
         path: "/home",
         element: <HomePage />,
         state: "home"
     },
+
+    //Footer
     {
         path: "/contact",
         element: <ContactPage />,
         state: "contact"
+    },
+    {
+        path: "imprint",
+        element: <ImprintPage />,
+        state: "imprint"
     },
     {
         path: "data-protection",
@@ -39,22 +55,18 @@ const routes = [
         state: "directions"
     },
     {
-        path: "imprint",
-        element: <ImprintPage />,
-        state: "imprint"
-    },
-    {
         path: "/job-career",
         element: <JobsPage />,
         state: "job-career"
     },
 
+
+    // Extra redirects
     {
         path: "status",
         element: <StatusPage />,
         state: "status"
     },
-
     {
         path: "*",
         element: <PageNotFound />,

@@ -14,7 +14,7 @@ const Footer = () => {
     const { appState } = useSelector((state) => state.appState);
   return (
     <Container includeMargin={false}>
-        <Paper square={true} sx={{backgroundImage: "unset", padding: "2rem"}}>
+        <Paper square={true} sx={{backgroundImage: "unset", padding: "2rem", zIndex: 10}}>
             <Stack
                 alignItems= "center"
                 justifyContent="space-between"

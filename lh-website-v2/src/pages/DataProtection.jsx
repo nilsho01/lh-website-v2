@@ -14,7 +14,7 @@ import ParallaxClouds from "../components/common/ParallaxClouds";
 import { useTheme } from '@mui/material/styles';
 
 const DataProtection = () => {
-  const { t } = useTranslation('dataProtection');
+  const { t } = useTranslation('data_protection');
   const theme = useTheme();
 
 
