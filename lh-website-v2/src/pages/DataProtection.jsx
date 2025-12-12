@@ -4,6 +4,7 @@ import {
   Container,
   Typography,
   Divider,
+  Stack,
   Link as MuiLink,
 } from '@mui/material';
 import { useTranslation, Trans } from 'react-i18next';
@@ -12,6 +13,9 @@ import TransText from '../components/common/TransText';
 import FadeInOnScroll from '../components/common/FadeInOnScroll';
 import ParallaxClouds from "../components/common/ParallaxClouds";
 import { useTheme } from '@mui/material/styles';
+import { motion } from "framer-motion";
+
+const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 
 const DataProtection = () => {
   const { t } = useTranslation('data_protection');
@@ -22,18 +26,46 @@ const DataProtection = () => {
     <>
       {/* HeroSection mit Titel */}
       <HeroSection backgroundUrl={'/wallpapers/data-protection_hero.jpg'} big={false}>
-        <Typography
-          variant="h3"
-          sx={{
-            fontWeight: 700,
-            textShadow: '0px 2px 10px rgba(0,0,0,0.6)',
-            fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem', lg: '3.5rem' },
-            textAlign: 'center',
-            color: 'text.primary',
-          }}
-        >
-          {t('title')}
-        </Typography>
+
+        <MotionBox
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    sx={{ position: "relative", width: "100%" }}
+                  >
+                    <Container
+                      maxWidth="lg"
+                      sx={{
+                        position: "relative",
+                        zIndex: 1,
+                        display: "flex",
+                        justifyContent: "flex-start",
+                      }}
+                    >
+                      <Stack
+                        spacing={2}
+                        maxWidth={720}
+                        sx={(theme) => ({
+                          mt: { xs: 4, md: 6, lg: 8 },
+                          textAlign: "left",
+                          alignItems: "flex-start",
+                        })}
+                      >
+                        <Typography
+                          variant="overline"
+                          sx={{ letterSpacing: 3, opacity: 0.9 }}
+                        >
+                          {t('header')}
+                        </Typography>
+                        <Typography variant="h4" component="h1" fontWeight={700}>
+                          {t('title')}
+                        </Typography>
+                        <Typography variant="body1" sx={{ maxWidth: 540 }}>
+                          {t('disclaimer')}
+                        </Typography>
+                      </Stack>
+                    </Container>
+                  </MotionBox>
       </HeroSection>
 
       {/* Hauptinhalt */}
@@ -41,12 +73,6 @@ const DataProtection = () => {
       <ParallaxClouds theme={theme} count={5}/>
       <Container maxWidth="md" sx={{ pt: 2, pb: 4 }}>
         {/* Intro mit dynamischem Link */}
-        <Typography paragraph>
-            <TransText
-                i18nKey="disclaimer"
-                t={t}
-            />
-        </Typography>
 
         <Typography paragraph>
             <TransText

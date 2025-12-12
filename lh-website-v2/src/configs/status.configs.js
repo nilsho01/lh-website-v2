@@ -228,16 +228,16 @@ export const PAGES_STATUS = [
   {
     id: "team",
     label: "Team",
-    concept: false,
-    framework: false,
-    firstImplementation: false,
-    reachable: false,
-    differentLanguages: false,
+    concept: true,
+    framework: true,
+    firstImplementation: true,
+    reachable: true,
+    differentLanguages: true,
     mobileReady: false,
     secondRunContent: false,
     secondRunDesign: false,
     accepted: false,
-    todos: "",
+    todos: "Tags to close to each other on mobile view. Jump to top button.",
   },
   {
     id: "solutions",
@@ -369,41 +369,40 @@ export const PAGES_STATUS = [
 
 // Release notes – arbitrary length, arbitrary items per note
 export const RELEASE_NOTES = [
-    {
+  {
     id: "2025-12-05-implementation-footer-pages",
     version: "1.1.0",
-    title: "Implementation of all Footer pages",
+    title: "Implementation of all footer pages",
     date: "2025-12-02",
     description:
-      "Implementation of all Footer pages and first content drafts. Additionaly some first adjustments to so far designs. Also first registration of the status page.",
+      "Implemented all footer-related pages with initial content drafts, applied the first round of design refinements, and introduced the status page.",
     items: [
-      "First implementation of the 'Contact' page",
-      "First implementation of the 'Imprint' page",
-      "First implementation of the 'Directions' page",
-      "First implementation of the 'Data Protection' page",
-      "First implementation of the 'Contact' page",
-      "Added Status page",
-      "Adjustest all symbols in the menues to fitting icons to the texts",
-      "Added general implementation of ParallaxClouds for nicer Backgrounds",
-      "Framework for easy Google Maps and Google Street view content",
-      "Fixed Page switch error",
-      "Added language: Chinesse"
+      "Initial implementation of the 'Contact' page",
+      "Initial implementation of the 'Imprint' page",
+      "Initial implementation of the 'Directions' page",
+      "Initial implementation of the 'Data Protection' page",
+      "Added status overview page",
+      "Adjusted all menu icons to better match their labels and content",
+      "Introduced ParallaxClouds for a more dynamic background experience",
+      "Added a framework for embedding Google Maps and Google Street View content",
+      "Fixed page switching state issues",
+      "Added support for an additional language: Chinese"
     ],
   },
   {
     id: "2025-12-02-first-implementation",
     version: "1.0.0",
-    title: "First implementation for demo porpuses",
+    title: "Initial implementation for demo purposes",
     date: "2025-12-02",
     description:
-      "Set up the project, first design decision and implemented the framework for all pages and the Home page for internal demenstration.",
+      "Set up the project structure, made the first design decisions, and implemented the base framework and home page for internal demonstrations.",
     items: [
-      "Added Page wrappers for consisten Experiences on all pages",
-      "Design choices and page overviews what should be included",
-      "Menue view for desktop and mobile devices",
-      "i-18n integration for language change",
-      "color plates for dark and lightmode",
-      "hosting of the website"
+      "Added page wrappers for a consistent experience across all pages",
+      "Defined design choices and created page overviews for planned content",
+      "Implemented desktop and mobile navigation menus",
+      "Integrated i18n for language switching",
+      "Defined color palettes for dark and light mode",
+      "Deployed the initial version of the website"
     ],
   },
 ];

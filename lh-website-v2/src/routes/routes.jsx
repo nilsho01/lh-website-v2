@@ -7,6 +7,7 @@ import ContactPage from "../pages/ContactPage";
 import StatusPage from "../pages/StatusPage";
 import JobsPage from "../pages/JobsPage";
 import TeamPage from "../pages/TeamPage";
+import FinancialMarketPage from "../pages/FinancialMarketPage";
 
 
 export const routesGen = {
@@ -22,6 +23,11 @@ const routes = [
     },
 
     // TopBar
+    {
+        path: "/finanzmarket",
+        element: <FinancialMarketPage />,
+        state: "finanzmarket"
+    },
     {
         path: "/team",
         element: <TeamPage />,

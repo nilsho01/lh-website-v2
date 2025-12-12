@@ -18,7 +18,8 @@ i18n.
             'home',
             'imprint',
             'jobs_career',
-            'not_found'
+            'not_found',
+            'team'
         ],
         defaultNS: 'general',
         interpolation: {

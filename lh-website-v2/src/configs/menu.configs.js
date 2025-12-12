@@ -31,7 +31,7 @@ const getMenuConfigs = (t) => {
           state: "flexibility",
         },
         {
-          display: t("buttons.specializations"),
+          display: t("buttons.specialisation"),
           path: "/company/specializations",
           state: "specializations",
         },

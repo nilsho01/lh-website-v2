@@ -12,7 +12,10 @@ const Wrapper = styled("div")(({ theme }) => ({
   width: "100vw",
   height: "100vh",
   overflow: "hidden",
-  backgroundImage: 'url("/wallpapers/PageNotFound_Wallpaper.jpg")',
+  backgroundImage:
+      theme.palette.mode === "light"
+        ? "url('/wallpapers/PageNotFound_light_hero.jpg')"
+        : "url('/wallpapers/PageNotFound_dark_hero.jpg')",
   backgroundSize: "cover",
   backgroundPosition: "center",
   color: "#fff",

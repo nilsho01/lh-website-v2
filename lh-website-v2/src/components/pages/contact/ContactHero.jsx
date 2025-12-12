@@ -18,7 +18,7 @@ const ContactHero = () => {
   console.log("HIEERR")
 
   return (
-    <HeroSection backgroundUrl="/wallpapers/contact_hero.jpg" big>
+    <HeroSection backgroundUrl="/wallpapers/contact_hero.jpg" big full>
       <MotionBox
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
