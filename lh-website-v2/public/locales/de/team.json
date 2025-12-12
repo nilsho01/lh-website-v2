@@ -1,0 +1,27 @@
+{
+  "header": "Unser Team",
+  "title": "Die Menschen hinter Ihren Erkenntnissen.",
+  "subtitle": "Strategie, Forschung und Technologie vereinen sich in kompakten, spezialisierten Teams, die nah an Ihrer Realität arbeiten – statt im Elfenbeinturm.",
+  "tags": [
+    "Beratung & Strategie",
+    "Healthcare- & Klinikerfahrung",
+    "Digitales Reporting & Technik"
+  ],
+  "card": {
+    "header": "Ein Mix aus Erfahrung & Neugier",
+    "title": "Kleine, spezialisierte Teams als eine flexible Einheit.",
+    "content": "Management, qualitative Forschung, Klinik, Online sowie IT/Reporting arbeiten in funktionsübergreifenden Konstellationen zusammen – maßgeschneidert für jedes Projekt statt in starren Silos."
+  },
+  "main_section": {
+    "header": "Teams & Expertise",
+    "title": "Unterschiedliche Teams – klar strukturiert."
+  },
+  "CTA": {
+    "header": "Werde Teil des Teams",
+    "title": "Ihnen gefällt, wie dieses Team aufgestellt ist? Vielleicht gehören Sie dazu.",
+    "content": "Wir suchen regelmäßig Menschen mit analytischem Denken, Freude an interdisziplinärer Zusammenarbeit und dem Wunsch, im Schnittfeld von Gesundheitswesen, Forschung und Technologie zu wachsen. Auch ohne ausgeschriebene Stelle freuen wir uns über Ihre Initiativbewerbung.",
+    "information": "Sehen Sie unsere aktuellen Stellen oder senden Sie uns eine Initiativbewerbung.",
+    "button": "Zu Jobs & Karriere",
+    "tip": "Tipp: Im Kontaktformular können Sie kurz Ihren Schwerpunkt skizzieren und Ihren Lebenslauf anhängen."
+  }
+}

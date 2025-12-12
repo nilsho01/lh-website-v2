@@ -1,0 +1,27 @@
+{
+    "header": "Our team",
+    "title": "The people behind your insights.",
+    "subtitle": "Strategy, research and technology combine in compact, specialized teams that stay close to your reality instead of working from an ivory tower.",
+    "tags": [
+        "Consulting & strategy",
+        "Healthcare & clinic expertise",
+        "Digital reporting & tech"
+    ],
+    "card": {
+        "header": "A mix of experience & curiosity",
+        "title": "Small, specialized teams working as one flexible unit.",
+        "content": "Management, qualitative, clinic, online and IT/reporting work together in cross-functional constellations – tailored to each project instead of fixed silos."
+    },
+    "main_section": {
+        "header": "Teams & expertise",
+        "title": "Different teams – clearly structured."
+    },
+    "CTA": {
+        "header": "Join the team",
+        "title": "You like how this team is set up? Maybe you belong in it.",
+        "content": "We regularly look for people who think analytically, love collaboration across disciplines and want to grow in the intersection of healthcare, research and technology. Even if there is no open role listed, we welcome your unsolicited application.",
+        "information": "See our current openings or send us an initiative application.",
+        "button": "Go to Jobs & Career",
+        "tip": "Tip: In the contact form you can also briefly outline your focus and attach your CV."
+    }
+}
