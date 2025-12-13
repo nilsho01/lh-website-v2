@@ -72,9 +72,9 @@ const getMenuConfigs = (t) => {
     },
     {
       display: t("buttons.customersatisfaction"),
-      path: "/customersatisfaction",
+      path: "/customer-satisfaction",
       icon: PermContactCalendarIcon,
-      state: "customersatisfaction",
+      state: "customer-satisfaction",
     },
     {
       display: t("buttons.finanzmarket"),

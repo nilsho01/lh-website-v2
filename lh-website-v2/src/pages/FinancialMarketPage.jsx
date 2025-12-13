@@ -15,6 +15,12 @@ import ReportingHeroSection from "../components/pages/reporting/ReportingHeroSec
 import ReportingWhySection from "../components/pages/reporting/ReportingWhySection";
 import ReportingDashboardsSection from "../components/pages/reporting/ReportingDashboardsSection";
 import ReportingDataGovernanceSection from "../components/pages/reporting/ReportingDataGovernanceSection";
+import GlowingLinesBackground from "../components/common/GlowingLinesBackground";
+
+
+import CustomerSatisfactionSection from "../components/pages/financialMarket_old/CustomerSatisfactionSection";
+import OnlineSurveySection from "../components/pages/financialMarket_old/OnlineSurveysSection";
+import ReportingSystemsSection from "../components/pages/financialMarket_old/ReportingSystemsSection";
 
 const FinancialMarketPage = () => {
   const customerRef = useRef(null);
@@ -29,21 +35,52 @@ const FinancialMarketPage = () => {
   return (
     <PageWrapper state="financial-market">
       <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>
-        <FinancialMarketHero />
-        <FMCustIntroSection />
-        <FMProgramsSection />
-        <FMChannelsSection />
-        <FMInsightsSection />
 
-        <OnlineSurveysHeroSection />
-        <OnlineSurveysWhySection />
-        <OnlineSurveysProcessSection />
-        <OnlineSurveysAutomationSection />
+        <FinancialMarketHero onJumpCostumers={() => scrollTo(customerRef)} onJumpSurveys={() => scrollTo(surveysRef)} onJumpReporting={() => scrollTo(reportingRef)}/>
 
-        <ReportingHeroSection />
-        <ReportingWhySection />
-        <ReportingDashboardsSection />
-        <ReportingDataGovernanceSection />
+        <Box ref={customerRef} sx={{ position: "relative"}}>
+          <GlowingLinesBackground count={8} infront={false} fullPage />'
+
+          <Box sx={{ position: "relative", zIndex: 1 }}>
+            <FMCustIntroSection />
+            <FMProgramsSection />
+            <FMChannelsSection />
+            <FMInsightsSection />
+          </Box>
+        </Box>
+
+        <Box ref={surveysRef} sx={{ position: "relative"}}>
+          <GlowingLinesBackground count={8} infront={false} fullPage />'
+
+          <Box sx={{ position: "relative", zIndex: 1 }}>
+            <OnlineSurveysHeroSection />
+            <OnlineSurveysWhySection />
+            <OnlineSurveysProcessSection />
+            <OnlineSurveysAutomationSection />
+          </Box>
+        </Box>
+        
+        <Box ref={reportingRef} sx={{ position: "relative"}}>
+          <GlowingLinesBackground count={8} infront={false} fullPage />'
+
+          <Box sx={{ position: "relative", zIndex: 1 }}>
+            <ReportingHeroSection />
+            <ReportingWhySection />
+            <ReportingDashboardsSection />
+            <ReportingDataGovernanceSection />
+          </Box>
+        </Box>
+
+        <Box ref={reportingRef} sx={{ position: "relative"}}>
+          <GlowingLinesBackground count={8} infront={false} fullPage />'
+
+          <Box sx={{ position: "relative", zIndex: 1 }}>
+            <CustomerSatisfactionSection />
+            <OnlineSurveySection />
+            <ReportingSystemsSection />
+          </Box>
+        </Box>
+
       </Box>
     </PageWrapper>
   );

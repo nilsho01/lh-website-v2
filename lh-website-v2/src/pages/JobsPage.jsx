@@ -1,6 +1,5 @@
 // src/pages/JobsPage.jsx
 import { Box } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 import PageWrapper from "../components/common/PageWrapper";
 import ParallaxClouds from "../components/common/ParallaxClouds";
@@ -12,8 +11,6 @@ import JobsOpenPositionsSection from "../components/pages/jobs/JobsOpenPositions
 import JobsHiringProcessSection from "../components/pages/jobs/JobsHiringProcessSection";
 
 const JobsPage = () => {
-  const theme = useTheme();
-
   return (
       <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>
         <JobsHeroSection />

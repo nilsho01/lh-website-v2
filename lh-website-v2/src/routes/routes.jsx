@@ -7,6 +7,7 @@ import ContactPage from "../pages/ContactPage";
 import StatusPage from "../pages/StatusPage";
 import JobsPage from "../pages/JobsPage";
 import TeamPage from "../pages/TeamPage";
+import CustomerSatisfactionPage from "../pages/CustomerSatisfactionPage.jsx";
 import FinancialMarketPage from "../pages/FinancialMarketPage";
 
 
@@ -23,6 +24,11 @@ const routes = [
     },
 
     // TopBar
+    {
+        path: "/customer-satisfaction",
+        element: <CustomerSatisfactionPage />,
+        state: "customer-satisfaction"
+    },
     {
         path: "/finanzmarket",
         element: <FinancialMarketPage />,

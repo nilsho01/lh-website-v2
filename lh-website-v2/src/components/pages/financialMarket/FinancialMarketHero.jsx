@@ -21,10 +21,9 @@ const MotionPaper =
     : motion(Paper);
 
 const FinancialMarketHero = ({
-  onJumpIntro,
-  onJumpPrograms,
-  onJumpChannels,
-  onJumpInsights,
+  onJumpCostumers,
+  onJumpSurveys,
+  onJumpReporting,
 }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
@@ -134,50 +133,38 @@ const FinancialMarketHero = ({
                     <Button
                       variant="contained"
                       color="secondary"
-                      onClick={onJumpIntro}
+                      onClick={onJumpCostumers}
                       sx={{
                         borderRadius: 999,
                         px: 3,
                         textTransform: "none",
                       }}
                     >
-                      Why it matters
+                      Custumer satisfaction
                     </Button>
                     <Button
                       variant="outlined"
                       color="inherit"
-                      onClick={onJumpPrograms}
+                      onClick={onJumpSurveys}
                       sx={{
                         borderRadius: 999,
                         px: 3,
                         textTransform: "none",
                       }}
                     >
-                      Programme design
+                      Surveys design
                     </Button>
                     <Button
                       variant="outlined"
                       color="inherit"
-                      onClick={onJumpChannels}
+                      onClick={onJumpReporting}
                       sx={{
                         borderRadius: 999,
                         px: 3,
                         textTransform: "none",
                       }}
                     >
-                      Touchpoints & channels
-                    </Button>
-                    <Button
-                      variant="outlined"
-                      color="inherit"
-                      onClick={onJumpInsights}
-                      sx={{
-                        borderRadius: 999,
-                        px: 3,
-                        textTransform: "none",
-                      }}
-                    >
-                      From data to insight
+                      Reportingsystems
                     </Button>
                   </Stack>
 
