@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 // Framer Motion wrappers
 const MotionDiv = motion.div;
@@ -26,6 +27,7 @@ const TeamSectionBlock = ({
   sectionNumber,
 }) => {
   const theme = useTheme();
+  const { t } = useTranslation("team");
   const sectionRef = useRef(null);
 
   // Scrollprogress nur für diesen Block
@@ -197,7 +199,7 @@ const TeamSectionBlock = ({
 
                 {section.highlight && (
                   <Chip
-                    label="Key contact for strategic topics"
+                    label={t("main_section.highlight_chip")}
                     size="small"
                     sx={{
                       borderRadius: 999,

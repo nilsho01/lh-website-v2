@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "overline": "Customer satisfaction · International studies",
+    "title": "International satisfaction programmes that turn feedback into steering signals.",
+    "content": "We design and run customer, dealer and employee satisfaction surveys – nationally and internationally. All steps, from data collection to online reporting, are conducted in-house so that every result fits into a consistent story.",
+    "chips": {
+      "international_coverage": "International coverage",
+      "structured_results": "Structured results",
+      "retention_loyalty": "Retention & loyalty"
+    },
+    "buttons": {
+      "how_studies_work": "How our studies work",
+      "industries_target_groups": "Industries & target groups",
+      "try_interactive": "Try the interactive view"
+    },
+    "card": {
+      "subtitle": "International satisfaction programmes",
+      "title": "From feedback to retention strategies.",
+      "content": "We link satisfaction scores to churn, loyalty and commercial KPIs. This way, customer retention programmes are backed by data instead of assumptions – across countries and channels.",
+      "caption": "Use the sections below to explore how we design projects, adapt them to industries and visualise results."
+    }
+  },
+  "overview": {
+    "header": "How our satisfaction studies work",
+    "title": "International satisfaction studies with a fully in-house workflow.",
+    "paragraph_1": "We offer international satisfaction studies and present results in a structured manner. Whether the focus is on customer, dealer or employee satisfaction, each study follows a clear logic: design, data collection, analysis and reporting are all handled by one team.",
+    "paragraph_2": "This integrated approach avoids breaks between agencies, platforms and dashboards. Questionnaires, fieldwork setups, weighting and databases are aligned from the start so that results can be compared over time and between markets.",
+    "paragraph_3": "As with our automotive studies, all steps of the project, from data collection through to reporting, are conducted in-house. This gives us control over timelines, quality checks and the way results are translated into practical recommendations.",
+    "chips": {
+      "design_methodology": "Design & methodology",
+      "fieldwork_data_quality": "Fieldwork & data quality",
+      "online_reporting_exports": "Online reporting & exports"
+    },
+    "cards": [
+      {
+        "title": "Design & sampling",
+        "text": "Clarification of objectives, questionnaire design and definition of target groups and samples per market."
+      },
+      {
+        "title": "Fieldwork & data preparation",
+        "text": "Multi-country fieldwork, automated plausibility checks, coding and preparation of structured datasets."
+      },
+      {
+        "title": "Reporting & activation",
+        "text": "Online dashboards, management summaries and workshops that turn results into concrete retention measures."
+      }
+    ]
+  },
+  "segments": {
+    "header": "Industries & target groups",
+    "title": "One framework, many sectors.",
+    "subtitle": "From automotive and finance to hardware, software, consumer goods and services – the same satisfaction logic adapts to different markets while keeping reporting and KPIs consistent.",
+    "chips": {
+      "international_programmes": "International programmes",
+      "structured_reporting": "Structured reporting"
+    },
+    "items": {
+      "automotive": {
+        "label": "Automotive",
+        "text": "In the automotive sector we measure satisfaction along the entire ownership journey: from sales and delivery through service, repair and remarketing. Dealer satisfaction is often integrated so that manufacturer, retailer and end-customer perspectives can be compared.",
+        "bullets": [
+          "Customer & dealer satisfaction surveys",
+          "Sales, aftersales and connected services",
+          "Benchmarks across brands, networks and markets"
+        ]
+      },
+      "finance": {
+        "label": "Finance",
+        "text": "In banking and insurance, satisfaction programmes focus on trust, transparency and ease of use. We link feedback from branches, contact centres and digital channels directly to retention and product usage.",
+        "bullets": [
+          "Customer and employee satisfaction",
+          "Branches, call centres and digital channels",
+          "Link to churn and cross-sell indicators"
+        ]
+      },
+      "hardware": {
+        "label": "Hardware & software",
+        "text": "For hardware and software providers, we track satisfaction across onboarding, support tickets and updates. This includes B2B and B2C environments with very different decision cycles.",
+        "bullets": [
+          "Implementation, onboarding and training",
+          "Support quality and response times",
+          "Net recommendation and renewal intent"
+        ]
+      },
+      "consumer": {
+        "label": "Consumer goods",
+        "text": "In consumer goods, brand perception and usage situations are key. Satisfaction studies help clarify how communication, availability and product experience interact.",
+        "bullets": [
+          "Brand, product and retail experience",
+          "Multi-country concept & product tests",
+          "Tracking of repeat purchase and loyalty"
+        ]
+      },
+      "services": {
+        "label": "Services & others",
+        "text": "For services and mixed portfolios, we support satisfaction measurements that combine transactional feedback with periodic relationship surveys.",
+        "bullets": [
+          "Transactional and relationship surveys",
+          "Service level, quality and perceived value",
+          "Reporting at contract, client and portfolio level"
+        ]
+      }
+    }
+  },
+  "playground": {
+    "header": "Interactive view",
+    "title": "Play with the satisfaction universe.",
+    "subtitle": "Customer retention programmes often combine different perspectives: customers, dealers and employees. Use the playground below to see how each group adds a layer to the overall picture.",
+    "card": {
+      "chip": "Part of one programme",
+      "title": "Combine perspectives instead of running isolated surveys.",
+      "paragraph_1": "In the context of customer retention programmes we offer the realisation of customer, dealer or employee satisfaction surveys with customised online reporting systems. Each perspective can be analysed separately – or combined in one integrated cockpit.",
+      "paragraph_2": "The programme can start with one group and grow over time without changing the underlying logic or breaking existing reports."
+    },
+    "selector": {
+      "title": "Switch perspective",
+      "content": "Click or tap on a tile to change the active perspective. The content on the left updates and the glow reacts to your mouse movement, making the whole card feel alive.",
+      "caption": "All perspectives feed into the same structured reporting layer with modern charts, so essential findings can be recognised at first sight – even when the underlying results are complex."
+    },
+    "profiles": {
+      "customers": {
+        "label": "Customer satisfaction",
+        "desc": "Measures how end-customers experience your products, services and communication – across touchpoints and markets.",
+        "focus_title": "Focus for customer satisfaction:",
+        "focus": [
+          "Perceived value & fairness",
+          "Ease of use across channels",
+          "Recommendation & churn risk"
+        ]
+      },
+      "dealers": {
+        "label": "Dealer satisfaction",
+        "desc": "Shows how your network partners see cooperation, processes and support from headquarters.",
+        "focus_title": "Focus for dealer satisfaction:",
+        "focus": [
+          "Support quality & tools",
+          "Margin and conditions",
+          "Brand alignment & communication"
+        ]
+      },
+      "employees": {
+        "label": "Employee satisfaction",
+        "desc": "Reveals how employees perceive culture, leadership and the tools they use to serve customers.",
+        "focus_title": "Focus for employee satisfaction:",
+        "focus": [
+          "Engagement & loyalty",
+          "Leadership & communication",
+          "Enablement to deliver service"
+        ]
+      }
+    }
+  }
+}

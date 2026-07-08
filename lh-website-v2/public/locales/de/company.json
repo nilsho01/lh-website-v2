@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "header": "Unternehmen",
+    "title": "L+H MarketingServices – Ihr Full-Service-Partner für Marktforschung.",
+    "subtitle": "Von der ersten Forschungsfrage bis zum fertigen Report: Wir konzipieren, realisieren und analysieren Studien mit einem eingespielten Team. Flexibel im Setup, spezialisiert auf den Automobil- und Finanzsektor und erfahren in internationalen Projekten.",
+    "chips": {
+      "full_service": "Full-Service-Marktforschung",
+      "automotive_finance": "Fokus Automobil & Finanzen",
+      "international_reach": "Internationale Studien"
+    },
+    "buttons": {
+      "flexibility": "Unsere Flexibilität",
+      "specialisation": "Unsere Spezialisierungen",
+      "internationality": "Internationale Reichweite"
+    }
+  },
+  "flexibility": {
+    "header": "Flexibilität",
+    "title": "Projekt-Setups, die sich Ihren Fragen anpassen – nicht umgekehrt.",
+    "subtitle": "Jeder Markt und jede Forschungsfrage ist anders. Deshalb halten wir unsere Strukturen schlank und unsere Studiendesigns anpassungsfähig – vom ersten Briefing bis zur finalen Lieferung.",
+    "tiles": [
+      {
+        "title": "Maßgeschneiderte Studiendesigns",
+        "content": "Statt Ihre Fragen in Standardvorlagen zu pressen, entwickeln wir Fragebögen, Stichproben und Methoden, die zu Ihren Zielen und Zielgruppen passen."
+      },
+      {
+        "title": "Kurze Reaktionszeiten",
+        "content": "Schlanke Strukturen und direkte Kommunikation ermöglichen schnelle Reaktionen – ob ein Fragebogen kurzfristig angepasst werden muss oder sich ein Zeitplan verschiebt."
+      },
+      {
+        "title": "Skalierbare Projekt-Setups",
+        "content": "Von der kompakten Einzelmarktstudie bis zum umfangreichen Mehrwellen-Programm: Setups wachsen mit oder werden verschlankt, wenn sich Ihre Anforderungen ändern."
+      }
+    ],
+    "paragraph_1": "Flexibilität ist für uns kein Schlagwort, sondern eine Arbeitsweise. Anforderungen können sich im Projektverlauf ändern – zusätzliche Zielgruppen, neue Märkte oder angepasste Deadlines. Da Konzeption, Feldarbeit und Analyse in einer Hand liegen, reagieren wir ohne Reibungsverluste.",
+    "paragraph_2": "Sie haben jederzeit einen direkten Draht zu den Menschen, die Ihre Studie tatsächlich umsetzen. Entscheidungen fallen schnell, und Änderungen werden dort umgesetzt, wo sie entstehen – im Projekt selbst.",
+    "caption": "Anpassungsfähige Setups, klare Verantwortlichkeiten und kurze Entscheidungswege – über das gesamte Projekt hinweg."
+  },
+  "specialisation": {
+    "header": "Spezialisierungen",
+    "title": "Tief verwurzelt in der Automobil- und Finanzmarktforschung.",
+    "subtitle": "Wir konzentrieren uns auf die Felder, die wir am besten kennen: Studien für den Automobil- und Finanzsektor – mit Kundenzufriedenheit als Kerndisziplin.",
+    "tiles": [
+      {
+        "title": "Automobilforschung",
+        "content": "Von Produktkliniken bis zu Händler- und Kundenbefragungen: Wir unterstützen Hersteller, Importeure und Dienstleister entlang der gesamten automobilen Customer Journey."
+      },
+      {
+        "title": "Finanzmarktforschung",
+        "content": "Für Banken, Versicherungen und Finanzdienstleister untersuchen wir, wie Kunden Produkte, Beratung und digitale Kanäle erleben – und was ihr Vertrauen stärkt."
+      },
+      {
+        "title": "Kundenzufriedenheit",
+        "content": "Zufriedenheits- und Loyalitätsstudien bilden das Herzstück unserer Arbeit: strukturierte Programme, die Feedback von Kunden, Händlern und Mitarbeitern in klare Prioritäten übersetzen."
+      }
+    ],
+    "paragraph_1": "Spezialisierung bedeutet für uns, den gesamten Prozess inhouse zu beherrschen: Fragebogenentwicklung, Programmierung, Feldarbeit, Datenaufbereitung, Analyse und Reporting kommen aus einer Hand.",
+    "paragraph_2": "Dieser durchgängige Ansatz hält die Qualität unter Kontrolle und die Ergebnisse konsistent – vom ersten Fragebogenentwurf bis zur finalen Management-Summary.",
+    "chips": {
+      "questionnaire_design": "Fragebogenentwicklung",
+      "fieldwork_analysis": "Feldarbeit & Analyse",
+      "reporting": "Reporting & Dashboards"
+    }
+  },
+  "internationality": {
+    "header": "Internationalität",
+    "title": "Internationale Studien, koordiniert aus einer Hand.",
+    "subtitle": "Märkte unterscheiden sich – und mit ihnen die Befragten. Wir planen und steuern Mehrländerstudien so, dass Ergebnisse vergleichbar bleiben, ohne lokale Besonderheiten zu verlieren.",
+    "tiles": [
+      {
+        "title": "Mehrländerprojekte",
+        "content": "Ein koordiniertes Setup statt fragmentierter Einzelstudien: einheitliche Methoden, abgestimmte Zeitpläne und zentrale Qualitätsstandards über alle Märkte hinweg."
+      },
+      {
+        "title": "Mehrsprachige Befragungen",
+        "content": "Fragebögen werden sorgfältig lokalisiert, damit Fragen in jeder Sprache und Kultur funktionieren – die Voraussetzung für wirklich vergleichbare Ergebnisse."
+      },
+      {
+        "title": "Vergleichbare Ergebnisse",
+        "content": "Harmonisierte Datenstrukturen und konsistentes Reporting machen es einfach, Märkte zu vergleichen, regionale Unterschiede zu erkennen und globale wie lokale Maßnahmen abzuleiten."
+      }
+    ],
+    "paragraph_1": "Internationale Projekte leben von guter Koordination. Wir kümmern uns um Übersetzungen, Feldsteuerung und Zeitzonen, damit Sie sich auf die Ergebnisse konzentrieren können.",
+    "paragraph_2": "Ob zwei Märkte oder viele: Sie erhalten ein konsistentes Ergebnispaket, einen festen Ansprechpartner und eine Geschichte, die alle Länder zusammenführt.",
+    "caption": "Ein Partner, eine Methodik – konsistente Erkenntnisse über Märkte hinweg."
+  }
+}

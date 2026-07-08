@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "header": "Company",
+    "title": "L+H MarketingServices – your full-service partner for market research.",
+    "subtitle": "From the first research question to the final report: we design, conduct and analyse studies with one dedicated team. Flexible in setup, specialised in the automotive and financial sectors and experienced in international projects.",
+    "chips": {
+      "full_service": "Full-service market research",
+      "automotive_finance": "Automotive & finance focus",
+      "international_reach": "International studies"
+    },
+    "buttons": {
+      "flexibility": "Our flexibility",
+      "specialisation": "Our specialisations",
+      "internationality": "International reach"
+    }
+  },
+  "flexibility": {
+    "header": "Flexibility",
+    "title": "Project setups that adapt to your questions – not the other way round.",
+    "subtitle": "Every market and every research question is different. That is why we keep our structures lean and our study designs adaptable – from the first briefing to the final delivery.",
+    "tiles": [
+      {
+        "title": "Tailored study designs",
+        "content": "Instead of forcing your questions into standard templates, we develop questionnaires, samples and methods that match your objectives and target groups."
+      },
+      {
+        "title": "Short reaction times",
+        "content": "Lean structures and direct communication allow us to respond quickly – whether a questionnaire needs a late change or a timeline suddenly shifts."
+      },
+      {
+        "title": "Scalable project setups",
+        "content": "From compact single-market studies to comprehensive multi-wave programmes: setups can grow or slim down as your requirements change."
+      }
+    ],
+    "paragraph_1": "Flexibility, for us, is not a buzzword but a way of working. Requirements can change during a project – additional target groups, new markets or adjusted deadlines. Because design, fieldwork and analysis are handled by one team, we can react without friction.",
+    "paragraph_2": "You always keep a direct line to the people who actually run your study. Decisions are made quickly, and changes are implemented where they occur – in the project itself.",
+    "caption": "Adaptable setups, clear responsibilities and short decision paths – throughout the entire project."
+  },
+  "specialisation": {
+    "header": "Specialisations",
+    "title": "Deep roots in automotive and financial market research.",
+    "subtitle": "We concentrate on the fields we know best: studies for the automotive and financial sectors – with customer satisfaction as a core discipline.",
+    "tiles": [
+      {
+        "title": "Automotive research",
+        "content": "From product clinics to dealer and customer surveys: we support manufacturers, importers and service providers along the entire automotive customer journey."
+      },
+      {
+        "title": "Financial market research",
+        "content": "For banks, insurers and financial service providers we examine how customers experience products, advice and digital channels – and what strengthens their trust."
+      },
+      {
+        "title": "Customer satisfaction",
+        "content": "Satisfaction and loyalty studies are at the heart of our work: structured programmes that turn feedback from customers, dealers and employees into clear priorities."
+      }
+    ],
+    "paragraph_1": "Specialisation, for us, means mastering the whole process in-house: questionnaire design, programming, fieldwork, data preparation, analysis and reporting come from one team.",
+    "paragraph_2": "This end-to-end approach keeps quality under control and results consistent – from the first draft of a questionnaire to the final management summary.",
+    "chips": {
+      "questionnaire_design": "Questionnaire design",
+      "fieldwork_analysis": "Fieldwork & analysis",
+      "reporting": "Reporting & dashboards"
+    }
+  },
+  "internationality": {
+    "header": "Internationality",
+    "title": "International studies, coordinated from a single point.",
+    "subtitle": "Markets differ, and so do respondents. We plan and manage multi-country studies so that results remain comparable without losing local nuance.",
+    "tiles": [
+      {
+        "title": "Multi-country projects",
+        "content": "One coordinated setup instead of fragmented single studies: consistent methods, aligned timelines and central quality standards across all markets."
+      },
+      {
+        "title": "Multilingual surveys",
+        "content": "Questionnaires are carefully localised so that questions work in every language and culture – a prerequisite for results you can genuinely compare."
+      },
+      {
+        "title": "Comparable results",
+        "content": "Harmonised data structures and consistent reporting make it easy to compare markets, spot regional differences and derive global as well as local actions."
+      }
+    ],
+    "paragraph_1": "International projects live from good coordination. We take care of translations, fieldwork management and time zones so that you can concentrate on the results.",
+    "paragraph_2": "Whether two markets or many: you receive one consistent set of deliverables, one point of contact and one story that ties all countries together.",
+    "caption": "One partner, one methodology – consistent insights across markets."
+  }
+}

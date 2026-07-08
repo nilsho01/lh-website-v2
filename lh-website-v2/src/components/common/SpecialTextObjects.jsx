@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { styled, useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { Typography } from "@mui/material";
 
 const GlowingTypography = styled(Typography)(({ theme }) => ({
@@ -21,7 +21,6 @@ const GlowingTypography = styled(Typography)(({ theme }) => ({
   }));
 
   const FlickeringText = ({ text }) => {
-    const theme = useTheme();
     const [flickerIndices, setFlickerIndices] = useState([]);
   
     useEffect(() => {

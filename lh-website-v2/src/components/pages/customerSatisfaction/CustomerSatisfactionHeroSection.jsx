@@ -12,6 +12,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import HeroSection from "../../common/HeroSection";
 
@@ -30,6 +31,7 @@ const CustomerSatisfactionHeroSection = ({
 }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("customer_satisfaction");
 
   return (
     <HeroSection backgroundUrl="/wallpapers/customer_satisfaction_hero.jpg" big>
@@ -66,38 +68,34 @@ const CustomerSatisfactionHeroSection = ({
                   variant="overline"
                   sx={{ letterSpacing: 3, opacity: 0.9 }}
                 >
-                  Customer satisfaction · International studies
+                  {t("hero.overline")}
                 </Typography>
 
                 <Typography variant="h4" component="h1" fontWeight={700}>
-                  International satisfaction programmes that turn feedback into
-                  steering signals.
+                  {t("hero.title")}
                 </Typography>
 
                 <Typography variant="body1" sx={{ maxWidth: 560, opacity: 0.95 }}>
-                  We design and run customer, dealer and employee satisfaction
-                  surveys – nationally and internationally. All steps, from data
-                  collection to online reporting, are conducted in-house so that
-                  every result fits into a consistent story.
+                  {t("hero.content")}
                 </Typography>
 
                 <Stack direction="row" spacing={1.5} mt={1} flexWrap="wrap">
                   <Chip
                     icon={<PublicIcon />}
-                    label="International coverage"
+                    label={t("hero.chips.international_coverage")}
                     size="small"
-                    color="primary"
+                    color="secondary"
                     variant="filled"
                   />
                   <Chip
                     icon={<QueryStatsIcon />}
-                    label="Structured results"
+                    label={t("hero.chips.structured_results")}
                     size="small"
                     variant="outlined"
                   />
                   <Chip
                     icon={<EmojiEmotionsIcon />}
-                    label="Retention & loyalty"
+                    label={t("hero.chips.retention_loyalty")}
                     size="small"
                     variant="outlined"
                   />
@@ -116,7 +114,7 @@ const CustomerSatisfactionHeroSection = ({
                     }}
                     onClick={onJumpOverview}
                   >
-                    How our studies work
+                    {t("hero.buttons.how_studies_work")}
                   </Button>
 
                   <Button
@@ -130,7 +128,7 @@ const CustomerSatisfactionHeroSection = ({
                     }}
                     onClick={onJumpSegments}
                   >
-                    Industries & target groups
+                    {t("hero.buttons.industries_target_groups")}
                   </Button>
 
                   <Button
@@ -144,7 +142,7 @@ const CustomerSatisfactionHeroSection = ({
                     }}
                     onClick={onJumpPlayground}
                   >
-                    Try the interactive view
+                    {t("hero.buttons.try_interactive")}
                   </Button>
                 </Stack>
               </Stack>
@@ -222,22 +220,19 @@ const CustomerSatisfactionHeroSection = ({
 
                 <Stack spacing={2} sx={{ position: "relative", zIndex: 1 }}>
                   <Typography variant="subtitle2" sx={{ opacity: 0.8 }}>
-                    International satisfaction programmes
+                    {t("hero.card.subtitle")}
                   </Typography>
                   <Typography variant="h6" fontWeight={700}>
-                    From feedback to retention strategies.
+                    {t("hero.card.title")}
                   </Typography>
                   <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                    We link satisfaction scores to churn, loyalty and commercial
-                    KPIs. This way, customer retention programmes are backed by
-                    data instead of assumptions – across countries and channels.
+                    {t("hero.card.content")}
                   </Typography>
                   <Typography
                     variant="caption"
                     sx={{ opacity: 0.85, mt: 0.5 }}
                   >
-                    Use the sections below to explore how we design projects,
-                    adapt them to industries and visualise results.
+                    {t("hero.card.caption")}
                   </Typography>
                 </Stack>
               </MotionPaper>

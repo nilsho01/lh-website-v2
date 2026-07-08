@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   Box,
   Container,
@@ -25,7 +25,7 @@ const DataProtection = () => {
   return (
     <>
       {/* HeroSection mit Titel */}
-      <HeroSection backgroundUrl={'/wallpapers/data-protection_hero.jpg'} big={false}>
+      <HeroSection backgroundUrl={'/wallpapers/data-protection_hero.jpg'} big>
 
         <MotionBox
                     initial={{ opacity: 0, y: 30 }}
@@ -45,11 +45,11 @@ const DataProtection = () => {
                       <Stack
                         spacing={2}
                         maxWidth={720}
-                        sx={(theme) => ({
+                        sx={{
                           mt: { xs: 4, md: 6, lg: 8 },
                           textAlign: "left",
                           alignItems: "flex-start",
-                        })}
+                        }}
                       >
                         <Typography
                           variant="overline"

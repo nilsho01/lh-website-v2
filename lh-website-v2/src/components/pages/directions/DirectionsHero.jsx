@@ -89,15 +89,15 @@ const DirectionsHero = () => {
             <Stack
                 spacing={2}
                 maxWidth={720}
-                sx={(theme) => ({
+                sx={{
                 mt: { xs: 4, md: 6, lg: 8 },
                 textAlign: "left",
                 alignItems: "flex-start",
-                })}
+                }}
             >
                 <Typography
                 variant="overline"
-                sx={{ letterSpacing: 2, opacity: 0.9 }}
+                sx={{ letterSpacing: 3, opacity: 0.9 }}
                 >
                 {t('header')}
                 </Typography>

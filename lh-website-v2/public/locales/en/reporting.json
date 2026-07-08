@@ -1,0 +1,109 @@
+{
+    "hero_section": {
+        "header": "Reporting systems · Financial markets",
+        "title": "Automated charts with room for detailed analyses.",
+        "content": "We build reporting systems that present complex results in a condensed, intuitive way – while still allowing your experts to drill down into details when needed.",
+        "chips": {
+            "online_dashboards": "Online dashboards",
+            "management_summaries": "Management summaries",
+            "time_series": "Time series & trends"
+        },
+        "buttons": {
+            "why": "Why reporting matters",
+            "dashboards": "Dashboard views",
+            "governance": "Data & governance"
+        },
+        "card": {
+            "subtitle": "From data to decisions",
+            "title": "Reporting that shows the essentials at first glance.",
+            "content": "Within our online reports it is possible to carry out highly individualised and detailed analyses – without losing the big picture. Standard charts for management, flexible views for experts.",
+            "caption": "Explore the sections below for use cases, dashboard types and data infrastructure."
+        }
+    },
+    "why_section": {
+        "header": "Why reporting systems",
+        "title": "From complex results to clean stories.",
+        "subtitle": "Reporting systems translate detailed research and tracking results into clear views. The objective: show the essentials at first sight while keeping all detail available in the background.",
+        "items": [
+            {
+                "title": "Structured data as a base",
+                "text": "Structured data and database management are the basis of detailed and stable reporting – especially when projects run across years and markets.",
+                "chip": "Stable foundation"
+            },
+            {
+                "title": "Condensed & individualised views",
+                "text": "We condense complex results into clear figures and filters, tailored to different user groups such as management, experts and local teams.",
+                "chip": "Clarity & relevance"
+            },
+            {
+                "title": "Continuous monitoring",
+                "text": "Campaigns, satisfaction and response rates can be monitored continuously, tracking both current status and desired targets.",
+                "chip": "Monitoring"
+            }
+        ]
+    },
+    "dashboards_section": {
+        "header": "Dashboard views",
+        "title": "Tailored reporting for different user groups.",
+        "subtitle": "The same underlying data can be presented very differently, depending on whether you are steering at board level, analysing details or running a local team.",
+        "choose_view": "Choose your view",
+        "toggle_hint": "Toggle between different dashboard types to see how the same underlying data can support board-level steering, expert analysis and local management.",
+        "modes": [
+            {
+                "label": "Management overview",
+                "chip": "High-level view",
+                "intro": "At overview level, standard KPIs and trends are shown in a compact way, so management can see status and direction at a glance.",
+                "cards": [
+                    "Executive dashboards with a small set of core KPIs.",
+                    "Time series views for tracking movements over multiple waves.",
+                    "Traffic-light indicators for targets and thresholds."
+                ]
+            },
+            {
+                "label": "Expert detail view",
+                "chip": "Drill-down",
+                "intro": "Detail views allow experts to filter by segment, time, product and channel, while keeping definitions and filters transparent.",
+                "cards": [
+                    "Flexible filters for markets, products, segments and time.",
+                    "Drill-down from total to specific sub-groups or questions.",
+                    "Download options for detailed tables and microdata extracts."
+                ]
+            },
+            {
+                "label": "Local & branch view",
+                "chip": "Operational view",
+                "intro": "Branch and local views highlight what is relevant locally, comparing each unit to benchmarks so teams can steer concretely.",
+                "cards": [
+                    "Simple dashboards for non-analysts with only a few KPIs.",
+                    "Comparison to network average and predefined peer-groups.",
+                    "Optional comment and action fields for local follow-up."
+                ]
+            }
+        ]
+    },
+    "governance_section": {
+        "header": "Data & governance",
+        "title": "Reporting systems that play nicely with your infrastructure.",
+        "subtitle": "Reporting is only sustainable when data flows, access rights and definitions are clear. We design systems that can live for years, not just for a single project.",
+        "items": [
+            {
+                "title": "Data pipelines & interfaces",
+                "text": "We set up stable exports and APIs from reporting systems to your BI tools, data warehouse or data lake – with clear schemas and IDs.",
+                "chip": "Integration",
+                "extra": "This includes standardised refresh cycles and monitoring of data flows."
+            },
+            {
+                "title": "Access control & roles",
+                "text": "Role-based access ensures that sensitive metrics and customer-related data are only visible to authorised users.",
+                "chip": "Access & privacy",
+                "extra": "Views can be aligned with internal structures such as countries, regions or branches."
+            },
+            {
+                "title": "Definitions & documentation",
+                "text": "KPIs, filters and survey variables are documented in a way that both analysts and non-specialists can understand.",
+                "chip": "Transparency",
+                "extra": "We provide simple data dictionaries, filter descriptions and FAQs inside or next to the dashboards."
+            }
+        ]
+    }
+}

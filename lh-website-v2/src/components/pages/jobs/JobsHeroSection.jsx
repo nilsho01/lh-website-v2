@@ -48,11 +48,11 @@ const JobsHeroSection = () => {
           <Stack
             spacing={2}
             maxWidth={720}
-            sx={(theme) => ({
+            sx={{
               mt: { xs: 4, md: 6, lg: 8 },
               textAlign: "left",
               alignItems: "flex-start"
-            })}
+            }}
           >
             <Typography
               variant="overline"
@@ -72,7 +72,7 @@ const JobsHeroSection = () => {
                 icon={<WorkOutlineIcon />}
                 label={t('tags.0')}
                 size="small"
-                color="primary"
+                color="secondary"
                 variant="filled"
               />
               <Chip

@@ -1,60 +1,62 @@
 {
-  "header": "路线指引",
-  "title": "如何找到我们",
-  "subtitle": "无论是驾车、乘坐公共交通还是步行——这里提供所有信息，助您轻松抵达我们的办公室。",
-  "adress_card": {
-    "title": "地址",
-    "company_name": "L+H MarketingServices GmbH",
-    "street": "Ingolstädter Str. 45",
-    "postal_code_city": "85276 Pfaffenhofen a.d.Ilm",
-    "phone": "电话：+49 8441 808-0",
-    "tags": [
-      "附近有停车位",
-      "公共交通便利可达"
-    ],
-    "office_details": "我们的办公室位于左侧，门牌号为 19。"
-  },
-  "directions_card": {
-    "title": "到达方式",
-    "subtitle": "选择对您最方便的出行方式——我们的位置交通便捷且标识清晰。",
-    "by_public_transport": {
-      "title": "乘坐公共交通",
-      "description": "乘火车至 Pfaffenhofen 火车站。从那里步行约 10 分钟即可到达 Ingolstädter Str. 45。"
+    "header": "路线指引",
+    "title": "如何找到我们",
+    "subtitle": "无论是驾车、乘坐公共交通还是步行——这里提供所有信息，助您轻松抵达我们的办公室。",
+    "adress_card": {
+        "title": "地址",
+        "company_name": "L+H MarketingServices GmbH",
+        "street": "Ingolstädter Str. 45",
+        "postal_code_city": "85276 Pfaffenhofen a.d.Ilm",
+        "phone": "电话：+49 8441 808-0",
+        "tags": [
+            "附近有停车位",
+            "公共交通便利可达"
+        ],
+        "office_details": "我们的办公室位于左侧，门牌号为 19。",
+        "image_alt": "我们办公楼的街景"
     },
-    "on_foot": {
-      "title": "步行 / 自行车",
-      "description": "从 Pfaffenhofen 市中心沿主干道向北步行，直至 Ingolstädter Str. 45。"
+    "directions_card": {
+        "title": "到达方式",
+        "subtitle": "选择对您最方便的出行方式——我们的位置交通便捷且标识清晰。",
+        "by_public_transport": {
+            "title": "乘坐公共交通",
+            "description": "乘火车至 Pfaffenhofen 火车站。从那里步行约 10 分钟即可到达 Ingolstädter Str. 45。"
+        },
+        "on_foot": {
+            "title": "步行 / 自行车",
+            "description": "从 Pfaffenhofen 市中心沿主干道向北步行，直至 Ingolstädter Str. 45。"
+        },
+        "by_car_A3": {
+            "title": "驾车经 A3",
+            "description": "如果您经由 A3 高速公路前来，请在 85 号出口“Nürnberg-Nord”下高速，并按指示牌朝纽伦堡方向行驶。沿“Äußere Bayreuther Straße”行驶约 4.5 公里。随后右转进入 Virchowstraße，即可到达目的地。"
+        },
+        "by_car_north_west": {
+            "title": "从北部或西部驾车",
+            "description": "如果您从纽伦堡的北部或西部前来，请沿 Nordring (B4R) 行至与 Äußere Bayreuther Straße 的交叉口。在此处右转进入 Äußere Bayreuther Straße，朝市中心方向行驶。随后不久再次右转进入 Virchowstraße。"
+        },
+        "by_car_south_east": {
+            "title": "从南部或东部驾车",
+            "description": "如果您从纽伦堡的南部或东部前来，请沿 B4R 朝机场方向行驶，直至与“Äußere Bayreuther Straße”的交叉口。在此处左转进入“Äußere Bayreuther Straße”，朝市中心（“Zentrum”）方向行驶。随后不久在下一个可转弯处右转进入 Virchowstraße。"
+        }
     },
-    "by_car_A3": {
-      "title": "驾车经 A3",
-      "description": "如果您经由 A3 高速公路前来，请在 85 号出口“Nürnberg-Nord”下高速，并按指示牌朝纽伦堡方向行驶。沿“Äußere Bayreuther Straße”行驶约 4.5 公里。随后右转进入 Virchowstraße，即可到达目的地。"
+    "map_card": {
+        "title": "地图上的我们的位置",
+        "description": "查看我们在地图上的位置，并轻松规划您的路线。",
+        "disclaimer": "为显示地图，我们使用 Google Maps。请同意使用以加载地图。",
+        "window": {
+            "title": "启用 Google 地图",
+            "description": "加载地图时，数据将传输至 Google。更多信息请参阅我们的隐私政策。",
+            "button": "同意并加载地图",
+            "subtitle": "此决定仅适用于您当前的访问。"
+        },
+        "iframe_title": "Google Maps"
     },
-    "by_car_north_west": {
-      "title": "从北部或西部驾车",
-      "description": "如果您从纽伦堡的北部或西部前来，请沿 Nordring (B4R) 行至与 Äußere Bayreuther Straße 的交叉口。在此处右转进入 Äußere Bayreuther Straße，朝市中心方向行驶。随后不久再次右转进入 Virchowstraße。"
-    },
-    "by_car_south_east": {
-      "title": "从南部或东部驾车",
-      "description": "如果您从纽伦堡的南部或东部前来，请沿 B4R 朝机场方向行驶，直至与“Äußere Bayreuther Straße”的交叉口。在此处左转进入“Äußere Bayreuther Straße”，朝市中心（“Zentrum”）方向行驶。随后不久在下一个可转弯处右转进入 Virchowstraße。"
+    "on_your_way": {
+        "title": "已经在路上了吗？",
+        "description": "不妨这样想——在您前来途中，我们已为您的项目做好准备。",
+        "subtitle": "继续向下滚动——您的项目正在路上。",
+        "title2": "还有关于到达路线的问题？",
+        "description2": "给我们写信——我们很乐意协助您规划行程，并亲自解答您的疑问。",
+        "contact_us": "联系我们"
     }
-  },
-  "map_card": {
-    "title": "地图上的我们的位置",
-    "description": "查看我们在地图上的位置，并轻松规划您的路线。",
-    "disclaimer": "为显示地图，我们使用 Google Maps。请同意使用以加载地图。",
-    "window": {
-      "title": "启用 Google 地图",
-      "discription": "加载地图时，数据将传输至 Google。更多信息请参阅我们的隐私政策。",
-      "button": "同意并加载地图",
-      "subtitle": "此决定仅适用于您当前的访问。"
-    }
-  },
-  "on_your_way": {
-    "title": "已经在路上了吗？",
-    "description": "不妨这样想——在您前来途中，我们已为您的项目做好准备。",
-    "subtitle": "继续向下滚动——您的项目正在路上。",
-    "title2": "还有关于到达路线的问题？",
-    "description2": "给我们写信——我们很乐意协助您规划行程，并亲自解答您的疑问。",
-    "contact_us": "联系我们"
-  }
 }

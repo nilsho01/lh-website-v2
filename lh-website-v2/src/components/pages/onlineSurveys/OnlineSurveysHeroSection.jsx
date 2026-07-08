@@ -12,6 +12,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import HeroSection from "../../common/HeroSection";
 
@@ -30,6 +31,7 @@ const OnlineSurveysHeroSection = ({
 }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("online_surveys");
 
   return (
     <HeroSection
@@ -71,37 +73,34 @@ const OnlineSurveysHeroSection = ({
                   variant="overline"
                   sx={{ letterSpacing: 3, opacity: 0.9 }}
                 >
-                  Online surveys · International research
+                  {t("hero.overline")}
                 </Typography>
 
                 <Typography variant="h4" component="h1" fontWeight={700}>
-                  From first invite to final dashboard – fully automated online
-                  surveys.
+                  {t("hero.title")}
                 </Typography>
 
                 <Typography variant="body1" sx={{ maxWidth: 540, opacity: 0.95 }}>
-                  We design and run online surveys that work across devices,
-                  languages and markets. From sampling to reporting, processes
-                  can be fully automated while quality stays under control.
+                  {t("hero.content")}
                 </Typography>
 
                 <Stack direction="row" spacing={1.5} mt={1} flexWrap="wrap">
                   <Chip
                     icon={<DevicesIcon />}
-                    label="Multi-device"
+                    label={t("hero.chips.multi_device")}
                     size="small"
-                    color="primary"
+                    color="secondary"
                     variant="filled"
                   />
                   <Chip
                     icon={<InsightsIcon />}
-                    label="Clean data"
+                    label={t("hero.chips.clean_data")}
                     size="small"
                     variant="outlined"
                   />
                   <Chip
                     icon={<AutoModeIcon />}
-                    label="Automation"
+                    label={t("hero.chips.automation")}
                     size="small"
                     variant="outlined"
                   />
@@ -120,7 +119,7 @@ const OnlineSurveysHeroSection = ({
                     }}
                     onClick={onJumpWhy}
                   >
-                    Why online surveys
+                    {t("hero.buttons.why")}
                   </Button>
 
                   <Button
@@ -134,7 +133,7 @@ const OnlineSurveysHeroSection = ({
                     }}
                     onClick={onJumpProcess}
                   >
-                    See the process
+                    {t("hero.buttons.process")}
                   </Button>
 
                   <Button
@@ -149,7 +148,7 @@ const OnlineSurveysHeroSection = ({
                     }}
                     onClick={onJumpAutomation}
                   >
-                    Automation & reporting
+                    {t("hero.buttons.automation")}
                   </Button>
                 </Stack>
               </Stack>
@@ -227,23 +226,19 @@ const OnlineSurveysHeroSection = ({
 
                 <Stack spacing={2} sx={{ position: "relative", zIndex: 1 }}>
                   <Typography variant="subtitle2" sx={{ opacity: 0.8 }}>
-                    One pipeline, many markets
+                    {t("hero.card.subtitle")}
                   </Typography>
                   <Typography variant="h6" fontWeight={700}>
-                    International online fieldwork under one roof.
+                    {t("hero.card.title")}
                   </Typography>
                   <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                    From invitations and reminders to quotas and redirects: we
-                    keep all steps of the online survey process in-house,
-                    ensuring consistent quality and documentation for every
-                    country.
+                    {t("hero.card.content")}
                   </Typography>
                   <Typography
                     variant="caption"
                     sx={{ opacity: 0.85, mt: 0.5 }}
                   >
-                    Use the sections below to explore design, process and
-                    automation in more detail.
+                    {t("hero.card.caption")}
                   </Typography>
                 </Stack>
               </MotionPaper>

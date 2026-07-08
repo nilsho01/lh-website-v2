@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "overline": "Automobil",
+    "title": "Automobil-Marktforschung, die mit Ihren Produktentscheidungen Schritt hält.",
+    "subtitle": "Von Produktkliniken über Customer Journeys bis zu Händler- und Kundenzufriedenheitsprogrammen: Wir unterstützen die Automobilbranche mit Studien, die Marktfeedback in klare Entscheidungen übersetzen.",
+    "chips": {
+      "full_service": "Full-Service-Studien",
+      "international": "Internationale Feldarbeit",
+      "automotive_focus": "Fokus Automobil"
+    },
+    "buttons": {
+      "performance": "So liefern wir",
+      "customers": "Für wen wir arbeiten",
+      "methods": "Methoden & Ansätze",
+      "car_clinics": "Car Clinics"
+    }
+  },
+  "performance": {
+    "header": "Leistung",
+    "title": "Verlässliche Projektabwicklung – vom Kick-off bis zum Abschlussbericht.",
+    "subtitle": "Die Zeitpläne der Automobilbranche sind anspruchsvoll. Unsere Projektteams verbinden kurze Durchlaufzeiten mit strengen Qualitätsstandards – damit Ergebnisse dann vorliegen, wenn Entscheidungen anstehen.",
+    "cards": [
+      {
+        "title": "Termintreue Projektdurchführung",
+        "text": "Klare Projektpläne, enge Abstimmung und proaktive Kommunikation halten jede Studie auf Kurs – auch wenn sich Zeitpläne auf Kundenseite verschieben."
+      },
+      {
+        "title": "Schnell, ohne Abkürzungen",
+        "text": "Schlanke Strukturen und kurze Entscheidungswege ermöglichen es uns, Automobilstudien zügig aufzusetzen, durchzuführen und auszuwerten – bei methodisch sauberer Umsetzung."
+      },
+      {
+        "title": "Konsistente Qualitätsstandards",
+        "text": "Standardisierte Qualitätsprüfungen über Fragebogen, Feldarbeit und Datenaufbereitung hinweg liefern Ergebnisse, die Sie souverän vor jedem Gremium vertreten können."
+      }
+    ],
+    "footnote": "Alle Projektschritte – vom Studiendesign bis zum Reporting – liegen in der Hand eines festen Teams."
+  },
+  "customers": {
+    "header": "Für wen wir arbeiten",
+    "title": "Partner für Hersteller, Importeure und Händlernetze.",
+    "subtitle": "Wir unterstützen Automobilunternehmen entlang der gesamten Wertschöpfungskette – von der Zentrale über nationale Vertriebsgesellschaften bis zur Handelsorganisation, im Heimatmarkt und international.",
+    "groups": [
+      {
+        "title": "Hersteller (OEMs)",
+        "text": "Produkt-, Marken- und Zufriedenheitsforschung für Zentralfunktionen – von der frühen Konzeptbewertung bis zu kontinuierlichen Kunden- und Händler-Feedbackprogrammen."
+      },
+      {
+        "title": "Importeure & Vertriebsgesellschaften",
+        "text": "Marktspezifische Studien, die zentrale Strategien in lokale Erkenntnisse übersetzen und die Besonderheiten einzelner Länder und Vertriebsregionen berücksichtigen."
+      },
+      {
+        "title": "Händlernetze",
+        "text": "Kunden- und Händlerzufriedenheitsprogramme, die zeigen, wie Verkauf und Service vor Ort erlebt werden – Standort für Standort, Region für Region."
+      }
+    ],
+    "logos_caption": "Eine Auswahl von Marken, die auf unsere Arbeit vertrauen"
+  },
+  "methods": {
+    "header": "Methoden",
+    "title": "Quantitativ und qualitativ – immer passend zur Fragestellung.",
+    "subtitle": "Wir kombinieren bewährte Forschungsmethoden zu Studiendesigns, die zu Ihrer Entscheidung, Ihrer Zielgruppe und Ihrem Zeitplan passen.",
+    "items": [
+      {
+        "title": "Quantitative Befragungen",
+        "text": "CATI- und Online-Interviews mit Fahrern, Besitzern und Interessenten – belastbare Stichproben, sorgfältiges Screening und strukturierte Fragebogen liefern messbare, vergleichbare Ergebnisse."
+      },
+      {
+        "title": "Qualitative Forschung",
+        "text": "Tiefeninterviews und Gruppendiskussionen legen die Motive hinter den Zahlen frei: wie Kunden in ihren eigenen Worten über Marken, Fahrzeuge und Services denken."
+      },
+      {
+        "title": "Customer-Journey-Analysen",
+        "text": "Wir zeichnen den Weg vom Erstkontakt über Kauf und Service bis zum Wiederkauf nach – und identifizieren die Kontaktpunkte, die Entscheidungen prägen oder Erlebnisse brechen."
+      },
+      {
+        "title": "Mystery-Elemente",
+        "text": "Mystery Calls, Besuche und Anfragen ergänzen Befragungsdaten um den Blick von außen: wie Verkaufs- und Serviceprozesse tatsächlich funktionieren."
+      }
+    ],
+    "footnote": "Alle Methoden werden zu einem Studiendesign kombiniert, damit Ergebnisse aus unterschiedlichen Quellen eine konsistente Geschichte erzählen."
+  },
+  "car_clinics": {
+    "header": "Car Clinics",
+    "title": "Produktkliniken, die Ihr Fahrzeug vor die richtigen Kunden bringen.",
+    "paragraph_1": "In Car Clinics bewerten Zielkunden Fahrzeugkonzepte, Designs und Prototypen unter kontrollierten Bedingungen – lange vor der Markteinführung. Interieur und Exterieur, Haptik, Funktionalität und wahrgenommener Wert werden im direkten Vergleich mit relevanten Wettbewerbern beurteilt.",
+    "paragraph_2": "Wir übernehmen das komplette Setup: die Rekrutierung der passenden Teilnehmer, die Konzeption des Bewertungsprogramms, die Durchführung vor Ort und die Verdichtung der Ergebnisse zu klaren Empfehlungen für Produkt- und Marketingentscheidungen.",
+    "chips": {
+      "concept_design": "Konzept- & Designbewertung",
+      "target_recruiting": "Zielkunden-Rekrutierung",
+      "benchmarking": "Wettbewerbsvergleich"
+    },
+    "cards": [
+      {
+        "title": "Statische Clinics",
+        "text": "Teilnehmer erleben Fahrzeuge oder Modelle im Stand – Sitzprobe, Ergonomie, Materialanmutung und Design werden im Detail bewertet und mit Wettbewerbsfahrzeugen verglichen."
+      },
+      {
+        "title": "Dynamische Clinics",
+        "text": "Testfahrten ergänzen das Fahrerlebnis: Beschleunigung, Handling, Komfort und Assistenzfunktionen werden in realistischen Nutzungssituationen beurteilt."
+      },
+      {
+        "title": "Prototypen- & Konzeptfeedback",
+        "text": "Frühes Feedback zu Prototypen, Mock-ups und Konzeptbeschreibungen zeigt, welche Merkmale Zielkunden überzeugen – und wo Konzepte vor dem Launch geschärft werden sollten."
+      }
+    ]
+  }
+}

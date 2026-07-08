@@ -15,8 +15,6 @@ const ContactHero = () => {
 
   const{ t } = useTranslation('contact')
 
-  console.log("HIEERR")
-
   return (
     <HeroSection backgroundUrl="/wallpapers/contact_hero.jpg" big full>
       <MotionBox
@@ -88,11 +86,11 @@ const ContactHero = () => {
           <Stack
             spacing={2}
             maxWidth={720}
-            sx={(theme) => ({
+            sx={{
               mt: { xs: 4, md: 6, lg: 8 },
               textAlign: "left",
               alignItems: "flex-start",
-            })}
+            }}
           >
             <Typography
               variant="overline"

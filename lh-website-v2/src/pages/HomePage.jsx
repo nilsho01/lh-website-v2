@@ -152,9 +152,9 @@ const HomePage = () => {
                   <Stack direction="row" spacing={2} alignItems="center">
                     <Button
                       variant="contained"
-                      color="primary"
+                      color="secondary"
                       component={RouterLink}
-                      to="/solutions"
+                      to="/finanzmarket"
                       sx={{
                         borderRadius: "999px",
                         px: 3,
@@ -221,8 +221,8 @@ const HomePage = () => {
                 >
                   <FloatingCard
                     icon={<PublicIcon fontSize="large" />}
-                    title="Global reach"
-                    text="Online panels & automotive partners worldwide."
+                    title={t('hero_section.cards.card_1.title')}
+                    text={t('hero_section.cards.card_1.content')}
                     sx={{
                       position: "absolute",
                       top: 0,
@@ -232,8 +232,8 @@ const HomePage = () => {
                   />
                   <FloatingCard
                     icon={<DirectionsCarFilledIcon fontSize="large" />}
-                    title="Automotive focus"
-                    text="From product clinics to customer journeys."
+                    title={t('hero_section.cards.card_3.title')}
+                    text={t('hero_section.cards.card_3.content')}
                     sx={{
                       position: "absolute",
                       bottom: 20,
@@ -243,8 +243,8 @@ const HomePage = () => {
                   />
                   <FloatingCard
                     icon={<InsightsIcon fontSize="large" />}
-                    title="Smart analytics"
-                    text="From dashboards to deep dives."
+                    title={t('hero_section.cards.card_2.title')}
+                    text={t('hero_section.cards.card_2.content')}
                     sx={{
                       position: "absolute",
                       top: 60,
@@ -295,7 +295,7 @@ const HomePage = () => {
                     background:
                       theme.palette.mode === "light"
                         ? "#ffffff"
-                        : theme.palette.secondary.contrastText,
+                        : theme.palette.background.paper,
                   }}
                 >
                   <Box
@@ -452,7 +452,7 @@ const MiniTag = ({ icon, children }) => {
 /* Animated floating info cards on the right side of the hero */
 const FloatingCard = ({ icon, title, text, sx, delay = 0 }) => {
   const theme = useTheme();
-  const isDark = true;
+  const isDark = theme.palette.mode === "dark";
 
   return (
     <MotionPaper
@@ -490,7 +490,7 @@ const FloatingCard = ({ icon, title, text, sx, delay = 0 }) => {
           background: isDark
             ? "radial-gradient(circle at 30% 30%, #ffffff, rgba(255,255,255,0.1))"
             : "radial-gradient(circle at 30% 30%, #000000, rgba(0,0,0,0.06))",
-          color: "#000",
+          color: isDark ? "#000" : "#fff",
         }}
       >
         {icon}

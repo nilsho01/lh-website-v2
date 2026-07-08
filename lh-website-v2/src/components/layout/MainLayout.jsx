@@ -8,9 +8,8 @@ const MainLayout = () => {
 
   return (
     <>
-      {/* global loading */}
+      {/* globales Lade-Overlay */}
       <GlobalLoading />
-      {/* global loading */}
 
 
       <Box display="flex" minHeight="100vh">

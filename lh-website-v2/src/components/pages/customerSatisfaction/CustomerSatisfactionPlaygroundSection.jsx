@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import StorefrontIcon from "@mui/icons-material/Storefront";
@@ -19,45 +20,32 @@ import GroupIcon from "@mui/icons-material/Group";
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 
-const PROFILES = {
-  customers: {
-    icon: <EmojiPeopleIcon />,
-    label: "Customer satisfaction",
-    desc: "Measures how end-customers experience your products, services and communication – across touchpoints and markets.",
-    focus: [
-      "Perceived value & fairness",
-      "Ease of use across channels",
-      "Recommendation & churn risk",
-    ],
-  },
-  dealers: {
-    icon: <StorefrontIcon />,
-    label: "Dealer satisfaction",
-    desc: "Shows how your network partners see cooperation, processes and support from headquarters.",
-    focus: [
-      "Support quality & tools",
-      "Margin and conditions",
-      "Brand alignment & communication",
-    ],
-  },
-  employees: {
-    icon: <GroupIcon />,
-    label: "Employee satisfaction",
-    desc: "Reveals how employees perceive culture, leadership and the tools they use to serve customers.",
-    focus: [
-      "Engagement & loyalty",
-      "Leadership & communication",
-      "Enablement to deliver service",
-    ],
-  },
+const PROFILE_ICONS = {
+  customers: <EmojiPeopleIcon />,
+  dealers: <StorefrontIcon />,
+  employees: <GroupIcon />,
 };
 
 const CustomerSatisfactionPlaygroundSection = ({ refProp }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("customer_satisfaction");
+
+  const profiles = Object.fromEntries(
+    Object.keys(PROFILE_ICONS).map((key) => [
+      key,
+      {
+        icon: PROFILE_ICONS[key],
+        label: t(`playground.profiles.${key}.label`),
+        desc: t(`playground.profiles.${key}.desc`),
+        focusTitle: t(`playground.profiles.${key}.focus_title`),
+        focus: t(`playground.profiles.${key}.focus`, { returnObjects: true }),
+      },
+    ])
+  );
 
   const [active, setActive] = useState("customers");
-  const activeProfile = PROFILES[active];
+  const activeProfile = profiles[active];
 
   // motion values for 3D-ish tilt & glow
   const x = useMotionValue(0);
@@ -94,18 +82,16 @@ const CustomerSatisfactionPlaygroundSection = ({ refProp }) => {
       <Container maxWidth="lg">
         <Stack spacing={1.5} mb={4} alignItems="center" textAlign="center">
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Interactive view
+            {t("playground.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            Play with the satisfaction universe.
+            {t("playground.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 780, mx: "auto", opacity: 0.9 }}
           >
-            Customer retention programmes often combine different perspectives:
-            customers, dealers and employees. Use the playground below to see
-            how each group adds a layer to the overall picture.
+            {t("playground.subtitle")}
           </Typography>
         </Stack>
 
@@ -157,7 +143,7 @@ const CustomerSatisfactionPlaygroundSection = ({ refProp }) => {
                     {activeProfile.label}
                   </Typography>
                   <Chip
-                    label="Part of one programme"
+                    label={t("playground.card.chip")}
                     size="small"
                     variant="outlined"
                     sx={{ borderRadius: 999 }}
@@ -165,21 +151,15 @@ const CustomerSatisfactionPlaygroundSection = ({ refProp }) => {
                 </Stack>
 
                 <Typography variant="h6" fontWeight={700}>
-                  Combine perspectives instead of running isolated surveys.
+                  {t("playground.card.title")}
                 </Typography>
 
                 <Typography variant="body2" sx={{ opacity: 0.95 }}>
-                  In the context of customer retention programmes we offer the
-                  realisation of customer, dealer or employee satisfaction
-                  surveys with customised online reporting systems. Each
-                  perspective can be analysed separately – or combined in one
-                  integrated cockpit.
+                  {t("playground.card.paragraph_1")}
                 </Typography>
 
                 <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                  The programme can start with one group and grow over time
-                  without changing the underlying logic or breaking existing
-                  reports.
+                  {t("playground.card.paragraph_2")}
                 </Typography>
 
                 <Stack spacing={0.5} sx={{ mt: 1 }}>
@@ -187,7 +167,7 @@ const CustomerSatisfactionPlaygroundSection = ({ refProp }) => {
                     variant="body2"
                     sx={{ opacity: 0.9, fontWeight: 600 }}
                   >
-                    Focus for {activeProfile.label.toLowerCase()}:
+                    {activeProfile.focusTitle}
                   </Typography>
                   {activeProfile.focus.map((f) => (
                     <Typography
@@ -207,16 +187,14 @@ const CustomerSatisfactionPlaygroundSection = ({ refProp }) => {
           <Grid item xs={12} md={5}>
             <Stack spacing={2}>
               <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>
-                Switch perspective
+                {t("playground.selector.title")}
               </Typography>
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                Click or tap on a tile to change the active perspective. The
-                content on the left updates and the glow reacts to your mouse
-                movement, making the whole card feel alive.
+                {t("playground.selector.content")}
               </Typography>
 
               <Grid container spacing={2} sx={{ mt: 1 }}>
-                {Object.entries(PROFILES).map(([key, profile]) => {
+                {Object.entries(profiles).map(([key, profile]) => {
                   const selected = key === active;
                   return (
                     <Grid key={key} item xs={12} sm={6}>
@@ -297,9 +275,7 @@ const CustomerSatisfactionPlaygroundSection = ({ refProp }) => {
                 variant="caption"
                 sx={{ opacity: 0.8, mt: 1, maxWidth: 360 }}
               >
-                All perspectives feed into the same structured reporting layer
-                with modern charts, so essential findings can be recognised at
-                first sight – even when the underlying results are complex.
+                {t("playground.selector.caption")}
               </Typography>
             </Stack>
           </Grid>

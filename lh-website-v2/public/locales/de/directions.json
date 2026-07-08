@@ -12,7 +12,8 @@
             "Parkplätze in der Nähe",
             "ÖPNV gut erreichbar"
         ],
-        "office_details": "Unser Büro ist auf der linken Seite mit der 19."
+        "office_details": "Unser Büro ist auf der linken Seite mit der 19.",
+        "image_alt": "Straßenansicht unseres Bürogebäudes"
     },
     "directions_card": {
         "title": "Anreiseoptionen",
@@ -44,10 +45,11 @@
         "disclaimer": "Zur Darstellung der Karte verwenden wir Google Maps. Bitte stimmen Sie der Nutzung zu, um die Karte zu laden.",
         "window": {
             "title": "Google Maps aktivieren",
-            "discription": "Durch das Laden der Karte werden Daten an Google übertragen. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
+            "description": "Durch das Laden der Karte werden Daten an Google übertragen. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
             "button": "Zustimmen und Karte laden",
-            "subtitle": "Diese Entscheidung gilt nur für Ihren aktuellen Besuch." 
-        }
+            "subtitle": "Diese Entscheidung gilt nur für Ihren aktuellen Besuch."
+        },
+        "iframe_title": "Google Maps"
     },
     "on_your_way": {
         "title": "Schon unterwegs?",

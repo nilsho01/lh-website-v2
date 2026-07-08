@@ -12,7 +12,8 @@
             "Parking nearby",
             "Public transport easily accessible"
         ],
-        "office_details": "Our office is on the left side with the number 19."
+        "office_details": "Our office is on the left side with the number 19.",
+        "image_alt": "Street view of our office building"
     },
     "directions_card": {
         "title": "Travel options",
@@ -44,10 +45,11 @@
         "disclaimer": "We use Google Maps to display the map. Please consent to the use to load the map.",
         "window": {
             "title": "Activate Google Maps",
-            "discription": "By loading the map, data is transmitted to Google. For more information, please see our privacy policy.",
+            "description": "By loading the map, data is transmitted to Google. For more information, please see our privacy policy.",
             "button": "Agree and load map",
-            "subtitle": "This decision only applies to your current visit." 
-        }
+            "subtitle": "This decision only applies to your current visit."
+        },
+        "iframe_title": "Google Maps"
     },
     "on_your_way": {
         "title": "Already on your way?",

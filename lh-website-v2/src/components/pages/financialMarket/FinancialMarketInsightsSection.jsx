@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import DatasetIcon from "@mui/icons-material/Dataset";
 import DashboardIcon from "@mui/icons-material/Dashboard";
@@ -19,6 +20,7 @@ import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const FMCustInsightsSection = ({ refProp }) => {
+  const { t } = useTranslation("financial_market");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
@@ -27,31 +29,28 @@ const FMCustInsightsSection = ({ refProp }) => {
       id: "foundations",
       label: "01",
       icon: <DatasetIcon />,
-      title: "Data foundations",
-      desc: "Clean survey data, harmonised time series and robust weighting so trends are real and comparable between segments.",
-      extra:
-        "We define which KPIs are central, which are supporting, and how they are documented across studies.",
-      chip: "Methodology",
+      title: t("insights.steps.foundations.title"),
+      desc: t("insights.steps.foundations.desc"),
+      extra: t("insights.steps.foundations.extra"),
+      chip: t("insights.steps.foundations.chip"),
     },
     {
       id: "dashboards",
       label: "02",
       icon: <DashboardIcon />,
-      title: "Dashboards & alerts",
-      desc: "Role-based dashboards for management, branches and call centres, plus alerts when critical indicators drop.",
-      extra:
-        "Standard figures are scheduled, while flexible filters allow exploration of sub-groups on demand.",
-      chip: "Reporting",
+      title: t("insights.steps.dashboards.title"),
+      desc: t("insights.steps.dashboards.desc"),
+      extra: t("insights.steps.dashboards.extra"),
+      chip: t("insights.steps.dashboards.chip"),
     },
     {
       id: "story",
       label: "03",
       icon: <PlayCircleOutlineIcon />,
-      title: "Storytelling & action",
-      desc: "Management summaries, workshops and playbooks that translate findings into concrete actions for teams.",
-      extra:
-        "We write and visualise results so that your teams can work with them without needing a statistician at their side.",
-      chip: "Activation",
+      title: t("insights.steps.story.title"),
+      desc: t("insights.steps.story.desc"),
+      extra: t("insights.steps.story.extra"),
+      chip: t("insights.steps.story.chip"),
     },
   ];
 
@@ -67,18 +66,16 @@ const FMCustInsightsSection = ({ refProp }) => {
       <Container maxWidth="lg">
         <Stack spacing={1.5} mb={4} alignItems="center" textAlign="center">
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            From data to insight
+            {t("insights.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            Reporting that supports decisions, not just slides.
+            {t("insights.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 760, mx: "auto", opacity: 0.9 }}
           >
-            We design reporting environments where satisfaction scores live
-            alongside your financial KPIs. The result: management views for
-            steering, and operational views for teams.
+            {t("insights.content")}
           </Typography>
         </Stack>
 

@@ -1,4 +1,5 @@
 {
+    "header": "DATENSCHUTZ",
     "title": "Datenschutzerklärung",
     "disclaimer": "Verantwortliche Stelle für diese Homepage ist die L+H MarketingServices GmbH.",
     "intro": "Der Schutz Ihrer Privatsphäre ist uns sehr wichtig. Daher haben wir unser Internet- Angebot grundsätzlich so gestaltet, dass dessen Nutzung weitestgehend ohne Verarbeitung Ihrer personenbezogenen Daten erfolgen kann.",
@@ -12,6 +13,7 @@
             " - der übertragenen Datenmenge,",
             " - dem Zugriffsstatus (Inhalt übertragen, Inhalt nicht gefunden),",
             " - der Beschreibung des verwendeten Webbrowsers und des Betriebssystems,",
+        " - dem Referral-Link, aus dem hervorgeht, von welcher Seite Sie auf unsere gelangt sind,",
             " - der IP-Adresse des anfragenden Rechners, die so verkürzt wird, dass ein Personenbezug nicht mehr herstellbar ist.",
             "Die genannten Protokolldaten werden nur anonymisiert ausgewertet."
         ]

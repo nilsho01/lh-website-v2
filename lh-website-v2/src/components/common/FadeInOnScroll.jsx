@@ -2,6 +2,8 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
+const MotionDiv = motion.div;
+
 const FadeInOnScroll = ({ children, delay = 0 }) => {
   const { ref, inView } = useInView({
     triggerOnce: false,         // <-- wichtig: erlaubt mehrfaches Triggern
@@ -9,7 +11,7 @@ const FadeInOnScroll = ({ children, delay = 0 }) => {
   });
 
   return (
-    <motion.div
+    <MotionDiv
       ref={ref}
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -17,7 +19,7 @@ const FadeInOnScroll = ({ children, delay = 0 }) => {
       transition={{ duration: 0.6, delay }}
     >
       {children}
-    </motion.div>
+    </MotionDiv>
   );
 };
 

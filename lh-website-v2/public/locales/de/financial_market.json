@@ -1,0 +1,166 @@
+{
+    "hero": {
+        "header": "Finanzmärkte & Kundenzufriedenheit",
+        "title": "Wir verwandeln Zufriedenheitswerte in Entscheidungen, die Kapital bewegen.",
+        "content": "Wir entwickeln Kundenzufriedenheitsprogramme für Banken, Versicherungen und Vermögensverwalter, die Erlebnisse an jedem Kontaktpunkt mit KPIs, ROI und langfristiger Loyalität verknüpfen.",
+        "buttons": {
+            "customers": "Kundenzufriedenheit",
+            "surveys": "Umfragedesign",
+            "reporting": "Reportingsysteme"
+        },
+        "chips": {
+            "retail": "Retail Banking",
+            "insurance": "Versicherungen",
+            "wealth": "Vermögensverwaltung"
+        },
+        "card": {
+            "header": "Von Scorecards zur Steuerung",
+            "title": "Kundenzufriedenheit als Frühwarnsystem.",
+            "content": "Wir verbinden Umfrage-Feedback mit Ihren operativen Daten: Beschwerden, Abwanderung, Produktnutzung, NPS und Mitarbeiterkennzahlen. Das Ergebnis ist eine Reporting-Ebene, die Erlebnisse in konkrete Maßnahmen für Filialen, Contact Center und digitale Teams übersetzt."
+        }
+    },
+    "intro": {
+        "header": "Kundenzufriedenheit an den Finanzmärkten",
+        "title": "Finanzentscheidungen basieren auf Vertrauen – nicht nur auf dem Preis.",
+        "content": "Wir entwickeln Zufriedenheitsprogramme, die repräsentative Messungen mit pragmatischen KPIs kombinieren – damit Ihre Teams sehen, was sich langfristig wirklich bewegt.",
+        "segments": {
+            "retail": {
+                "label": "Retail Banking",
+                "text": "Im Retail Banking konzentrieren sich Zufriedenheitsprogramme auf alltägliche Interaktionen: Konten, Karten, Online-Zugang und einfache Beratungsgespräche. Wir verknüpfen diese Erlebnisse mit Abwanderung, Produktnutzung und Weiterempfehlung."
+            },
+            "insurance": {
+                "label": "Versicherungen",
+                "text": "Bei Versicherungen stehen die Schadenbearbeitung und die Kommunikation im Schadenfall im Mittelpunkt. Zufriedenheitstracking zeigt Ihnen, wie gut Ihre Prozesse funktionieren, wenn Ihre Kunden Sie wirklich brauchen."
+            },
+            "wealth": {
+                "label": "Vermögensverwaltung",
+                "text": "In der Vermögens- und Anlageverwaltung sind Vertrauen und Kontinuität entscheidend. Zufriedenheitsmessungen zeigen, wie Beratungsqualität, Transparenz und digitales Reporting langfristige Kundenbeziehungen prägen."
+            }
+        },
+        "pillars": [
+            {
+                "title": "Kundenbindung & Lifetime Value",
+                "text": "Erkennen Sie, welche Kundengruppen gefährdet sind – und welche Erlebnisse langfristige Loyalität und Produkttiefe fördern.",
+                "chip": "Lifetime Value"
+            },
+            {
+                "title": "Risiko & Reputation",
+                "text": "Nutzen Sie Zufriedenheitswerte als Frühindikator für Reputationsrisiken, regulatorische Themen und Servicebrüche.",
+                "chip": "Frühwarnung"
+            },
+            {
+                "title": "Kommerzielle Steuerung",
+                "text": "Übersetzen Sie Feedback in konkrete Ziele für Regionen, Filialen und Kanäle – statt in allgemeine Slogans.",
+                "chip": "Steuerungs-KPIs"
+            }
+        ]
+    },
+    "channels": {
+        "header": "Kontaktpunkte & Kanäle",
+        "title": "Ein konsistenter Blick über alle Customer Journeys.",
+        "content": "Wir kartieren Ihre wichtigsten Journeys und richten Messungen und KPIs daran aus. Wählen Sie einen Kontaktpunkt aus, um zu sehen, wie wir Indikatoren und Feedback typischerweise strukturieren.",
+        "selected_touchpoint": "Ausgewählter Kontaktpunkt:",
+        "typical_kpis": "Typische KPIs & Indikatoren:",
+        "items": {
+            "branches": {
+                "title": "Filialen & Berater",
+                "desc": "Komplexe Produkte und Beratungssituationen werden nach wie vor im persönlichen Gespräch geklärt.",
+                "kpis": [
+                    "Beratungsqualität",
+                    "Verständlichkeit der Erklärungen",
+                    "Wahrgenommene Fairness"
+                ]
+            },
+            "contact": {
+                "title": "Contact Center",
+                "desc": "Wenn etwas schiefläuft, wird das Callcenter zum wichtigsten Kontaktpunkt.",
+                "kpis": [
+                    "Lösung beim Erstkontakt",
+                    "Wartezeit & wahrgenommener Aufwand",
+                    "Tonalität"
+                ]
+            },
+            "digital": {
+                "title": "Online-Banking & Apps",
+                "desc": "Die alltägliche Nutzung findet in digitalen Kanälen statt – insbesondere bei jüngeren Segmenten.",
+                "kpis": [
+                    "Aufgabenerledigung (z. B. Überweisungen)",
+                    "Benutzerfreundlichkeit auf Mobilgeräten",
+                    "Wahrgenommene Sicherheit"
+                ]
+            },
+            "claims": {
+                "title": "Schäden & Vorfälle",
+                "desc": "Bei Versicherungen und im Zahlungsverkehr entscheidet die Schadenbearbeitung über langfristige Loyalität.",
+                "kpis": [
+                    "Bearbeitungsgeschwindigkeit",
+                    "Fairness des Ergebnisses",
+                    "Transparenz der Kommunikation"
+                ]
+            }
+        }
+    },
+    "programs": {
+        "header": "Programmdesign",
+        "title": "Von einmaligen Umfragen zur kontinuierlichen Entscheidungsunterstützung.",
+        "content": "Kombinieren Sie langfristiges Tracking mit fokussierten Deep Dives und Closed-Loop-Feedback. Sie entscheiden, welche Elemente Sie benötigen – wir sorgen dafür, dass sie technisch und methodisch zusammenpassen.",
+        "selected_programme": "Ausgewähltes Programm:",
+        "items": {
+            "survey": {
+                "title": "Kontinuierliches Tracking",
+                "tag": "Quartalsweise / monatlich",
+                "desc": "Stabiles, langfristiges Tracking von Zufriedenheit, Loyalität und NPS.",
+                "bullets": [
+                    "Konsistente Fragebögen und Gewichtung über die Zeit",
+                    "Regelmäßige Management-Updates und automatisierte Exporte",
+                    "Benchmarks für Regionen, Kanäle und Produkte"
+                ]
+            },
+            "adhoc": {
+                "title": "Ad-hoc Deep Dives",
+                "tag": "Wenn sich etwas ändert",
+                "desc": "Fokussierte Module zu spezifischen Fragestellungen oder Ereignissen.",
+                "bullets": [
+                    "Einführung neuer Produkte oder Preismodelle",
+                    "Regulatorische Änderungen oder Prozess-Redesigns",
+                    "Fusionen, Rebrandings oder Kanalverschiebungen"
+                ]
+            },
+            "closedloop": {
+                "title": "Closed-Loop-Feedback",
+                "tag": "Vom Wert zur Maßnahme",
+                "desc": "Einzelfälle lösen Workflows und Follow-ups aus.",
+                "bullets": [
+                    "Alerts bei sehr unzufriedenen Kunden",
+                    "Weiterleitung von Feedback an Filialen oder Serviceteams",
+                    "Nachverfolgung von Lösungen und Lernschleifen"
+                ]
+            }
+        }
+    },
+    "insights": {
+        "header": "Von Daten zu Erkenntnissen",
+        "title": "Reporting, das Entscheidungen unterstützt – nicht nur Folien füllt.",
+        "content": "Wir gestalten Reporting-Umgebungen, in denen Zufriedenheitswerte neben Ihren Finanz-KPIs stehen. Das Ergebnis: Managementsichten zur Steuerung und operative Sichten für Ihre Teams.",
+        "steps": {
+            "foundations": {
+                "title": "Datenfundament",
+                "desc": "Saubere Umfragedaten, harmonisierte Zeitreihen und robuste Gewichtung – damit Trends real und zwischen Segmenten vergleichbar sind.",
+                "extra": "Wir definieren, welche KPIs zentral und welche unterstützend sind – und wie sie studienübergreifend dokumentiert werden.",
+                "chip": "Methodik"
+            },
+            "dashboards": {
+                "title": "Dashboards & Alerts",
+                "desc": "Rollenbasierte Dashboards für Management, Filialen und Callcenter – plus Alerts, wenn kritische Indikatoren einbrechen.",
+                "extra": "Standardkennzahlen werden automatisiert bereitgestellt, während flexible Filter die Analyse von Teilgruppen auf Abruf ermöglichen.",
+                "chip": "Reporting"
+            },
+            "story": {
+                "title": "Storytelling & Umsetzung",
+                "desc": "Management-Summaries, Workshops und Playbooks, die Erkenntnisse in konkrete Maßnahmen für Ihre Teams übersetzen.",
+                "extra": "Wir bereiten Ergebnisse sprachlich und visuell so auf, dass Ihre Teams direkt damit arbeiten können – ganz ohne Statistiker an ihrer Seite.",
+                "chip": "Aktivierung"
+            }
+        }
+    }
+}

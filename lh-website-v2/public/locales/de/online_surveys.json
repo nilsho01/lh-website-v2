@@ -1,0 +1,126 @@
+{
+    "hero": {
+        "overline": "Online-Befragungen · Internationale Forschung",
+        "title": "Von der ersten Einladung bis zum fertigen Dashboard – vollautomatisierte Online-Befragungen.",
+        "content": "Wir konzipieren und führen Online-Befragungen durch, die über Geräte, Sprachen und Märkte hinweg funktionieren. Vom Sampling bis zum Reporting lassen sich alle Prozesse vollständig automatisieren – bei durchgehend kontrollierter Qualität.",
+        "chips": {
+            "multi_device": "Multi-Device",
+            "clean_data": "Saubere Daten",
+            "automation": "Automatisierung"
+        },
+        "buttons": {
+            "why": "Warum Online-Befragungen",
+            "process": "Prozess ansehen",
+            "automation": "Automatisierung & Reporting"
+        },
+        "card": {
+            "subtitle": "Eine Pipeline, viele Märkte",
+            "title": "Internationale Online-Feldarbeit aus einer Hand.",
+            "content": "Von Einladungen und Erinnerungen bis zu Quoten und Redirects: Wir halten alle Schritte des Online-Befragungsprozesses im eigenen Haus und sichern so konsistente Qualität und Dokumentation für jedes Land.",
+            "caption": "Nutzen Sie die folgenden Abschnitte, um Design, Prozess und Automatisierung im Detail kennenzulernen."
+        }
+    },
+    "why": {
+        "overline": "Warum Online-Befragungen",
+        "title": "Eine Standardmethode für internationale Projekte.",
+        "content": "Online-Befragungen gehören zu unserem Standardrepertoire und werden als zentrale Methode in internationalen Studien eingesetzt. Von der ersten Einladung bis zum fertigen Report lassen sich alle Prozesse vollständig automatisieren.",
+        "items": [
+            {
+                "title": "Geschwindigkeit & Skalierbarkeit",
+                "text": "Erreichen Sie Tausende von Befragten innerhalb von Tagen statt Wochen – mit klaren Durchlaufzeiten und planbaren Kosten.",
+                "chip": "Schnelle Feldarbeit"
+            },
+            {
+                "title": "Internationale Konsistenz",
+                "text": "Nutzen Sie einen zentralen Kernfragebogen, angepasst an lokale Sprachen und Märkte, während Ihre KPIs vergleichbar bleiben.",
+                "chip": "Globales Setup"
+            },
+            {
+                "title": "Saubere, strukturierte Daten",
+                "text": "Routing, Validierung und automatisierte Qualitätsprüfungen stellen sicher, dass Ihre Datensätze bereit für Modellierung und Reporting sind.",
+                "chip": "Qualität & Struktur"
+            }
+        ]
+    },
+    "process": {
+        "overline": "Prozessüberblick",
+        "title": "Eine Pipeline vom Fragebogendesign bis zum Reporting.",
+        "content": "Erfahren Sie, wie wir vom Fragebogen und den Einladungen über Feldarbeit und Datenaufbereitung bis zu Dashboards und Exporten gelangen.",
+        "steps": [
+            {
+                "label": "Fragebogendesign & Einladungen",
+                "short": "Fragebogen & Stichprobe",
+                "desc": "Wir gestalten Online-Fragebögen, die auf allen Geräten funktionieren – mit klarem Routing und intelligenter Validierung, damit Befragte sie schnell und zuverlässig ausfüllen können.",
+                "details": [
+                    "Fragebogendesign & Programmierung",
+                    "Sampling, Quoten & Panels",
+                    "Einladungen, Erinnerungen & Redirects"
+                ]
+            },
+            {
+                "label": "Feldarbeit & Datenaufbereitung",
+                "short": "Bereinigung & Codierung",
+                "desc": "Die Datenaufbereitung umfasst automatisierte Plausibilitätsprüfungen, die Codierung offener Antworten und die Vorbereitung aller relevanten Variablen für Reporting und Modellierung.",
+                "details": [
+                    "Automatisierte Qualitätsprüfungen & Bereinigung",
+                    "Codierung offener Antworten",
+                    "Variablensets für die Modellierung"
+                ]
+            },
+            {
+                "label": "Reporting & Exporte",
+                "short": "Dashboards & Dateien",
+                "desc": "Die Ergebnisse werden in Online-Dashboards oder statische Reports geladen. Standardauswertungen lassen sich zeitgesteuert erstellen, während Ad-hoc-Filter die Analyse von Teilgruppen auf Abruf ermöglichen.",
+                "details": [
+                    "Rollenbasierte Dashboards",
+                    "Standardisierte KPIs & Trendverläufe",
+                    "Exporte in BI-Tools oder Data-Lake"
+                ]
+            }
+        ],
+        "wheel_text": "Vom <strong>Fragebogendesign</strong> über die <strong>Datenaufbereitung</strong> bis zum <strong>Reporting</strong> – eine durchgängige Pipeline."
+    },
+    "automation": {
+        "overline": "Automatisierung & Reporting",
+        "title": "Online-Befragungen, die sich in Ihre Reporting-Landschaft einfügen.",
+        "content": "Ob Sie Dashboards, Präsentationen oder Rohdaten-Exporte bevorzugen – wir bauen eine Reporting-Ebene, die zu Ihrer Organisation passt und sich mit bestehenden Tools verbindet, statt ein weiteres Silo zu schaffen.",
+        "focus_label": "Schwerpunkt",
+        "toggle_hint": "Wechseln Sie zwischen Automatisierung, Integration und Alerts, um zu sehen, wie wir Online-Befragungen mit Ihrer bestehenden Infrastruktur verbinden.",
+        "current_focus": "Aktueller Schwerpunkt: {{label}}",
+        "modes": [
+            {
+                "label": "Automatisierung",
+                "headline": "Automatisiert von der Einladung bis zum Export.",
+                "text": "Einladungen, Erinnerungen, Quoten und Redirects lassen sich über Wellen und Länder hinweg automatisieren – mit Dokumentation und Monitoring im Hintergrund.",
+                "bullets": [
+                    "Zeitgesteuerte Feldphasen",
+                    "Automatisierte Erinnerungen & Redirects",
+                    "Quotenprüfungen & Monitoring"
+                ],
+                "tag": "Prozessautomatisierung"
+            },
+            {
+                "label": "Integration",
+                "headline": "Verbunden mit Ihren Systemen.",
+                "text": "Befragungsdaten können in Ihr Data Warehouse oder Ihre BI-Tools übertragen werden – mit stabilen Schemata und IDs, die zu Ihren internen Strukturen passen.",
+                "bullets": [
+                    "Stabile IDs & Metadaten",
+                    "Exporte in BI / Data-Lake",
+                    "APIs für Dashboards"
+                ],
+                "tag": "Datenintegration"
+            },
+            {
+                "label": "Alerts",
+                "headline": "Alerts, wenn etwas nicht nach Plan läuft.",
+                "text": "Schwellenwertbasierte Alerts melden, wenn die Zufriedenheit sinkt oder sich Quoten, Stichproben oder technische KPIs unerwartet verhalten.",
+                "bullets": [
+                    "Schwellenwerte je KPI & Segment",
+                    "Benachrichtigungen an Projektteams",
+                    "Optionales Closed-Loop-Follow-up"
+                ],
+                "tag": "Monitoring"
+            }
+        ]
+    }
+}

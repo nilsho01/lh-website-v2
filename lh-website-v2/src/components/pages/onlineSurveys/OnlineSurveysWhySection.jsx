@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import SpeedIcon from "@mui/icons-material/Speed";
 import PublicIcon from "@mui/icons-material/Public";
@@ -21,27 +22,13 @@ const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 const OnlineSurveysWhySection = ({ refProp }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("online_surveys");
 
-  const items = [
-    {
-      icon: <SpeedIcon />,
-      title: "Speed & scalability",
-      text: "Reach thousands of respondents within days instead of weeks, with clear turnaround times and predictable costs.",
-      chip: "Fast fieldwork",
-    },
-    {
-      icon: <PublicIcon />,
-      title: "International consistency",
-      text: "Use one core questionnaire, adapted to local languages and markets, while keeping your KPIs aligned.",
-      chip: "Global setup",
-    },
-    {
-      icon: <ChecklistIcon />,
-      title: "Clean, structured data",
-      text: "Routing, validation and automated quality checks ensure that your datasets are ready for modelling and reporting.",
-      chip: "Quality & structure",
-    },
-  ];
+  const icons = [<SpeedIcon />, <PublicIcon />, <ChecklistIcon />];
+  const items = t("why.items", { returnObjects: true }).map((item, idx) => ({
+    ...item,
+    icon: icons[idx],
+  }));
 
   return (
     <Box ref={refProp} sx={{ py: { xs: 5, md: 7 } }}>
@@ -53,18 +40,16 @@ const OnlineSurveysWhySection = ({ refProp }) => {
           textAlign="center"
         >
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Why online surveys
+            {t("why.overline")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            A standard method for international projects.
+            {t("why.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 680, mx: "auto", opacity: 0.9 }}
           >
-            Online surveys are part of our standard repertoire and are used as a
-            central method within international surveys. From the first invite
-            to the final report, all processes can be fully automated.
+            {t("why.content")}
           </Typography>
         </Stack>
 

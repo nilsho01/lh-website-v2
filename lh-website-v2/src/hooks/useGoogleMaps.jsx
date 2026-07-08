@@ -2,13 +2,12 @@
 import { useEffect, useState } from "react";
 
 export const useGoogleMaps = () => {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(
+    () => typeof window !== "undefined" && !!(window.google && window.google.maps)
+  );
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.google && window.google.maps) {
-      setLoaded(true);
-      return;
-    }
+    if (loaded) return;
 
     const existingScript = document.querySelector(
       'script[src^="https://maps.googleapis.com/maps/api/js"]'
@@ -32,7 +31,7 @@ export const useGoogleMaps = () => {
     script.onerror = () =>
       console.error("Failed to load Google Maps JavaScript API");
     document.head.appendChild(script);
-  }, []);
+  }, [loaded]);
 
   return loaded;
 };

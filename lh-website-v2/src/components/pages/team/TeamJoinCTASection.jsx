@@ -115,8 +115,9 @@ const JoinTeamCTASection = () => {
 
                 <Button
                   component={RouterLink}
-                  to="/jobs"
+                  to="/job-career"
                   variant="contained"
+                  color="secondary"
                   size="large"
                   endIcon={<ArrowForwardIcon />}
                   sx={{

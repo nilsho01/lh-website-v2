@@ -26,7 +26,7 @@ const Container = ({ header, children, includeMargin = true}) => {
                         backgroundColor: "primary.main"
                     }
                 }}>
-                    <Typography variant="5h" fontWeight="700" textTransform="uppercase">
+                    <Typography variant="h5" fontWeight="700" textTransform="uppercase">
                         {header}
                     </Typography>
                 </Box>

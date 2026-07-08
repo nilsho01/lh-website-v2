@@ -12,6 +12,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import HeroSection from "../../common/HeroSection";
 
@@ -28,6 +29,7 @@ const ReportingHeroSection = ({
   onJumpDashboards,
   onJumpGovernance,
 }) => {
+  const { t } = useTranslation("reporting");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
@@ -66,36 +68,34 @@ const ReportingHeroSection = ({
                   variant="overline"
                   sx={{ letterSpacing: 3, opacity: 0.9 }}
                 >
-                  Reporting systems · Financial markets
+                  {t("hero_section.header")}
                 </Typography>
 
                 <Typography variant="h4" component="h1" fontWeight={700}>
-                  Automated charts with room for detailed analyses.
+                  {t("hero_section.title")}
                 </Typography>
 
                 <Typography variant="body1" sx={{ maxWidth: 540, opacity: 0.95 }}>
-                  We build reporting systems that present complex results in a
-                  condensed, intuitive way – while still allowing your experts
-                  to drill down into details when needed.
+                  {t("hero_section.content")}
                 </Typography>
 
                 <Stack direction="row" spacing={1.5} mt={1} flexWrap="wrap">
                   <Chip
                     icon={<DashboardIcon />}
-                    label="Online dashboards"
+                    label={t("hero_section.chips.online_dashboards")}
                     size="small"
-                    color="primary"
+                    color="secondary"
                     variant="filled"
                   />
                   <Chip
                     icon={<InsightsIcon />}
-                    label="Management summaries"
+                    label={t("hero_section.chips.management_summaries")}
                     size="small"
                     variant="outlined"
                   />
                   <Chip
                     icon={<TimelineIcon />}
-                    label="Time series & trends"
+                    label={t("hero_section.chips.time_series")}
                     size="small"
                     variant="outlined"
                   />
@@ -114,7 +114,7 @@ const ReportingHeroSection = ({
                     }}
                     onClick={onJumpWhy}
                   >
-                    Why reporting matters
+                    {t("hero_section.buttons.why")}
                   </Button>
 
                   <Button
@@ -128,7 +128,7 @@ const ReportingHeroSection = ({
                     }}
                     onClick={onJumpDashboards}
                   >
-                    Dashboard views
+                    {t("hero_section.buttons.dashboards")}
                   </Button>
 
                   <Button
@@ -143,7 +143,7 @@ const ReportingHeroSection = ({
                     }}
                     onClick={onJumpGovernance}
                   >
-                    Data & governance
+                    {t("hero_section.buttons.governance")}
                   </Button>
                 </Stack>
               </Stack>
@@ -221,23 +221,19 @@ const ReportingHeroSection = ({
 
                 <Stack spacing={2} sx={{ position: "relative", zIndex: 1 }}>
                   <Typography variant="subtitle2" sx={{ opacity: 0.8 }}>
-                    From data to decisions
+                    {t("hero_section.card.subtitle")}
                   </Typography>
                   <Typography variant="h6" fontWeight={700}>
-                    Reporting that shows the essentials at first glance.
+                    {t("hero_section.card.title")}
                   </Typography>
                   <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                    Within our online reports it is possible to carry out highly
-                    individualised and detailed analyses – without losing the
-                    big picture. Standard charts for management, flexible views
-                    for experts.
+                    {t("hero_section.card.content")}
                   </Typography>
                   <Typography
                     variant="caption"
                     sx={{ opacity: 0.85, mt: 0.5 }}
                   >
-                    Explore the sections below for use cases, dashboard types
-                    and data infrastructure.
+                    {t("hero_section.card.caption")}
                   </Typography>
                 </Stack>
               </MotionPaper>

@@ -11,46 +11,23 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const FMCustIntroSection = ({ refProp }) => {
+  const { t } = useTranslation("financial_market");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
   const [segment, setSegment] = useState("retail");
 
-  const segmentText = {
-    retail:
-      "In retail banking, satisfaction programmes focus on everyday interactions: accounts, cards, online access and simple advisory meetings. We link these experiences to churn, product holding and recommendation.",
-    insurance:
-      "In insurance, claims handling and communication during incidents are central. Satisfaction tracking helps you understand how well your processes work when customers actually need you.",
-    wealth:
-      "For wealth and asset management, trust and continuity are key. Satisfaction measurements show how advice quality, transparency and digital reporting affect long-term relationships.",
-  };
-
-  const pillars = [
-    {
-      title: "Retention & lifetime value",
-      text: "Identify which customer groups are at risk, and which experiences drive long-term loyalty and product depth.",
-      chip: "Lifetime value",
-    },
-    {
-      title: "Risk & reputation",
-      text: "Use satisfaction scores as an early indicator for reputational risk, regulatory issues and service breakdowns.",
-      chip: "Early warning",
-    },
-    {
-      title: "Commercial steering",
-      text: "Translate feedback into concrete targets for regions, branches and channels instead of generic slogans.",
-      chip: "Steering KPIs",
-    },
-  ];
+  const pillars = t("intro.pillars", { returnObjects: true });
 
   const segmentOptions = [
-    { id: "retail", label: "Retail banking" },
-    { id: "insurance", label: "Insurance" },
-    { id: "wealth", label: "Wealth management" },
+    { id: "retail", label: t("intro.segments.retail.label") },
+    { id: "insurance", label: t("intro.segments.insurance.label") },
+    { id: "wealth", label: t("intro.segments.wealth.label") },
   ];
 
   return (
@@ -61,15 +38,13 @@ const FMCustIntroSection = ({ refProp }) => {
           <Grid item xs={12} md={6}>
             <Stack spacing={2}>
               <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-                Customer satisfaction in financial markets
+                {t("intro.header")}
               </Typography>
               <Typography variant="h5" fontWeight={700}>
-                Financial decisions are based on trust, not just price.
+                {t("intro.title")}
               </Typography>
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                We design satisfaction programmes that combine representative
-                measurements with pragmatic KPIs, so your teams see what really
-                moves the needle over time.
+                {t("intro.content")}
               </Typography>
 
               <Stack
@@ -98,7 +73,7 @@ const FMCustIntroSection = ({ refProp }) => {
               </Stack>
 
               <Typography variant="body2" sx={{ opacity: 0.9, mt: 1 }}>
-                {segmentText[segment]}
+                {t(`intro.segments.${segment}.text`)}
               </Typography>
             </Stack>
           </Grid>

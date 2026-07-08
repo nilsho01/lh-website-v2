@@ -11,12 +11,14 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const CustomerSatisfactionOverviewSection = ({ refProp }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("customer_satisfaction");
 
   return (
     <Box
@@ -33,34 +35,23 @@ const CustomerSatisfactionOverviewSection = ({ refProp }) => {
           <Grid item xs={12} md={6}>
             <Stack spacing={2}>
               <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-                How our satisfaction studies work
+                {t("overview.header")}
               </Typography>
 
               <Typography variant="h5" fontWeight={700}>
-                International satisfaction studies with a fully in-house
-                workflow.
+                {t("overview.title")}
               </Typography>
 
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                We offer international satisfaction studies and present results
-                in a structured manner. Whether the focus is on customer,
-                dealer or employee satisfaction, each study follows a clear
-                logic: design, data collection, analysis and reporting are all
-                handled by one team.
+                {t("overview.paragraph_1")}
               </Typography>
 
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                This integrated approach avoids breaks between agencies,
-                platforms and dashboards. Questionnaires, fieldwork setups,
-                weighting and databases are aligned from the start so that
-                results can be compared over time and between markets.
+                {t("overview.paragraph_2")}
               </Typography>
 
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                As with our automotive studies, all steps of the project, from
-                data collection through to reporting, are conducted in-house.
-                This gives us control over timelines, quality checks and the way
-                results are translated into practical recommendations.
+                {t("overview.paragraph_3")}
               </Typography>
 
               <Stack
@@ -70,19 +61,19 @@ const CustomerSatisfactionOverviewSection = ({ refProp }) => {
                 sx={{ mt: 1 }}
               >
                 <Chip
-                  label="Design & methodology"
+                  label={t("overview.chips.design_methodology")}
                   size="small"
                   variant="outlined"
                   sx={{ borderRadius: 999 }}
                 />
                 <Chip
-                  label="Fieldwork & data quality"
+                  label={t("overview.chips.fieldwork_data_quality")}
                   size="small"
                   variant="outlined"
                   sx={{ borderRadius: 999 }}
                 />
                 <Chip
-                  label="Online reporting & exports"
+                  label={t("overview.chips.online_reporting_exports")}
                   size="small"
                   variant="outlined"
                   sx={{ borderRadius: 999 }}
@@ -94,20 +85,7 @@ const CustomerSatisfactionOverviewSection = ({ refProp }) => {
           {/* Right: compact process cards */}
           <Grid item xs={12} md={6}>
             <Grid container spacing={3}>
-              {[
-                {
-                  title: "Design & sampling",
-                  text: "Clarification of objectives, questionnaire design and definition of target groups and samples per market.",
-                },
-                {
-                  title: "Fieldwork & data preparation",
-                  text: "Multi-country fieldwork, automated plausibility checks, coding and preparation of structured datasets.",
-                },
-                {
-                  title: "Reporting & activation",
-                  text: "Online dashboards, management summaries and workshops that turn results into concrete retention measures.",
-                },
-              ].map((item, idx) => (
+              {t("overview.cards", { returnObjects: true }).map((item, idx) => (
                 <Grid item xs={12} key={item.title}>
                   <MotionPaper
                     initial={{ opacity: 0, y: 15 }}

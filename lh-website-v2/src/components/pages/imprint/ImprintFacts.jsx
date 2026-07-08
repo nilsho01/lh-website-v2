@@ -70,6 +70,7 @@ const ImprintFacts = () => {
                     label={t('facts.fact.1.tag')}
                     size="small"
                     variant="outlined"
+                    color="secondary"
                 />
                 <Typography variant="body2">
                     {t('facts.fact.1.content')}
@@ -80,6 +81,7 @@ const ImprintFacts = () => {
                     label={t('facts.fact.2.tag')}
                     size="small"
                     variant="outlined"
+                    color="secondary"
                 />
                 <Typography variant="body2">
                     {t('facts.fact.2.content')}
@@ -90,6 +92,7 @@ const ImprintFacts = () => {
                     label={t('facts.fact.3.tag')}
                     size="small"
                     variant="outlined"
+                    color="secondary"
                 />
                 <Typography variant="body2">
                     {t('facts.fact.3.content')}

@@ -3,7 +3,6 @@ import {
   Box,
   Container,
   Grid,
-  useTheme,
 } from "@mui/material";
 
 import ParallaxClouds from "../components/common/ParallaxClouds";

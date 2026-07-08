@@ -7,6 +7,14 @@ const StreetViewPanoramaView = ({ position, pov }) => {
   const containerRef = useRef(null);
   const mapsLoaded = useGoogleMaps();
 
+  // Nur die Primitive als Effect-Abhängigkeiten verwenden,
+  // damit neue Objekt-Identitäten keinen Re-Init auslösen
+  const lat = position?.lat;
+  const lng = position?.lng;
+  const heading = pov?.heading ?? 0;
+  const pitch = pov?.pitch ?? 0;
+  const zoom = pov?.zoom ?? 1;
+
   useEffect(() => {
     if (!mapsLoaded || !containerRef.current) return;
     if (!window.google || !window.google.maps) return;
@@ -24,12 +32,8 @@ const StreetViewPanoramaView = ({ position, pov }) => {
           if (cancelled || !containerRef.current) return;
 
           pano = new StreetViewPanorama(containerRef.current, {
-            position,
-            pov: {
-              heading: pov?.heading ?? 0,
-              pitch: pov?.pitch ?? 0,
-              zoom: pov?.zoom ?? 1,
-            },
+            position: { lat, lng },
+            pov: { heading, pitch, zoom },
             disableDefaultUI: true,
             zoomControl: false,
             panControl: false,
@@ -49,12 +53,8 @@ const StreetViewPanoramaView = ({ position, pov }) => {
           pano = new window.google.maps.StreetViewPanorama(
             containerRef.current,
             {
-              position,
-              pov: {
-                heading: pov?.heading ?? 0,
-                pitch: pov?.pitch ?? 0,
-                zoom: pov?.zoom ?? 1,
-              },
+              position: { lat, lng },
+              pov: { heading, pitch, zoom },
               disableDefaultUI: true,
               zoomControl: false,
               panControl: false,
@@ -85,14 +85,7 @@ const StreetViewPanoramaView = ({ position, pov }) => {
         pano.setVisible(false);
       }
     };
-  }, [
-    mapsLoaded,
-    position?.lat,
-    position?.lng,
-    pov?.heading,
-    pov?.pitch,
-    pov?.zoom,
-  ]);
+  }, [mapsLoaded, lat, lng, heading, pitch, zoom]);
 
   return (
     <Box

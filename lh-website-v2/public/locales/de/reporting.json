@@ -1,0 +1,109 @@
+{
+    "hero_section": {
+        "header": "Reporting-Systeme · Finanzmärkte",
+        "title": "Automatisierte Charts mit Raum für detaillierte Analysen.",
+        "content": "Wir entwickeln Reporting-Systeme, die komplexe Ergebnisse verdichtet und intuitiv darstellen – und Ihren Experten dennoch erlauben, bei Bedarf tief in die Details einzusteigen.",
+        "chips": {
+            "online_dashboards": "Online-Dashboards",
+            "management_summaries": "Management-Summaries",
+            "time_series": "Zeitreihen & Trends"
+        },
+        "buttons": {
+            "why": "Warum Reporting wichtig ist",
+            "dashboards": "Dashboard-Ansichten",
+            "governance": "Daten & Governance"
+        },
+        "card": {
+            "subtitle": "Von Daten zu Entscheidungen",
+            "title": "Reporting, das das Wesentliche auf den ersten Blick zeigt.",
+            "content": "In unseren Online-Reports sind hochgradig individualisierte und detaillierte Analysen möglich – ohne den Gesamtüberblick zu verlieren. Standard-Charts für das Management, flexible Ansichten für Experten.",
+            "caption": "Entdecken Sie in den folgenden Abschnitten Anwendungsfälle, Dashboard-Typen und Dateninfrastruktur."
+        }
+    },
+    "why_section": {
+        "header": "Warum Reporting-Systeme",
+        "title": "Von komplexen Ergebnissen zu klaren Geschichten.",
+        "subtitle": "Reporting-Systeme übersetzen detaillierte Forschungs- und Tracking-Ergebnisse in übersichtliche Ansichten. Das Ziel: das Wesentliche auf den ersten Blick zeigen und gleichzeitig alle Details im Hintergrund verfügbar halten.",
+        "items": [
+            {
+                "title": "Strukturierte Daten als Basis",
+                "text": "Strukturierte Daten und Datenbankmanagement sind die Grundlage für detailliertes und stabiles Reporting – insbesondere wenn Projekte über Jahre und Märkte hinweg laufen.",
+                "chip": "Stabiles Fundament"
+            },
+            {
+                "title": "Verdichtete & individualisierte Ansichten",
+                "text": "Wir verdichten komplexe Ergebnisse zu klaren Kennzahlen und Filtern – zugeschnitten auf unterschiedliche Nutzergruppen wie Management, Experten und lokale Teams.",
+                "chip": "Klarheit & Relevanz"
+            },
+            {
+                "title": "Kontinuierliches Monitoring",
+                "text": "Kampagnen, Zufriedenheit und Rücklaufquoten lassen sich kontinuierlich beobachten – sowohl der aktuelle Status als auch die angestrebten Zielwerte.",
+                "chip": "Monitoring"
+            }
+        ]
+    },
+    "dashboards_section": {
+        "header": "Dashboard-Ansichten",
+        "title": "Maßgeschneidertes Reporting für unterschiedliche Nutzergruppen.",
+        "subtitle": "Dieselben zugrunde liegenden Daten können sehr unterschiedlich dargestellt werden – je nachdem, ob Sie auf Vorstandsebene steuern, Details analysieren oder ein lokales Team führen.",
+        "choose_view": "Wählen Sie Ihre Ansicht",
+        "toggle_hint": "Wechseln Sie zwischen verschiedenen Dashboard-Typen und sehen Sie, wie dieselben Daten die Steuerung auf Vorstandsebene, Expertenanalysen und das lokale Management unterstützen können.",
+        "modes": [
+            {
+                "label": "Management-Überblick",
+                "chip": "High-Level-Ansicht",
+                "intro": "Auf Überblicksebene werden Standard-KPIs und Trends kompakt dargestellt, sodass das Management Status und Entwicklung auf einen Blick erfasst.",
+                "cards": [
+                    "Executive-Dashboards mit wenigen zentralen KPIs.",
+                    "Zeitreihen-Ansichten zur Verfolgung von Entwicklungen über mehrere Wellen.",
+                    "Ampel-Indikatoren für Zielwerte und Schwellenwerte."
+                ]
+            },
+            {
+                "label": "Experten-Detailansicht",
+                "chip": "Drill-down",
+                "intro": "Detailansichten ermöglichen es Experten, nach Segment, Zeit, Produkt und Kanal zu filtern – bei transparenten Definitionen und Filtern.",
+                "cards": [
+                    "Flexible Filter für Märkte, Produkte, Segmente und Zeiträume.",
+                    "Drill-down vom Gesamtergebnis zu spezifischen Untergruppen oder Fragen.",
+                    "Download-Optionen für detaillierte Tabellen und Mikrodaten-Auszüge."
+                ]
+            },
+            {
+                "label": "Lokale & Filial-Ansicht",
+                "chip": "Operative Ansicht",
+                "intro": "Filial- und lokale Ansichten heben hervor, was vor Ort relevant ist, und vergleichen jede Einheit mit Benchmarks – so können Teams konkret steuern.",
+                "cards": [
+                    "Einfache Dashboards für Nicht-Analysten mit nur wenigen KPIs.",
+                    "Vergleich mit dem Netzwerkdurchschnitt und vordefinierten Peer-Groups.",
+                    "Optionale Kommentar- und Maßnahmenfelder für das lokale Follow-up."
+                ]
+            }
+        ]
+    },
+    "governance_section": {
+        "header": "Daten & Governance",
+        "title": "Reporting-Systeme, die sich nahtlos in Ihre Infrastruktur einfügen.",
+        "subtitle": "Reporting ist nur dann nachhaltig, wenn Datenflüsse, Zugriffsrechte und Definitionen klar geregelt sind. Wir konzipieren Systeme, die über Jahre bestehen – nicht nur für ein einzelnes Projekt.",
+        "items": [
+            {
+                "title": "Daten-Pipelines & Schnittstellen",
+                "text": "Wir richten stabile Exporte und APIs von Reporting-Systemen zu Ihren BI-Tools, Ihrem Data Warehouse oder Data Lake ein – mit klaren Schemata und IDs.",
+                "chip": "Integration",
+                "extra": "Dazu gehören standardisierte Aktualisierungszyklen und ein Monitoring der Datenflüsse."
+            },
+            {
+                "title": "Zugriffskontrolle & Rollen",
+                "text": "Rollenbasierte Zugriffe stellen sicher, dass sensible Kennzahlen und kundenbezogene Daten nur für autorisierte Nutzer sichtbar sind.",
+                "chip": "Zugriff & Datenschutz",
+                "extra": "Ansichten können an interne Strukturen wie Länder, Regionen oder Filialen angepasst werden."
+            },
+            {
+                "title": "Definitionen & Dokumentation",
+                "text": "KPIs, Filter und Umfragevariablen werden so dokumentiert, dass sowohl Analysten als auch Fachfremde sie verstehen.",
+                "chip": "Transparenz",
+                "extra": "Wir stellen einfache Daten-Glossare, Filterbeschreibungen und FAQs direkt in oder neben den Dashboards bereit."
+            }
+        ]
+    }
+}

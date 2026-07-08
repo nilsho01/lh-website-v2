@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import StorageIcon from "@mui/icons-material/Storage";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
@@ -19,29 +20,14 @@ import MonitorHeartIcon from "@mui/icons-material/MonitorHeart";
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const ReportingWhySection = ({ refProp }) => {
+  const { t } = useTranslation("reporting");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
-  const items = [
-    {
-      icon: <StorageIcon />,
-      title: "Structured data as a base",
-      text: "Structured data and database management are the basis of detailed and stable reporting – especially when projects run across years and markets.",
-      chip: "Stable foundation",
-    },
-    {
-      icon: <FilterAltIcon />,
-      title: "Condensed & individualised views",
-      text: "We condense complex results into clear figures and filters, tailored to different user groups such as management, experts and local teams.",
-      chip: "Clarity & relevance",
-    },
-    {
-      icon: <MonitorHeartIcon />,
-      title: "Continuous monitoring",
-      text: "Campaigns, satisfaction and response rates can be monitored continuously, tracking both current status and desired targets.",
-      chip: "Monitoring",
-    },
-  ];
+  const icons = [<StorageIcon />, <FilterAltIcon />, <MonitorHeartIcon />];
+  const items = t("why_section.items", { returnObjects: true }).map(
+    (item, idx) => ({ ...item, icon: icons[idx] })
+  );
 
   return (
     <Box ref={refProp} sx={{ py: { xs: 5, md: 7 } }}>
@@ -53,18 +39,16 @@ const ReportingWhySection = ({ refProp }) => {
           textAlign="center"
         >
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Why reporting systems
+            {t("why_section.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            From complex results to clean stories.
+            {t("why_section.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 760, mx: "auto", opacity: 0.9 }}
           >
-            Reporting systems translate detailed research and tracking results
-            into clear views. The objective: show the essentials at first sight
-            while keeping all detail available in the background.
+            {t("why_section.subtitle")}
           </Typography>
         </Stack>
 

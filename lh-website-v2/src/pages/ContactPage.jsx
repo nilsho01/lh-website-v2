@@ -1,6 +1,6 @@
 // src/pages/ContactPage.jsx
 import React from "react";
-import { Box, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 
 import PageWrapper from "../components/common/PageWrapper";
 import ParallaxClouds from "../components/common/ParallaxClouds";
@@ -12,7 +12,6 @@ import ContactWhySection from "../components/pages/contact/ContactWhySection";
 import ContactCTASection from "../components/pages/contact/ContactCTASection";
 
 const ContactPage = () => {
-  const theme = useTheme();
 
   return (
       <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>

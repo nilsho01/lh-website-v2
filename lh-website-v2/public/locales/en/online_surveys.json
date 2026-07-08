@@ -1,0 +1,126 @@
+{
+    "hero": {
+        "overline": "Online surveys · International research",
+        "title": "From first invite to final dashboard – fully automated online surveys.",
+        "content": "We design and run online surveys that work across devices, languages and markets. From sampling to reporting, processes can be fully automated while quality stays under control.",
+        "chips": {
+            "multi_device": "Multi-device",
+            "clean_data": "Clean data",
+            "automation": "Automation"
+        },
+        "buttons": {
+            "why": "Why online surveys",
+            "process": "See the process",
+            "automation": "Automation & reporting"
+        },
+        "card": {
+            "subtitle": "One pipeline, many markets",
+            "title": "International online fieldwork under one roof.",
+            "content": "From invitations and reminders to quotas and redirects: we keep all steps of the online survey process in-house, ensuring consistent quality and documentation for every country.",
+            "caption": "Use the sections below to explore design, process and automation in more detail."
+        }
+    },
+    "why": {
+        "overline": "Why online surveys",
+        "title": "A standard method for international projects.",
+        "content": "Online surveys are part of our standard repertoire and are used as a central method within international surveys. From the first invite to the final report, all processes can be fully automated.",
+        "items": [
+            {
+                "title": "Speed & scalability",
+                "text": "Reach thousands of respondents within days instead of weeks, with clear turnaround times and predictable costs.",
+                "chip": "Fast fieldwork"
+            },
+            {
+                "title": "International consistency",
+                "text": "Use one core questionnaire, adapted to local languages and markets, while keeping your KPIs aligned.",
+                "chip": "Global setup"
+            },
+            {
+                "title": "Clean, structured data",
+                "text": "Routing, validation and automated quality checks ensure that your datasets are ready for modelling and reporting.",
+                "chip": "Quality & structure"
+            }
+        ]
+    },
+    "process": {
+        "overline": "Process overview",
+        "title": "One pipeline from survey design to reporting.",
+        "content": "Explore how we move from questionnaire and invites through fieldwork and data processing into dashboards and exports.",
+        "steps": [
+            {
+                "label": "Survey design & invites",
+                "short": "Questionnaire & sample",
+                "desc": "We design online questionnaires that work across devices, using clear routing and smart validation so respondents can complete them quickly and reliably.",
+                "details": [
+                    "Questionnaire design & scripting",
+                    "Sampling, quotas & panels",
+                    "Invites, reminders & redirects"
+                ]
+            },
+            {
+                "label": "Fieldwork & data processing",
+                "short": "Cleaning & coding",
+                "desc": "Data processing includes automated plausibility checks, coding of open answers and preparation of all relevant variables for reporting and modelling.",
+                "details": [
+                    "Automated quality checks & cleaning",
+                    "Coding of open-ended answers",
+                    "Variable sets for modelling"
+                ]
+            },
+            {
+                "label": "Reporting & exports",
+                "short": "Dashboards & files",
+                "desc": "Results are loaded into online dashboards or static reports. Standard figures can be scheduled, while ad-hoc filters let you explore sub-groups on demand.",
+                "details": [
+                    "Role-based dashboards",
+                    "Standardised KPIs & trending",
+                    "Exports to BI tools or data-lake"
+                ]
+            }
+        ],
+        "wheel_text": "From <strong>survey design</strong> through <strong>processing</strong> to <strong>reporting</strong> – one connected pipeline."
+    },
+    "automation": {
+        "overline": "Automation & reporting",
+        "title": "Online surveys that plug into your reporting landscape.",
+        "content": "Whether you prefer dashboards, slide decks or raw data exports – we build a reporting layer that matches your organisation and connects to existing tools instead of adding yet another silo.",
+        "focus_label": "Focus area",
+        "toggle_hint": "Toggle between automation, integration and alerts to see how we connect online surveys with your existing infrastructure.",
+        "current_focus": "Current focus: {{label}}",
+        "modes": [
+            {
+                "label": "Automation",
+                "headline": "Automated from invite to export.",
+                "text": "Invites, reminders, quotas and redirects can be automated across waves and countries – with documentation and monitoring in the background.",
+                "bullets": [
+                    "Scheduled fieldwork windows",
+                    "Automated reminders & redirects",
+                    "Quota checks & monitoring"
+                ],
+                "tag": "Process automation"
+            },
+            {
+                "label": "Integration",
+                "headline": "Connected to your systems.",
+                "text": "Survey data can be streamed into your data warehouse or BI tools, using stable schemas and IDs that match your internal structures.",
+                "bullets": [
+                    "Stable IDs & metadata",
+                    "Exports to BI / data-lake",
+                    "APIs for dashboards"
+                ],
+                "tag": "Data integration"
+            },
+            {
+                "label": "Alerts",
+                "headline": "Alerts when things go wrong.",
+                "text": "Threshold-based alerts signal when satisfaction drops or when quotas, samples or technical KPIs behave unexpectedly.",
+                "bullets": [
+                    "Thresholds per KPI & segment",
+                    "Notifications to project teams",
+                    "Optional closed-loop follow-up"
+                ],
+                "tag": "Monitoring"
+            }
+        ]
+    }
+}

@@ -12,6 +12,7 @@ import {
   Button,
 } from "@mui/material";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import HeroSection from "../../common/HeroSection";
 
 const MotionDiv = motion.div;
@@ -25,6 +26,7 @@ const FinancialMarketHero = ({
   onJumpSurveys,
   onJumpReporting,
 }) => {
+  const { t } = useTranslation("financial_market");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
   const chipVariant = isDark ? "outlined" : "filled";
@@ -76,7 +78,7 @@ const FinancialMarketHero = ({
                       opacity: 0.8,
                     }}
                   >
-                    Financial markets & customer satisfaction
+                    {t("hero.header")}
                   </Typography>
 
                   <Typography
@@ -100,7 +102,7 @@ const FinancialMarketHero = ({
                           }
                     }
                   >
-                    Turning satisfaction scores into decisions that move capital.
+                    {t("hero.title")}
                   </Typography>
 
                   <Typography
@@ -114,10 +116,7 @@ const FinancialMarketHero = ({
                         : "0 0 10px rgba(0,0,0,0.5)",
                     }}
                   >
-                    We design customer satisfaction programmes for banks,
-                    insurance companies and wealth managers that link
-                    experiences at every touchpoint to KPIs, ROI and long-term
-                    loyalty.
+                    {t("hero.content")}
                   </Typography>
 
                   <Stack
@@ -140,7 +139,7 @@ const FinancialMarketHero = ({
                         textTransform: "none",
                       }}
                     >
-                      Custumer satisfaction
+                      {t("hero.buttons.customers")}
                     </Button>
                     <Button
                       variant="outlined"
@@ -152,7 +151,7 @@ const FinancialMarketHero = ({
                         textTransform: "none",
                       }}
                     >
-                      Surveys design
+                      {t("hero.buttons.surveys")}
                     </Button>
                     <Button
                       variant="outlined"
@@ -164,7 +163,7 @@ const FinancialMarketHero = ({
                         textTransform: "none",
                       }}
                     >
-                      Reportingsystems
+                      {t("hero.buttons.reporting")}
                     </Button>
                   </Stack>
 
@@ -179,21 +178,21 @@ const FinancialMarketHero = ({
                     }}
                   >
                     <Chip
-                      label="Retail banking"
+                      label={t("hero.chips.retail")}
                       size="small"
                       variant={chipVariant}
                       color={!isDark ? "secondary" : "default"}
                       sx={{ borderRadius: 999 }}
                     />
                     <Chip
-                      label="Insurance"
+                      label={t("hero.chips.insurance")}
                       size="small"
                       variant={chipVariant}
                       color={!isDark ? "secondary" : "default"}
                       sx={{ borderRadius: 999 }}
                     />
                     <Chip
-                      label="Wealth management"
+                      label={t("hero.chips.wealth")}
                       size="small"
                       variant={chipVariant}
                       color={!isDark ? "secondary" : "default"}
@@ -273,18 +272,14 @@ const FinancialMarketHero = ({
 
                 <Stack spacing={2} sx={{ position: "relative", zIndex: 1 }}>
                   <Typography variant="subtitle2" sx={{ opacity: 0.8 }}>
-                    From scorecards to steering
+                    {t("hero.card.header")}
                   </Typography>
                   <Typography variant="h6" fontWeight={700}>
-                    Customer satisfaction as an early-warning system.
+                    {t("hero.card.title")}
                   </Typography>
 
                   <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                    We connect survey feedback with your operational data:
-                    complaints, churn, product usage, NPS and employee metrics.
-                    The result is a reporting layer that translates experiences
-                    into concrete actions for branches, contact centres and
-                    digital teams.
+                    {t("hero.card.content")}
                   </Typography>
                 </Stack>
               </MotionPaper>

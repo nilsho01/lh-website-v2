@@ -14,6 +14,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import SearchIcon from "@mui/icons-material/Search";
@@ -22,6 +23,7 @@ import LoopIcon from "@mui/icons-material/Loop";
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const FMCustProgramsSection = ({ refProp }) => {
+  const { t } = useTranslation("financial_market");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
@@ -29,38 +31,26 @@ const FMCustProgramsSection = ({ refProp }) => {
     {
       id: "survey",
       icon: <ScheduleIcon />,
-      title: "Continuous tracking",
-      tag: "Quarterly / monthly",
-      desc: "Stable, long-term tracking of satisfaction, loyalty and NPS.",
-      bullets: [
-        "Consistent questionnaires and weighting over time",
-        "Regular management updates and automated exports",
-        "Benchmarks for regions, channels and products",
-      ],
+      title: t("programs.items.survey.title"),
+      tag: t("programs.items.survey.tag"),
+      desc: t("programs.items.survey.desc"),
+      bullets: t("programs.items.survey.bullets", { returnObjects: true }),
     },
     {
       id: "adhoc",
       icon: <SearchIcon />,
-      title: "Ad-hoc deep dives",
-      tag: "When something changes",
-      desc: "Focused modules around specific questions or events.",
-      bullets: [
-        "Launch of new products or pricing models",
-        "Regulatory changes or process redesigns",
-        "Mergers, rebrandings or channel shifts",
-      ],
+      title: t("programs.items.adhoc.title"),
+      tag: t("programs.items.adhoc.tag"),
+      desc: t("programs.items.adhoc.desc"),
+      bullets: t("programs.items.adhoc.bullets", { returnObjects: true }),
     },
     {
       id: "closedloop",
       icon: <LoopIcon />,
-      title: "Closed-loop feedback",
-      tag: "From score to action",
-      desc: "Individual cases trigger workflows and follow-ups.",
-      bullets: [
-        "Alerts for very dissatisfied customers",
-        "Routing of feedback to branches or service teams",
-        "Tracking of resolution and learning loops",
-      ],
+      title: t("programs.items.closedloop.title"),
+      tag: t("programs.items.closedloop.tag"),
+      desc: t("programs.items.closedloop.desc"),
+      bullets: t("programs.items.closedloop.bullets", { returnObjects: true }),
     },
   ];
 
@@ -80,18 +70,16 @@ const FMCustProgramsSection = ({ refProp }) => {
       <Container maxWidth="lg">
         <Stack spacing={1.5} mb={4} alignItems="center" textAlign="center">
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Programme design
+            {t("programs.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            From one-off surveys to continuous decision support.
+            {t("programs.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 720, mx: "auto", opacity: 0.9 }}
           >
-            Combine long-term tracking with focused deep dives and closed-loop
-            feedback. You decide which elements you need – we make sure they fit
-            together technically and methodologically.
+            {t("programs.content")}
           </Typography>
         </Stack>
 
@@ -192,7 +180,7 @@ const FMCustProgramsSection = ({ refProp }) => {
         >
           <Stack spacing={1.5}>
             <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>
-              Selected programme:
+              {t("programs.selected_programme")}
             </Typography>
             <Typography variant="h6" fontWeight={700}>
               {activeProgram.title}

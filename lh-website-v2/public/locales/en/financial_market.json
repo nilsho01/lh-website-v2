@@ -1,0 +1,166 @@
+{
+    "hero": {
+        "header": "Financial markets & customer satisfaction",
+        "title": "Turning satisfaction scores into decisions that move capital.",
+        "content": "We design customer satisfaction programmes for banks, insurance companies and wealth managers that link experiences at every touchpoint to KPIs, ROI and long-term loyalty.",
+        "buttons": {
+            "customers": "Customer satisfaction",
+            "surveys": "Survey design",
+            "reporting": "Reporting systems"
+        },
+        "chips": {
+            "retail": "Retail banking",
+            "insurance": "Insurance",
+            "wealth": "Wealth management"
+        },
+        "card": {
+            "header": "From scorecards to steering",
+            "title": "Customer satisfaction as an early-warning system.",
+            "content": "We connect survey feedback with your operational data: complaints, churn, product usage, NPS and employee metrics. The result is a reporting layer that translates experiences into concrete actions for branches, contact centres and digital teams."
+        }
+    },
+    "intro": {
+        "header": "Customer satisfaction in financial markets",
+        "title": "Financial decisions are based on trust, not just price.",
+        "content": "We design satisfaction programmes that combine representative measurements with pragmatic KPIs, so your teams see what really moves the needle over time.",
+        "segments": {
+            "retail": {
+                "label": "Retail banking",
+                "text": "In retail banking, satisfaction programmes focus on everyday interactions: accounts, cards, online access and simple advisory meetings. We link these experiences to churn, product holding and recommendation."
+            },
+            "insurance": {
+                "label": "Insurance",
+                "text": "In insurance, claims handling and communication during incidents are central. Satisfaction tracking helps you understand how well your processes work when customers actually need you."
+            },
+            "wealth": {
+                "label": "Wealth management",
+                "text": "For wealth and asset management, trust and continuity are key. Satisfaction measurements show how advice quality, transparency and digital reporting affect long-term relationships."
+            }
+        },
+        "pillars": [
+            {
+                "title": "Retention & lifetime value",
+                "text": "Identify which customer groups are at risk, and which experiences drive long-term loyalty and product depth.",
+                "chip": "Lifetime value"
+            },
+            {
+                "title": "Risk & reputation",
+                "text": "Use satisfaction scores as an early indicator for reputational risk, regulatory issues and service breakdowns.",
+                "chip": "Early warning"
+            },
+            {
+                "title": "Commercial steering",
+                "text": "Translate feedback into concrete targets for regions, branches and channels instead of generic slogans.",
+                "chip": "Steering KPIs"
+            }
+        ]
+    },
+    "channels": {
+        "header": "Touchpoints & channels",
+        "title": "A consistent view across all customer journeys.",
+        "content": "We map your main journeys and then align measurements and KPIs. Select a touchpoint to see how we typically structure indicators and feedback.",
+        "selected_touchpoint": "Selected touchpoint:",
+        "typical_kpis": "Typical KPIs & indicators:",
+        "items": {
+            "branches": {
+                "title": "Branches & advisors",
+                "desc": "Complex products and advice situations are still handled face-to-face.",
+                "kpis": [
+                    "Advice quality",
+                    "Clarity of explanations",
+                    "Perceived fairness"
+                ]
+            },
+            "contact": {
+                "title": "Contact centres",
+                "desc": "When something goes wrong, the call centre becomes the main touchpoint.",
+                "kpis": [
+                    "First contact resolution",
+                    "Waiting time & perceived effort",
+                    "Tone of voice"
+                ]
+            },
+            "digital": {
+                "title": "Online banking & apps",
+                "desc": "Everyday usage happens in digital channels – especially for younger segments.",
+                "kpis": [
+                    "Task completion (e.g. transfers)",
+                    "Ease of use on mobile",
+                    "Perceived security"
+                ]
+            },
+            "claims": {
+                "title": "Claims & incidents",
+                "desc": "For insurance and payments, claims handling defines long-term loyalty.",
+                "kpis": [
+                    "Speed of processing",
+                    "Fairness of outcome",
+                    "Transparency of communication"
+                ]
+            }
+        }
+    },
+    "programs": {
+        "header": "Programme design",
+        "title": "From one-off surveys to continuous decision support.",
+        "content": "Combine long-term tracking with focused deep dives and closed-loop feedback. You decide which elements you need – we make sure they fit together technically and methodologically.",
+        "selected_programme": "Selected programme:",
+        "items": {
+            "survey": {
+                "title": "Continuous tracking",
+                "tag": "Quarterly / monthly",
+                "desc": "Stable, long-term tracking of satisfaction, loyalty and NPS.",
+                "bullets": [
+                    "Consistent questionnaires and weighting over time",
+                    "Regular management updates and automated exports",
+                    "Benchmarks for regions, channels and products"
+                ]
+            },
+            "adhoc": {
+                "title": "Ad-hoc deep dives",
+                "tag": "When something changes",
+                "desc": "Focused modules around specific questions or events.",
+                "bullets": [
+                    "Launch of new products or pricing models",
+                    "Regulatory changes or process redesigns",
+                    "Mergers, rebrandings or channel shifts"
+                ]
+            },
+            "closedloop": {
+                "title": "Closed-loop feedback",
+                "tag": "From score to action",
+                "desc": "Individual cases trigger workflows and follow-ups.",
+                "bullets": [
+                    "Alerts for very dissatisfied customers",
+                    "Routing of feedback to branches or service teams",
+                    "Tracking of resolution and learning loops"
+                ]
+            }
+        }
+    },
+    "insights": {
+        "header": "From data to insight",
+        "title": "Reporting that supports decisions, not just slides.",
+        "content": "We design reporting environments where satisfaction scores live alongside your financial KPIs. The result: management views for steering, and operational views for teams.",
+        "steps": {
+            "foundations": {
+                "title": "Data foundations",
+                "desc": "Clean survey data, harmonised time series and robust weighting so trends are real and comparable between segments.",
+                "extra": "We define which KPIs are central, which are supporting, and how they are documented across studies.",
+                "chip": "Methodology"
+            },
+            "dashboards": {
+                "title": "Dashboards & alerts",
+                "desc": "Role-based dashboards for management, branches and call centres, plus alerts when critical indicators drop.",
+                "extra": "Standard figures are scheduled, while flexible filters allow exploration of sub-groups on demand.",
+                "chip": "Reporting"
+            },
+            "story": {
+                "title": "Storytelling & action",
+                "desc": "Management summaries, workshops and playbooks that translate findings into concrete actions for teams.",
+                "extra": "We write and visualise results so that your teams can work with them without needing a statistician at their side.",
+                "chip": "Activation"
+            }
+        }
+    }
+}

@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
@@ -26,68 +27,40 @@ const SEGMENTS = [
   {
     id: "automotive",
     icon: <DirectionsCarIcon />,
-    label: "Automotive",
     image: "/wallpapers/customer_automotive.jpg",
-    text: "In the automotive sector we measure satisfaction along the entire ownership journey: from sales and delivery through service, repair and remarketing. Dealer satisfaction is often integrated so that manufacturer, retailer and end-customer perspectives can be compared.",
-    bullets: [
-      "Customer & dealer satisfaction surveys",
-      "Sales, aftersales and connected services",
-      "Benchmarks across brands, networks and markets",
-    ],
   },
   {
     id: "finance",
     icon: <AccountBalanceIcon />,
-    label: "Finance",
     image: "/wallpapers/customer_finance.jpg",
-    text: "In banking and insurance, satisfaction programmes focus on trust, transparency and ease of use. We link feedback from branches, contact centres and digital channels directly to retention and product usage.",
-    bullets: [
-      "Customer and employee satisfaction",
-      "Branches, call centres and digital channels",
-      "Link to churn and cross-sell indicators",
-    ],
   },
   {
     id: "hardware",
     icon: <DevicesIcon />,
-    label: "Hardware & software",
     image: "/wallpapers/customer_software.jpg",
-    text: "For hardware and software providers, we track satisfaction across onboarding, support tickets and updates. This includes B2B and B2C environments with very different decision cycles.",
-    bullets: [
-      "Implementation, onboarding and training",
-      "Support quality and response times",
-      "Net recommendation and renewal intent",
-    ],
   },
   {
     id: "consumer",
     icon: <ShoppingBagIcon />,
-    label: "Consumer goods",
     image: "/wallpapers/customer_consumer.jpg",
-    text: "In consumer goods, brand perception and usage situations are key. Satisfaction studies help clarify how communication, availability and product experience interact.",
-    bullets: [
-      "Brand, product and retail experience",
-      "Multi-country concept & product tests",
-      "Tracking of repeat purchase and loyalty",
-    ],
   },
   {
     id: "services",
     icon: <MiscellaneousServicesIcon />,
-    label: "Services & others",
     image: "/wallpapers/customer_services.jpg",
-    text: "For services and mixed portfolios, we support satisfaction measurements that combine transactional feedback with periodic relationship surveys.",
-    bullets: [
-      "Transactional and relationship surveys",
-      "Service level, quality and perceived value",
-      "Reporting at contract, client and portfolio level",
-    ],
   },
 ];
 
 const SegmentCard = ({ seg, index, totalSlides, dense = false }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("customer_satisfaction");
+
+  const label = t(`segments.items.${seg.id}.label`);
+  const text = t(`segments.items.${seg.id}.text`);
+  const bullets = t(`segments.items.${seg.id}.bullets`, {
+    returnObjects: true,
+  });
 
   const primary = theme.palette.primary;
   const secondary = theme.palette.secondary || theme.palette.primary;
@@ -199,7 +172,7 @@ const SegmentCard = ({ seg, index, totalSlides, dense = false }) => {
             {seg.icon}
           </Box>
           <Chip
-            label={seg.label}
+            label={label}
             size="small"
             sx={{
               borderRadius: 999,
@@ -244,7 +217,7 @@ const SegmentCard = ({ seg, index, totalSlides, dense = false }) => {
             lineHeight: 1.5,
           }}
         >
-          {seg.text}
+          {text}
         </Typography>
 
         <Stack
@@ -255,7 +228,7 @@ const SegmentCard = ({ seg, index, totalSlides, dense = false }) => {
             mt: 0.35,
           }}
         >
-          {seg.bullets.map((b) => (
+          {bullets.map((b) => (
             <Typography
               key={b}
               component="li"
@@ -278,7 +251,7 @@ const SegmentCard = ({ seg, index, totalSlides, dense = false }) => {
           sx={{ mt: 0.8 }}
         >
           <Chip
-            label="International programmes"
+            label={t("segments.chips.international_programmes")}
             size="small"
             variant="outlined"
             sx={{
@@ -291,7 +264,7 @@ const SegmentCard = ({ seg, index, totalSlides, dense = false }) => {
             }}
           />
           <Chip
-            label="Structured reporting"
+            label={t("segments.chips.structured_reporting")}
             size="small"
             variant="outlined"
             sx={{
@@ -310,7 +283,7 @@ const SegmentCard = ({ seg, index, totalSlides, dense = false }) => {
 };
 
 const CustomerSatisfactionSegmentsSection = ({ refProp }) => {
-  const theme = useTheme();
+  const { t } = useTranslation("customer_satisfaction");
   const sectionRef = useRef(null);
   const totalSlides = SEGMENTS.length;
 
@@ -339,18 +312,16 @@ const CustomerSatisfactionSegmentsSection = ({ refProp }) => {
       <Container maxWidth="lg" sx={{ mb: { xs: 1.5, md: 1.3 } }}>
         <Stack spacing={0.75} alignItems="center" textAlign="center">
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Industries & target groups
+            {t("segments.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            One framework, many sectors.
+            {t("segments.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 720, mx: "auto", opacity: 0.9 }}
           >
-            From automotive and finance to hardware, software, consumer goods
-            and services – the same satisfaction logic adapts to different
-            markets while keeping reporting and KPIs consistent.
+            {t("segments.subtitle")}
           </Typography>
         </Stack>
       </Container>

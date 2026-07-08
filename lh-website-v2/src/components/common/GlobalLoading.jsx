@@ -9,13 +9,13 @@ const GlobalLoading = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        if(globalLoading) {
-            setIsLoading(true);
-        } else {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 500);
-        }   
+        // Einblenden sofort, Ausblenden verzögert – setState nur im Timeout-Callback,
+        // Cleanup verhindert veraltete Timeouts bei schnellen Wechseln
+        const timeout = setTimeout(() => {
+            setIsLoading(globalLoading);
+        }, globalLoading ? 0 : 500);
+
+        return () => clearTimeout(timeout);
     }, [globalLoading]);
 
     return (

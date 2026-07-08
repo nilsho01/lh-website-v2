@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import GroupsIcon from "@mui/icons-material/Groups";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
@@ -20,47 +21,14 @@ const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 
 const ReportingDashboardsSection = ({ refProp }) => {
+  const { t } = useTranslation("reporting");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
-  const modes = [
-    {
-      id: "overview",
-      label: "Management overview",
-      chip: "High-level view",
-      intro:
-        "At overview level, standard KPIs and trends are shown in a compact way, so management can see status and direction at a glance.",
-      cards: [
-        "Executive dashboards with a small set of core KPIs.",
-        "Time series views for tracking movements over multiple waves.",
-        "Traffic-light indicators for targets and thresholds.",
-      ],
-    },
-    {
-      id: "detail",
-      label: "Expert detail view",
-      chip: "Drill-down",
-      intro:
-        "Detail views allow experts to filter by segment, time, product and channel, while keeping definitions and filters transparent.",
-      cards: [
-        "Flexible filters for markets, products, segments and time.",
-        "Drill-down from total to specific sub-groups or questions.",
-        "Download options for detailed tables and microdata extracts.",
-      ],
-    },
-    {
-      id: "local",
-      label: "Local & branch view",
-      chip: "Operational view",
-      intro:
-        "Branch and local views highlight what is relevant locally, comparing each unit to benchmarks so teams can steer concretely.",
-      cards: [
-        "Simple dashboards for non-analysts with only a few KPIs.",
-        "Comparison to network average and predefined peer-groups.",
-        "Optional comment and action fields for local follow-up.",
-      ],
-    },
-  ];
+  const modeIds = ["overview", "detail", "local"];
+  const modes = t("dashboards_section.modes", { returnObjects: true }).map(
+    (m, idx) => ({ ...m, id: modeIds[idx] })
+  );
 
   const [mode, setMode] = useState("overview");
   const active = modes.find((m) => m.id === mode) ?? modes[0];
@@ -82,18 +50,16 @@ const ReportingDashboardsSection = ({ refProp }) => {
           textAlign="center"
         >
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Dashboard views
+            {t("dashboards_section.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            Tailored reporting for different user groups.
+            {t("dashboards_section.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 760, mx: "auto", opacity: 0.9 }}
           >
-            The same underlying data can be presented very differently,
-            depending on whether you are steering at board level, analysing
-            details or running a local team.
+            {t("dashboards_section.subtitle")}
           </Typography>
         </Stack>
 
@@ -102,7 +68,7 @@ const ReportingDashboardsSection = ({ refProp }) => {
           <Grid item xs={12} md={5}>
             <Stack spacing={2}>
               <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>
-                Choose your view
+                {t("dashboards_section.choose_view")}
               </Typography>
 
               <Stack direction="row" spacing={1} flexWrap="wrap">
@@ -129,9 +95,7 @@ const ReportingDashboardsSection = ({ refProp }) => {
               </Stack>
 
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                Toggle between different dashboard types to see how the same
-                underlying data can support board-level steering, expert
-                analysis and local management.
+                {t("dashboards_section.toggle_hint")}
               </Typography>
 
               <Chip

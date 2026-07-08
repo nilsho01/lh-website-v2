@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation, Trans } from "react-i18next";
 
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
@@ -18,42 +19,15 @@ const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 const OnlineSurveysProcessSection = ({ refProp }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("online_surveys");
 
-  const steps = [
-    {
-      id: "survey",
-      label: "Survey design & invites",
-      short: "Questionnaire & sample",
-      desc: "We design online questionnaires that work across devices, using clear routing and smart validation so respondents can complete them quickly and reliably.",
-      details: [
-        "Questionnaire design & scripting",
-        "Sampling, quotas & panels",
-        "Invites, reminders & redirects",
-      ],
-    },
-    {
-      id: "processing",
-      label: "Fieldwork & data processing",
-      short: "Cleaning & coding",
-      desc: "Data processing includes automated plausibility checks, coding of open answers and preparation of all relevant variables for reporting and modelling.",
-      details: [
-        "Automated quality checks & cleaning",
-        "Coding of open-ended answers",
-        "Variable sets for modelling",
-      ],
-    },
-    {
-      id: "reporting",
-      label: "Reporting & exports",
-      short: "Dashboards & files",
-      desc: "Results are loaded into online dashboards or static reports. Standard figures can be scheduled, while ad-hoc filters let you explore sub-groups on demand.",
-      details: [
-        "Role-based dashboards",
-        "Standardised KPIs & trending",
-        "Exports to BI tools or data-lake",
-      ],
-    },
-  ];
+  const stepIds = ["survey", "processing", "reporting"];
+  const steps = t("process.steps", { returnObjects: true }).map(
+    (step, idx) => ({
+      id: stepIds[idx],
+      ...step,
+    })
+  );
 
   const [activeStep, setActiveStep] = useState("survey");
   const active = steps.find((s) => s.id === activeStep) ?? steps[0];
@@ -73,14 +47,13 @@ const OnlineSurveysProcessSection = ({ refProp }) => {
           <Grid item xs={12} md={6}>
             <Stack spacing={2}>
               <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-                Process overview
+                {t("process.overline")}
               </Typography>
               <Typography variant="h5" fontWeight={700}>
-                One pipeline from survey design to reporting.
+                {t("process.title")}
               </Typography>
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                Explore how we move from questionnaire and invites through
-                fieldwork and data processing into dashboards and exports.
+                {t("process.content")}
               </Typography>
 
               <Stack
@@ -241,9 +214,7 @@ const OnlineSurveysProcessSection = ({ refProp }) => {
                 }}
               >
                 <Typography variant="body2" sx={{ opacity: 0.95 }}>
-                  From <strong>survey design</strong> through{" "}
-                  <strong>processing</strong> to{" "}
-                  <strong>reporting</strong> – one connected pipeline.
+                  <Trans t={t} i18nKey="process.wheel_text" />
                 </Typography>
               </Box>
             </MotionBox>

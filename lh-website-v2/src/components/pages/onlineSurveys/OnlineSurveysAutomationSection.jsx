@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import AutoModeIcon from "@mui/icons-material/AutoMode";
 import LanIcon from "@mui/icons-material/Lan";
@@ -21,48 +22,17 @@ const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 const OnlineSurveysAutomationSection = ({ refProp }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("online_surveys");
 
-  const modes = [
-    {
-      id: "automation",
-      label: "Automation",
-      icon: <AutoModeIcon />,
-      headline: "Automated from invite to export.",
-      text: "Invites, reminders, quotas and redirects can be automated across waves and countries – with documentation and monitoring in the background.",
-      bullets: [
-        "Scheduled fieldwork windows",
-        "Automated reminders & redirects",
-        "Quota checks & monitoring",
-      ],
-      tag: "Process automation",
-    },
-    {
-      id: "integration",
-      label: "Integration",
-      icon: <LanIcon />,
-      headline: "Connected to your systems.",
-      text: "Survey data can be streamed into your data warehouse or BI tools, using stable schemas and IDs that match your internal structures.",
-      bullets: [
-        "Stable IDs & metadata",
-        "Exports to BI / data-lake",
-        "APIs for dashboards",
-      ],
-      tag: "Data integration",
-    },
-    {
-      id: "alerts",
-      label: "Alerts",
-      icon: <WarningAmberIcon />,
-      headline: "Alerts when things go wrong.",
-      text: "Threshold-based alerts signal when satisfaction drops or when quotas, samples or technical KPIs behave unexpectedly.",
-      bullets: [
-        "Thresholds per KPI & segment",
-        "Notifications to project teams",
-        "Optional closed-loop follow-up",
-      ],
-      tag: "Monitoring",
-    },
-  ];
+  const modeIds = ["automation", "integration", "alerts"];
+  const modeIcons = [<AutoModeIcon />, <LanIcon />, <WarningAmberIcon />];
+  const modes = t("automation.modes", { returnObjects: true }).map(
+    (mode, idx) => ({
+      id: modeIds[idx],
+      icon: modeIcons[idx],
+      ...mode,
+    })
+  );
 
   const [activeMode, setActiveMode] = useState("automation");
   const active = modes.find((m) => m.id === activeMode) ?? modes[0];
@@ -79,18 +49,16 @@ const OnlineSurveysAutomationSection = ({ refProp }) => {
       <Container maxWidth="lg">
         <Stack spacing={1.5} mb={4} alignItems="center" textAlign="center">
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Automation & reporting
+            {t("automation.overline")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            Online surveys that plug into your reporting landscape.
+            {t("automation.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 760, mx: "auto", opacity: 0.9 }}
           >
-            Whether you prefer dashboards, slide decks or raw data exports – we
-            build a reporting layer that matches your organisation and connects
-            to existing tools instead of adding yet another silo.
+            {t("automation.content")}
           </Typography>
         </Stack>
 
@@ -99,7 +67,7 @@ const OnlineSurveysAutomationSection = ({ refProp }) => {
           <Grid item xs={12} md={5}>
             <Stack spacing={2}>
               <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>
-                Focus area
+                {t("automation.focus_label")}
               </Typography>
               <Stack direction="row" spacing={1} flexWrap="wrap">
                 {modes.map((mode) => {
@@ -125,12 +93,11 @@ const OnlineSurveysAutomationSection = ({ refProp }) => {
               </Stack>
 
               <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                Toggle between automation, integration and alerts to see how we
-                connect online surveys with your existing infrastructure.
+                {t("automation.toggle_hint")}
               </Typography>
 
               <Chip
-                label={`Current focus: ${active.label}`}
+                label={t("automation.current_focus", { label: active.label })}
                 size="small"
                 sx={{ alignSelf: "flex-start", mt: 1, borderRadius: 999 }}
               />

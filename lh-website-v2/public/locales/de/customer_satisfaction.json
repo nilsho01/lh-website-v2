@@ -1,0 +1,153 @@
+{
+  "hero": {
+    "overline": "Kundenzufriedenheit · Internationale Studien",
+    "title": "Internationale Zufriedenheitsprogramme, die Feedback in Steuerungssignale verwandeln.",
+    "content": "Wir konzipieren und realisieren Kunden-, Händler- und Mitarbeiterzufriedenheitsbefragungen – national und international. Alle Schritte, von der Datenerhebung bis zum Online-Reporting, erfolgen inhouse, damit sich jedes Ergebnis in ein konsistentes Gesamtbild einfügt.",
+    "chips": {
+      "international_coverage": "Internationale Abdeckung",
+      "structured_results": "Strukturierte Ergebnisse",
+      "retention_loyalty": "Bindung & Loyalität"
+    },
+    "buttons": {
+      "how_studies_work": "So funktionieren unsere Studien",
+      "industries_target_groups": "Branchen & Zielgruppen",
+      "try_interactive": "Interaktive Ansicht ausprobieren"
+    },
+    "card": {
+      "subtitle": "Internationale Zufriedenheitsprogramme",
+      "title": "Vom Feedback zur Kundenbindungsstrategie.",
+      "content": "Wir verknüpfen Zufriedenheitswerte mit Abwanderung, Loyalität und kommerziellen KPIs. So basieren Kundenbindungsprogramme auf Daten statt auf Annahmen – über Länder und Kanäle hinweg.",
+      "caption": "Nutzen Sie die folgenden Abschnitte, um zu erkunden, wie wir Projekte konzipieren, an Branchen anpassen und Ergebnisse visualisieren."
+    }
+  },
+  "overview": {
+    "header": "So funktionieren unsere Zufriedenheitsstudien",
+    "title": "Internationale Zufriedenheitsstudien mit vollständig internem Workflow.",
+    "paragraph_1": "Wir bieten internationale Zufriedenheitsstudien an und bereiten Ergebnisse strukturiert auf. Ob der Fokus auf Kunden-, Händler- oder Mitarbeiterzufriedenheit liegt – jede Studie folgt einer klaren Logik: Konzeption, Datenerhebung, Analyse und Reporting liegen in der Hand eines Teams.",
+    "paragraph_2": "Dieser integrierte Ansatz vermeidet Brüche zwischen Agenturen, Plattformen und Dashboards. Fragebögen, Feldarbeits-Setups, Gewichtung und Datenbanken werden von Anfang an aufeinander abgestimmt, sodass sich Ergebnisse über die Zeit und zwischen Märkten vergleichen lassen.",
+    "paragraph_3": "Wie bei unseren Automotive-Studien werden alle Projektschritte, von der Datenerhebung bis zum Reporting, inhouse durchgeführt. So behalten wir die Kontrolle über Zeitpläne, Qualitätsprüfungen und die Art und Weise, wie Ergebnisse in praxisnahe Empfehlungen übersetzt werden.",
+    "chips": {
+      "design_methodology": "Konzeption & Methodik",
+      "fieldwork_data_quality": "Feldarbeit & Datenqualität",
+      "online_reporting_exports": "Online-Reporting & Exporte"
+    },
+    "cards": [
+      {
+        "title": "Konzeption & Stichproben",
+        "text": "Klärung der Zielsetzungen, Fragebogendesign sowie Definition von Zielgruppen und Stichproben je Markt."
+      },
+      {
+        "title": "Feldarbeit & Datenaufbereitung",
+        "text": "Mehrländer-Feldarbeit, automatisierte Plausibilitätsprüfungen, Codierung und Aufbereitung strukturierter Datensätze."
+      },
+      {
+        "title": "Reporting & Aktivierung",
+        "text": "Online-Dashboards, Management-Summaries und Workshops, die Ergebnisse in konkrete Kundenbindungsmaßnahmen übersetzen."
+      }
+    ]
+  },
+  "segments": {
+    "header": "Branchen & Zielgruppen",
+    "title": "Ein Framework, viele Branchen.",
+    "subtitle": "Von Automotive und Finanzen über Hardware und Software bis zu Konsumgütern und Dienstleistungen – dieselbe Zufriedenheitslogik passt sich unterschiedlichen Märkten an und hält Reporting und KPIs konsistent.",
+    "chips": {
+      "international_programmes": "Internationale Programme",
+      "structured_reporting": "Strukturiertes Reporting"
+    },
+    "items": {
+      "automotive": {
+        "label": "Automotive",
+        "text": "Im Automobilsektor messen wir Zufriedenheit entlang der gesamten Ownership-Journey: vom Verkauf über die Auslieferung bis zu Service, Reparatur und Remarketing. Die Händlerzufriedenheit wird häufig integriert, sodass sich die Perspektiven von Hersteller, Handel und Endkunden vergleichen lassen.",
+        "bullets": [
+          "Kunden- & Händlerzufriedenheitsbefragungen",
+          "Sales, Aftersales und Connected Services",
+          "Benchmarks über Marken, Netzwerke und Märkte hinweg"
+        ]
+      },
+      "finance": {
+        "label": "Finanzen",
+        "text": "In Banken und Versicherungen konzentrieren sich Zufriedenheitsprogramme auf Vertrauen, Transparenz und Benutzerfreundlichkeit. Wir verknüpfen Feedback aus Filialen, Contact-Centern und digitalen Kanälen direkt mit Kundenbindung und Produktnutzung.",
+        "bullets": [
+          "Kunden- und Mitarbeiterzufriedenheit",
+          "Filialen, Callcenter und digitale Kanäle",
+          "Verknüpfung mit Abwanderungs- und Cross-Selling-Indikatoren"
+        ]
+      },
+      "hardware": {
+        "label": "Hardware & Software",
+        "text": "Für Hardware- und Softwareanbieter verfolgen wir die Zufriedenheit über Onboarding, Support-Tickets und Updates hinweg. Dies umfasst B2B- und B2C-Umgebungen mit sehr unterschiedlichen Entscheidungszyklen.",
+        "bullets": [
+          "Implementierung, Onboarding und Schulung",
+          "Supportqualität und Reaktionszeiten",
+          "Weiterempfehlung und Verlängerungsabsicht"
+        ]
+      },
+      "consumer": {
+        "label": "Konsumgüter",
+        "text": "Bei Konsumgütern sind Markenwahrnehmung und Verwendungssituationen entscheidend. Zufriedenheitsstudien helfen zu klären, wie Kommunikation, Verfügbarkeit und Produkterlebnis zusammenwirken.",
+        "bullets": [
+          "Marken-, Produkt- und Einkaufserlebnis",
+          "Mehrländer-Konzept- & Produkttests",
+          "Tracking von Wiederkauf und Loyalität"
+        ]
+      },
+      "services": {
+        "label": "Dienstleistungen & mehr",
+        "text": "Für Dienstleistungen und gemischte Portfolios unterstützen wir Zufriedenheitsmessungen, die transaktionales Feedback mit periodischen Beziehungsbefragungen kombinieren.",
+        "bullets": [
+          "Transaktions- und Beziehungsbefragungen",
+          "Servicelevel, Qualität und wahrgenommener Wert",
+          "Reporting auf Vertrags-, Kunden- und Portfolioebene"
+        ]
+      }
+    }
+  },
+  "playground": {
+    "header": "Interaktive Ansicht",
+    "title": "Entdecken Sie das Zufriedenheits-Universum.",
+    "subtitle": "Kundenbindungsprogramme kombinieren häufig verschiedene Perspektiven: Kunden, Händler und Mitarbeiter. Nutzen Sie den interaktiven Bereich unten, um zu sehen, wie jede Gruppe dem Gesamtbild eine weitere Ebene hinzufügt.",
+    "card": {
+      "chip": "Teil eines Programms",
+      "title": "Perspektiven kombinieren statt isolierte Befragungen durchführen.",
+      "paragraph_1": "Im Rahmen von Kundenbindungsprogrammen bieten wir die Realisierung von Kunden-, Händler- oder Mitarbeiterzufriedenheitsbefragungen mit maßgeschneiderten Online-Reporting-Systemen an. Jede Perspektive kann separat analysiert – oder in einem integrierten Cockpit zusammengeführt werden.",
+      "paragraph_2": "Das Programm kann mit einer Gruppe starten und über die Zeit wachsen, ohne die zugrunde liegende Logik zu verändern oder bestehende Berichte zu beeinträchtigen."
+    },
+    "selector": {
+      "title": "Perspektive wechseln",
+      "content": "Klicken oder tippen Sie auf eine Kachel, um die aktive Perspektive zu wechseln. Der Inhalt links wird aktualisiert und der Lichteffekt reagiert auf Ihre Mausbewegung – so wirkt die gesamte Karte lebendig.",
+      "caption": "Alle Perspektiven fließen in dieselbe strukturierte Reporting-Ebene mit modernen Charts ein, sodass wesentliche Erkenntnisse auf den ersten Blick erkennbar sind – auch wenn die zugrunde liegenden Ergebnisse komplex sind."
+    },
+    "profiles": {
+      "customers": {
+        "label": "Kundenzufriedenheit",
+        "desc": "Misst, wie Endkunden Ihre Produkte, Services und Kommunikation erleben – über Touchpoints und Märkte hinweg.",
+        "focus_title": "Fokus bei Kundenzufriedenheit:",
+        "focus": [
+          "Wahrgenommener Wert & Fairness",
+          "Benutzerfreundlichkeit über alle Kanäle",
+          "Weiterempfehlung & Abwanderungsrisiko"
+        ]
+      },
+      "dealers": {
+        "label": "Händlerzufriedenheit",
+        "desc": "Zeigt, wie Ihre Netzwerkpartner Zusammenarbeit, Prozesse und Unterstützung durch die Zentrale wahrnehmen.",
+        "focus_title": "Fokus bei Händlerzufriedenheit:",
+        "focus": [
+          "Supportqualität & Tools",
+          "Marge und Konditionen",
+          "Markenausrichtung & Kommunikation"
+        ]
+      },
+      "employees": {
+        "label": "Mitarbeiterzufriedenheit",
+        "desc": "Zeigt, wie Mitarbeitende Kultur, Führung und die Werkzeuge wahrnehmen, mit denen sie Kunden betreuen.",
+        "focus_title": "Fokus bei Mitarbeiterzufriedenheit:",
+        "focus": [
+          "Engagement & Loyalität",
+          "Führung & Kommunikation",
+          "Befähigung zu exzellentem Service"
+        ]
+      }
+    }
+  }
+}

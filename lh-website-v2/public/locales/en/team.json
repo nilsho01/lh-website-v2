@@ -14,7 +14,8 @@
     },
     "main_section": {
         "header": "Teams & expertise",
-        "title": "Different teams – clearly structured."
+        "title": "Different teams – clearly structured.",
+        "highlight_chip": "Key contact for strategic topics"
     },
     "CTA": {
         "header": "Join the team",

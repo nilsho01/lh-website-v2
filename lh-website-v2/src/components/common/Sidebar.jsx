@@ -351,7 +351,7 @@ const Sidebar = ({ open, toggleSidebar }) => {
             disableTypography
             primary={
               <Typography textTransform="uppercase">
-                {themeMode === themeModes.dark ? "dark mode" : "light mode"}
+                {themeMode === themeModes.dark ? t("general.dark_mode") : t("general.light_mode")}
               </Typography>
             }
           />

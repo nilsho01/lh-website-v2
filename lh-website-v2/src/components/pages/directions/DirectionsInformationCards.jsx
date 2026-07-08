@@ -111,7 +111,7 @@ const DirectionsInformationCards = () => {
                 <Box
                     component="img"
                     src="/images/office.png" // <-- dein Bild hier
-                    alt="Office street view"
+                    alt={t('adress_card.image_alt')}
                     sx={{
                         width: "100%",
                         height: "100%",

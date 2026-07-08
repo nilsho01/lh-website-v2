@@ -5,14 +5,26 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const MotionPath = motion.path;
 
-const rand = (min, max) => Math.random() * (max - min) + min;
+// Deterministischer PRNG (mulberry32): pro Linien-Index stabile "Zufalls"-Werte,
+// damit das Rendering pur bleibt (react-hooks/purity) und nicht bei Re-Renders springt
+const mulberry32 = (seed) => {
+  let t = seed;
+  return () => {
+    t += 0x6d2b79f5;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r ^= r + Math.imul(r ^ (r >>> 7), 61 | r);
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+};
 
 const GlowingShape = ({ index, total }) => {
   const theme = useTheme();
   const { scrollYProgress } = useScroll();
 
   const cfg = useMemo(() => {
-    const isPrimary = Math.random() < 0.6;
+    const random = mulberry32(index * 7919 + 1);
+    const rand = (min, max) => random() * (max - min) + min;
+    const isPrimary = random() < 0.6;
 
     // Breite so groß, dass sie quer über den Viewport geht
     const width = rand(1600, 2600);
@@ -29,7 +41,7 @@ const GlowingShape = ({ index, total }) => {
       bandEnd - bandHeight * 0.15
     );
 
-    const shapeTypeRand = Math.random();
+    const shapeTypeRand = random();
     let shapeType = "curve";
     if (shapeTypeRand > 0.66) shapeType = "loop";
     else if (shapeTypeRand > 0.33) shapeType = "diagonal";
@@ -49,8 +61,8 @@ const GlowingShape = ({ index, total }) => {
       stopAt: rand(0.4, 0.9),
       yDrift: rand(-40, 40),
       shapeType,
-      flipVertical: Math.random() < 0.5,
-      flipHorizontal: Math.random() < 0.5,
+      flipVertical: random() < 0.5,
+      flipHorizontal: random() < 0.5,
     };
   }, [theme, index, total]);
 

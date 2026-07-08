@@ -10,6 +10,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import CallIcon from "@mui/icons-material/Call";
@@ -19,6 +20,7 @@ import ReportGmailerrorredIcon from "@mui/icons-material/ReportGmailerrorred";
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const FMCustChannelsSection = ({ refProp }) => {
+  const { t } = useTranslation("financial_market");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
@@ -26,42 +28,30 @@ const FMCustChannelsSection = ({ refProp }) => {
     {
       id: "branches",
       icon: <StorefrontIcon />,
-      title: "Branches & advisors",
-      desc: "Complex products and advice situations are still handled face-to-face.",
-      kpis: ["Advice quality", "Clarity of explanations", "Perceived fairness"],
+      title: t("channels.items.branches.title"),
+      desc: t("channels.items.branches.desc"),
+      kpis: t("channels.items.branches.kpis", { returnObjects: true }),
     },
     {
       id: "contact",
       icon: <CallIcon />,
-      title: "Contact centres",
-      desc: "When something goes wrong, the call centre becomes the main touchpoint.",
-      kpis: [
-        "First contact resolution",
-        "Waiting time & perceived effort",
-        "Tone of voice",
-      ],
+      title: t("channels.items.contact.title"),
+      desc: t("channels.items.contact.desc"),
+      kpis: t("channels.items.contact.kpis", { returnObjects: true }),
     },
     {
       id: "digital",
       icon: <SmartphoneIcon />,
-      title: "Online banking & apps",
-      desc: "Everyday usage happens in digital channels – especially for younger segments.",
-      kpis: [
-        "Task completion (e.g. transfers)",
-        "Ease of use on mobile",
-        "Perceived security",
-      ],
+      title: t("channels.items.digital.title"),
+      desc: t("channels.items.digital.desc"),
+      kpis: t("channels.items.digital.kpis", { returnObjects: true }),
     },
     {
       id: "claims",
       icon: <ReportGmailerrorredIcon />,
-      title: "Claims & incidents",
-      desc: "For insurance and payments, claims handling defines long-term loyalty.",
-      kpis: [
-        "Speed of processing",
-        "Fairness of outcome",
-        "Transparency of communication",
-      ],
+      title: t("channels.items.claims.title"),
+      desc: t("channels.items.claims.desc"),
+      kpis: t("channels.items.claims.kpis", { returnObjects: true }),
     },
   ];
 
@@ -80,18 +70,16 @@ const FMCustChannelsSection = ({ refProp }) => {
       <Container maxWidth="lg">
         <Stack spacing={1.5} mb={4} alignItems="center" textAlign="center">
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Touchpoints & channels
+            {t("channels.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            A consistent view across all customer journeys.
+            {t("channels.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 760, mx: "auto", opacity: 0.9 }}
           >
-            We map your main journeys and then align measurements and KPIs.
-            Select a touchpoint to see how we typically structure indicators and
-            feedback.
+            {t("channels.content")}
           </Typography>
         </Stack>
 
@@ -172,7 +160,7 @@ const FMCustChannelsSection = ({ refProp }) => {
         >
           <Stack spacing={1.5}>
             <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>
-              Selected touchpoint:
+              {t("channels.selected_touchpoint")}
             </Typography>
             <Typography variant="h6" fontWeight={700}>
               {active.title}
@@ -185,7 +173,7 @@ const FMCustChannelsSection = ({ refProp }) => {
               variant="body2"
               sx={{ opacity: 0.9, mt: 1, fontWeight: 600 }}
             >
-              Typical KPIs & indicators:
+              {t("channels.typical_kpis")}
             </Typography>
 
             <Stack spacing={0.5}>

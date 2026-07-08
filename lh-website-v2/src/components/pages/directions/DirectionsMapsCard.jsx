@@ -42,7 +42,7 @@ const DirectionsMapsCard = () => {
             <Typography variant="body2">
                 {t('map_card.description')}
             </Typography>
-            <Typography variant="body3" sx={{ opacity: 0.8 }}>
+            <Typography variant="caption" sx={{ opacity: 0.8 }}>
                 {t('map_card.disclaimer')}
             </Typography>
             </Stack>
@@ -65,7 +65,7 @@ const DirectionsMapsCard = () => {
             {mapsConsent ? (
                 <Box
                 component="iframe"
-                title="Google Maps"
+                title={t('map_card.iframe_title')}
                 src={
                 "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5185.7869467849605!2d11.092399176783747!3d49.46762745763972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57c034dbc863%3A0xb38edf9007a446d4!2sVirchowstra%C3%9Fe%2019%2C%2090409%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1764802796812!5m2!1sde!2sde"
                 }

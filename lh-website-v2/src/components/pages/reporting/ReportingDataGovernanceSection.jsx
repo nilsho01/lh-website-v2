@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import LanIcon from "@mui/icons-material/Lan";
 import SecurityIcon from "@mui/icons-material/Security";
@@ -19,35 +20,14 @@ import DescriptionIcon from "@mui/icons-material/Description";
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const ReportingDataGovernanceSection = ({ refProp }) => {
+  const { t } = useTranslation("reporting");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
-  const items = [
-    {
-      icon: <LanIcon />,
-      title: "Data pipelines & interfaces",
-      text: "We set up stable exports and APIs from reporting systems to your BI tools, data warehouse or data lake – with clear schemas and IDs.",
-      chip: "Integration",
-      extra:
-        "This includes standardised refresh cycles and monitoring of data flows.",
-    },
-    {
-      icon: <SecurityIcon />,
-      title: "Access control & roles",
-      text: "Role-based access ensures that sensitive metrics and customer-related data are only visible to authorised users.",
-      chip: "Access & privacy",
-      extra:
-        "Views can be aligned with internal structures such as countries, regions or branches.",
-    },
-    {
-      icon: <DescriptionIcon />,
-      title: "Definitions & documentation",
-      text: "KPIs, filters and survey variables are documented in a way that both analysts and non-specialists can understand.",
-      chip: "Transparency",
-      extra:
-        "We provide simple data dictionaries, filter descriptions and FAQs inside or next to the dashboards.",
-    },
-  ];
+  const icons = [<LanIcon />, <SecurityIcon />, <DescriptionIcon />];
+  const items = t("governance_section.items", { returnObjects: true }).map(
+    (item, idx) => ({ ...item, icon: icons[idx] })
+  );
 
   return (
     <Box
@@ -66,18 +46,16 @@ const ReportingDataGovernanceSection = ({ refProp }) => {
           textAlign="center"
         >
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            Data & governance
+            {t("governance_section.header")}
           </Typography>
           <Typography variant="h5" fontWeight={700}>
-            Reporting systems that play nicely with your infrastructure.
+            {t("governance_section.title")}
           </Typography>
           <Typography
             variant="body2"
             sx={{ maxWidth: 760, mx: "auto", opacity: 0.9 }}
           >
-            Reporting is only sustainable when data flows, access rights and
-            definitions are clear. We design systems that can live for years,
-            not just for a single project.
+            {t("governance_section.subtitle")}
           </Typography>
         </Stack>
 

@@ -123,7 +123,7 @@ const ImprintMainPart = () => {
                 inset: 0,
                 opacity: 0.03,
                 background:
-                "linear-gradient(135deg, #90a4f4 0%, transparent 60%)",
+                "linear-gradient(135deg, #5564b5 0%, transparent 60%)",
                 pointerEvents: "none",
             }}
             />
@@ -180,7 +180,7 @@ const ImprintMainPart = () => {
                 inset: 0,
                 opacity: 0.04,
                 background:
-                "radial-gradient(circle at bottom right, #b76df5, transparent 60%)",
+                "radial-gradient(circle at bottom right, #5564b5, transparent 60%)",
                 pointerEvents: "none",
             }}
             />
@@ -222,7 +222,7 @@ const ImprintMainPart = () => {
                 inset: 0,
                 opacity: 0.04,
                 background:
-                "linear-gradient(135deg, #f5b76d 0%, transparent 60%)",
+                "linear-gradient(135deg, #5564b5 0%, transparent 60%)",
                 pointerEvents: "none",
             }}
             />

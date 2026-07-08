@@ -17,11 +17,6 @@ import ReportingDashboardsSection from "../components/pages/reporting/ReportingD
 import ReportingDataGovernanceSection from "../components/pages/reporting/ReportingDataGovernanceSection";
 import GlowingLinesBackground from "../components/common/GlowingLinesBackground";
 
-
-import CustomerSatisfactionSection from "../components/pages/financialMarket_old/CustomerSatisfactionSection";
-import OnlineSurveySection from "../components/pages/financialMarket_old/OnlineSurveysSection";
-import ReportingSystemsSection from "../components/pages/financialMarket_old/ReportingSystemsSection";
-
 const FinancialMarketPage = () => {
   const customerRef = useRef(null);
   const surveysRef = useRef(null);
@@ -39,7 +34,7 @@ const FinancialMarketPage = () => {
         <FinancialMarketHero onJumpCostumers={() => scrollTo(customerRef)} onJumpSurveys={() => scrollTo(surveysRef)} onJumpReporting={() => scrollTo(reportingRef)}/>
 
         <Box ref={customerRef} sx={{ position: "relative"}}>
-          <GlowingLinesBackground count={8} infront={false} fullPage />'
+          <GlowingLinesBackground count={8} infront={false} fullPage />
 
           <Box sx={{ position: "relative", zIndex: 1 }}>
             <FMCustIntroSection />
@@ -50,7 +45,7 @@ const FinancialMarketPage = () => {
         </Box>
 
         <Box ref={surveysRef} sx={{ position: "relative"}}>
-          <GlowingLinesBackground count={8} infront={false} fullPage />'
+          <GlowingLinesBackground count={8} infront={false} fullPage />
 
           <Box sx={{ position: "relative", zIndex: 1 }}>
             <OnlineSurveysHeroSection />
@@ -61,23 +56,13 @@ const FinancialMarketPage = () => {
         </Box>
         
         <Box ref={reportingRef} sx={{ position: "relative"}}>
-          <GlowingLinesBackground count={8} infront={false} fullPage />'
+          <GlowingLinesBackground count={8} infront={false} fullPage />
 
           <Box sx={{ position: "relative", zIndex: 1 }}>
             <ReportingHeroSection />
             <ReportingWhySection />
             <ReportingDashboardsSection />
             <ReportingDataGovernanceSection />
-          </Box>
-        </Box>
-
-        <Box ref={reportingRef} sx={{ position: "relative"}}>
-          <GlowingLinesBackground count={8} infront={false} fullPage />'
-
-          <Box sx={{ position: "relative", zIndex: 1 }}>
-            <CustomerSatisfactionSection />
-            <OnlineSurveySection />
-            <ReportingSystemsSection />
           </Box>
         </Box>
 

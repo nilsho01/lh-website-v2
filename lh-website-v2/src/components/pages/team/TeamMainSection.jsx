@@ -1,4 +1,4 @@
-import React, { useMemo, useRef } from "react";
+import React, { useMemo } from "react";
 import {
   Box,
   Container,
@@ -11,6 +11,8 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion, useScroll, useTransform } from "framer-motion";
+
+const MotionDiv = motion.div;
 
 import getTeamSections from "../../../configs/team.configs";
 import { useTranslation } from "react-i18next";
@@ -55,7 +57,7 @@ const TeamMainSection = () => {
           }}
         >
           {/* Vertikale Scroll-Lichtspur */}
-          <motion.div
+          <MotionDiv
             style={{
               position: "absolute",
               left: "8%",

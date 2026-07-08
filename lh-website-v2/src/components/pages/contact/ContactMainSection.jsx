@@ -306,7 +306,7 @@ const ContactMainSection = () => {
                   inset: 0,
                   opacity: 0.06,
                   background:
-                    "radial-gradient(circle at top right, #90a4f4, transparent 60%)",
+                    "radial-gradient(circle at top right, #5564b5, transparent 60%)",
                   pointerEvents: "none",
                 }}
               />
