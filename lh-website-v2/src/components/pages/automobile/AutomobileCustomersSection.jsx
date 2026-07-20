@@ -6,7 +6,6 @@ import {
   Grid,
   Stack,
   Typography,
-  Paper,
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
@@ -18,7 +17,6 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import { useTranslation } from "react-i18next";
 
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
-const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 // Variants for the client logo grid (same pattern as HomePage)
 const clientsContainerVariants = {
@@ -96,24 +94,43 @@ const AutomobileCustomersSection = ({ refProp }) => {
           </Typography>
         </Stack>
 
-        <Grid container spacing={3}>
+        <Grid container spacing={0}>
           {groups.map((group, idx) => (
             <Grid item xs={12} md={4} key={group.title}>
-              <MotionPaper
+              <MotionBox
                 custom={idx * 0.1}
                 variants={sectionFade}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                whileHover={{ y: -4, boxShadow: 7 }}
                 sx={{
-                  borderRadius: 3,
-                  p: 3,
                   height: "100%",
+                  px: { xs: 0, md: 3 },
+                  py: { xs: 2, md: 0 },
+                  borderLeft: {
+                    xs: "none",
+                    md: idx > 0 ? `1px solid ${theme.palette.divider}` : "none",
+                  },
+                  borderTop: {
+                    xs: idx > 0 ? `1px solid ${theme.palette.divider}` : "none",
+                    md: "none",
+                  },
                 }}
               >
-                <Stack spacing={1.5}>
-                  {group.icon}
+                <Stack spacing={1.5} alignItems="center" textAlign="center">
+                  <Box
+                    sx={{
+                      width: 52,
+                      height: 52,
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      bgcolor: theme.palette.action.hover,
+                    }}
+                  >
+                    {group.icon}
+                  </Box>
                   <Typography variant="subtitle1" fontWeight={700}>
                     {group.title}
                   </Typography>
@@ -121,7 +138,7 @@ const AutomobileCustomersSection = ({ refProp }) => {
                     {group.text}
                   </Typography>
                 </Stack>
-              </MotionPaper>
+              </MotionBox>
             </Grid>
           ))}
         </Grid>

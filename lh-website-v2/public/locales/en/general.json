@@ -6,7 +6,8 @@
         "general": "General",
         "menu": "Menu",
         "dark_mode": "Dark mode",
-        "light_mode": "Light mode"
+        "light_mode": "Light mode",
+        "learn_more": "Learn more"
     },
     "buttons": {
         "home": "Home",

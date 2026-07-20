@@ -24,11 +24,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
-const OnlineSurveysHeroSection = ({
-  onJumpWhy,
-  onJumpProcess,
-  onJumpAutomation,
-}) => {
+const OnlineSurveysHeroSection = ({ onJumpWhy }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
   const { t } = useTranslation("online_surveys");
@@ -120,35 +116,6 @@ const OnlineSurveysHeroSection = ({
                     onClick={onJumpWhy}
                   >
                     {t("hero.buttons.why")}
-                  </Button>
-
-                  <Button
-                    variant="outlined"
-                    color="inherit"
-                    sx={{
-                      borderRadius: "999px",
-                      px: 2.4,
-                      py: 1,
-                      fontWeight: 500,
-                    }}
-                    onClick={onJumpProcess}
-                  >
-                    {t("hero.buttons.process")}
-                  </Button>
-
-                  <Button
-                    variant="text"
-                    color="inherit"
-                    endIcon={<ArrowForwardIcon />}
-                    sx={{
-                      px: 1,
-                      py: 1,
-                      fontWeight: 500,
-                      textTransform: "none",
-                    }}
-                    onClick={onJumpAutomation}
-                  >
-                    {t("hero.buttons.automation")}
                   </Button>
                 </Stack>
               </Stack>

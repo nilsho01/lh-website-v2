@@ -292,12 +292,14 @@ const CustomerSatisfactionSegmentsSection = ({ refProp }) => {
     offset: ["start start", "end end"],
   });
 
-  const step = 100 / totalSlides;
+  // Matches each card's flex-basis below (50 / totalSlides % of the track's own width),
+  // so the track finishes moving exactly when the last card has fully arrived.
+  const cardBasis = 50 / totalSlides;
 
   const trackX = useTransform(
     scrollYProgress,
     [0, 1],
-    ["0%", `-${(totalSlides - 1) * step}%`]
+    ["0%", `-${(totalSlides - 1) * cardBasis}%`]
   );
 
   return (
@@ -349,7 +351,7 @@ const CustomerSatisfactionSegmentsSection = ({ refProp }) => {
         sx={{
           display: { xs: "none", md: "block" },
           position: "relative",
-          height: `${totalSlides * 14}vh`,
+          height: `${100 + (totalSlides - 1) * 50}vh`,
           mt: 0.3,
         }}
       >
@@ -360,6 +362,7 @@ const CustomerSatisfactionSegmentsSection = ({ refProp }) => {
             height: "100vh",
             display: "flex",
             alignItems: "center",
+            overflow: "hidden",
           }}
         >
           <Container maxWidth="lg">

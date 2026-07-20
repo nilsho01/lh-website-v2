@@ -12,8 +12,8 @@ return (
   >
     <Box
   component="img"
-  src="/N+F_Logo.png"
-  alt="N+F Logo"
+  src="/L+H_Logo.png"
+  alt="L+H Logo"
   sx={(theme) => ({
     height: "2em",
     width: "auto",

@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { Box } from "@mui/material";
 
 import PageWrapper from "../components/common/PageWrapper";
-import ParallaxClouds from "../components/common/ParallaxClouds";
+import GlowingLinesBackground from "../components/common/GlowingLinesBackground";
 
 import CustomerSatisfactionHeroSection from "../components/pages/customerSatisfaction/CustomerSatisfactionHeroSection";
 import CustomerSatisfactionOverviewSection from "../components/pages/customerSatisfaction/CustomerSatisfactionOverviewSection";
@@ -30,7 +30,7 @@ const CustomerSatisfactionPage = () => {
         />
 
         <Box sx={{ position: "relative" }}>
-          <ParallaxClouds count={5} infront={false} />
+          <GlowingLinesBackground count={5} infront={false} />
 
           <Box sx={{ position: "relative", zIndex: 1 }}>
             <CustomerSatisfactionOverviewSection refProp={overviewRef} />

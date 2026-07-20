@@ -13,6 +13,7 @@ import {
 import { motion } from "framer-motion";
 import { Link as RouterLink } from "react-router-dom";
 import HeroSection from "../components/common/HeroSection";
+import GlowingLinesBackground from "../components/common/GlowingLinesBackground";
 
 import InsightsIcon from "@mui/icons-material/Insights";
 import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
@@ -24,26 +25,6 @@ import { useTranslation } from "react-i18next";
 
 const MotionBox = motion(Box);
 const MotionPaper = motion(Paper);
-
-// Variants for "Our clients" animation
-const clientsContainerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.1,
-    },
-  },
-};
-
-const clientItemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, ease: "easeOut" },
-  },
-};
 
 const HomePage = () => {
   const theme = useTheme();
@@ -80,7 +61,7 @@ const HomePage = () => {
   return (
     <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>
       {/* ===== HERO SECTION (mit HeroSection-Overlay & Fade) ===== */}
-      <HeroSection backgroundUrl={"/wallpapers/home_hero.jpg"} big>
+      <HeroSection backgroundUrl={"/wallpapers/home4_hero.avif"} big>
         <MotionBox
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -259,6 +240,10 @@ const HomePage = () => {
         </MotionBox>
       </HeroSection>
 
+      <Box sx={{ position: "relative" }}>
+        <GlowingLinesBackground count={5} infront={false} />
+
+        <Box sx={{ position: "relative", zIndex: 1 }}>
       {/* ===== INTRO / FEATURES SECTION ===== */}
       <Box
         sx={{
@@ -296,6 +281,9 @@ const HomePage = () => {
                       theme.palette.mode === "light"
                         ? "#ffffff"
                         : theme.palette.background.paper,
+                    border: isDark
+                      ? `1px solid ${theme.palette.divider}`
+                      : "none",
                   }}
                 >
                   <Box
@@ -348,71 +336,72 @@ const HomePage = () => {
               {t('main_section.clients.title')}
             </Typography>
           </Stack>
-
-          <MotionBox
-            variants={clientsContainerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <Grid
-              container
-              spacing={{ xs: 3, md: 4 }}
-              justifyContent="center"
-              alignItems="center"
-            >
-              {clients.map((client) => (
-                <Grid
-                  item
-                  xs={6}
-                  sm={4}
-                  md={4}   // 3 pro Reihe auf md+
-                  key={client.name}
-                >
-                  <MotionBox
-                    variants={clientItemVariants}
-                    sx={{
-                      borderRadius: 3,
-                      px: 3,
-                      py: 2.5,
-                      textAlign: "center",
-                      border: `1px solid ${theme.palette.divider}`,
-                      backgroundColor: isDark
-                        ? "rgba(10,10,10,0.9)"
-                        : "rgba(255,255,255,0.95)",
-                      backdropFilter: "blur(6px)",
-                      transition:
-                        "transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease",
-                      "&:hover": {
-                        transform: "translateY(-6px)",
-                        boxShadow: 6,
-                        borderColor: theme.palette.primary.main,
-                        backgroundColor: isDark
-                          ? "rgba(15,15,20,0.98)"
-                          : "rgba(255,255,255,1)",
-                      },
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      minHeight: 120, // mehr Höhe → größere Logos
-                    }}
-                  >
-                    <Box
-                      component="img"
-                      src={client.logo}
-                      alt={client.name}
-                      sx={{
-                        maxWidth: "100%",
-                        maxHeight: 72,    // hier werden sie größer
-                        objectFit: "contain",
-                      }}
-                    />
-                  </MotionBox>
-                </Grid>
-              ))}
-            </Grid>
-          </MotionBox>
         </Container>
+
+        {/* Endless scrolling logo marquee */}
+        <Box
+          sx={{
+            mt: 2,
+            width: "100%",
+            overflow: "hidden",
+            maskImage:
+              "linear-gradient(90deg, transparent, black 10%, black 90%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(90deg, transparent, black 10%, black 90%, transparent)",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              width: "max-content",
+              animation: "clients-marquee 32s linear infinite",
+              "@keyframes clients-marquee": {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+              "&:hover": {
+                animationPlayState: "paused",
+              },
+            }}
+          >
+            {[...clients, ...clients].map((client, idx) => (
+              <Box
+                key={`${client.name}-${idx}`}
+                sx={{
+                  flex: "0 0 auto",
+                  width: { xs: 150, sm: 180, md: 200 },
+                  mx: { xs: 1.5, md: 2 },
+                  borderRadius: 3,
+                  px: 3,
+                  py: 2.5,
+                  border: `1px solid ${theme.palette.divider}`,
+                  backgroundColor: isDark
+                    ? "rgba(10,10,10,0.9)"
+                    : "rgba(255,255,255,0.95)",
+                  backdropFilter: "blur(6px)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  minHeight: 120,
+                }}
+              >
+                <Box
+                  component="img"
+                  src={client.logo}
+                  alt={client.name}
+                  sx={{
+                    maxWidth: "100%",
+                    maxHeight: 72,
+                    objectFit: "contain",
+                  }}
+                />
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+        </Box>
       </Box>
 
     </Box>

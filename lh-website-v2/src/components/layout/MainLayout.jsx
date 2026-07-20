@@ -21,6 +21,7 @@ const MainLayout = () => {
         <Box
           component="main"
           flexGrow={1}
+          minWidth={0}
           minHeight="100vh"
         >
           <Outlet />

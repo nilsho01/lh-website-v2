@@ -24,11 +24,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
-const ReportingHeroSection = ({
-  onJumpWhy,
-  onJumpDashboards,
-  onJumpGovernance,
-}) => {
+const ReportingHeroSection = ({ onJumpWhy }) => {
   const { t } = useTranslation("reporting");
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
@@ -115,35 +111,6 @@ const ReportingHeroSection = ({
                     onClick={onJumpWhy}
                   >
                     {t("hero_section.buttons.why")}
-                  </Button>
-
-                  <Button
-                    variant="outlined"
-                    color="inherit"
-                    sx={{
-                      borderRadius: "999px",
-                      px: 2.4,
-                      py: 1,
-                      fontWeight: 500,
-                    }}
-                    onClick={onJumpDashboards}
-                  >
-                    {t("hero_section.buttons.dashboards")}
-                  </Button>
-
-                  <Button
-                    variant="text"
-                    color="inherit"
-                    endIcon={<ArrowForwardIcon />}
-                    sx={{
-                      px: 1,
-                      py: 1,
-                      fontWeight: 500,
-                      textTransform: "none",
-                    }}
-                    onClick={onJumpGovernance}
-                  >
-                    {t("hero_section.buttons.governance")}
                   </Button>
                 </Stack>
               </Stack>

@@ -3,14 +3,11 @@ import React from "react";
 import {
   Box,
   Container,
-  Grid,
   Stack,
   Typography,
-  Paper,
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
-import sectionFade from "../../common/SectionFade";
 
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import ForumIcon from "@mui/icons-material/Forum";
@@ -18,7 +15,7 @@ import RouteIcon from "@mui/icons-material/Route";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 import { useTranslation } from "react-i18next";
 
-const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
+const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 
 const AutomobileMethodsSection = ({ refProp }) => {
   const theme = useTheme();
@@ -26,22 +23,22 @@ const AutomobileMethodsSection = ({ refProp }) => {
 
   const items = [
     {
-      icon: <QueryStatsIcon color="primary" />,
+      icon: <QueryStatsIcon />,
       title: t("methods.items.0.title"),
       text: t("methods.items.0.text"),
     },
     {
-      icon: <ForumIcon color="primary" />,
+      icon: <ForumIcon />,
       title: t("methods.items.1.title"),
       text: t("methods.items.1.text"),
     },
     {
-      icon: <RouteIcon color="primary" />,
+      icon: <RouteIcon />,
       title: t("methods.items.2.title"),
       text: t("methods.items.2.text"),
     },
     {
-      icon: <TravelExploreIcon color="primary" />,
+      icon: <TravelExploreIcon />,
       title: t("methods.items.3.title"),
       text: t("methods.items.3.text"),
     },
@@ -57,7 +54,7 @@ const AutomobileMethodsSection = ({ refProp }) => {
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={2} mb={4} textAlign="center" alignItems="center">
+        <Stack spacing={2} mb={5} textAlign="center" alignItems="center">
           <Typography variant="overline" sx={{ letterSpacing: 3 }}>
             {t("methods.header")}
           </Typography>
@@ -72,35 +69,55 @@ const AutomobileMethodsSection = ({ refProp }) => {
           </Typography>
         </Stack>
 
-        <Grid container spacing={3}>
-          {items.map((item, idx) => (
-            <Grid item xs={12} sm={6} key={item.title}>
-              <MotionPaper
-                custom={idx * 0.1}
-                variants={sectionFade}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                whileHover={{ y: -4, boxShadow: 7 }}
+        <Stack spacing={0} sx={{ maxWidth: 880, mx: "auto" }}>
+          {items.map((item, idx) => {
+            const fromLeft = idx % 2 === 0;
+            return (
+              <MotionBox
+                key={item.title}
+                initial={{ opacity: 0, x: fromLeft ? -30 : 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.5, delay: idx * 0.05 }}
                 sx={{
-                  borderRadius: 3,
-                  p: 3,
-                  height: "100%",
+                  display: "flex",
+                  flexDirection: { xs: "row", md: fromLeft ? "row" : "row-reverse" },
+                  alignItems: "center",
+                  gap: 3,
+                  py: 2.5,
+                  borderBottom:
+                    idx < items.length - 1
+                      ? `1px solid ${theme.palette.divider}`
+                      : "none",
                 }}
               >
-                <Stack spacing={1.5}>
+                <Box
+                  sx={{
+                    flexShrink: 0,
+                    width: 60,
+                    height: 60,
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    bgcolor: theme.palette.primary.main,
+                    color: theme.palette.primary.contrastText,
+                  }}
+                >
                   {item.icon}
+                </Box>
+                <Box sx={{ textAlign: { xs: "left", md: fromLeft ? "left" : "right" } }}>
                   <Typography variant="subtitle1" fontWeight={700}>
                     {item.title}
                   </Typography>
                   <Typography variant="body2" sx={{ opacity: 0.9 }}>
                     {item.text}
                   </Typography>
-                </Stack>
-              </MotionPaper>
-            </Grid>
-          ))}
-        </Grid>
+                </Box>
+              </MotionBox>
+            );
+          })}
+        </Stack>
 
         <Typography
           variant="caption"

@@ -17,140 +17,139 @@ import SpeedIcon from "@mui/icons-material/Speed";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import { useTranslation } from "react-i18next";
 
-const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
+const MotionBox = motion.create ? motion.create(Box) : motion(Box);
+
+const icons = [
+  <TuneIcon fontSize="small" />,
+  <SpeedIcon fontSize="small" />,
+  <TrendingUpIcon fontSize="small" />,
+];
 
 const CompanyFlexibilitySection = ({ refProp }) => {
   const theme = useTheme();
   const { t } = useTranslation("company");
 
+  const tiles = [0, 1, 2].map((i) => ({
+    title: t(`flexibility.tiles.${i}.title`),
+    content: t(`flexibility.tiles.${i}.content`),
+  }));
+
   return (
     <Box
       ref={refProp}
       sx={{
-        py: { xs: 5, md: 7 },
+        py: { xs: 6, md: 9 },
         borderTop: "1px solid",
         borderColor: theme.palette.divider,
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={2} mb={4} textAlign="center" alignItems="center">
-          <Typography variant="overline" sx={{ letterSpacing: 3 }}>
-            {t("flexibility.header")}
-          </Typography>
-          <Typography variant="h5" fontWeight={700}>
-            {t("flexibility.title")}
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{ maxWidth: 640, mx: "auto", opacity: 0.9 }}
-          >
-            {t("flexibility.subtitle")}
-          </Typography>
-        </Stack>
+        <Grid container spacing={{ xs: 5, md: 7 }}>
+          {/* Left: intro / sticky text column */}
+          <Grid item xs={12} md={5}>
+            <Box sx={{ position: { md: "sticky" }, top: { md: 120 } }}>
+              <Stack spacing={2} alignItems="flex-start" textAlign="left">
+                <Typography variant="overline" sx={{ letterSpacing: 3 }}>
+                  {t("flexibility.header")}
+                </Typography>
+                <Typography variant="h5" fontWeight={700}>
+                  {t("flexibility.title")}
+                </Typography>
+                <Typography variant="body2" sx={{ opacity: 0.9 }}>
+                  {t("flexibility.subtitle")}
+                </Typography>
 
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={4}>
-            <MotionPaper
-              custom={0}
-              variants={sectionFade}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ y: -4, boxShadow: 7 }}
-              sx={{
-                borderRadius: 3,
-                p: 3,
-                height: "100%",
-              }}
-            >
-              <Stack spacing={1.5}>
-                <TuneIcon color="primary" />
-                <Typography variant="subtitle1" fontWeight={700}>
-                  {t("flexibility.tiles.0.title")}
-                </Typography>
-                <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                  {t("flexibility.tiles.0.content")}
-                </Typography>
-              </Stack>
-            </MotionPaper>
-          </Grid>
+                <Box
+                  sx={{
+                    mt: 1,
+                    pl: 2.5,
+                    borderLeft: `3px solid ${theme.palette.primary.main}`,
+                  }}
+                >
+                  <Stack spacing={1.5}>
+                    <Typography variant="body2" sx={{ opacity: 0.9 }}>
+                      {t("flexibility.paragraph_1")}
+                    </Typography>
+                    <Typography variant="body2" sx={{ opacity: 0.9 }}>
+                      {t("flexibility.paragraph_2")}
+                    </Typography>
+                  </Stack>
+                </Box>
 
-          <Grid item xs={12} md={4}>
-            <MotionPaper
-              custom={0.1}
-              variants={sectionFade}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ y: -4, boxShadow: 7 }}
-              sx={{
-                borderRadius: 3,
-                p: 3,
-                height: "100%",
-              }}
-            >
-              <Stack spacing={1.5}>
-                <SpeedIcon color="primary" />
-                <Typography variant="subtitle1" fontWeight={700}>
-                  {t("flexibility.tiles.1.title")}
-                </Typography>
-                <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                  {t("flexibility.tiles.1.content")}
-                </Typography>
-              </Stack>
-            </MotionPaper>
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <MotionPaper
-              custom={0.2}
-              variants={sectionFade}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ y: -4, boxShadow: 7 }}
-              sx={{
-                borderRadius: 3,
-                p: 3,
-                height: "100%",
-              }}
-            >
-              <Stack spacing={1.5}>
-                <TrendingUpIcon color="primary" />
-                <Typography variant="subtitle1" fontWeight={700}>
-                  {t("flexibility.tiles.2.title")}
-                </Typography>
-                <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                  {t("flexibility.tiles.2.content")}
-                </Typography>
-              </Stack>
-            </MotionPaper>
-          </Grid>
-
-          <Grid item xs={12}>
-            <MotionPaper
-              custom={0.3}
-              variants={sectionFade}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              sx={{
-                borderRadius: 3,
-                p: { xs: 3, md: 4 },
-              }}
-            >
-              <Stack spacing={1.5}>
-                <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                  {t("flexibility.paragraph_1")}
-                </Typography>
-                <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                  {t("flexibility.paragraph_2")}
-                </Typography>
-                <Typography variant="caption" sx={{ opacity: 0.8 }}>
+                <Typography
+                  variant="caption"
+                  sx={{ opacity: 0.7, fontStyle: "italic" }}
+                >
                   {t("flexibility.caption")}
                 </Typography>
               </Stack>
-            </MotionPaper>
+            </Box>
+          </Grid>
+
+          {/* Right: numbered timeline */}
+          <Grid item xs={12} md={7}>
+            <Box sx={{ position: "relative" }}>
+              <Box
+                sx={{
+                  position: "absolute",
+                  left: 27,
+                  top: 8,
+                  bottom: 8,
+                  width: "2px",
+                  bgcolor: theme.palette.divider,
+                }}
+              />
+
+              <Stack spacing={5}>
+                {tiles.map((tile, i) => (
+                  <MotionBox
+                    key={tile.title}
+                    custom={i * 0.15}
+                    variants={sectionFade}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    sx={{ display: "flex", gap: 3, position: "relative" }}
+                  >
+                    <Box
+                      sx={{
+                        flexShrink: 0,
+                        width: 56,
+                        height: 56,
+                        borderRadius: "50%",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        bgcolor: theme.palette.primary.main,
+                        color: theme.palette.primary.contrastText,
+                        fontWeight: 800,
+                        zIndex: 1,
+                      }}
+                    >
+                      {icons[i]}
+                    </Box>
+                    <Box sx={{ pt: 0.5 }}>
+                      <Typography
+                        variant="caption"
+                        sx={{
+                          opacity: 0.6,
+                          letterSpacing: 2,
+                          fontWeight: 700,
+                        }}
+                      >
+                        {`0${i + 1}`}
+                      </Typography>
+                      <Typography variant="subtitle1" fontWeight={700}>
+                        {tile.title}
+                      </Typography>
+                      <Typography variant="body2" sx={{ opacity: 0.9 }}>
+                        {tile.content}
+                      </Typography>
+                    </Box>
+                  </MotionBox>
+                ))}
+              </Stack>
+            </Box>
           </Grid>
         </Grid>
       </Container>

@@ -6,7 +6,8 @@
         "general": "Allgemein",
         "menu": "Menü",
         "dark_mode": "Dunkelmodus",
-        "light_mode": "Hellmodus"
+        "light_mode": "Hellmodus",
+        "learn_more": "Mehr erfahren"
     },
     "buttons": {
         "home": "Home",

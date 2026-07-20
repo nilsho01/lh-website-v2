@@ -21,7 +21,7 @@ const themeConfigs = {
             },
             background: {
               default: "#000000ff",
-              paper: "#0f0f0fff",
+              paper: "#1c1c1eff",
             },
           }
         : {
