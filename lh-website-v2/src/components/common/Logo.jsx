@@ -14,14 +14,11 @@ return (
   component="img"
   src="/L+H_Logo.png"
   alt="L+H Logo"
-  sx={(theme) => ({
-    height: "2em",
+  sx={{
+    height: "1.4em",
     width: "auto",
     display: "block",
-    // im Lightmode invertieren, im Darkmode normal
-    filter: theme.palette.mode === "light" ? "invert(1)" : "none",
-    transition: "filter 0.2s ease",
-  })}
+  }}
 />
 
     <Typography
