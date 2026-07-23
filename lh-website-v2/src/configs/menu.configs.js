@@ -67,6 +67,11 @@ const getMenuConfigs = (t) => {
             display: t("buttons.car_clinics"),
             path: "/automobile/car-clinics",
             state: "car-clinics"  ,
+        },
+        {
+            display: t("buttons.automobile_conclusion"),
+            path: "/automobile/conclusion",
+            state: "conclusion",
         }
        ]
     },

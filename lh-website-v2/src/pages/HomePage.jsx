@@ -51,7 +51,6 @@ const HomePage = () => {
 
   const clients = [
     { name: "BMW", logo: "/clients/bmw.png" },
-    { name: "Audi", logo: "/clients/audi.png" },
     { name: "Bentley", logo: "/clients/bentley.png" },
     { name: "Porsche", logo: "/clients/porsche.png" },
     { name: "MINI", logo: "/clients/mini.png" },

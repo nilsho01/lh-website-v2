@@ -147,19 +147,6 @@ const AutomobilePerformanceSection = ({ refProp }) => {
             ))}
           </Grid>
         </Box>
-
-        <Typography
-          variant="caption"
-          component="p"
-          sx={{
-            mt: 4,
-            textAlign: "center",
-            opacity: 0.75,
-            color: theme.palette.text.secondary,
-          }}
-        >
-          {t("performance.footnote")}
-        </Typography>
       </Container>
     </Box>
   );

@@ -12,8 +12,10 @@ import {
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
-import PublicIcon from "@mui/icons-material/Public";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import ShieldIcon from "@mui/icons-material/Shield";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
 import InsightsIcon from "@mui/icons-material/Insights";
 
 import PageWrapper from "../components/common/PageWrapper";
@@ -24,6 +26,7 @@ import AutomobilePerformanceSection from "../components/pages/automobile/Automob
 import AutomobileCustomersSection from "../components/pages/automobile/AutomobileCustomersSection";
 import AutomobileMethodsSection from "../components/pages/automobile/AutomobileMethodsSection";
 import AutomobileCarClinicsSection from "../components/pages/automobile/AutomobileCarClinicsSection";
+import AutomobileConclusionSection from "../components/pages/automobile/AutomobileConclusionSection";
 
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 
@@ -36,6 +39,7 @@ const AutomobilePage = ({ section, state = "automobile" }) => {
   const customersRef = useRef(null);
   const methodsRef = useRef(null);
   const carClinicsRef = useRef(null);
+  const conclusionRef = useRef(null);
 
   const scrollTo = (ref) => {
     if (!ref?.current) return;
@@ -50,6 +54,7 @@ const AutomobilePage = ({ section, state = "automobile" }) => {
       customers: customersRef,
       methods: methodsRef,
       "car-clinics": carClinicsRef,
+      conclusion: conclusionRef,
     };
 
     const ref = sectionRefs[section];
@@ -171,23 +176,41 @@ const AutomobilePage = ({ section, state = "automobile" }) => {
                   {t("hero.subtitle")}
                 </Typography>
 
-                <Stack direction="row" spacing={1.5} mt={1} flexWrap="wrap">
+                <Stack
+                  direction="row"
+                  spacing={1.5}
+                  mt={1}
+                  flexWrap="wrap"
+                  rowGap={1.5}
+                >
                   <Chip
-                    icon={<DirectionsCarFilledIcon />}
-                    label={t("hero.chips.automotive_focus")}
+                    icon={<WorkspacePremiumIcon />}
+                    label={t("hero.chips.senior_led")}
                     size="small"
                     color="secondary"
                     variant="filled"
                   />
                   <Chip
-                    icon={<PublicIcon />}
-                    label={t("hero.chips.international")}
+                    icon={<VerifiedUserIcon />}
+                    label={t("hero.chips.tisax")}
+                    size="small"
+                    variant="outlined"
+                  />
+                  <Chip
+                    icon={<ShieldIcon />}
+                    label={t("hero.chips.prototype")}
+                    size="small"
+                    variant="outlined"
+                  />
+                  <Chip
+                    icon={<SmartToyIcon />}
+                    label={t("hero.chips.ai_platform")}
                     size="small"
                     variant="outlined"
                   />
                   <Chip
                     icon={<InsightsIcon />}
-                    label={t("hero.chips.full_service")}
+                    label={t("hero.chips.board_ready")}
                     size="small"
                     variant="outlined"
                   />
@@ -231,6 +254,14 @@ const AutomobilePage = ({ section, state = "automobile" }) => {
                   >
                     {t("hero.buttons.methods")}
                   </Button>
+
+                  <Button
+                    variant="text"
+                    sx={navButtonSx}
+                    onClick={() => scrollTo(conclusionRef)}
+                  >
+                    {t("hero.buttons.conclusion")}
+                  </Button>
                 </Stack>
               </Stack>
             </Container>
@@ -245,6 +276,7 @@ const AutomobilePage = ({ section, state = "automobile" }) => {
             <AutomobileCustomersSection refProp={customersRef} />
             <AutomobileMethodsSection refProp={methodsRef} />
             <AutomobileCarClinicsSection refProp={carClinicsRef} />
+            <AutomobileConclusionSection refProp={conclusionRef} />
           </Box>
         </Box>
       </Box>

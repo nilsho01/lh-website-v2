@@ -74,6 +74,11 @@ const routes = [
         state: "car-clinics"
     },
     {
+        path: "/automobile/conclusion",
+        element: <AutomobilePage section="conclusion" state="conclusion" />,
+        state: "conclusion"
+    },
+    {
         path: "/customer-satisfaction",
         element: <CustomerSatisfactionPage />,
         state: "customer-satisfaction"

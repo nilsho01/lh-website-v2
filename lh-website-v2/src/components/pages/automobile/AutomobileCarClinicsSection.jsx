@@ -12,9 +12,10 @@ import {
 import { motion } from "framer-motion";
 import sectionFade from "../../common/SectionFade";
 
-import EventSeatIcon from "@mui/icons-material/EventSeat";
-import DriveEtaIcon from "@mui/icons-material/DriveEta";
+import BarChartIcon from "@mui/icons-material/BarChart";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import TouchAppIcon from "@mui/icons-material/TouchApp";
 import { useTranslation } from "react-i18next";
 
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
@@ -24,19 +25,24 @@ const AutomobileCarClinicsSection = ({ refProp }) => {
 
   const cards = [
     {
-      icon: <EventSeatIcon color="primary" />,
+      icon: <BarChartIcon color="primary" />,
       title: t("car_clinics.cards.0.title"),
       text: t("car_clinics.cards.0.text"),
     },
     {
-      icon: <DriveEtaIcon color="primary" />,
+      icon: <DesignServicesIcon color="primary" />,
       title: t("car_clinics.cards.1.title"),
       text: t("car_clinics.cards.1.text"),
     },
     {
-      icon: <DesignServicesIcon color="primary" />,
+      icon: <VerifiedUserIcon color="primary" />,
       title: t("car_clinics.cards.2.title"),
       text: t("car_clinics.cards.2.text"),
+    },
+    {
+      icon: <TouchAppIcon color="primary" />,
+      title: t("car_clinics.cards.3.title"),
+      text: t("car_clinics.cards.3.text"),
     },
   ];
 
@@ -66,17 +72,7 @@ const AutomobileCarClinicsSection = ({ refProp }) => {
                 {t("car_clinics.paragraph_1")}
               </Typography>
 
-              <Typography variant="body2" sx={{ opacity: 0.9 }}>
-                {t("car_clinics.paragraph_2")}
-              </Typography>
-
               <Stack direction="row" spacing={1} flexWrap="wrap" rowGap={1} sx={{ mt: 1 }}>
-                <Chip
-                  label={t("car_clinics.chips.concept_design")}
-                  size="small"
-                  variant="outlined"
-                  sx={{ borderRadius: 999 }}
-                />
                 <Chip
                   label={t("car_clinics.chips.target_recruiting")}
                   size="small"
@@ -85,6 +81,18 @@ const AutomobileCarClinicsSection = ({ refProp }) => {
                 />
                 <Chip
                   label={t("car_clinics.chips.benchmarking")}
+                  size="small"
+                  variant="outlined"
+                  sx={{ borderRadius: 999 }}
+                />
+                <Chip
+                  label={t("car_clinics.chips.senior_execution")}
+                  size="small"
+                  variant="outlined"
+                  sx={{ borderRadius: 999 }}
+                />
+                <Chip
+                  label={t("car_clinics.chips.reliable_reporting")}
                   size="small"
                   variant="outlined"
                   sx={{ borderRadius: 999 }}

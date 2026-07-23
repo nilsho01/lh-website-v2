@@ -9,10 +9,10 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 
-import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import ForumIcon from "@mui/icons-material/Forum";
-import RouteIcon from "@mui/icons-material/Route";
-import TravelExploreIcon from "@mui/icons-material/TravelExplore";
+import QueryStatsIcon from "@mui/icons-material/QueryStats";
+import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import { useTranslation } from "react-i18next";
 
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
@@ -23,22 +23,22 @@ const AutomobileMethodsSection = ({ refProp }) => {
 
   const items = [
     {
-      icon: <QueryStatsIcon />,
+      icon: <ForumIcon />,
       title: t("methods.items.0.title"),
       text: t("methods.items.0.text"),
     },
     {
-      icon: <ForumIcon />,
+      icon: <QueryStatsIcon />,
       title: t("methods.items.1.title"),
       text: t("methods.items.1.text"),
     },
     {
-      icon: <RouteIcon />,
+      icon: <DirectionsCarFilledIcon />,
       title: t("methods.items.2.title"),
       text: t("methods.items.2.text"),
     },
     {
-      icon: <TravelExploreIcon />,
+      icon: <LightbulbIcon />,
       title: t("methods.items.3.title"),
       text: t("methods.items.3.text"),
     },
@@ -118,19 +118,6 @@ const AutomobileMethodsSection = ({ refProp }) => {
             );
           })}
         </Stack>
-
-        <Typography
-          variant="caption"
-          component="p"
-          sx={{
-            mt: 4,
-            textAlign: "center",
-            opacity: 0.75,
-            color: theme.palette.text.secondary,
-          }}
-        >
-          {t("methods.footnote")}
-        </Typography>
       </Container>
     </Box>
   );

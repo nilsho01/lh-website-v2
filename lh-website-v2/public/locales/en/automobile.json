@@ -1,107 +1,126 @@
 {
   "hero": {
-    "overline": "Automotive",
-    "title": "Automotive market research that keeps pace with your product decisions.",
-    "subtitle": "From product clinics and customer journeys to dealer and customer satisfaction programmes: we support the automotive industry with research that turns market feedback into clear decisions.",
+    "overline": "Automotive Research & Consulting",
+    "title": "Automotive research and consulting for strategic decision-making.",
+    "subtitle": "Since 1992, L+H has supported complex research and consulting projects across the automotive industry, from volume clinics and design studies to ethnography, online research, and executive-level insight synthesis. We combine advanced research methodology, senior judgment, flexible execution, and clear, decision-ready reporting. Our work is designed to stand up to expert review, management discussion, and board-level decision-making.",
     "chips": {
-      "full_service": "Full-service studies",
-      "international": "International fieldwork",
-      "automotive_focus": "Automotive focus"
+      "senior_led": "Senior-led",
+      "tisax": "TISAX-AL 3 certified",
+      "prototype": "Experienced in prototype-sensitive research",
+      "ai_platform": "Data-compliant AI research platform",
+      "board_ready": "Board-ready results presentations"
     },
     "buttons": {
-      "performance": "How we deliver",
+      "performance": "How we work",
       "customers": "Who we work for",
-      "methods": "Methods & approaches",
-      "car_clinics": "Car clinics"
+      "methods": "Methods & consulting",
+      "car_clinics": "Car clinics",
+      "conclusion": "Get in touch"
     }
   },
   "performance": {
-    "header": "Performance",
-    "title": "Reliable delivery, from kick-off to final report.",
-    "subtitle": "Automotive timelines are demanding. Our project teams combine fast turnaround with strict quality standards, so results arrive when decisions are made – not after.",
+    "header": "How we work",
+    "title": "Senior expertise. Agile execution. Decisions you can stand behind.",
+    "subtitle": "We combine methodological precision, lean project management, and management-level results delivery.",
     "cards": [
       {
-        "title": "On-time project delivery",
-        "text": "Clear project plans, close coordination and proactive communication keep every study on track – even when timings shift on the client side."
+        "title": "Direct access to experienced senior consultants",
+        "text": "No unnecessary handoffs, no loss of context. Your project is led by experienced senior consultants from the start."
       },
       {
-        "title": "Speed without shortcuts",
-        "text": "Lean structures and short decision paths let us set up, field and analyse automotive studies quickly while keeping the methodology sound."
+        "title": "Flexibility with substance",
+        "text": "Short communication lines, fast response times, and reliable quality standards."
       },
       {
-        "title": "Consistent quality standards",
-        "text": "Standardised quality checks across questionnaires, fieldwork and data preparation deliver results you can confidently present to any board."
+        "title": "Insights built to hold up",
+        "text": "Decision-ready insights for experts, cross-functional teams, management, and the board."
       }
-    ],
-    "footnote": "All project steps, from study design through to reporting, are handled by one dedicated team."
+    ]
   },
   "customers": {
     "header": "Who we work for",
-    "title": "Partners to manufacturers, importers and dealer networks.",
-    "subtitle": "We support automotive companies along the entire value chain – from headquarters to national sales companies and retail organisations, in home markets and internationally.",
+    "title": "A trusted partner for automotive manufacturers, suppliers, and decision-makers.",
+    "subtitle": "We operate where product, brand, and market strategies are shaped by a deep understanding of the customer.",
     "groups": [
       {
-        "title": "Manufacturers (OEMs)",
-        "text": "Product, brand and satisfaction research for headquarters functions – from early concept evaluation to continuous customer and dealer feedback programmes."
+        "title": "Manufacturers & Automotive Brands",
+        "text": "Research for concepts, vehicle designs, product development, and strategic decision-making."
       },
       {
-        "title": "Importers & sales companies",
-        "text": "Market-specific studies that translate central strategies into local insights and account for the specifics of each country and sales region."
+        "title": "Mobility Companies & Emerging Players",
+        "text": "Customer and user perspectives for new services, offerings, and market entry decisions."
       },
       {
-        "title": "Dealer networks",
-        "text": "Customer and dealer satisfaction programmes that show how sales and service are experienced on the ground – outlet by outlet, region by region."
+        "title": "Sales & Retail Networks",
+        "text": "Research for sales and service experiences that help shape brand success."
       }
     ],
-    "logos_caption": "A selection of brands that trust our work"
+    "logos_caption": "Trusted research partner for Porsche, BMW, Bentley, Audi, and MINI."
   },
   "methods": {
-    "header": "Methods",
-    "title": "Quantitative and qualitative – always tailored to the question.",
-    "subtitle": "We combine proven research methods into study designs that fit your decision, your target group and your timeline.",
+    "header": "Methods & Consulting",
+    "title": "Advanced methods. Critical evaluation. Tailored approaches for every research question.",
+    "subtitle": "We combine qualitative, quantitative, and hybrid approaches, with a clear focus on actionable insights, practical relevance, and confident decision-making.",
     "items": [
       {
-        "title": "Quantitative surveys",
-        "text": "CATI and online interviews with drivers, owners and prospects – robust samples, careful screening and structured questionnaires deliver measurable, comparable results."
-      },
-      {
         "title": "Qualitative research",
-        "text": "In-depth interviews and group discussions uncover the motives behind the numbers: how customers think about brands, vehicles and services in their own words."
+        "text": "Uncovering the underlying motivations, perceptions, and experiences that shape customer decisions."
       },
       {
-        "title": "Customer journey analyses",
-        "text": "We map the path from first contact through purchase, service and repurchase – identifying the touchpoints that shape decisions and where experiences break down."
+        "title": "Quantitative research",
+        "text": "Measurable, comparable, and decision-ready results."
       },
       {
-        "title": "Mystery elements",
-        "text": "Mystery calls, visits and enquiries complement survey data with an outside-in view of how sales and service processes actually perform."
+        "title": "Car clinics & product-focused studies (virtual & physical)",
+        "text": "Early feedback on concepts, prototypes, and design directions."
+      },
+      {
+        "title": "Consulting & insight integration",
+        "text": "Insights that go beyond reporting and directly support decision-making."
       }
-    ],
-    "footnote": "Methods are combined into one study design, so results from different sources tell a single, consistent story."
+    ]
   },
   "car_clinics": {
     "header": "Car clinics",
-    "title": "Product clinics that put your vehicle in front of the customers who matter.",
-    "paragraph_1": "In car clinics, target customers evaluate vehicle concepts, designs and prototypes under controlled conditions – long before market launch. Interior and exterior, haptics, functionality and perceived value are assessed in direct comparison with relevant competitors.",
-    "paragraph_2": "We handle the complete setup: recruiting the right participants, designing the evaluation programme, running the fieldwork on site and condensing the results into clear recommendations for product and marketing decisions.",
+    "title": "Car clinics designed for high-stakes projects and confident product decisions.",
+    "paragraph_1": "For many years, L+H has been supporting volume car clinics, concept evaluations, and design clinics across complex automotive environments.",
     "chips": {
-      "concept_design": "Concept & design evaluation",
-      "target_recruiting": "Target customer recruiting",
-      "benchmarking": "Competitive benchmarking"
+      "target_recruiting": "Strategic recruitment",
+      "benchmarking": "Competitive benchmarking",
+      "senior_execution": "Senior consulting & execution",
+      "reliable_reporting": "Reliable insight delivery"
     },
     "cards": [
       {
-        "title": "Static clinics",
-        "text": "Participants experience vehicles or models standing still – seating, ergonomics, material impressions and design are evaluated in detail and compared with competitor vehicles."
+        "title": "Volume and static car clinics",
+        "text": "Structured evaluation of vehicles and competitors, including volume, pricing, and detailed product attributes."
       },
       {
-        "title": "Dynamic clinics",
-        "text": "Test drives add the driving experience: acceleration, handling, comfort and assistance features are assessed in realistic usage situations."
+        "title": "Concept and design clinics",
+        "text": "Early-stage customer feedback on design direction, brand positioning, and perceived product value."
       },
       {
-        "title": "Prototype & concept feedback",
-        "text": "Early feedback on prototypes, mock-ups and concept descriptions shows which features convince target customers – and where concepts should be sharpened before launch."
+        "title": "Prototype-based execution",
+        "text": "TISAX-certified, privacy-compliant, and secure research execution for confidential development projects."
+      },
+      {
+        "title": "UX/UI & smart vehicle experience research",
+        "text": "Customer-based research for the mobility of the future – evaluating digital cockpits, user interfaces, connected functions, and new electric vehicle concepts."
       }
     ]
+  },
+  "conclusion": {
+    "header": "Conclusion",
+    "title": "When research shapes better decisions.",
+    "paragraph_1": "We bring together methodological rigor, TISAX-certified process security, flexible project leadership, and executive-ready insights that support decisions from specialist teams through to senior management and the board.",
+    "paragraph_2": "Through our privacy-compliant AI platform, we continuously evolve research processes, providing more precise analysis, faster synthesis, and reliable decision foundations.",
+    "cta": "Let's discuss how we can support your project.",
+    "contact": {
+      "label": "Get in touch",
+      "name": "Renate Schulze",
+      "role": "Managing Director",
+      "email": "Renate.Schulze@l-h.de",
+      "phone": "+49 176 13322890"
+    }
   }
 }
