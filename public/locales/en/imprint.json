@@ -1,0 +1,55 @@
+{
+  "header": "LEGAL NOTICE",
+  "title": "Imprint · L+H MarketingServices GmbH",
+  "subtitle": "Transparency and clarity matter to us – here you'll find all legally required information about L+H MarketingServices GmbH at a glance.",
+  "company_information": {
+    "title": "Company information",
+    "company": "L+H MarketingServices GmbH",
+    "street": "Virchowstraße 19",
+    "city": "D-90409 Nuremberg, Germany",
+    "phone": "Phone: +49 (0)911-32289-0",
+    "fax": "Fax: +49 (0)911-32289-99",
+    "mail": "Email: info(at)l-h.de"
+  },
+  "register_management": {
+    "title": "Register & Management",
+    "content": "Entry in the commercial register of the Nuremberg Local Court:<br><strong>HRB 11298</strong>",
+    "managing": "Managing Director:",
+    "name": "Christian Hothum",
+    "vat": "VAT ID: <strong>DE152635599</strong>"
+  },
+  "copyright": {
+    "title": "Copyright & Usage Rights",
+    "content": "Copyright and usage rights to all content on this website belong to:<br><strong>L+H MarketingServices GmbH</strong>"
+  },
+  "dispute_resolution": {
+    "title": "Dispute Resolution",
+    "content": "In accordance with § 36 VSBG (German Consumer Dispute Resolution Act), we would like to point out that we do not participate in dispute resolution proceedings before a consumer arbitration board and are not legally obligated to do so."
+  },
+  "facts": {
+    "header": "At a glance",
+    "title": "Key legal information",
+    "fact": [
+      {
+        "tag": "GmbH",
+        "content": "L+H MarketingServices GmbH, headquartered in Nuremberg (Germany)"
+      },
+      {
+        "tag": "HRB 11298",
+        "content": "Commercial register – Nuremberg Local Court"
+      },
+      {
+        "tag": "VAT ID",
+        "content": "DE152635599"
+      },
+      {
+        "tag": "Managing Director",
+        "content": "Christian Hothum"
+      }
+    ]
+  },
+  "hint": {
+    "title": "A brief note",
+    "content": "This imprint is provided in accordance with German law. If you have any questions about the imprint or data protection, please feel free to contact us using the contact options listed below."
+  }
+}

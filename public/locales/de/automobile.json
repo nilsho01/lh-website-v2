@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "overline": "Automotive Research & Beratung",
+    "title": "Automotive Research & Beratung für Entscheidungen mit strategischem Gewicht.",
+    "content": "L+H begleitet seit 1992 anspruchsvolle Forschungs- und Beratungsprojekte in der Automobilindustrie: von Volumenclinics und Designstudien bis zu Ethnographie, Online Research und vorstandssicher verdichteten Ergebnissen. Wir verbinden methodische Aktualität, kritische Urteilskraft, flexible Umsetzung und Ergebnispräsentationen, die auch vor anspruchsvollen Gremien bestehen.",
+    "chips": [
+      "Senior geführt",
+      "TISAX-AL 3 zertifiziert",
+      "Prototypensensible Umfelder",
+      "Datenschutzkonforme KI-Plattform",
+      "Vorstandssichere Ergebnispräsentation"
+    ]
+  },
+  "performance": {
+    "header": "So arbeiten wir",
+    "title": "Senior geführt. Flexibel umgesetzt. Sicher in der Entscheidung.",
+    "subtitle": "Wir verbinden methodische Präzision, schlanke Projektführung und Ergebnisaufbereitung auf Management-Niveau.",
+    "tiles": {
+      "first": {
+        "header": "Erfahrene Ansprechpartner",
+        "content": "Keine Weitergabe, keine Reibungsverluste. Projekte werden direkt von Senioren geführt."
+      },
+      "secound": {
+        "header": "Flexibilität mit Substanz",
+        "content": "Kurze Wege, hohe Reaktionsgeschwindigkeit und verlässliche Qualitätsstandards."
+      },
+      "third": {
+        "header": "Ergebnisse, die bestehen",
+        "content": "Erkenntnisse, die auch vor Fachbereichen, Management und Vorständen tragen."
+      }
+    }
+  },
+  "customers": {
+    "header": "Für wen wir arbeiten",
+    "title": "Partner für Hersteller, Mobilitätsanbieter und anspruchsvolle Automotive-Entscheider.",
+    "subtitle": "Wir arbeiten dort, wo Produkt-, Marken- und Marktentwicklungen belastbare Kundenperspektiven brauchen.",
+    "tiles": {
+      "first": {
+        "header": "Hersteller & Marken",
+        "content": "Forschung für Konzepte, Designs, Fahrzeuge und strategische Entscheidungen."
+      },
+      "secound": {
+        "header": "Mobilitätsanbieter & neue Player",
+        "content": "Nutzerperspektiven für neue Angebote, Services und Marktzugänge."
+      },
+      "third": {
+        "header": "Vertrieb & Handel",
+        "content": "Research für Verkaufs- und Serviceerlebnisse, die Markenerfolg mitprägen."
+      }
+    },
+    "logos_caption": "Erfahrung in Projekten für Porsche, BMW, Bentley, Audi und MINI."
+  },
+  "methods": {
+    "header": "Methoden & Beratung",
+    "title": "Methodisch aktuell. Kritisch geprüft. Passend zur Fragestellung.",
+    "subtitle": "Wir arbeiten qualitativ, quantitativ und hybrid – mit klarem Blick auf Erkenntniswert, Umsetzbarkeit und Entscheidungssicherheit.",
+    "items": [
+      {
+        "header": "Qualitative Forschung",
+        "content": "Tiefenverständnis für Motive, Wahrnehmung und Nutzung."
+      },
+      {
+        "header": "Quantitative Forschung",
+        "content": "Messbare, vergleichbare und entscheidungsfähige Ergebnisse."
+      },
+      {
+        "header": "Car Clinics & produktnahe Studien (virtuell und physisch)",
+        "content": "Frühes Feedback zu Konzepten, Prototypen und Designrichtungen."
+      },
+      {
+        "header": "Beratung & Einbindung von Erkenntnissen",
+        "content": "Ergebnisse, die nicht im Reporting enden, sondern in Entscheidungen wirken."
+      }
+    ]
+  },
+  "car_clinics": {
+    "header": "Car Clinics",
+    "title": "Car Clinics für sensible Projekte und belastbare Produktentscheidungen.",
+    "paragraph_1": "L+H begleitet seit vielen Jahren Volumenclinics, Konzept- und Designclinics in anspruchsvollen Automotive-Umfeldern.",
+    "cards": {
+      "first": {
+        "header": "Volumen- und statische Clinics",
+        "content": "Strukturierte Bewertung von Fahrzeugen und deren Wettbewerbern, Volumen & Preis sowie Detailausprägungen."
+      },
+      "secound": {
+        "header": "Konzept- und Designclinics",
+        "content": "Frühes Feedback zu Exterieur, Interieur, Positionierung und wahrgenommenem Wert."
+      },
+      "third": {
+        "header": "Prototypennahe Durchführung",
+        "content": "TISAX-zertifiziert, datenschutzkonform und sicher in sensiblen Entwicklungsumfeldern."
+      },
+      "fourth": {
+        "header": "UX/UI- & Smart-Fahrzeugerlebnisforschung",
+        "content": "Kundenbasierte Forschung für die Mobilität der Zukunft – zur Bewertung digitaler Cockpits, Bedienoberflächen, vernetzter Funktionen und neuer Elektrofahrzeugkonzepte."
+      }
+    },
+    "chips": {
+      "target_recruiting": "Zielkunden-Rekrutierung",
+      "benchmarking": "Wettbewerbsvergleich",
+      "senior_execution": "Senior Beratung & Durchführung",
+      "reliable_reporting": "Belastbare Ergebnisaufbereitung"
+    }
+  },
+  "conclusion": {
+    "header": "Abschluss",
+    "title": "Wenn Research entscheidungsrelevant werden muss.",
+    "paragraph_1": "L+H steht für senior geführtes Automotive Research & Beratung in sensiblen, komplexen und beratungsnahen Projekten. Wir verbinden methodische Sicherheit, TISAX-zertifizierte Prozesssicherheit, flexible Projektführung und Ergebnisaufbereitung, die auch vor Management und Vorstand Bestand hat.",
+    "paragraph_2": "Mit unserer datenschutzkonformen KI-Plattform entwickeln wir Forschungsprozesse gezielt weiter – für präzisere Auswertung, schnellere Verdichtung und belastbare Entscheidungsgrundlagen.",
+    "cta": "Sprechen Sie mit uns über Ihr Projekt.",
+    "contact": {
+      "label": "Kontakt",
+      "name": "Renate Schulze",
+      "role": "Managing Director",
+      "email": "Renate.Schulze@l-h.de",
+      "phone": "+49 176 13322890"
+    }
+  }
+}

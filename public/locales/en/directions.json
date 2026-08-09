@@ -1,0 +1,62 @@
+{
+    "header": "DIRECTIONS",
+    "title": "How to find us",
+    "subtitle": "Whether by car, public transport, or on foot – here you'll find everything you need to reach us comfortably.",
+    "adress_card": {
+        "title": "Address",
+        "company_name": "L+H MarketingServices GmbH",
+        "street": "Virchowstraße 19",
+        "postal_code_city": "D-90409 Nuremberg",
+        "phone": "Phone: +49 (0)911-32289-0",
+        "tags": [
+            "Parking nearby",
+            "Easily reachable by public transport"
+        ],
+        "office_details": "Our office is on the left-hand side, number 19.",
+        "image_alt": "Street view of our office building"
+    },
+    "directions_card": {
+        "title": "Travel options",
+        "subtitle": "Choose the way that suits you best – we're conveniently located and well signposted.",
+        "by_public_transport": {
+            "title": "By public transport",
+            "description": "Take the tram or train to Nuremberg Central Station. From there it's just a few minutes to Virchowstraße 19."
+        },
+        "on_foot": {
+            "title": "On foot / by bike",
+            "description": "From Nuremberg city center, follow Äußere Bayreuther Straße until you reach Virchowstraße 19."
+        },
+        "by_car_A3": {
+            "title": "By car from the A3",
+            "description": "If you're arriving via the A3 motorway, take exit 85 \"Nürnberg-Nord\" and follow the signs toward Nuremberg. Stay on \"Äußere Bayreuther Straße\" for about 4.5 km. After this stretch, turn right onto Virchowstraße to reach your destination."
+        },
+        "by_car_north_west": {
+            "title": "By car from the north or west",
+            "description": "If you're approaching Nuremberg from the north or west, follow the Nordring (B4R) to the intersection with Äußere Bayreuther Straße. Turn right there onto Äußere Bayreuther Straße heading toward the city center. Shortly after, turn right again onto Virchowstraße."
+        },
+        "by_car_south_east": {
+            "title": "By car from the south or east",
+            "description": "If you're approaching Nuremberg from the south or east, follow the B4R toward the airport until you reach the intersection with \"Äußere Bayreuther Straße\". Turn left there onto \"Äußere Bayreuther Straße\" heading toward the city center (\"Zentrum\"). Shortly after, take the next right turn onto Virchowstraße."
+        }
+    },
+    "map_card": {
+        "title": "Our location on the map",
+        "description": "View our location on the map and plan your route easily.",
+        "disclaimer": "We use Google Maps to display the map. Please consent to its use so the map can load.",
+        "window": {
+            "title": "Enable Google Maps",
+            "description": "Loading the map transfers data to Google. For more information, please see our privacy policy.",
+            "button": "Consent and load map",
+            "subtitle": "This choice only applies to your current visit."
+        },
+        "iframe_title": "Google Maps"
+    },
+    "on_your_way": {
+        "title": "Already on your way?",
+        "description": "Just picture it – while you're making your way here, we're already getting ready for your project.",
+        "subtitle": "Keep scrolling – your project is already on its way.",
+        "title2": "Still have questions about directions?",
+        "description2": "Write to us – we're happy to help you plan your trip and answer any open questions in person.",
+        "contact_us": "Contact us"
+    }
+}

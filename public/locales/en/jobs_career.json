@@ -1,0 +1,90 @@
+{
+  "header": "Jobs & Careers",
+  "title": "Build your career where communication meets craft.",
+  "subtitle": "At L+H, you'll work on real projects for real clients – in a team that prefers direct communication over buzzwords. Grow your skills, your responsibility, and your impact step by step.",
+  "tags": [
+    "Marketing & Communications",
+    "Small, experienced team",
+    "Long-term development"
+  ],
+  "button": "Send a speculative application",
+  "why_work": {
+    "header": "Why work with us?",
+    "title": "A career path with real faces, not just org charts.",
+    "subtitle": "We work closely with our clients – and just as closely with each other. Expect clear responsibilities, visible impact, and colleagues who actually know your name.",
+    "cards": [
+      {
+        "title": "Varied client projects",
+        "content": "From concept to execution – you'll see ideas turn into tangible communication.",
+        "tag": "Hands-on work"
+      },
+      {
+        "title": "A well-tuned team",
+        "content": "You'll be part of a small, experienced team that values direct communication and trust.",
+        "tag": "Flat hierarchy"
+      },
+      {
+        "title": "Room to contribute",
+        "content": "Bring your strengths and shape your role over time – rather than fitting into a rigid template.",
+        "tag": "Your ideas are welcome"
+      }
+    ]
+  },
+  "jobs": {
+    "header": "Jobs",
+    "title": "Open positions – when the timing is right.",
+    "subtitle": "We publish our open positions here. Get in touch if you're interested in one of the roles. If there's currently no matching role, we're still happy to receive speculative applications via our contact page.",
+    "no_positions": "No open positions at the moment.",
+    "no_positions_helper": "Sometimes the best matches happen without a job posting. If you feel like you and L+H would be a good fit, we'd love to hear from you via a speculative application on our contact page.",
+    "apply": "Apply for this position"
+  },
+  "how_we_hire": {
+    "header": "How we hire",
+    "title": "Transparent, personal, and to the point.",
+    "subtitle": "We keep our process lean and personal. No endless assessment marathons – just a few focused steps in which we find out whether we're a good fit for each other.",
+    "cards": [
+      {
+        "name": "Step 01",
+        "title": "Your message",
+        "content": "You contact us via the contact form and briefly outline who you are, your background, and what you're looking for."
+      },
+      {
+        "name": "Step 02",
+        "title": "Initial conversation",
+        "content": "We schedule a short call to clarify both sides' expectations and see whether there's a potential match."
+      },
+      {
+        "name": "Step 03",
+        "title": "Deeper dive",
+        "content": "If things look promising, we talk in more detail about your experience and way of working, and may look at a small work sample."
+      },
+      {
+        "name": "Step 04",
+        "title": "Decision & next steps",
+        "content": "You'll get honest feedback and – ideally – a concrete offer for how you can join us."
+      }
+    ]
+  },
+  "career": {
+    "header": "Your career at L+H",
+    "title": "Not just a job, but a path you help shape.",
+    "subtitle": "We see career growth as something we build together. We talk regularly about where you want to go and what you need to get there – instead of sending you annual feedback forms.",
+    "cards": [
+      {
+        "title": "Onboarding & mentoring",
+        "content": "You'll get structured onboarding and a dedicated point of contact who introduces you to our clients, tools, and processes.",
+        "tag": "Guided start"
+      },
+      {
+        "title": "Growing responsibility",
+        "content": "Over time you'll take on more ownership: your own projects, direct client contact, or responsibility for specific topics.",
+        "tag": "Gradual growth"
+      },
+      {
+        "title": "Long-term development",
+        "content": "Whether you lean toward concept work, project management, or digital topics – we shape your role together with you.",
+        "tag": "Individual paths"
+      }
+    ]
+  }
+}

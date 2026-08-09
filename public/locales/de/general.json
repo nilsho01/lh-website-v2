@@ -1,0 +1,32 @@
+{
+    "general": {
+        "language": "Deutsch",
+        "cancel": "Abbrechen",
+        "confirm": "Bestätigen",
+        "general": "Allgemein",
+        "menu": "Menü",
+        "dark_mode": "Dunkelmodus",
+        "light_mode": "Hellmodus",
+        "learn_more": "Mehr erfahren"
+    },
+    "buttons": {
+        "home": "Startseite",
+        "automobile": {
+            "main": "Automobil",
+            "how-we-work": "So arbeiten wir",
+            "who-we-work-for": "Für wen wir arbeiten",
+            "methods-consulting": "Methoden & Beratung"
+        },
+        "customer-satisfaction": "Kundenzufriedenheit",
+        "financial-markets": {
+            "main": "Finanzmarkt",
+            "online-surveys": "Webbefragungen",
+            "reporting-systems": "Reportingsysteme"
+        },
+        "contact": "Kontakt",
+        "imprint": "Impressum",
+        "data-protection": "Datenschutz",
+        "directions": "Anfahrt",
+        "job_career": "Jobs & Karriere"
+    }
+}

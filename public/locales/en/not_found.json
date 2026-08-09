@@ -1,0 +1,6 @@
+{
+    "title": "Page Not Found",
+    "content": "The page you requested doesn't exist or has been moved.",
+    "button": "Back to home",
+    "note": "If you expected something here, let us know via the <linkTag href='/contact'>contact form</linkTag>."
+}

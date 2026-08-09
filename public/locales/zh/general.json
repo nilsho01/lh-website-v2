@@ -1,0 +1,32 @@
+{
+    "general": {
+        "language": "中文",
+        "cancel": "取消",
+        "confirm": "确认",
+        "general": "常规",
+        "menu": "菜单",
+        "dark_mode": "深色模式",
+        "light_mode": "浅色模式",
+        "learn_more": "了解更多"
+    },
+    "buttons": {
+        "home": "首页",
+        "automobile": {
+            "main": "汽车",
+            "how-we-work": "我们的工作方式",
+            "who-we-work-for": "我们的客户",
+            "methods-consulting": "方法与咨询"
+        },
+        "customer-satisfaction": "客户满意度",
+        "financial-markets": {
+            "main": "金融市场",
+            "online-surveys": "在线调研",
+            "reporting-systems": "报告系统"
+        },
+        "contact": "联系我们",
+        "imprint": "版本说明",
+        "data-protection": "数据保护",
+        "directions": "路线",
+        "job_career": "招聘与职业发展"
+    }
+}

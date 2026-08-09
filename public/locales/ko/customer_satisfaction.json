@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "overline": "고객 만족도",
+    "title": "고객 만족도 측정.",
+    "content": "저희는 체계적으로 결과를 정리한 국제 만족도 조사를 제공합니다.",
+    "chips": [
+      "원스톱 서비스",
+      "국제적 & 산업 전반",
+      "명확한 리포팅"
+    ]
+  },
+  "main": {
+    "header": "저희의 진행 방식",
+    "subheader": "다양한 산업의 기업을 위해 데이터 수집부터 리포팅까지 만족도 조사를 지원합니다.",
+    "first": {
+      "header": "맞춤형 만족도 조사",
+      "content": "고객 로열티 프로그램의 일환으로, 고객사 맞춤형 온라인 리포팅 시스템을 활용해 <strong>고객, 딜러 또는 임직원 만족도 조사</strong>를 수행합니다."
+    },
+    "secound": {
+      "header": "원스톱 서비스",
+      "content": "자동차 부문 조사와 마찬가지로, 데이터 수집부터 리포팅까지 <strong>모든 프로젝트 단계</strong>를 <strong>자체적으로 처리</strong>합니다."
+    },
+    "third": {
+      "header": "국제적 & 산업 전반",
+      "content": "저희는 <strong>국내외</strong>에서 <strong>자동차 및 금융 서비스</strong> 기업뿐 아니라 <strong>하드웨어 및 소프트웨어</strong>, <strong>소비재</strong> 분야 기업과도 협력하고 있습니다."
+    },
+    "fourth": {
+      "header": "명확한 리포팅",
+      "content": "리포팅에서 특히 중요하게 여기는 것은, <strong>복잡한 결과에도 불구하고</strong> <strong>현대적인 그래픽</strong>을 활용한 시각화를 통해 모든 데이터 이용자가 <strong>핵심 내용</strong>을 <strong>한눈에</strong> 파악할 수 있도록 하는 것입니다."
+    }
+  }
+}
