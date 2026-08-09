@@ -1,0 +1,6 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/locales/*", "/wallpapers/*", "/clients/*", "/images/*", "*.{png,jpg,jpeg,avif,ico,svg,css,js}"]
+  }
+}
