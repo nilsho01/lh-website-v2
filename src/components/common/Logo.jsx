@@ -23,9 +23,7 @@ const Logo = () => {
             
             <Typography
                 component="span"
-                fontWeight={700}
-                fontSize="0.7em"
-                sx={{ lineHeight: 1 }}
+                sx={{ fontWeight: 700, fontSize: "0.7em", lineHeight: 1 }}
             >
                 MarketingServices
                 <span

@@ -3,6 +3,7 @@ import React from "react";
 import {
   Box,
   Container,
+  Grid,
   Stack,
   Typography,
   Paper,
@@ -30,8 +31,9 @@ const ContactMainSection = () => {
 
   return (
     <Box sx={{ py: { xs: 5, md: 7 } }}>
-      <Container maxWidth="sm">
-        <Stack spacing={3}>
+      <Container maxWidth="md">
+        <Grid container spacing={3}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <MotionPaper
             custom={0}
             variants={sectionFade}
@@ -42,6 +44,7 @@ const ContactMainSection = () => {
             sx={{
               borderRadius: 3,
               p: 3,
+              height: "100%",
               position: "relative",
               overflow: "hidden",
             }}
@@ -112,7 +115,9 @@ const ContactMainSection = () => {
               </Typography>
             </Stack>
           </MotionPaper>
+        </Grid>
 
+        <Grid size={{ xs: 12, md: 6 }}>
           <MotionPaper
             custom={0.1}
             variants={sectionFade}
@@ -123,6 +128,7 @@ const ContactMainSection = () => {
             sx={{
               borderRadius: 3,
               p: 3,
+              height: "100%",
               position: "relative",
               overflow: "hidden",
             }}
@@ -192,7 +198,8 @@ const ContactMainSection = () => {
                 </Stack>
 
           </MotionPaper>
-        </Stack>
+        </Grid>
+        </Grid>
       </Container>
     </Box>
   );

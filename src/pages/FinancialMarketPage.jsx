@@ -25,7 +25,7 @@ const FinancialMarketPage = () => {
         <FinancialMarketHero />
 
         <Box sx={{ position: "relative" }}>
-          <GlowingLinesBackground count={8} infront={false} fullPage />
+          <GlowingLinesBackground count={8} infront={false} />
 
           <Box sx={{ position: "relative", zIndex: 1 }}>
             <FinancialMarketApproachSection />
