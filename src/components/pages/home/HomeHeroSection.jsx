@@ -87,7 +87,7 @@ const HomeHeroSection = () => {
                     variant="contained"
                     color="secondary"
                     component={RouterLink}
-                    to="/financial-markets"
+                    to="/contact"
                     sx={{
                       borderRadius: "999px",
                       px: 3,
