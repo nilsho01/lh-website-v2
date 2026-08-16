@@ -92,7 +92,7 @@ const JobsCareerDevelopmentSection = () => {
                   }`,
                 }}
               >
-                <Stack spacing={1.5}>
+                <Stack spacing={1.5} sx={{ alignItems: "center", textAlign: "center" }}>
                   <Box
                     sx={{
                       width: 40,
@@ -101,6 +101,7 @@ const JobsCareerDevelopmentSection = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      alignSelf: "center",
                       bgcolor: isDark
                         ? "rgba(255,255,255,0.06)"
                         : "rgba(0,0,0,0.04)",
@@ -118,7 +119,7 @@ const JobsCareerDevelopmentSection = () => {
                     label={block.tag}
                     size="small"
                     variant="outlined"
-                    sx={{ alignSelf: "flex-start" }}
+                    sx={{ alignSelf: "center" }}
                   />
                 </Stack>
               </MotionPaper>

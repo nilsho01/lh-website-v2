@@ -62,8 +62,8 @@ const ContactWhySection = () => {
                 height: "100%",
               }}
             >
-              <Stack spacing={1.5}>
-                <TimelineIcon color="primary" />
+              <Stack spacing={1.5} sx={{ alignItems: "center", textAlign: "center" }}>
+                <TimelineIcon color="primary" sx={{ alignSelf: "center" }} />
                 <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
                   {t('why_contact.tiles.0.title')}
                 </Typography>
@@ -88,8 +88,8 @@ const ContactWhySection = () => {
                 height: "100%",
               }}
             >
-              <Stack spacing={1.5}>
-                <PeopleAltIcon color="primary" />
+              <Stack spacing={1.5} sx={{ alignItems: "center", textAlign: "center" }}>
+                <PeopleAltIcon color="primary" sx={{ alignSelf: "center" }} />
                 <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
                   {t('why_contact.tiles.1.title')}
                 </Typography>
@@ -114,8 +114,8 @@ const ContactWhySection = () => {
                 height: "100%",
               }}
             >
-              <Stack spacing={1.5}>
-                <ArrowForwardIcon color="primary" />
+              <Stack spacing={1.5} sx={{ alignItems: "center", textAlign: "center" }}>
+                <ArrowForwardIcon color="primary" sx={{ alignSelf: "center" }} />
                 <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
                   {t('why_contact.tiles.2.title')}
                 </Typography>

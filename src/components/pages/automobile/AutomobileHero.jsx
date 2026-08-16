@@ -31,7 +31,7 @@ const AutomobileHero = () => {
   const chips = Array.isArray(chipsRaw) ? chipsRaw : [];
 
   return (
-    <HeroSection backgroundUrl="/wallpapers/automobile_hero.avif" big>
+    <HeroSection backgroundUrl="/wallpapers/automobile_hero2.jpg" big>
       <MotionBox
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

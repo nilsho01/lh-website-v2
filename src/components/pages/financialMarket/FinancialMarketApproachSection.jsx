@@ -45,7 +45,7 @@ const FinancialMarketApproachSection = ({ refProp }) => {
                   height: "100%",
                   borderRadius: 3,
                   p: 3,
-                  textAlign: "left",
+                  textAlign: "center",
                   background: theme.palette.mode === "light" ? "#ffffff" : theme.palette.background.paper,
                   border: isDark ? `1px solid ${theme.palette.divider}` : "none",
                 }}
@@ -59,6 +59,7 @@ const FinancialMarketApproachSection = ({ refProp }) => {
                     alignItems: "center",
                     justifyContent: "center",
                     mb: 2,
+                    mx: "auto",
                     backgroundColor: theme.palette.primary.main,
                     color: theme.palette.primary.contrastText,
                   }}

@@ -99,7 +99,15 @@ const JobsWhyJoinSection = () => {
                     pointerEvents: "none",
                   }}
                 />
-                <Stack spacing={1.5} sx={{ position: "relative", zIndex: 1 }}>
+                <Stack
+                  spacing={1.5}
+                  sx={{
+                    position: "relative",
+                    zIndex: 1,
+                    alignItems: "center",
+                    textAlign: "center",
+                  }}
+                >
                   <Box
                     sx={{
                       width: 40,
@@ -108,6 +116,7 @@ const JobsWhyJoinSection = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      alignSelf: "center",
                       bgcolor: isDark
                         ? "rgba(255,255,255,0.06)"
                         : "rgba(0,0,0,0.04)",
@@ -125,7 +134,7 @@ const JobsWhyJoinSection = () => {
                     label={item.chip}
                     size="small"
                     variant="outlined"
-                    sx={{ alignSelf: "flex-start", mt: 1 }}
+                    sx={{ alignSelf: "center", mt: 1 }}
                   />
                 </Stack>
               </MotionPaper>

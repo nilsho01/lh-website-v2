@@ -105,8 +105,8 @@ const Topbar = () => {
   const languages = [
     { code: "en", label: "English", flag: "GB" },
     { code: "de", label: "Deutsch", flag: "DE" },
-    { code: "zh", label: "中文", flag: "CN" },
-    { code: "ko", label: "한국어", flag: "KR" },
+    //{ code: "zh", label: "中文", flag: "CN" },
+    //{ code: "ko", label: "한국어", flag: "KR" },
   ];
 
   const currentLanguage =

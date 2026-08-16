@@ -9,6 +9,9 @@ const clients = [
   { name: "Porsche", logo: "/clients/porsche.png" },
   { name: "MINI", logo: "/clients/mini.png" },
   { name: "Sparkasse", logo: "/clients/sparkasse.png" },
+  { name: "Jaguar", logo: "/clients/Jaguar.png"},
+  { name: "Land Rover", logo: "/clients/LandRover.svg"},
+  { name: "Ferrari", logo: "/clients/Scuderia_Ferrari_Logo.svg"}
 ];
 
 const HomeClientsSection = () => {

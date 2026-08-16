@@ -21,8 +21,9 @@ const clients = [
   { name: "Porsche", logo: "/clients/porsche.png" },
   { name: "BMW", logo: "/clients/bmw.png" },
   { name: "Bentley", logo: "/clients/bentley.png" },
-  { name: "Audi", logo: "/clients/audi.png" },
   { name: "MINI", logo: "/clients/mini.png" },
+  { name: "Jaguar", logo: "/clients/Jaguar.png" },
+  { name: "Land Rover", logo: "/clients/LandRover.svg" },
 ];
 
 const AutomobileCustomersSection = ({ refProp }) => {
@@ -55,7 +56,7 @@ const AutomobileCustomersSection = ({ refProp }) => {
                   height: "100%",
                   borderRadius: 3,
                   p: 3,
-                  textAlign: "left",
+                  textAlign: "center",
                   background: theme.palette.mode === "light" ? "#ffffff" : theme.palette.background.paper,
                   border: isDark ? `1px solid ${theme.palette.divider}` : "none",
                 }}
@@ -69,6 +70,7 @@ const AutomobileCustomersSection = ({ refProp }) => {
                     alignItems: "center",
                     justifyContent: "center",
                     mb: 2,
+                    mx: "auto",
                     backgroundColor: theme.palette.primary.main,
                     color: theme.palette.primary.contrastText,
                   }}
