@@ -4,14 +4,14 @@ import { Box, Container, Stack, Typography, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 const clients = [
-  { name: "BMW", logo: "/clients/bmw.png" },
   { name: "Bentley", logo: "/clients/bentley.png" },
-  { name: "Porsche", logo: "/clients/porsche.png" },
+  { name: "BMW", logo: "/clients/bmw.png" },
+  { name: "Ferrari", logo: "/clients/Scuderia_Ferrari_Logo.svg"},
   { name: "MINI", logo: "/clients/mini.png" },
-  { name: "Sparkasse", logo: "/clients/sparkasse.png" },
   { name: "Jaguar", logo: "/clients/Jaguar.png"},
   { name: "Land Rover", logo: "/clients/LandRover.svg"},
-  { name: "Ferrari", logo: "/clients/Scuderia_Ferrari_Logo.svg"}
+  { name: "Porsche", logo: "/clients/porsche.png" },
+  { name: "Sparkasse", logo: "/clients/sparkasse.png" }
 ];
 
 const HomeClientsSection = () => {
