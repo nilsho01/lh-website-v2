@@ -112,7 +112,8 @@
       "label": "联系方式",
       "name": "Renate Schulze",
       "role": "总经理",
-      "email": "Renate.Schulze@l-h.de",
+      "email_user": "Renate.Schulze",
+      "email_domain": "l-h.de",
       "phone": "+49 176 13322890"
     }
   }
