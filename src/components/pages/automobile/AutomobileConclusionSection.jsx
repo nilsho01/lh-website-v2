@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import sectionFade from "../../common/SectionFade";
 
 import EmailIcon from "@mui/icons-material/Email";
+import ObfuscatedEmail from "../../common/ObfuscatedEmail";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { useTranslation } from "react-i18next";
 
@@ -25,7 +26,10 @@ const AutomobileConclusionSection = ({ refProp }) => {
   const isDark = theme.palette.mode === "dark";
   const { t } = useTranslation("automobile");
 
-  const email = t("conclusion.contact.email");
+  // Getrennt gehalten, damit in den oeffentlich abrufbaren
+  // Uebersetzungsdateien keine vollstaendige Adresse steht.
+  const emailUser = t("conclusion.contact.email_user");
+  const emailDomain = t("conclusion.contact.email_domain");
   const phone = t("conclusion.contact.phone");
 
   return (
@@ -97,14 +101,13 @@ const AutomobileConclusionSection = ({ refProp }) => {
                 </Box>
 
                 <Stack spacing={1.5}>
-                  <Button
-                    href={`mailto:${email}`}
+                  <ObfuscatedEmail
+                    user={emailUser}
+                    domain={emailDomain}
                     startIcon={<EmailIcon />}
                     variant="contained"
                     sx={{ borderRadius: 999, textTransform: "none", justifyContent: "flex-start" }}
-                  >
-                    {email}
-                  </Button>
+                  />
                   <Button
                     href={`tel:${phone.replace(/\s+/g, "")}`}
                     startIcon={<PhoneIcon />}

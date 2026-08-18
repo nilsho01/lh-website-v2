@@ -1,116 +1,37 @@
-# ==============================================================
-#  L+H Website - Apache Konfiguration
-#  Liegt in public/ und wird bei jedem `npm run build`
-#  automatisch nach dist/ kopiert. Nicht in dist/ direkt editieren.
-#
-#  ZWEI GRUNDREGELN, die hier bewusst eingehalten werden:
-#
-#  1. Nur Direktiven der Override-Klasse FileInfo. DirectoryIndex
-#     (Klasse Indexes) und Options (Klasse Options) sind auf dem
-#     Server nicht erlaubt und beenden jede Anfrage mit HTTP 500.
-#
-#  2. Keine pauschalen Regeln. Eine .htaccess wirkt auch auf alle
-#     Unterverzeichnisse. Liegen dort weitere Anwendungen (SSO,
-#     Erfasserabrechnung, Inventarverwaltung), duerfen sie von den
-#     Regeln dieser Seite nicht erfasst werden. Deshalb greift jede
-#     Regel nur auf einem ausdruecklich benannten Pfad.
-# ==============================================================
-
-
-# --- 1) Routing ------------------------------------------------
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-
-  # 1a) Redirects von der alten PHP-Website.
-  # Diese Adressen stehen noch in alten Fragebogen und auf Fremdseiten.
-  # Der Parameter lng setzt die Sprache der App (i18next liest ihn mit
-  # hoechster Prioritaet und merkt sie sich im localStorage).
-  RewriteRule ^de/07_im\.php$  /imprint?lng=de  [NC,R=301,L]
-  RewriteRule ^en/07_im\.php$  /imprint?lng=en  [NC,R=301,L]
-
-  # 1b) Marker fuer die Cache-Header weiter unten. Reine Kennzeichnung,
-  # kein Umschreiben - dadurch bleiben die Header auf diese Pfade
-  # begrenzt und treffen keine fremden Verzeichnisse.
-  RewriteRule ^assets/                    - [E=CACHE_IMMUTABLE:1]
-  RewriteRule ^(wallpapers|clients|images)/ - [E=CACHE_WEEK:1]
-  RewriteRule ^locales/                   - [E=CACHE_NONE:1]
-  RewriteRule ^(index\.html)?$            - [E=CACHE_NONE:1]
-
-  # 1c) Verzeichnis-Listings der eigenen Ordner unterbinden.
-  # Ersetzt "Options -Indexes", das hier nicht erlaubt ist. Bewusst auf
-  # die eigenen Verzeichnisse begrenzt - eine pauschale Regel wuerde
-  # auch fremde Anwendungen mit 403 abweisen.
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^(assets|locales|wallpapers|clients|images)(/|$) - [F]
-
-  # 1d) SPA-Fallback.
-  # Greift nur, wenn die Anfrage weder eine existierende Datei noch ein
-  # existierendes Verzeichnis ist UND ihr erstes Pfadsegment kein
-  # Verzeichnis im DocumentRoot bezeichnet.
-  #
-  # Diese dritte Bedingung ist der Schutz fuer die Nachbarn: Liegen
-  # unter diesem Verzeichnis weitere Anwendungen (SSO,
-  # Erfasserabrechnung, Inventarverwaltung), ist ihr erstes
-  # Pfadsegment ein echtes Verzeichnis - die Regel laesst sie dann
-  # samt ihrer eigenen 404-Seiten in Ruhe. Unbekannte Adressen dieser
-  # Seite erreichen dagegen die gestaltete PageNotFound-Seite der App.
-  #
-  # Setzt voraus, dass diese .htaccess im DocumentRoot liegt.
-  RewriteCond %{REQUEST_FILENAME}  !-f
-  RewriteCond %{REQUEST_FILENAME}  !-d
-  RewriteCond %{DOCUMENT_ROOT}/$1  !-d
-  RewriteRule ^([^/]+) index.html [L]
-
-  # 1e) Startseite. Noetig, weil DirectoryIndex nicht erlaubt ist.
-  RewriteRule ^$ index.html [L]
-</IfModule>
-
-
-# --- 2) MIME-Typen ---------------------------------------------
-# Aeltere Apache-Versionen kennen woff2/avif nicht.
-<IfModule mod_mime.c>
-  AddType font/woff2  .woff2
-  AddType font/woff   .woff
-  AddType image/avif  .avif
-</IfModule>
-
-
-# --- 3) Kompression --------------------------------------------
-# Das JS-Bundle ist ~4,5 MB unkomprimiert, ~1,5 MB gzip.
-# Schriften und Bilder sind bereits komprimiert -> nicht erneut packen.
-# Wirkt bewusst auch auf Unterverzeichnisse: Kompression ist fuer
-# fremde Anwendungen unschaedlich und dort ebenso erwuenscht.
-<IfModule mod_brotli.c>
-  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain \
-                                        text/javascript application/javascript \
-                                        application/json image/svg+xml
-</IfModule>
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css text/plain \
-                                text/javascript application/javascript \
-                                application/json image/svg+xml
-</IfModule>
-
-
-# --- 4) Caching ------------------------------------------------
-# Ausschliesslich ueber die Marker aus 1b, also nur fuer die
-# Verzeichnisse dieser Seite.
+RewriteEngine On
+RewriteBase /
+ 
+# Wenn Datei oder Ordner existiert, nichts umschreiben
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+ 
+# Sonderfall Impressum und Datenschutz - die werden von Fragebögen angesteuert
+RewriteRule ^de/impressum\.html$ /imprint [R=301,L]
+ 
+# Sonst alles an React weitergeben
+RewriteRule ^ index.html [L]
+ 
+ 
 <IfModule mod_headers.c>
-
-  # /assets/* traegt einen Content-Hash im Dateinamen. Bei einer
-  # Aenderung entsteht ein neuer Name -> dauerhaft cachebar.
-  Header set Cache-Control "public, max-age=31536000, immutable" env=CACHE_IMMUTABLE
-
+ 
+  # Build-Assets (/assets/*) tragen einen Content-Hash im Dateinamen.
+  # Bei einer Aenderung entsteht ein neuer Name -> dauerhaft cachebar.
+<FilesMatch "\.(js|css|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+ 
   # Bilder aus public/ haben feste Namen. Moderat cachen, damit ein
   # ausgetauschtes Wallpaper nicht ein Jahr lang alt bleibt.
-  Header set Cache-Control "public, max-age=604800" env=CACHE_WEEK
-
-  # Uebersetzungen nie dauerhaft cachen.
-  Header set Cache-Control "no-cache" env=CACHE_NONE
-
-  # Die zweite Zeile faengt den Fall ab, dass die Startseite intern
-  # auf index.html umgeschrieben wurde - Apache stellt Variablen dann
-  # mit dem Praefix REDIRECT_ bereit.
-  Header set Cache-Control "no-cache" env=REDIRECT_CACHE_NONE
+<FilesMatch "\.(png|jpe?g|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+</FilesMatch>
+ 
+  # index.html und die Uebersetzungen NIE dauerhaft cachen, sonst
+  # sehen Besucher nach einem Deploy weiter die alte Version.
+<FilesMatch "\.(html|json)$">
+    Header set Cache-Control "no-cache"
+</FilesMatch>
+ 
+  Header set X-Content-Type-Options "nosniff"
 </IfModule>
