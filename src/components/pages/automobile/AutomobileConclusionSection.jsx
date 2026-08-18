@@ -32,6 +32,12 @@ const AutomobileConclusionSection = ({ refProp }) => {
   const emailDomain = t("conclusion.contact.email_domain");
   const phone = t("conclusion.contact.phone");
 
+  // "+49 (0)911-32289-0" -> "+49911322890"
+  // Die (0) gilt nur beim Waehlen im Inland und darf in einer
+  // internationalen Nummer nicht mitgewaehlt werden; Klammern und
+  // Bindestriche haben in einem tel:-Verweis ohnehin nichts zu suchen.
+  const phoneHref = phone.replace(/\(0\)/g, "").replace(/[^\d+]/g, "");
+
   return (
     <Box id="conclusion" ref={refProp}
       sx={{
@@ -109,7 +115,7 @@ const AutomobileConclusionSection = ({ refProp }) => {
                     sx={{ borderRadius: 999, textTransform: "none", justifyContent: "flex-start" }}
                   />
                   <Button
-                    href={`tel:${phone.replace(/\s+/g, "")}`}
+                    href={`tel:${phoneHref}`}
                     startIcon={<PhoneIcon />}
                     variant="outlined"
                     sx={{ borderRadius: 999, textTransform: "none", justifyContent: "flex-start" }}
