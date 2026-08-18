@@ -2,12 +2,12 @@
 #  L+H Website - Apache Konfiguration
 #  Liegt in public/ und wird bei jedem `npm run build`
 #  automatisch nach dist/ kopiert. Nicht in dist/ direkt editieren.
+#
+#  WICHTIG: Diese Datei kommt bewusst mit "AllowOverride FileInfo"
+#  aus. Direktiven wie DirectoryIndex (Klasse Indexes) oder Options
+#  (Klasse Options) sind auf dem Server nicht erlaubt und wuerden
+#  jede Anfrage mit HTTP 500 beenden - nicht wieder aufnehmen.
 # ==============================================================
-
-DirectoryIndex index.html
-
-# Kein Verzeichnis-Listing (z.B. /wallpapers/)
-Options -Indexes
 
 
 # --- 1) Routing ------------------------------------------------
@@ -24,15 +24,19 @@ Options -Indexes
   RewriteRule ^de/07_im\.php$  /imprint?lng=de  [NC,R=301,L]
   RewriteRule ^en/07_im\.php$  /imprint?lng=en  [NC,R=301,L]
 
-  # 1b) SPA-Fallback: der React-Router kennt Routen wie /contact nur
-  # im Browser. Ohne diese Regel liefert Apache dort einen 404.
-
-  # Existierende Dateien und Verzeichnisse unveraendert ausliefern
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  # 1b) Verzeichnis-Anfragen wie /wallpapers/ abweisen.
+  # Ersetzt "Options -Indexes", das hier nicht erlaubt ist.
+  # Das Muster .+ greift bewusst nicht bei der Startseite (leerer Pfad).
   RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule .+ - [F]
+
+  # 1c) Existierende Dateien unveraendert ausliefern
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  # Alles Uebrige uebernimmt die App
+  # 1d) SPA-Fallback: der React-Router kennt Routen wie /contact nur
+  # im Browser. Ohne diese Regel liefert Apache dort einen 404.
+  # Deckt zugleich die Startseite ab, da DirectoryIndex entfaellt.
   RewriteRule ^ index.html [L]
 </IfModule>
 
