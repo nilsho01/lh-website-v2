@@ -1,0 +1,67 @@
+{
+    "hero": {
+        "header": "Financial Markets",
+        "title": "Measuring customer satisfaction in financial markets",
+        "content": "When measuring customer satisfaction in financial markets, we handle every step from data analysis to reporting in-house.",
+        "chips": [
+            "Customer satisfaction",
+            "In-house reporting",
+            "Tailored reporting"
+        ]
+    },
+    "main": {
+        "header": "Customer satisfaction in financial markets",
+        "title": "How we work",
+        "subheader": "We support customer and employee satisfaction studies for financial market companies with tailored online reporting.",
+        "tiles": {
+            "first": {
+                "header": "Tailored satisfaction studies",
+                "content": "As part of <strong>customer loyalty programs</strong>, we conduct <strong>customer or employee satisfaction studies</strong> with client-specific <strong>online reporting systems</strong> for financial market companies."
+            },
+            "second": {
+                "header": "Clear reporting",
+                "content": "In reporting, we place particular emphasis on ensuring that <strong>despite the complexity</strong> of the results, the presentation is supported by <strong>modern graphics</strong>, so that all data users can grasp the <strong>'essentials'</strong> at a <strong>glance</strong>."
+            }
+        }
+    },
+    "webquestionaire": {
+        "header": "Web Survey",
+        "title": "A central tool for international surveys",
+        "subheader": "Online surveys are part of our standard repertoire and serve as a central tool for international surveys.",
+        "tile": {
+            "header": "Automated processes",
+            "content": "From <strong>data collection</strong> to <strong>reporting</strong>, our processes run <strong>fully automated</strong>."
+        }
+    },
+    "reportingsysteme": {
+        "header": "Reporting Systems",
+        "title": "Tailored reporting from a single mold - on a single platform",
+        "subheader": "Automated graphical presentation of results is highly important to us. Our online reports also allow for individual detailed analyses.",
+        "tiles": {
+            "first": {
+                "header": "Data foundation",
+                "content": "<strong>Structured</strong> data and database management as the foundation for <strong>detailed</strong> and <strong>stable</strong> reporting."
+            },
+            "secound": {
+                "header": "Tailored reporting",
+                "content": "<strong>Condensed</strong>, <strong>complexity-reduced</strong>, <strong>tailored</strong> reporting."
+            },
+            "third": {
+                "header": "Campaign monitoring",
+                "content": "<strong>Continuous</strong> monitoring of your campaigns. You track <strong>target</strong> and <strong>actual</strong> response rates. Overall and across all sub- and target groups."
+            },
+            "fourth": {
+                "header": "Clean questionnaires",
+                "content": "<strong>Methodically clean</strong> questionnaires for <strong>robust</strong> measurements of your target groups."
+            },
+            "fifth": {
+                "header": "The overview you need",
+                "content": "From <strong>specialist</strong> to <strong>generalist</strong> – we keep the <strong>overview</strong> you need."
+            },
+            "sixst": {
+                "header": "Professional project management",
+                "content": "<strong>Professional</strong> project management from the <strong>first idea</strong> all the way to the <strong>up-to-date dashboard</strong>."
+            }
+        }
+    }
+}

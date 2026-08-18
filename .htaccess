@@ -1,0 +1,88 @@
+# ==============================================================
+#  L+H Website - Apache Konfiguration
+#  Liegt in public/ und wird bei jedem `npm run build`
+#  automatisch nach dist/ kopiert. Nicht in dist/ direkt editieren.
+# ==============================================================
+
+DirectoryIndex index.html
+
+# Kein Verzeichnis-Listing (z.B. /wallpapers/)
+Options -Indexes
+
+
+# --- 1) Routing ------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1a) Redirects von der alten PHP-Website.
+  # Diese Adressen stehen noch in alten Fragebogen und auf Fremdseiten.
+  # Der Parameter lng setzt die Sprache der App (i18next liest ihn mit
+  # hoechster Prioritaet und merkt sie sich im localStorage).
+  # WICHTIG: muss vor dem SPA-Fallback stehen, sonst wird die alte
+  # Adresse an die App durchgereicht und landet auf der 404-Seite.
+  RewriteRule ^de/07_im\.php$  /imprint?lng=de  [NC,R=301,L]
+  RewriteRule ^en/07_im\.php$  /imprint?lng=en  [NC,R=301,L]
+
+  # 1b) SPA-Fallback: der React-Router kennt Routen wie /contact nur
+  # im Browser. Ohne diese Regel liefert Apache dort einen 404.
+
+  # Existierende Dateien und Verzeichnisse unveraendert ausliefern
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Alles Uebrige uebernimmt die App
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+
+# --- 2) MIME-Typen ---------------------------------------------
+# Aeltere Apache-Versionen kennen woff2/avif nicht.
+<IfModule mod_mime.c>
+  AddType font/woff2  .woff2
+  AddType font/woff   .woff
+  AddType image/avif  .avif
+  AddType image/svg+xml .svg
+  AddType application/json .json
+</IfModule>
+
+
+# --- 3) Kompression --------------------------------------------
+# Das JS-Bundle ist ~4,5 MB unkomprimiert, ~1,5 MB gzip.
+# Schriften und Bilder sind bereits komprimiert -> nicht erneut packen.
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain \
+                                        text/javascript application/javascript \
+                                        application/json image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain \
+                                text/javascript application/javascript \
+                                application/json image/svg+xml
+</IfModule>
+
+
+# --- 4) Caching ------------------------------------------------
+<IfModule mod_headers.c>
+
+  # Build-Assets (/assets/*) tragen einen Content-Hash im Dateinamen.
+  # Bei einer Aenderung entsteht ein neuer Name -> dauerhaft cachebar.
+  <FilesMatch "\.(js|css|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Bilder aus public/ haben feste Namen. Moderat cachen, damit ein
+  # ausgetauschtes Wallpaper nicht ein Jahr lang alt bleibt.
+  <FilesMatch "\.(png|jpe?g|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # index.html und die Uebersetzungen NIE dauerhaft cachen, sonst
+  # sehen Besucher nach einem Deploy weiter die alte Version.
+  <FilesMatch "\.(html|json)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>

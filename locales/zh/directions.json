@@ -1,0 +1,62 @@
+{
+    "header": "路线指引",
+    "title": "如何找到我们",
+    "subtitle": "无论是自驾、乘坐公共交通，还是步行前来——在此您可以找到轻松抵达我们所需的全部信息。",
+    "adress_card": {
+        "title": "地址",
+        "company_name": "L+H MarketingServices GmbH",
+        "street": "Virchowstraße 19",
+        "postal_code_city": "D-90409 纽伦堡，德国",
+        "phone": "电话：+49 (0)911-32289-0",
+        "tags": [
+            "附近设有停车位",
+            "公共交通便捷可达"
+        ],
+        "office_details": "我们的办公室位于左侧，门牌号为19号。",
+        "image_alt": "我们办公楼的街景图"
+    },
+    "directions_card": {
+        "title": "到达方式",
+        "subtitle": "请选择最适合您的出行方式——我们地理位置便利，且路标指引清晰。",
+        "by_public_transport": {
+            "title": "乘坐公共交通",
+            "description": "乘坐有轨电车或火车至纽伦堡中央车站，从车站出发只需几分钟即可到达 Virchowstraße 19。"
+        },
+        "on_foot": {
+            "title": "步行 / 骑行",
+            "description": "从纽伦堡市中心出发，沿 Äußere Bayreuther Straße 前行，即可到达 Virchowstraße 19。"
+        },
+        "by_car_A3": {
+            "title": "自驾（经A3高速）",
+            "description": "如您经A3高速公路前来，请在85号出口“Nürnberg-Nord”驶出，并沿指示牌前往纽伦堡方向。沿“Äußere Bayreuther Straße”行驶约4.5公里后，右转进入 Virchowstraße 即可到达目的地。"
+        },
+        "by_car_north_west": {
+            "title": "自驾（从北部或西部方向）",
+            "description": "如您从纽伦堡北部或西部方向前来，请沿北环路（Nordring / B4R）行驶，至与“Äußere Bayreuther Straße”交叉路口处右转，沿“Äußere Bayreuther Straße”驶向市中心方向。随后不久再次右转进入 Virchowstraße。"
+        },
+        "by_car_south_east": {
+            "title": "自驾（从南部或东部方向）",
+            "description": "如您从纽伦堡南部或东部方向前来，请沿B4R道路驶向机场方向，至与“Äußere Bayreuther Straße”交叉路口处左转，沿“Äußere Bayreuther Straße”驶向市中心（“Zentrum”）方向。随后不久，在下一个路口右转进入 Virchowstraße。"
+        }
+    },
+    "map_card": {
+        "title": "我们在地图上的位置",
+        "description": "在地图上查看我们的位置，轻松规划您的行程路线。",
+        "disclaimer": "我们使用 Google 地图来显示位置信息。请同意使用条款以加载地图。",
+        "window": {
+            "title": "启用 Google 地图",
+            "description": "加载地图会将数据传输至 Google。更多信息请参阅我们的隐私政策。",
+            "button": "同意并加载地图",
+            "subtitle": "此选择仅适用于您本次访问。"
+        },
+        "iframe_title": "Google 地图"
+    },
+    "on_your_way": {
+        "title": "已经在路上了吗？",
+        "description": "尽情想象吧——在您前来的路上，我们已为您的项目做好了准备。",
+        "subtitle": "继续向下滚动——您的项目已在路上。",
+        "title2": "关于路线还有疑问？",
+        "description2": "欢迎给我们留言——我们很乐意为您规划行程提供帮助，并当面为您解答疑问。",
+        "contact_us": "联系我们"
+    }
+}

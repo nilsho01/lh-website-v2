@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "overline": "Customer Satisfaction",
+    "title": "Measuring customer satisfaction.",
+    "content": "We offer international satisfaction studies with structured presentation of results.",
+    "chips": [
+      "All from a single source",
+      "International & cross-industry",
+      "Clear reporting"
+    ]
+  },
+  "main": {
+    "header": "How we work",
+    "subheader": "We support satisfaction studies for companies across different industries, from data collection to reporting.",
+    "first": {
+      "header": "Tailored satisfaction studies",
+      "content": "As part of customer loyalty programs, we conduct <strong>customer, dealer, or employee satisfaction studies</strong> with client-specific online reporting systems."
+    },
+    "secound": {
+      "header": "All from a single source",
+      "content": "As with our automotive studies, <strong>every project step</strong> from data collection to reporting is <strong>handled in-house</strong>."
+    },
+    "third": {
+      "header": "International & cross-industry",
+      "content": "We work <strong>domestically and internationally</strong> for companies in <strong>automotive and financial services</strong>, as well as <strong>hardware and software</strong> or <strong>consumer goods</strong>."
+    },
+    "fourth": {
+      "header": "Clear reporting",
+      "content": "In reporting, we place particular emphasis on ensuring that <strong>despite the complexity</strong> of the results, the presentation is supported by <strong>modern graphics</strong>, so that all data users can grasp the <strong>'essentials'</strong> at a <strong>glance</strong>."
+    }
+  }
+}

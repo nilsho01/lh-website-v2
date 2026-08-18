@@ -1,0 +1,32 @@
+{
+    "general": {
+        "language": "한국어",
+        "cancel": "취소",
+        "confirm": "확인",
+        "general": "일반",
+        "menu": "메뉴",
+        "dark_mode": "다크 모드",
+        "light_mode": "라이트 모드",
+        "learn_more": "더 알아보기"
+    },
+    "buttons": {
+        "home": "홈",
+        "automobile": {
+            "main": "자동차",
+            "how-we-work": "일하는 방식",
+            "who-we-work-for": "고객사",
+            "methods-consulting": "방법론 & 컨설팅"
+        },
+        "customer-satisfaction": "고객 만족도",
+        "financial-markets": {
+            "main": "금융 시장",
+            "online-surveys": "온라인 설문조사",
+            "reporting-systems": "리포팅 시스템"
+        },
+        "contact": "문의하기",
+        "imprint": "임프린트",
+        "data-protection": "개인정보 보호",
+        "directions": "오시는 길",
+        "job_career": "채용 & 커리어"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "general": {
+        "language": "English",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "general": "General",
+        "menu": "Menu",
+        "dark_mode": "Dark mode",
+        "light_mode": "Light mode",
+        "learn_more": "Learn more"
+    },
+    "buttons": {
+        "home": "Home",
+        "automobile": {
+            "main": "Automotive",
+            "how-we-work": "How we work",
+            "who-we-work-for": "Who we work for",
+            "methods-consulting": "Methods & Consulting"
+        },
+        "customer-satisfaction": "Customer Satisfaction",
+        "financial-markets": {
+            "main": "Financial Markets",
+            "online-surveys": "Web Surveys",
+            "reporting-systems": "Reporting Systems"
+        },
+        "contact": "Contact",
+        "imprint": "Imprint",
+        "data-protection": "Data Protection",
+        "directions": "Directions",
+        "job_career": "Jobs & Careers"
+    }
+}

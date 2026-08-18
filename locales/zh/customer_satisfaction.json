@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "overline": "客户满意度",
+    "title": "客户满意度测评。",
+    "content": "我们提供国际化的满意度研究，并对结果进行结构化呈现。",
+    "chips": [
+      "一站式服务",
+      "跨国界、跨行业",
+      "清晰的报告"
+    ]
+  },
+  "main": {
+    "header": "我们的工作方式",
+    "subheader": "我们为不同行业的企业提供满意度研究支持，涵盖从数据采集到报告呈现的全过程。",
+    "first": {
+      "header": "量身定制的满意度研究",
+      "content": "在客户忠诚度项目框架下，我们通过客户专属的在线报告系统开展<strong>客户、经销商或员工满意度研究</strong>。"
+    },
+    "secound": {
+      "header": "一站式服务",
+      "content": "与我们的汽车行业研究一样，从数据采集到报告呈现的<strong>每一个项目环节</strong>均由我们<strong>内部完成</strong>。"
+    },
+    "third": {
+      "header": "跨国界、跨行业",
+      "content": "我们服务于<strong>国内外</strong>的<strong>汽车与金融服务</strong>企业，也涵盖<strong>硬件与软件</strong>以及<strong>消费品</strong>领域。"
+    },
+    "fourth": {
+      "header": "清晰的报告",
+      "content": "在报告呈现方面，我们特别注重：<strong>尽管结果较为复杂</strong>，仍通过<strong>现代化的图表设计</strong>加以支持，让所有数据使用者都能<strong>一目了然</strong>地把握<strong>核心要点</strong>。"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+    "hero": {
+        "header": "金融市场",
+        "title": "金融市场中的客户满意度测评",
+        "content": "在金融市场客户满意度测评中，从数据分析到报告呈现的每一个环节，我们均在内部完成。",
+        "chips": [
+            "客户满意度",
+            "内部报告",
+            "定制化报告"
+        ]
+    },
+    "main": {
+        "header": "金融市场中的客户满意度",
+        "title": "我们的工作方式",
+        "subheader": "我们为金融市场企业提供客户与员工满意度研究支持，并配备定制化的在线报告系统。",
+        "tiles": {
+            "first": {
+                "header": "量身定制的满意度研究",
+                "content": "作为<strong>客户忠诚度项目</strong>的一部分，我们为金融市场企业通过客户专属的<strong>在线报告系统</strong>开展<strong>客户或员工满意度研究</strong>。"
+            },
+            "second": {
+                "header": "清晰的报告",
+                "content": "在报告呈现方面，我们特别注重：<strong>尽管结果较为复杂</strong>，仍通过<strong>现代化的图表设计</strong>加以支持，让所有数据使用者都能<strong>一目了然</strong>地把握<strong>核心要点</strong>。"
+            }
+        }
+    },
+    "webquestionaire": {
+        "header": "网络问卷调查",
+        "title": "国际调研的核心工具",
+        "subheader": "在线问卷调查是我们的标准服务之一，也是开展国际调研的核心工具。",
+        "tile": {
+            "header": "自动化流程",
+            "content": "从<strong>数据采集</strong>到<strong>报告呈现</strong>，我们的流程<strong>全程自动化</strong>。"
+        }
+    },
+    "reportingsysteme": {
+        "header": "报告系统",
+        "title": "一体化的定制报告 —— 统一平台呈现",
+        "subheader": "自动化的图形化结果呈现对我们而言至关重要。在我们的在线报告中，还可进行个性化的详细分析。",
+        "tiles": {
+            "first": {
+                "header": "数据基础",
+                "content": "<strong>结构化的</strong>数据与数据库管理，是实现<strong>详尽</strong>且<strong>稳定</strong>报告的基础。"
+            },
+            "secound": {
+                "header": "定制化报告",
+                "content": "<strong>精简、降低复杂度</strong>且<strong>个性化定制</strong>的报告。"
+            },
+            "third": {
+                "header": "活动监测",
+                "content": "<strong>持续</strong>监测您的营销活动。您可追踪回收率的<strong>目标值</strong>与<strong>实际值</strong>，涵盖整体及所有细分群体与目标群体。"
+            },
+            "fourth": {
+                "header": "严谨的问卷设计",
+                "content": "<strong>方法严谨</strong>的问卷设计，确保对目标群体进行<strong>可靠</strong>的测评。"
+            },
+            "fifth": {
+                "header": "始终保持全局视野",
+                "content": "从<strong>专才</strong>到<strong>通才</strong>——我们始终保持必要的<strong>全局视野</strong>。"
+            },
+            "sixst": {
+                "header": "专业的项目管理",
+                "content": "<strong>专业的</strong>项目管理，从<strong>最初的构想</strong>一直贯穿到<strong>实时更新的仪表盘</strong>。"
+            }
+        }
+    }
+}

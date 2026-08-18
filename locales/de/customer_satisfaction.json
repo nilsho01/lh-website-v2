@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "overline": "Kundenzufriedenheit",
+    "title": "Messung der Kundenzufriedenheit.",
+    "content": "Wir bieten internationale Zufriedenheitsstudien mit strukturierter Erebnisdarstellung.",
+    "chips": [
+      "Alles aus einer Hand",
+      "International & branchenübergreifend",
+      "Klares Reporting"
+    ]
+  },
+  "main": {
+    "header": "Wie wir vorgehen",
+    "subheader": "Wir begleiten Zufriedenheitsstudien für Unternehmen unterschiedlicher Branchen von der Datenerhebung bis zum Reporting.",
+    "first": {
+      "header": "Individuelle Zufriedenheitsstudien",
+      "content": "Im Rahmen von Kundenbindungsprogrammen realisieren wir <strong>Kunden-, Händler- oder Mitarbeiterzufriedenheitsstudien</strong> mit kundenindividuellen Online-Reportingsystemen."
+    },
+    "secound": {
+      "header": "Alles aus einer Hand",
+      "content": "Wie auch bei unseren Automobilstudien werden <strong>alle Projektschritte</strong> von der Datenerhebung bis zum Reporting <strong>inhouse abgewickelt</strong>."
+    },
+    "third": {
+      "header": "International & branchenübergreifend",
+      "content": "Wir sind im <strong>In- und Ausland</strong> für Unternehmen aus den Bereichen <strong>Automobil und Finanzdienstleistung</strong>, aber auch <strong>Hard- und Software</strong> bzw. <strong>Konsumgüter</strong> tätig."
+    },
+    "fourth": {
+      "header": "Klares Reporting",
+      "content": "Beim Reporting legen wir besonderes Augenmerk darauf, dass <strong>trotz der Komplexität</strong> der Ergebnisse die Darstellung anhand von <strong>modernen Grafiken</strong> unterstützt wird, sodass alle Datennutzer die <strong>'Essentials'</strong> auf den <strong>ersten Blick</strong> erkennen können."
+    }
+  }
+}
