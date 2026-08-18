@@ -44,13 +44,23 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^(assets|locales|wallpapers|clients|images)(/|$) - [F]
 
-  # 1d) SPA-Fallback, ausdruecklich auf die Routen der App begrenzt.
-  # Der React-Router kennt diese Pfade nur im Browser; ohne die Regel
-  # liefert Apache dort 404. Bewusst KEIN Catch-all: alles, was hier
-  # nicht steht, bleibt unangetastet und wird normal von Apache
-  # behandelt - inklusive aller Unterverzeichnisse mit eigenen Apps.
-  # Bei neuen Seiten in src/routes/routes.jsx hier ergaenzen.
-  RewriteRule ^(automobile|contact|imprint|data-protection|directions|job-career|customer-satisfaction|financial-markets)/?$ index.html [L]
+  # 1d) SPA-Fallback.
+  # Greift nur, wenn die Anfrage weder eine existierende Datei noch ein
+  # existierendes Verzeichnis ist UND ihr erstes Pfadsegment kein
+  # Verzeichnis im DocumentRoot bezeichnet.
+  #
+  # Diese dritte Bedingung ist der Schutz fuer die Nachbarn: Liegen
+  # unter diesem Verzeichnis weitere Anwendungen (SSO,
+  # Erfasserabrechnung, Inventarverwaltung), ist ihr erstes
+  # Pfadsegment ein echtes Verzeichnis - die Regel laesst sie dann
+  # samt ihrer eigenen 404-Seiten in Ruhe. Unbekannte Adressen dieser
+  # Seite erreichen dagegen die gestaltete PageNotFound-Seite der App.
+  #
+  # Setzt voraus, dass diese .htaccess im DocumentRoot liegt.
+  RewriteCond %{REQUEST_FILENAME}  !-f
+  RewriteCond %{REQUEST_FILENAME}  !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1  !-d
+  RewriteRule ^([^/]+) index.html [L]
 
   # 1e) Startseite. Noetig, weil DirectoryIndex nicht erlaubt ist.
   RewriteRule ^$ index.html [L]
