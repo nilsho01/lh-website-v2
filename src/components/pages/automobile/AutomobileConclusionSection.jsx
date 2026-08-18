@@ -29,8 +29,7 @@ const AutomobileConclusionSection = ({ refProp }) => {
   const phone = t("conclusion.contact.phone");
 
   return (
-    <Box
-      ref={refProp}
+    <Box id="conclusion" ref={refProp}
       sx={{
         py: { xs: 5, md: 7 },
         borderTop: "1px solid",

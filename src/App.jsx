@@ -4,6 +4,7 @@ import themeConfigs from "./configs/theme.configs";
 import { ToastContainer } from "react-toastify"
 import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter, Route, Routes} from "react-router";
+import ScrollToHash from "./components/common/ScrollToHash";
 import MainLayout from "./components/layout/MainLayout";
 import routes from "./routes/routes";
 import PageWrapper from "./components/common/PageWrapper";
@@ -22,6 +23,7 @@ const App = () => {
 
         {/* app routes */}
         <BrowserRouter>
+          <ScrollToHash />
           <Routes>
             <Route path="/" element={<MainLayout />}>
               {routes.map((route, index) => (

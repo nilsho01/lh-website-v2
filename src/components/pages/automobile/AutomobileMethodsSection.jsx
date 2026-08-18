@@ -22,7 +22,7 @@ const AutomobileMethodsSection = ({ refProp }) => {
   const items = Array.isArray(itemsRaw) ? itemsRaw : [];
 
   return (
-    <Box ref={refProp} sx={{ py: { xs: 6, md: 8 } }}>
+    <Box id="methods-consulting" ref={refProp} sx={{ py: { xs: 6, md: 8 } }}>
       <Container maxWidth="lg">
         <Stack spacing={1.5} sx={{ alignItems: "center", textAlign: "center", mb: 4 }}>
           <Typography variant="overline" sx={{ letterSpacing: 2, opacity: 0.8 }}>

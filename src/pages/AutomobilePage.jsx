@@ -1,5 +1,5 @@
 // src/pages/AutomobilePage.jsx
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 import { useLocation } from "react-router";
 
@@ -18,34 +18,6 @@ const AutomobilePage = ({ state = "automobile" }) => {
   const section = hash ? hash.slice(1) : null;
   const effectiveState = section || state;
 
-  const performanceRef = useRef(null);
-  const customersRef = useRef(null);
-  const methodsRef = useRef(null);
-  const carClinicsRef = useRef(null);
-  const conclusionRef = useRef(null);
-
-  useEffect(() => {
-    if (!section) return;
-
-    const sectionRefs = {
-      performance: performanceRef,
-      customers: customersRef,
-      methods: methodsRef,
-      "car-clinics": carClinicsRef,
-      conclusion: conclusionRef,
-    };
-
-    const ref = sectionRefs[section];
-    if (!ref) return;
-
-    // PageWrapper scrolls to top on mount, so jump to the section shortly after
-    const timer = setTimeout(() => {
-      ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, [section]);
-
   return (
     <PageWrapper state={effectiveState}>
       <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>
@@ -55,11 +27,11 @@ const AutomobilePage = ({ state = "automobile" }) => {
           <GlowingLinesBackground count={5} infront={false} />
 
           <Box sx={{ position: "relative", zIndex: 1 }}>
-            <AutomobilePerformanceSection refProp={performanceRef} />
-            <AutomobileCustomersSection refProp={customersRef} />
-            <AutomobileMethodsSection refProp={methodsRef} />
-            <AutomobileCarClinicsSection refProp={carClinicsRef} />
-            <AutomobileConclusionSection refProp={conclusionRef} />
+            <AutomobilePerformanceSection />
+            <AutomobileCustomersSection />
+            <AutomobileMethodsSection />
+            <AutomobileCarClinicsSection />
+            <AutomobileConclusionSection />
           </Box>
         </Box>
       </Box>

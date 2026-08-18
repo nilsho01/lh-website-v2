@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Box } from "@mui/material";
-import { useLocation } from "react-router";
 import PageWrapper from "../components/common/PageWrapper";
 
 import FinancialMarketHero from "../components/pages/financialMarket/FinancialMarketHero";
@@ -10,14 +9,6 @@ import FinancialMarketReportingSystemsSection from "../components/pages/financia
 import GlowingLinesBackground from "../components/common/GlowingLinesBackground";
 
 const FinancialMarketPage = () => {
-  const { hash } = useLocation();
-
-  useEffect(() => {
-    if (!hash) return;
-    const el = document.getElementById(hash.slice(1));
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, [hash]);
-
   return (
     <PageWrapper state="financial-market">
       <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>

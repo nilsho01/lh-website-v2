@@ -32,7 +32,7 @@ const AutomobileCustomersSection = ({ refProp }) => {
   const { t } = useTranslation("automobile");
 
   return (
-    <Box ref={refProp} sx={{ py: { xs: 6, md: 8 } }}>
+    <Box id="who-we-work-for" ref={refProp} sx={{ py: { xs: 6, md: 8 } }}>
       <Container maxWidth="lg">
         <Stack spacing={1.5} sx={{ alignItems: "center", textAlign: "center", mb: 4 }}>
           <Typography variant="overline" sx={{ letterSpacing: 2, opacity: 0.8 }}>
