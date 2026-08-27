@@ -1,23 +1,23 @@
 {
   "header": "GET IN TOUCH",
-  "title": "Contact L+H MarketingServices GmbH",
-  "content": "Whether you already have a specific project in mind or just have a question: get in touch with us – we're happy to support you with our marketing services.",
-  "response_time": "We usually respond within 1–2 business days",
+  "title": "Contact L+H",
+  "content": "Let's get started—whether you have a specific project in mind or just a question—we're ready to help.",
+  "response_time": "We usually respond within 24 hours",
   "informations": {
     "contact_details": {
       "title": "Contact details",
       "company_name": "L+H MarketingServices GmbH",
+      "company_name2": "L+H AutomobilConsult GmbH",
       "street": "Virchowstraße 19",
       "city": "D-90409 Nuremberg",
       "phone": "Phone: +49 (0)911-32289-0",
-      "fax": "Fax: +49 (0)911-32289-99",
       "mail": "Email: info(at)l-h.de",
       "office_hours": {
         "title": "Office hours",
         "times": "Monday – Friday: 9:00 AM – 5:30 PM",
         "disclaimer": "(CET, except on public holidays)"
       },
-      "contact_info": "You can also reach us via the provided mail and phone number – we'll forward your inquiry internally and get back to you."
+      "contact_info": "You can reach us via the provided mail and phone number – we'll forward your inquiry internally and get back to you."
     },
     "on_side": {
       "title": "On-site in Nuremberg",

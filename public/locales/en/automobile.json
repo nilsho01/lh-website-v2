@@ -17,16 +17,16 @@
     "subtitle": "We combine methodological precision, lean project management, and management-level result preparation.",
     "tiles": {
       "first": {
-        "header": "Senior points of contact",
-        "content": "No hand-offs, no friction losses. Projects are led directly by seniors."
+        "header": "Senior-Level Contacts",
+        "content": "No detours, clear accountability, no inefficiencies."
       },
       "secound": {
         "header": "Flexibility with substance",
         "content": "Short paths, high responsiveness, and reliable quality standards."
       },
       "third": {
-        "header": "Results that hold up",
-        "content": "Insights that hold their ground in front of departments, management, and boards."
+        "header": "Results That Impress",
+        "content": "Insights that are recognized in academic departments, by management, and at the executive board level."
       }
     }
   },
@@ -48,7 +48,7 @@
         "content": "Research into sales and service experiences that help shape brand success."
       }
     },
-    "logos_caption": "Experience in projects for Bentley, BMW, MINI, Jaguar, JLR, Land Rover and Porsche."
+    "logos_caption": "Experience in projects for leading premium and volume brands."
   },
   "methods": {
     "header": "Methods & Consulting",
@@ -91,8 +91,8 @@
         "content": "TISAX-certified, privacy-compliant, and secure in sensitive development environments."
       },
       "fourth": {
-        "header": "UX/UI & smart vehicle experience research",
-        "content": "Customer-based research for the mobility of the future – evaluating digital cockpits, user interfaces, connected features, and new electric vehicle concepts."
+        "header": "UI/UX - Smart Research",
+        "content": "We combine digital research with a deep understanding of vehicles—across all types of powertrains."
       }
     },
     "chips": {
@@ -104,9 +104,9 @@
   },
   "conclusion": {
     "header": "Get in touch",
-    "title": "When research needs to become decision-relevant.",
-    "paragraph_1": "L+H stands for senior-led automotive research & consulting in sensitive, complex, and consulting-intensive projects. We combine methodological confidence, TISAX-certified process security, flexible project management, and result preparation that holds up in front of management and the board.",
-    "paragraph_2": "With our privacy-compliant AI platform, we continually advance our research processes – for more precise analysis, faster synthesis, and robust decision foundations.",
+    "title": "When sound decisions require more than just data.",
+    "paragraph_1": "L+H specializes in automotive research and consulting, with many years of experience in complex and sensitive projects. We combine methodological rigor, TISAX (AL-3) certified process quality, and results that hold up even at the management and executive board levels.",
+    "paragraph_2": "With our AI platform, which complies with data protection regulations, we are driving targeted advancements in research processes—for faster analysis, greater precision, and reliable decisions.",
     "cta": "Talk to us about your project.",
     "contact": {
       "label": "Contact",

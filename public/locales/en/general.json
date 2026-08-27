@@ -7,7 +7,8 @@
         "menu": "Menu",
         "dark_mode": "Dark mode",
         "light_mode": "Light mode",
-        "learn_more": "Learn more"
+        "learn_more": "Learn more",
+        "ai_generated_image": "AI-generated image"
     },
     "buttons": {
         "home": "Home",
@@ -15,7 +16,8 @@
             "main": "Automotive",
             "how-we-work": "How we work",
             "who-we-work-for": "Who we work for",
-            "methods-consulting": "Methods & Consulting"
+            "methods-consulting": "Methods & Consulting",
+            "car-clinics": "Car Clinics"
         },
         "customer-satisfaction": "Customer Satisfaction",
         "financial-markets": {

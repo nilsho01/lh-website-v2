@@ -21,7 +21,7 @@
       "2": {
         "title": "Speicherung der IP-Adresse zu Sicherheitszwecken",
         "paragraphs": [
-          "Darüber hinaus speichern wir die von Ihrem Webbrowser übermittelte vollständige IP-Adresse streng zweckge¬bunden für die Dauer von sieben Tagen, in dem Interesse, Angriffe auf unsere Web¬seiten erkennen, eingrenzen und beseitigen zu können. Nach Ablauf dieser Zeitspanne löschen bzw. anonymisieren wir die IP-Adresse. Rechtsgrundlage ist Art. 6 Abs. 1 S. 1 lit. f DSGVO."
+          "Darüber hinaus speichern wir die von Ihrem Webbrowser übermittelte vollständige IP-Adresse streng zweckgebunden für die Dauer von sieben Tagen, in dem Interesse, Angriffe auf unsere Webseiten erkennen, eingrenzen und beseitigen zu können. Nach Ablauf dieser Zeitspanne löschen bzw. anonymisieren wir die IP-Adresse. Rechtsgrundlage ist Art. 6 Abs. 1 S. 1 lit. f DSGVO."
         ]
       },
       "3": {
@@ -33,7 +33,7 @@
       "4": {
         "title": "Verschlüsselung",
         "paragraphs": [
-          "-Um Ihre Daten vor unerwünschten Zugriffen zu schützen, setzen wir auf allen Seiten ein Verschlüsselungsverfahren ein. Ihre Aufrufe und Angaben werden dann von Ihrem Rechner zu unserem Server und umgekehrt über das Internet mittels einer TLS-Verschlüsselung übertragen. Sie erkennen dies daran, dass auf der Statusleiste Ihres Browsers das Schloß-Symbol geschlossen ist und die Adresszeile mit https:// beginnt."
+          "Um Ihre Daten vor unerwünschten Zugriffen zu schützen, setzen wir auf allen Seiten ein Verschlüsselungsverfahren ein. Ihre Aufrufe und Angaben werden dann von Ihrem Rechner zu unserem Server und umgekehrt über das Internet mittels einer TLS-Verschlüsselung übertragen. Sie erkennen dies daran, dass auf der Statusleiste Ihres Browsers das Schloß-Symbol geschlossen ist und die Adresszeile mit https:// beginnt."
         ]
       },
       "5": {
@@ -57,14 +57,18 @@
         ]
       },
       "6": {
-        "title": "Kontaktformular",
+        "title": "Google Maps",
         "paragraphs": [
-          "Sie haben die Möglichkeit, mit uns über ein Webformular in Kontakt zu treten. Die Angabe der dort genannten Daten ist freiwillig. Pflichtfelder bestehen nicht. Ihre Daten werden nur zur Beantwortung Ihrer Anfrage verarbeitet und nach einem Zeitraum von 7 Tagen gelöscht. Eine Weitergabe an Dritte erfolgt nicht."
+          "Auf der Seite <strong>'Anfahrt'</strong> binden wir eine Kartenansicht des Dienstes <strong>Google Maps</strong> ein. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.",
+          "Die Karte wird nicht automatisch geladen. Solange Sie nicht ausdrücklich zustimmen, sehen Sie an ihrer Stelle lediglich eine Platzhalterfläche, und es werden keinerlei Daten an Google übertragen. Erst wenn Sie auf <strong>'Zustimmen und Karte laden'</strong> klicken, wird die Karte von den Servern von Google abgerufen.",
+          "Mit diesem Abruf werden insbesondere Ihre <strong>IP-Adresse</strong> sowie Angaben zu <strong>Browser</strong>, <strong>Betriebssystem</strong> und <strong>Gerät</strong> an <strong>Google</strong> übermittelt. Google kann diese Daten auch an die Google LLC in den USA weiterleiten und dort verarbeiten; für Übermittlungen in die USA besteht ein Angemessenheitsbeschluss der Europäischen Kommission auf Grundlage des EU-US Data Privacy Framework. Sind Sie zum Zeitpunkt des Abrufs in einem Google-Konto angemeldet, kann Google den Zugriff Ihrem Konto zuordnen. Auf Umfang, Zweck und weitere Verarbeitung der Daten durch Google haben wir keinen Einfluss.",
+          "Rechtsgrundlage für die Übermittlung ist Ihre Einwilligung nach Art. 6 Abs. 1 S. 1 lit. a DSGVO. Ihre Einwilligung wird nicht gespeichert und <strong>gilt ausschließlich für den aktuellen Seitenaufruf</strong>. <strong>Sie können sie jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie die Seite neu laden</strong> — die Karte ist danach wieder gesperrt. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.",
+          "Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der <linkTag href='https://policies.google.com/privacy'>Datenschutzerklärung von Google</linkTag>."
         ]
       }
     },
     "footer": {
-      "note": ""
+      "note": "Zuletzt aktualisiert: 27 August 2026"
     }
   }
   

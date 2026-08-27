@@ -7,8 +7,6 @@ import ParallaxClouds from "../components/common/ParallaxClouds";
 
 import ContactHero from "../components/pages/contact/ContactHero";
 import ContactMainSection from "../components/pages/contact/ContactMainSection";
-import ContactNextStepsSection from "../components/pages/contact/ContactNextStepsSection";
-import ContactWhySection from "../components/pages/contact/ContactWhySection";
 import ContactCTASection from "../components/pages/contact/ContactCTASection";
 
 const ContactPage = () => {
@@ -23,8 +21,6 @@ const ContactPage = () => {
 
           <Box sx={{ position: "relative", zIndex: 1 }}>
             <ContactMainSection />
-            <ContactNextStepsSection />
-            <ContactWhySection />
             <ContactCTASection />
           </Box>
         </Box>

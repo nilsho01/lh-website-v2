@@ -31,6 +31,11 @@
         "tile": {
             "header": "자동화된 프로세스",
             "content": "<strong>데이터 수집</strong>부터 <strong>리포팅</strong>까지, 저희의 프로세스는 <strong>완전히 자동화</strong>되어 진행됩니다."
+        },
+        "graphic": {
+            "survey": "조사",
+            "data-processing": "데이터 처리",
+            "reporting": "리포팅"
         }
     },
     "reportingsysteme": {

@@ -99,9 +99,9 @@ const AutomobileCarClinicsSection = ({ refProp }) => {
         </Grid>
 
         {/* Smaller supporting tiles */}
-        <Grid container spacing={2} sx={{ mt: { xs: 1, md: 2 } }}>
+        <Grid container spacing={{ xs: 1.5, sm: 4 }} sx={{ mt: { xs: 1, md: 2 } }}>
           {chipEntries.map(([key, label]) => (
-            <Grid key={key} size={{ xs: 6, sm: 3 }}>
+            <Grid key={key} size={{ xs: 12, sm: 6, md: 3 }}>
               <Paper
                 sx={{
                   borderRadius: 2,

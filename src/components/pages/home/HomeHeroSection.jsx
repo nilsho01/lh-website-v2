@@ -13,7 +13,7 @@ const HomeHeroSection = () => {
   const { t } = useTranslation("home");
 
   return (
-    <HeroSection backgroundUrl={"/wallpapers/home_hero2.jpg"} big>
+    <HeroSection backgroundUrl={"/wallpapers/home_hero3.png"} big AI>
       <MotionBox
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

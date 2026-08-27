@@ -9,14 +9,33 @@ import { useTranslation } from "react-i18next";
 
 const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 
+// Ersetzt "L+H" im Fliesstext durch das Logo (gleiche Hoehe wie die Versalien).
+const LOGO_TOKEN = "L+H";
+
+const InlineLogo = () => (
+  <Box
+    component="img"
+    src="/L+H_Logo.png"
+    alt={LOGO_TOKEN}
+    sx={{
+      height: "0.72em",
+      width: "auto",
+      display: "inline-block",
+      verticalAlign: "baseline",
+    }}
+  />
+);
+
 const ContactHero = () => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
   const{ t } = useTranslation('contact')
 
+  const titleParts = t('title').split(LOGO_TOKEN);
+
   return (
-    <HeroSection backgroundUrl="/wallpapers/contact_hero.jpg" big full>
+    <HeroSection backgroundUrl="/wallpapers/contact_hero2.png" big AI full>
       <MotionBox
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -99,7 +118,12 @@ const ContactHero = () => {
               {t('header')}
             </Typography>
             <Typography variant="h4" component="h1" sx={{ fontWeight: 700 }}>
-              {t('title')}
+              {titleParts.map((part, index) => (
+                <React.Fragment key={index}>
+                  {index > 0 && <InlineLogo />}
+                  {part}
+                </React.Fragment>
+              ))}
             </Typography>
             <Typography variant="body1" sx={{ maxWidth: 560 }}>
               {t('content')}

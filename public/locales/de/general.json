@@ -7,7 +7,8 @@
         "menu": "Menü",
         "dark_mode": "Dunkelmodus",
         "light_mode": "Hellmodus",
-        "learn_more": "Mehr erfahren"
+        "learn_more": "Mehr erfahren",
+        "ai_generated_image": "KI-generiertes Bild"
     },
     "buttons": {
         "home": "Startseite",
@@ -15,7 +16,8 @@
             "main": "Automobil",
             "how-we-work": "So arbeiten wir",
             "who-we-work-for": "Für wen wir arbeiten",
-            "methods-consulting": "Methoden & Beratung"
+            "methods-consulting": "Methoden & Beratung",
+            "car-clinics": "Car Clinics"
         },
         "customer-satisfaction": "Kundenzufriedenheit",
         "financial-markets": {

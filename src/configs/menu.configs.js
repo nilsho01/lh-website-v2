@@ -33,6 +33,11 @@ const getMenuConfigs = (t) => {
                     display: t("buttons.automobile.methods-consulting"),
                     path: "/automobile#methods-consulting",
                     state: "automobile_methods-consulting"
+                },
+                {
+                    display: t("buttons.automobile.car-clinics"),
+                    path: "/automobile#car-clinics",
+                    state: "automobile_car-clinics"
                 }
             ]
         },

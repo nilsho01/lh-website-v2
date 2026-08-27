@@ -1,7 +1,7 @@
 {
     "hero": {
         "header": "Financial Markets",
-        "title": "Measuring customer satisfaction in financial markets",
+        "title": "Measuring customer satisfaction in financial markets.",
         "content": "When measuring customer satisfaction in financial markets, we handle every step from data analysis to reporting in-house.",
         "chips": [
             "Customer satisfaction",
@@ -31,6 +31,11 @@
         "tile": {
             "header": "Automated processes",
             "content": "From <strong>data collection</strong> to <strong>reporting</strong>, our processes run <strong>fully automated</strong>."
+        },
+        "graphic": {
+            "survey": "Survey",
+            "data-processing": "Data Precessing",
+            "reporting": "Reporting"
         }
     },
     "reportingsysteme": {

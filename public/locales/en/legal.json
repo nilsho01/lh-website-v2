@@ -33,7 +33,7 @@
       "4": {
         "title": "Encryption",
         "paragraphs": [
-          "-To protect your data from unwanted access, we use an encryption process on all pages. Your requests and inputs are then transmitted between your computer and our server via the internet using TLS encryption. You can recognize this by the closed padlock symbol in your browser's status bar and by the address bar starting with https://."
+          "To protect your data from unwanted access, we use an encryption process on all pages. Your requests and inputs are then transmitted between your computer and our server via the internet using TLS encryption. You can recognize this by the closed padlock symbol in your browser's status bar and by the address bar starting with https://."
         ]
       },
       "5": {
@@ -57,13 +57,17 @@
         ]
       },
       "6": {
-        "title": "Contact form",
+        "title": "Google Maps",
         "paragraphs": [
-          "You have the option of contacting us via a web form. Providing the data requested there is voluntary. There are no mandatory fields. Your data is only processed to respond to your inquiry and is deleted after a period of 7 days. It is not passed on to third parties."
+          "On the <strong>'Directions'</strong> page we embed a map view provided by <strong>Google Maps</strong>. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.",
+          "The map is not loaded automatically. Unless you expressly consent, you will only see a placeholder in its place, and no data whatsoever is transmitted to Google. Only when you click <strong>'Consent and load map'</strong> is the map retrieved from Google's servers.",
+          "This retrieval transmits, in particular, your <strong>IP address</strong> as well as information about your <strong>browser</strong>, <strong>operating system</strong> and <strong>device</strong> to <strong>Google</strong>. Google may also forward this data to Google LLC in the USA and process it there; transfers to the USA are covered by an adequacy decision of the European Commission based on the EU-US Data Privacy Framework. If you are signed in to a Google account at the time of retrieval, Google may associate the access with your account. We have no influence over the scope, purpose or further processing of the data by Google.",
+          "The legal basis for the transfer is your consent pursuant to Art. 6(1)(1)(a) GDPR. Your consent is not stored and <strong>applies solely to the current page visit</strong>. <strong>You may withdraw it at any time with effect for the future by reloading the page</strong> — the map will then be blocked again. The lawfulness of processing carried out prior to withdrawal remains unaffected.",
+          "For more information on how user data is handled, please see <linkTag href='https://policies.google.com/privacy'>Google's privacy policy</linkTag>."
         ]
       }
     },
     "footer": {
-      "note": ""
+      "note": "Last updated: 27 August 2026"
     }
   }

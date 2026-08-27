@@ -31,6 +31,11 @@
         "tile": {
             "header": "自动化流程",
             "content": "从<strong>数据采集</strong>到<strong>报告呈现</strong>，我们的流程<strong>全程自动化</strong>。"
+        },
+        "graphic": {
+            "survey": "数据采集",
+            "data-processing": "数据处理",
+            "reporting": "报告"
         }
     },
     "reportingsysteme": {

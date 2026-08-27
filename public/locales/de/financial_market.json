@@ -1,7 +1,7 @@
 {
     "hero": {
         "header": "Finanzmärkte",
-        "title": "Messung der Kundenzufriedenheit im Finanzmarkt",
+        "title": "Messung der Kundenzufriedenheit im Finanzmarkt.",
         "content": "Bei der Messung der Kundenzufriedenheit im Finanzmarkt wickeln wir alle Schritte von der Datenauswertung bis zum Reporting inhouse ab.",
         "chips": [
             "Kundenzufriedenheit",
@@ -31,11 +31,16 @@
         "tile": {
             "header": "Automatisierte Prozesse",
             "content": "Von der <strong>Erhebung</strong> bis zum <strong>Reporting</strong> laufen unsere Prozesse <strong>vollständig automatisiert</strong> ab."
+        },
+        "graphic": {
+            "survey": "Erhebung",
+            "data-processing": "Datenverarbeitung",
+            "reporting": "Reporting"
         }
     },
     "reportingsysteme": {
         "header": "Reportingsysteme",
-        "title": "Individuelles Reporting aus einem Guss - auf einer Platform",
+        "title": "Individuelles Reporting aus einem Guss - auf einer Plattform",
         "subheader": "Die automatisierte graphische Ergebnisdarstellung hat für uns einen hohen Stellenwert. In unseren online abrufbaren Berichten können außerdem individuelle Detailanalysen vorgenommen werden.",
         "tiles": {
             "first": {

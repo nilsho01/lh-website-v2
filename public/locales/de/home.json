@@ -1,14 +1,14 @@
 {
-    "hero_section": {
-        "header": "MANCHMAL IST GUT NICHT GUT GENUG",
-        "title": "Wir verwandeln komplexe Zielgruppen in klare Entscheidungen.",
-        "content": "In unseren Kernbereichen – dem Online- und dem Automobilsektor – übersetzen wir Verhaltensweisen und Einstellungen in Erkenntnisse, die Ihre strategischen und operativen Entscheidungen direkt unterstützen.",
-        "buttons": {
-            "get_in_touch": "KONTAKT AUFNEHMEN"
-        }
-    },
-    "clients": {
-        "header": "UNSERE KUNDEN",
-        "title": "Ausgewählte Marken, die uns vertrauen"
+  "hero_section": {
+    "header": "Wo Anspruch Methode braucht.",
+    "title": "Wir verwandeln komplexe Erwartungen in klare Entscheidungen.",
+    "content": "In unseren Kernbereichen Automotive und CX-Forschung machen wir Verhaltensweisen, Einstellungen und Customer Experience so verständlich, dass daraus fundierte strategische wie operative Entscheidungen entstehen.",
+    "buttons": {
+      "get_in_touch": "KONTAKT AUFNEHMEN"
     }
+  },
+  "clients": {
+    "header": "UNSERE KUNDEN",
+    "title": "Erfahrung in Projekten für führende Premium- und Volumenmarken."
+  }
 }

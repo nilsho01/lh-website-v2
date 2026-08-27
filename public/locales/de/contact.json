@@ -1,23 +1,23 @@
 {
   "header": "KONTAKT AUFNEHMEN",
-  "title": "Kontakt zu L+H MarketingServices GmbH",
-  "content": "Ob Sie bereits ein konkretes Projekt im Sinn haben oder nur eine Frage: Melden Sie sich bei uns – wir unterstützen Sie gerne mit unseren Marketingservices.",
-  "response_time": "Antwort in der Regel innerhalb von 1–2 Werktagen",
+  "title": "Kontakt zu L+H aufnehmen.",
+  "content": "Lassen Sie uns starten - egal ob sie ein konkretesProjekt im Sinn haben oder nur eine Frage - wir sind bereit.",
+  "response_time": "Antwort in der Regel innerhalb von 24 Stunden",
   "informations": {
     "contact_details": {
       "title": "Kontaktdaten",
       "company_name": "L+H MarketingServices GmbH",
+      "company_name2": "L+H AutomobilConsult GmbH",
       "street": "Virchowstraße 19",
       "city": "D-90409 Nürnberg",
       "phone": "Telefon: +49 (0)911-32289-0",
-      "fax": "Fax: +49 (0)911-32289-99",
       "mail": "E-Mail: info(at)l-h.de",
       "office_hours": {
         "title": "Bürozeiten",
         "times": "Montag – Freitag: 09:00 – 17:30",
         "disclaimer": "(MEZ, außer an Feiertagen)"
       },
-      "contact_info": "Sie erreichen uns auch über die angegebene Email und Telefonnummer – wir leiten Ihre Anfrage intern weiter und melden uns bei Ihnen."
+      "contact_info": "Sie erreichen uns über die angegebene Email und Telefonnummer – wir leiten Ihre Anfrage intern weiter und melden uns bei Ihnen."
     },
     "on_side": {
       "title": "Vor Ort in Nürnberg",

@@ -7,7 +7,8 @@
         "menu": "메뉴",
         "dark_mode": "다크 모드",
         "light_mode": "라이트 모드",
-        "learn_more": "더 알아보기"
+        "learn_more": "더 알아보기",
+        "ai_generated_image": "AI 생성 이미지"
     },
     "buttons": {
         "home": "홈",
@@ -15,7 +16,8 @@
             "main": "자동차",
             "how-we-work": "일하는 방식",
             "who-we-work-for": "고객사",
-            "methods-consulting": "방법론 & 컨설팅"
+            "methods-consulting": "방법론 & 컨설팅",
+            "car-clinics": "카 클리닉"
         },
         "customer-satisfaction": "고객 만족도",
         "financial-markets": {

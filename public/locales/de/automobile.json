@@ -17,16 +17,16 @@
     "subtitle": "Wir verbinden methodische Präzision, schlanke Projektführung und Ergebnisaufbereitung auf Management-Niveau.",
     "tiles": {
       "first": {
-        "header": "Senior Ansprechpartner",
-        "content": "Keine Weitergabe, keine Reibungsverluste. Projekte werden direkt von Senioren geführt."
+        "header": "Ansprechpartner auf Senior-Level",
+        "content": "Keine Umwege, klare Verantwortung, keine Reibungsverluste."
       },
       "secound": {
         "header": "Flexibilität mit Substanz",
         "content": "Kurze Wege, hohe Reaktionsgeschwindigkeit und verlässliche Qualitätsstandards."
       },
       "third": {
-        "header": "Ergebnisse, die bestehen",
-        "content": "Erkenntnisse, die auch vor Fachbereichen, Management und Vorständen tragen."
+        "header": "Ergebnisse die überzeugen",
+        "content": "Erkenntnisse, die in Fachbereichen, im Management und auf Vorstandsebene Bestand haben."
       }
     }
   },
@@ -48,7 +48,7 @@
         "content": "Research für Verkaufs- und Serviceerlebnisse, die Markenerfolg mitprägen."
       }
     },
-    "logos_caption": "Erfahrung in Projekten für Bentley, BMW, MINI, Jaguar, JLR, Land Rover und Porsche."
+    "logos_caption": "Erfahrung in Projekten für führende Premium- und Volumenmarken."
   },
   "methods": {
     "header": "Methoden & Beratung",
@@ -91,8 +91,8 @@
         "content": "TISAX-zertifiziert, datenschutzkonform und sicher in sensiblen Entwicklungsumfeldern."
       },
       "fourth": {
-        "header": "UX/UI- & Smart-Fahrzeugerlebnisforschung",
-        "content": "Kundenbasierte Forschung für die Mobilität der Zukunft – zur Bewertung digitaler Cockpits, Bedienoberflächen, vernetzter Funktionen und neuer Elektrofahrzeugkonzepte."
+        "header": "UI/UX - Smarte Forschung",
+        "content": "Wir verbinden digitale Forschung mit fundiertem Fahrzeugverständnis – über alle Antriebsarten hinweg."
       }
     },
     "chips": {
@@ -104,9 +104,9 @@
   },
   "conclusion": {
     "header": "Kontaktieren Sie uns",
-    "title": "Wenn Research entscheidungsrelevant werden muss.",
-    "paragraph_1": "L+H steht für senior geführtes Automotive Research & Beratung in sensiblen, komplexen und beratungsnahen Projekten. Wir verbinden methodische Sicherheit, TISAX-zertifizierte Prozesssicherheit, flexible Projektführung und Ergebnisaufbereitung, die auch vor Management und Vorstand Bestand hat.",
-    "paragraph_2": "Mit unserer datenschutzkonformen KI-Plattform entwickeln wir Forschungsprozesse gezielt weiter – für präzisere Auswertung, schnellere Verdichtung und belastbare Entscheidungsgrundlagen.",
+    "title": "Wenn belastbare Entscheidungen mehr brauchen als Daten.",
+    "paragraph_1": "L+H steht für Automotive Research und Beratung mit langjähriger Erfahrung in komplexen und sensiblen Projekten. Wir verbinden methodische Sicherheit, TISAX (AL-3) zertifizierte Prozessqualität und Ergebnisse, die auch auf Management- und Vorstandsebene tragen.",
+    "paragraph_2": "Mit unserer datenschutzkonformen KI-Plattform entwickeln wir Forschungsprozesse gezielt weiter - für schnellere Auswertung, mehr Präzision und belastbare Entscheidungen.",
     "cta": "Sprechen Sie mit uns über Ihr Projekt.",
     "contact": {
       "label": "Kontakt",

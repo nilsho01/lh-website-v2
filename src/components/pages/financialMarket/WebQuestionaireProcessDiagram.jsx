@@ -2,6 +2,7 @@
 import React from "react";
 import { Box, Paper, Stack, Typography, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import FactCheckIcon from "@mui/icons-material/FactCheck";
 import SettingsIcon from "@mui/icons-material/Settings";
@@ -12,13 +13,14 @@ const MotionBox = motion.create ? motion.create(Box) : motion(Box);
 const MotionPaper = motion.create ? motion.create(Paper) : motion(Paper);
 
 const STEPS = [
-  { key: "collection", icon: <FactCheckIcon fontSize="large" />, label: "Erhebung" },
-  { key: "processing", icon: <SettingsIcon fontSize="large" />, label: "Datenverarbeitung" },
-  { key: "reporting", icon: <BarChartIcon fontSize="large" />, label: "Reporting" },
+  { key: "collection", icon: <FactCheckIcon fontSize="large" />, label: "survey" },
+  { key: "processing", icon: <SettingsIcon fontSize="large" />, label: "data-processing" },
+  { key: "reporting", icon: <BarChartIcon fontSize="large" />, label: "reporting" },
 ];
 
 const WebQuestionaireProcessDiagram = () => {
   const theme = useTheme();
+  const { t } = useTranslation("financial_market");
   const isDark = theme.palette.mode === "dark";
   const primary = theme.palette.primary.main;
   const secondary = theme.palette.secondary.main;
@@ -94,7 +96,7 @@ const WebQuestionaireProcessDiagram = () => {
                 </MotionBox>
               </Box>
               <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
-                {step.label}
+                {t(`webquestionaire.graphic.${step.label}`)}
               </Typography>
             </Stack>
 
