@@ -1,22 +1,25 @@
 // src/components/pages/home/HomeClientsSection.jsx
 import React from "react";
-import { Box, Container, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Container, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
+import ReferenceLogos from "../../common/ReferenceLogos";
+
+// weight gleicht die sehr unterschiedlichen Seitenverhaeltnisse optisch aus,
+// siehe ReferenceLogos.
 const clients = [
-  { name: "Bentley", logo: "/clients/bentley.png" },
-  { name: "BMW", logo: "/clients/bmw.png" },
-  { name: "Ferrari", logo: "/clients/Scuderia_Ferrari_Logo.svg"},
-  { name: "MINI", logo: "/clients/mini.png" },
-  { name: "Jaguar", logo: "/clients/Jaguar.png"},
-  { name: "Land Rover", logo: "/clients/LandRover.svg"},
-  { name: "Porsche", logo: "/clients/porsche.png" },
-  { name: "Sparkasse", logo: "/clients/sparkasse.png" }
+  { name: "Bentley", logo: "/clients/bentley.png", weight: 1 },
+  { name: "BMW", logo: "/clients/bmw.png", weight: 1.15 },
+  { name: "Ferrari", logo: "/clients/Scuderia_Ferrari_Logo.svg", weight: 1.35 },
+  { name: "MINI", logo: "/clients/mini.png", weight: 0.9 },
+  { name: "Jaguar", logo: "/clients/Jaguar.png", weight: 1 },
+  { name: "Land Rover", logo: "/clients/LandRover.svg", weight: 1 },
+  { name: "Porsche", logo: "/clients/porsche.png", weight: 1.35 },
+  { name: "Sparkasse", logo: "/clients/sparkasse.png", weight: 1 },
 ];
 
 const HomeClientsSection = () => {
   const theme = useTheme();
-  const isDark = theme.palette.mode === "dark";
   const { t } = useTranslation("home");
 
   return (
@@ -28,77 +31,10 @@ const HomeClientsSection = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={2} sx={{ alignItems: "center", textAlign: "center", mb: 4 }}>
-          <Typography variant="overline" sx={{ letterSpacing: 2, opacity: 0.8 }}>
-            {t("clients.header")}
-          </Typography>
-          <Typography variant="h5" component="h2" sx={{ fontWeight: 700 }}>
-            {t("clients.title")}
-          </Typography>
-        </Stack>
+        {/* headline: auf der Startseite traegt die Zeile das Argument des
+            Abschnitts, die Logos belegen es nur. */}
+        <ReferenceLogos logos={clients} caption={t("clients.title")} headline />
       </Container>
-
-      {/* Endless scrolling logo marquee */}
-      <Box
-        sx={{
-          mt: 2,
-          width: "100%",
-          overflow: "hidden",
-          maskImage:
-            "linear-gradient(90deg, transparent, black 10%, black 90%, transparent)",
-          WebkitMaskImage:
-            "linear-gradient(90deg, transparent, black 10%, black 90%, transparent)",
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            width: "max-content",
-            animation: "clients-marquee 32s linear infinite",
-            "@keyframes clients-marquee": {
-              "0%": { transform: "translateX(0)" },
-              "100%": { transform: "translateX(-50%)" },
-            },
-            "&:hover": {
-              animationPlayState: "paused",
-            },
-          }}
-        >
-          {[...clients, ...clients].map((client, idx) => (
-            <Box
-              key={`${client.name}-${idx}`}
-              sx={{
-                flex: "0 0 auto",
-                width: { xs: 150, sm: 180, md: 200 },
-                mx: { xs: 1.5, md: 2 },
-                borderRadius: 3,
-                px: 3,
-                py: 2.5,
-                border: `1px solid ${theme.palette.divider}`,
-                backgroundColor: isDark
-                  ? "rgba(10,10,10,0.9)"
-                  : "rgba(255,255,255,0.95)",
-                backdropFilter: "blur(6px)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: 120,
-              }}
-            >
-              <Box
-                component="img"
-                src={client.logo}
-                alt={client.name}
-                sx={{
-                  maxWidth: "100%",
-                  maxHeight: 72,
-                  objectFit: "contain",
-                }}
-              />
-            </Box>
-          ))}
-        </Box>
-      </Box>
     </Box>
   );
 };
