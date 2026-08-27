@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { colors } from "@mui/material";
 
 export const themeModes = {
@@ -36,17 +36,36 @@ const themeConfigs = {
             },
           };
 
-    return createTheme({
-      palette: {
-        mode,
-        ...customPalette,
-      },
-      components: {
-        MuiButton: {
-          defaultProps: { disableElevation: true },
+    // responsiveFontSizes skaliert die Ueberschriften auf kleinen Viewports
+    // herunter. Ohne das bleibt h3 auch auf einem 360px-Display bei 48px -
+    // lange deutsche Komposita ("Datenschutzerklaerung") sprengen dann die
+    // Zeile und weiten ueber die min-content-Breite das ganze Layout.
+    return responsiveFontSizes(
+      createTheme({
+        palette: {
+          mode,
+          ...customPalette,
         },
-      },
-    });
+        components: {
+          MuiButton: {
+            defaultProps: { disableElevation: true },
+          },
+          MuiCssBaseline: {
+            styleOverrides: {
+              // Lange Komposita duerfen umbrechen, statt den Container zu
+              // weiten. "anywhere" statt "break-word", weil nur ersteres in
+              // die min-content-Breite eingeht - und genau die laesst ein
+              // Flex-Kind sonst nicht unter die Wortbreite schrumpfen.
+              // Bewusst ohne hyphens: auto, das zerlegt sonst auch dort
+              // Woerter, wo die Zeile noch reicht.
+              "h1, h2, h3, h4, h5, h6": {
+                overflowWrap: "anywhere",
+              },
+            },
+          },
+        },
+      })
+    );
   },
 };
 

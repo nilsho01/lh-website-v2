@@ -32,4 +32,15 @@ i18n
         }
     });
 
+// Das lang-Attribut muss der aktiven Sprache folgen: Screenreader waehlen
+// danach die Aussprache, Suchmaschinen die Sprachzuordnung. In index.html
+// steht es fest auf "en", auch wenn die Seite deutsch ausgeliefert wird.
+const applyDocumentLanguage = (lng) => {
+    const code = (lng || i18n.resolvedLanguage || i18n.language || "").split("-")[0];
+    if (code) document.documentElement.lang = code;
+};
+
+i18n.on("languageChanged", applyDocumentLanguage);
+i18n.on("initialized", () => applyDocumentLanguage());
+
 export default i18n;

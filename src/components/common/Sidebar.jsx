@@ -28,8 +28,7 @@ import { setThemeMode } from "../../redux/features/themeModeSlice";
 
 import getMenuConfigs from "../../configs/menu.configs";
 import { useTranslation } from "react-i18next";
-import RawFlag from "react-world-flags";
-const Flag = RawFlag.default || RawFlag;
+import Flag from "./Flag";
 import i18n from "../../i18n";
 
 const Sidebar = ({ open, toggleSidebar }) => {
@@ -81,7 +80,7 @@ const Sidebar = ({ open, toggleSidebar }) => {
     <>
       <Toolbar sx={{ paddingY: "20px", color: "text.primary" }}>
         <Stack direction="row" sx={{ width: "100%", justifyContent: "center" }}>
-          <Logo />
+          <Logo onClick={() => toggleSidebar(false)} />
         </Stack>
       </Toolbar>
 
@@ -366,9 +365,13 @@ const Sidebar = ({ open, toggleSidebar }) => {
       open={open}
       onClose={() => toggleSidebar(false)}
       sx={{
-        "& .MuiDrawer-Paper": {
+        // Klein geschrieben - .MuiDrawer-Paper trifft nichts, die Breite
+        // wurde bisher still ignoriert und das Panel richtete sich nach
+        // seinem Inhalt. maxWidth deckelt es auf schmalen Geraeten.
+        "& .MuiDrawer-paper": {
           boxSizing: "border-box",
           width: SidebarWidth,
+          maxWidth: "85vw",
           borderRight: 0,
         },
       }}

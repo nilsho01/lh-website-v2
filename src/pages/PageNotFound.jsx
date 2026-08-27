@@ -9,8 +9,11 @@ import FlickeringText from "../components/common/SpecialTextObjects";
 // === Styled Components ===
 const Wrapper = styled("div")(({ theme }) => ({
   position: "relative",
-  width: "100vw",
-  height: "100vh",
+  // 100vw ignoriert die Scrollbar, 100vh die einklappende Adressleiste
+  // mobiler Browser - zusammen mit overflow: hidden wurde der untere Teil
+  // dort abgeschnitten. dvh folgt der tatsaechlich sichtbaren Hoehe.
+  width: "100%",
+  minHeight: "100dvh",
   overflow: "hidden",
   backgroundImage:
       theme.palette.mode === "light"
@@ -23,6 +26,11 @@ const Wrapper = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
+  // Ohne Innenabstand klebte der Text auf schmalen Displays am Rand und
+  // der letzte Absatz lief unter overflow: hidden aus dem Bild.
+  paddingInline: theme.spacing(3),
+  paddingBlock: theme.spacing(6),
+  textAlign: "center",
 }));
 
 const MaskedBackground = styled("div")(({ x, y, theme }) => {
@@ -47,7 +55,7 @@ const Subtitle = styled(Typography)(({ theme }) => ({
 }));
 
 const FourOfour = styled(Typography)(({ theme }) => ({
-  fontSize: "3rem",
+  fontSize: "clamp(2rem, 10vw, 3rem)",
   fontWeight: "bold",
   marginTop: theme.spacing(2),
   color: theme.palette.mode === "light" ? "#000" : "#fff",

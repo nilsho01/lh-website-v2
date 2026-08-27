@@ -21,8 +21,7 @@ import { themeModes } from "../../configs/theme.configs";
 import { setThemeMode } from "../../redux/features/themeModeSlice";
 import Logo from "./Logo";
 import Sidebar from "./Sidebar";
-import RawFlag from "react-world-flags";
-const Flag = RawFlag.default || RawFlag;
+import Flag from "./Flag";
 import i18n from "../../i18n";
 import { useTranslation } from "react-i18next";
 

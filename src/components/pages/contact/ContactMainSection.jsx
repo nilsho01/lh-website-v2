@@ -70,6 +70,8 @@ const ContactMainSection = () => {
               <Typography variant="body1">
                 <strong>{t('informations.contact_details.company_name')}</strong>
                 <br />
+                <strong>{t('informations.contact_details.company_name2')}</strong>
+                <br />
                 {t('informations.contact_details.street')}
                 <br />
                 {t('informations.contact_details.city')}
@@ -80,12 +82,6 @@ const ContactMainSection = () => {
                   <LocalPhoneIcon sx={{ fontSize: 18, opacity: 0.8 }} />
                   <Typography variant="body2">
                     {t('informations.contact_details.phone')}
-                  </Typography>
-                </Stack>
-                <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-                  <LocalPhoneIcon sx={{ fontSize: 18, opacity: 0.8 }} />
-                  <Typography variant="body2">
-                    {t('informations.contact_details.fax')}
                   </Typography>
                 </Stack>
                 <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
@@ -148,7 +144,8 @@ const ContactMainSection = () => {
                 <Stack
                     direction="row"
                     spacing={1}
-                    sx={{ mt: 1, flexWrap: "wrap", rowGap: 1 }}
+                    useFlexGap
+                    sx={{ mt: 1, flexWrap: "wrap" }}
                 >
                     <Chip
                     label={t('informations.on_side.tag_1')}

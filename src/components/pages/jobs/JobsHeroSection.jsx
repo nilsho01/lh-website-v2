@@ -67,7 +67,7 @@ const JobsHeroSection = () => {
               {t('subtitle')}
             </Typography>
 
-            <Stack direction="row" spacing={1.5} sx={{ mt: 1, flexWrap: "wrap" }}>
+            <Stack direction="row" spacing={1.5} useFlexGap sx={{ mt: 1, flexWrap: "wrap" }}>
               <Chip
                 icon={<WorkOutlineIcon />}
                 label={t('tags.0')}
@@ -89,7 +89,7 @@ const JobsHeroSection = () => {
               />
             </Stack>
 
-            <Stack direction="row" spacing={1.5} sx={{ mt: 2, flexWrap: "wrap" }}>
+            <Stack direction="row" spacing={1.5} useFlexGap sx={{ mt: 2, flexWrap: "wrap" }}>
               <Button
                 component={RouterLink}
                 to="/contact"

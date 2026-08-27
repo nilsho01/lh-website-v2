@@ -73,7 +73,7 @@ const ImprintMainPart = () => {
                 {t('company_information.city')}
             </Typography>
 
-            <Stack direction="row" spacing={2} sx={{ flexWrap: "wrap" }}>
+            <Stack direction="row" spacing={2} useFlexGap sx={{ flexWrap: "wrap" }}>
                 <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
                 <LocalPhoneIcon
                     sx={{ fontSize: 18, opacity: 0.8 }}

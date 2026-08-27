@@ -108,7 +108,8 @@ const JobsOpenPositionsSection = () => {
                   <Stack
                     direction="row"
                     spacing={1}
-                    sx={{ flexWrap: "wrap", rowGap: 1 }}
+                    useFlexGap
+                    sx={{ flexWrap: "wrap" }}
                   >
                     {job.location && (
                       <Chip

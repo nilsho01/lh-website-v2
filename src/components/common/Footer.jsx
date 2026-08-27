@@ -17,6 +17,7 @@ const Footer = () => {
             <Paper square={true} sx={{ backgroundImage: "unset", padding: "2rem", zIndex: 10 }}>
                 <Stack
                     direction={{ xs: "column", md: "row"}}
+                    spacing={{ xs: 3, md: 0 }}
                     sx={{
                         alignItems: "center",
                         justifyContent: "space-between",

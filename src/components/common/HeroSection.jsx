@@ -1,10 +1,20 @@
 // src/components/common/HeroSection.jsx
-import { Box, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import { useTranslation } from "react-i18next";
 import uiConfigs from "../../configs/ui.configs";
 
-const HeroSection = ({ backgroundUrl, children, big = false, flipBackground = false }) => {
+const HeroSection = ({
+  backgroundUrl,
+  children,
+  big = false,
+  flipBackground = false,
+  AI = false,
+  aiLabel,
+}) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
+  const { t } = useTranslation("general");
 
   const bottomFade = uiConfigs.style.gradientByImage[theme.palette.mode];
 
@@ -43,7 +53,11 @@ const HeroSection = ({ backgroundUrl, children, big = false, flipBackground = fa
         },
 
         color: isDark ? "#ffffff" : theme.palette.text.primary,
-        overflow: { xs: "visible", md: "hidden" },
+        // Auch auf xs clippen: die dekorativen Leuchtkreise der einzelnen
+        // Heroes werden per framer-motion nach rechts verschoben und ragen
+        // sonst ueber den Viewport hinaus - das erzeugte auf dem Handy
+        // horizontales Scrollen (Startseite: 487px statt 390px).
+        overflow: "hidden",
 
         // Bottom fade (always)
         "&::before": {
@@ -115,6 +129,29 @@ const HeroSection = ({ backgroundUrl, children, big = false, flipBackground = fa
       >
         {children}
       </Box>
+
+      {/* Hinweis auf KI-generiertes Bild (unten rechts) */}
+      {AI && (
+        <Box
+          sx={{
+            position: "absolute",
+            right: { xs: "0.75rem", md: "1rem" },
+            bottom: { xs: "0.75rem", md: "1rem" },
+            zIndex: 4,
+            display: "flex",
+            alignItems: "center",
+            gap: 0.5,
+            pointerEvents: "none",
+            opacity: 0.6,
+            textShadow: isDark ? "0 1px 2px rgba(0, 0, 0, 0.6)" : "none",
+          }}
+        >
+          <AutoAwesomeIcon sx={{ fontSize: "0.85rem" }} />
+          <Typography variant="caption" sx={{ fontSize: "0.7rem", lineHeight: 1.4 }}>
+            {aiLabel ?? t("general.ai_generated_image")}
+          </Typography>
+        </Box>
+      )}
     </Box>
   );
 };

@@ -69,7 +69,8 @@ const AutomobileHero = () => {
             <Stack
               direction="row"
               spacing={1.5}
-              sx={{ mt: 1, flexWrap: "wrap", rowGap: 1, justifyContent: "center", width: "100%" }}
+              useFlexGap
+              sx={{ mt: 1, flexWrap: "wrap", justifyContent: "center", width: "100%" }}
             >
               {chips.map((chip, index) => (
                 <Chip

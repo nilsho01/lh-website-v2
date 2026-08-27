@@ -1,10 +1,21 @@
 import React from "react";
 import { Typography, useTheme, Box, Stack } from "@mui/material";
+import { Link as RouterLink } from "react-router";
 
-const Logo = () => {
+/**
+ * Das Logo verweist standardmaessig auf die Startseite - so erwartet man es
+ * von einem Website-Logo.
+ *
+ * disableLink fuer Stellen, an denen es rein dekorativ steht (Ladeoverlay):
+ * dort waere ein Verweis fuer Screenreader nur Rauschen und ohnehin nicht
+ * anklickbar.
+ *
+ * onClick reicht die Sidebar durch, um beim Navigieren das Panel zu schliessen.
+ */
+const Logo = ({ disableLink = false, onClick }) => {
     const theme = useTheme();
 
-    return (
+    const content = (
         <Stack
             direction="row"
             spacing={1}
@@ -13,14 +24,14 @@ const Logo = () => {
             <Box
                 component="img"
                 src="/L+H_Logo.png"
-                alt="L+H Logo"
+                alt=""
                 sx={{
                     height: "1.4em",
                     width: "auto",
                     display: "block"
                 }}
             />
-            
+
             <Typography
                 component="span"
                 sx={{ fontWeight: 700, fontSize: "0.7em", lineHeight: 1 }}
@@ -36,6 +47,26 @@ const Logo = () => {
                 </span>
             </Typography>
         </Stack>
+    );
+
+    if (disableLink) return content;
+
+    return (
+        <Box
+            component={RouterLink}
+            to="/"
+            onClick={onClick}
+            aria-label="L+H MarketingServices AutomobilConsult - zur Startseite"
+            sx={{
+                display: "inline-flex",
+                color: "inherit",
+                textDecoration: "none",
+                transition: "opacity 0.2s ease",
+                "&:hover": { opacity: 0.8 },
+            }}
+        >
+            {content}
+        </Box>
     );
 };
 

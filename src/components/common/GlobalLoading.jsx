@@ -23,8 +23,9 @@ const GlobalLoading = () => {
                     pointerEvents: "none",
                     transition: "all .3s ease",
                     position: "fixed",
-                    width: "100vw",
-                    height: "100vh",
+                    inset: 0,
+                    width: "100%",
+                    height: "100dvh",
                     zIndex: 999
                 }}
             >
@@ -36,7 +37,7 @@ const GlobalLoading = () => {
                     left: "50%",
                     transform: "translate(-50%, -50%)s"
                 }}>
-                    <Logo />
+                    <Logo disableLink />
                 </Box>
             </Paper>
         </>
